@@ -8,7 +8,7 @@ N 230 90 280 90 {lab=out}
 N 280 90 350 90 {lab=out}
 N -80 190 -20 190 {lab=vdda}
 N -80 210 -20 210 {lab=vssa}
-N -150 110 -20 110 {lab=in_n}
+N -150 110 -20 110 {lab=in_p}
 N -80 170 -20 170 {lab=i_bias}
 N -150 70 -20 70 {lab=in_n}
 C {devices/lab_wire.sym} 340 90 0 0 {name=p1 sig_type=std_logic lab=out}
