@@ -1,4 +1,4 @@
-v {xschem version=3.4.6 file_version=1.2}
+v {xschem version=3.4.7 file_version=1.2}
 G {}
 K {}
 V {}
@@ -50,7 +50,8 @@ set wr_singlescale
 set wr_vecnames
 
 compose l_vec  values 0.28u 0.29u
-+ 0.3u 0.4u 0.5u 0.6u 0.7u 0.8u 0.9u 1u 2u 3u
++ 0.3u 0.4u 0.5u 0.6u 0.7u 0.8u 0.9u 1u 2u 3u 4u 5u
++ 6u 7u 8u 9u 10u
 compose vg_vec start= 0 stop=3.301  step=25m
 compose vd_vec start= 0 stop=3.301  step=25m
 compose vb_vec start= 0 stop=-0.4 step=-0.2
