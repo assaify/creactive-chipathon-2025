@@ -81,6 +81,8 @@ The detailed block diagram of the project is shown on the figure below. All of t
 | **Analog** | A[7] | Analog GPIO| Connected to 39 x 10 switch matrix |
 | **Analog** | A[8] | Analog GPIO| Connected to 39 x 10 switch matrix |
 | **Analog** | A[9] | Analog GPIO| Connected to 39 x 10 switch matrix |
+| **Analog** | I_BIAS_1 | Current Bias| Current bias for all 3 single ended OTA |
+| **Analog** | I_BIAS_2 | Current Bias| Current bias for all 3 differential output OTA |
 
 ## Switch Matrix Programming
 The switch matrix has 57 rows and 10 column busses, resulting in 570 number of switch cells. To control the value of passive arrays, another 18 rows of switch cell were added. The bit stream data has the size of 75 x 10 and illustrated on the table below.
