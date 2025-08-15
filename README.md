@@ -60,6 +60,7 @@ The overall design is shown on the block diagram below:
 ### Internal Pin
 
 The detailed block diagram of the project is shown on the figure below. All of the circuit blocks are connected to the switch matrix row internal pins (annotated with numbers 1-39), while the GPIOs are connected to the column internal pins (A0-A9).
+
 ![Pin Diagram](figures/internal_pin_diagram.svg)
 
 ### External Pin
@@ -71,16 +72,16 @@ The detailed block diagram of the project is shown on the figure below. All of t
 | **Digital** | DATA | Digital Input| |
 | **Digital** | CLK | Digital Input| |
 | **Digital** | RSTN | Digital Input| |
-| **Analog** | A[0] | Analog GPIO| Connected to 39 x 10 switch matrix |
-| **Analog** | A[1] | Analog GPIO| Connected to 39 x 10 switch matrix |
-| **Analog** | A[2] | Analog GPIO| Connected to 39 x 10 switch matrix |
-| **Analog** | A[3] | Analog GPIO| Connected to 39 x 10 switch matrix |
-| **Analog** | A[4] | Analog GPIO| Connected to 39 x 10 switch matrix |
-| **Analog** | A[5] | Analog GPIO| Connected to 39 x 10 switch matrix |
-| **Analog** | A[6] | Analog GPIO| Connected to 39 x 10 switch matrix |
-| **Analog** | A[7] | Analog GPIO| Connected to 39 x 10 switch matrix |
-| **Analog** | A[8] | Analog GPIO| Connected to 39 x 10 switch matrix |
-| **Analog** | A[9] | Analog GPIO| Connected to 39 x 10 switch matrix |
+| **Analog** | A[0] | Analog GPIO| Connected to 57 x 10 switch matrix |
+| **Analog** | A[1] | Analog GPIO| Connected to 57 x 10 switch matrix |
+| **Analog** | A[2] | Analog GPIO| Connected to 57 x 10 switch matrix |
+| **Analog** | A[3] | Analog GPIO| Connected to 57 x 10 switch matrix |
+| **Analog** | A[4] | Analog GPIO| Connected to 57 x 10 switch matrix |
+| **Analog** | A[5] | Analog GPIO| Connected to 57 x 10 switch matrix |
+| **Analog** | A[6] | Analog GPIO| Connected to 57 x 10 switch matrix |
+| **Analog** | A[7] | Analog GPIO| Connected to 57 x 10 switch matrix |
+| **Analog** | A[8] | Analog GPIO| Connected to 57 x 10 switch matrix |
+| **Analog** | A[9] | Analog GPIO| Connected to 57 x 10 switch matrix |
 | **Analog** | I_BIAS_1 | Current Bias| Current bias for all 3 single ended OTA |
 | **Analog** | I_BIAS_2 | Current Bias| Current bias for all 3 differential output OTA |
 
