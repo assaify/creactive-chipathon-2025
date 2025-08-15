@@ -1,0 +1,21 @@
+magic
+tech gf180mcuD
+magscale 1 5
+timestamp 1755278155
+use gf180mcu_fd_sc_mcu9t5v0__dffq_1  x1 pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/mag
+timestamp 1749760379
+transform 1 0 1378 0 1 -675
+box -43 -45 1611 549
+use gf180mcu_fd_sc_mcu9t5v0__nand2_1  x2 pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/mag
+timestamp 1749760379
+transform 1 0 4514 0 1 -675
+box -43 -45 323 549
+use gf180mcu_fd_sc_mcu9t5v0__inv_1  x3 pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/mag
+timestamp 1749760379
+transform 1 0 4794 0 1 -675
+box -43 -45 267 549
+use gf180mcu_fd_sc_mcu9t5v0__dffq_1  x5
+timestamp 1749760379
+transform 1 0 2946 0 1 -675
+box -43 -45 1611 549
+<< end >>

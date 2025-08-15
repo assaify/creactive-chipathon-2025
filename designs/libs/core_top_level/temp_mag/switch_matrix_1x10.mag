@@ -1,0 +1,45 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1755278828
+use switch-cell  switch-cell_0
+timestamp 1755278155
+transform 1 0 -101 0 1 0
+box 2670 -1440 10122 -252
+use switch-cell  switch-cell_1
+timestamp 1755278155
+transform 1 0 7609 0 1 0
+box 2670 -1440 10122 -252
+use switch-cell  switch-cell_2
+timestamp 1755278155
+transform 1 0 15319 0 1 0
+box 2670 -1440 10122 -252
+use switch-cell  switch-cell_3
+timestamp 1755278155
+transform 1 0 23029 0 1 0
+box 2670 -1440 10122 -252
+use switch-cell  switch-cell_4
+timestamp 1755278155
+transform 1 0 30739 0 1 0
+box 2670 -1440 10122 -252
+use switch-cell  switch-cell_5
+timestamp 1755278155
+transform 1 0 38449 0 1 0
+box 2670 -1440 10122 -252
+use switch-cell  switch-cell_6
+timestamp 1755278155
+transform 1 0 46159 0 1 0
+box 2670 -1440 10122 -252
+use switch-cell  switch-cell_7
+timestamp 1755278155
+transform 1 0 53869 0 1 0
+box 2670 -1440 10122 -252
+use switch-cell  switch-cell_8
+timestamp 1755278155
+transform 1 0 61579 0 1 0
+box 2670 -1440 10122 -252
+use switch-cell  switch-cell_9
+timestamp 1755278155
+transform 1 0 69289 0 1 0
+box 2670 -1440 10122 -252
+<< end >>

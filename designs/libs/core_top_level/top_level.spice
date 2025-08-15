@@ -1,0 +1,251 @@
+** sch_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_top_level/top_level.sch
+.subckt top_level
+
+x1 net1 net2 net3 net4 net5 net6 single_ended_ota
+x2 net7 net8 net9 net10 net11 net12 single_ended_ota
+x3 net13 net14 net15 net16 net17 net18 single_ended_ota
+x4 net19 net20 net21 net22 net23 net24 net25 differential_ota
+x5 net26 net27 net28 net29 net30 net31 net32 differential_ota
+x6 net33 net34 net35 net36 net37 net38 net39 differential_ota
+x7 net40 net41 net42 net43 net44 net45 net46 net47 array_cap_10x1p
+x10 net48 net49 net50 net51 net52 net53 net54 net55 array_res_10x10k
+x13 net56 net57 net58 net59 net60 net61 net62 net63 array_res_10x1k
+x8 net64 net65 net66 net67 net68 net69 net70 net71 array_cap_10x1p
+x9 net72 net73 net74 net75 net76 net77 net78 net79 array_cap_10x1p
+x11 net80 net81 net82 net83 net84 net85 net86 net87 array_res_10x10k
+x12 net88 net89 net90 net91 net92 net93 net94 net95 array_res_10x10k
+x14 net96 net97 net98 net99 net100 net101 net102 net103 array_res_10x1k
+x15 net104 net105 net106 net107 net108 net109 net110 net111 array_res_10x1k
+x16 switch_matrix_1x10
+x17 switch_matrix_1x10
+x18 switch_matrix_1x10
+x19 switch_matrix_1x10
+x20 switch_matrix_1x10
+x21 switch_matrix_1x10
+x22 switch_matrix_1x10
+x23 switch_matrix_1x10
+x24 switch_matrix_1x10
+x25 switch_matrix_1x10
+x26 switch_matrix_1x10
+x27 switch_matrix_1x10
+x28 switch_matrix_1x10
+x29 switch_matrix_1x10
+x30 switch_matrix_1x10
+x31 switch_matrix_1x10
+x32 switch_matrix_1x10
+x33 switch_matrix_1x10
+x34 switch_matrix_1x10
+x35 switch_matrix_1x10
+x36 switch_matrix_1x10
+x37 switch_matrix_1x10
+x38 switch_matrix_1x10
+x39 switch_matrix_1x10
+x40 switch_matrix_1x10
+x41 switch_matrix_1x10
+x42 switch_matrix_1x10
+x43 switch_matrix_1x10
+x44 switch_matrix_1x10
+x45 switch_matrix_1x10
+x46 switch_matrix_1x10
+x47 switch_matrix_1x10
+x48 switch_matrix_1x10
+x49 switch_matrix_1x10
+x50 switch_matrix_1x10
+x51 switch_matrix_1x10
+x52 switch_matrix_1x10
+x53 switch_matrix_1x10
+x54 switch_matrix_1x10
+x55 switch_matrix_1x10
+x56 switch_matrix_1x10
+x57 switch_matrix_1x10
+x58 switch_matrix_1x10
+x59 switch_matrix_1x10
+x60 switch_matrix_1x10
+x61 switch_matrix_1x10
+x62 switch_matrix_1x10
+x63 switch_matrix_1x10
+x64 switch_matrix_1x10
+x65 switch_matrix_1x10
+x66 switch_matrix_1x10
+x67 switch_matrix_1x10
+x68 switch_matrix_1x10
+x69 switch_matrix_1x10
+x70 switch_matrix_1x10
+x71 switch_matrix_1x10
+x72 switch_matrix_1x10
+.ends
+
+* expanding   symbol:  libs/core_analog/single_ended_ota/single_ended_ota.sym # of pins=6
+** sym_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_analog/single_ended_ota/single_ended_ota.sym
+** sch_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_analog/single_ended_ota/single_ended_ota.sch
+.subckt single_ended_ota vdd vss ibias in_n in_p out
+*.PININFO vdd:B vss:B ibias:B in_n:I in_p:I out:O
+XM1 net1 in_n vs vss nfet_03v3 L=1u W=4.75u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=4
+XM3 net1 net1 vdd vdd pfet_03v3 L=1u W=10u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=4
+XM5 vs ibias vss vss nfet_03v3 L=1u W=2.25u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=4
+XM6 ibias ibias vss vss nfet_03v3 L=1u W=2.25u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=4
+XM7 out net2 vdd vdd pfet_03v3 L=1u W=42u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=10
+XM8 out ibias vss vss nfet_03v3 L=1u W=2.25u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=20
+XM2 net2 in_p vs vss nfet_03v3 L=1u W=4.75u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=4
+XM4 net2 net1 vdd vdd pfet_03v3 L=1u W=10u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=4
+XC3 out net3 cap_mim_2f0fF c_width=5e-6 c_length=5e-6 m=132
+XR2 net2 net3 vss ppolyf_u_1k r_width=1e-6 r_length=13.37e-6 m=10
+.ends
+
+
+* expanding   symbol:  libs/core_analog/differential_ota/differential_ota.sym # of pins=7
+** sym_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_analog/differential_ota/differential_ota.sym
+** sch_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_analog/differential_ota/differential_ota.sch
+.subckt differential_ota vdd vss ibias in_n in_p out_n out_p
+*.PININFO vdd:B vss:B ibias:B in_n:I in_p:I out_n:O out_p:O
+XM1 net1 in_n net4 vss nfet_03v3 L=1u W=4.75u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=4
+XM3 net1 net3 vdd vdd pfet_03v3 L=1u W=10u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=4
+XM5 net4 ibias vss vss nfet_03v3 L=1u W=2.25u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=4
+XM6 ibias ibias vss vss nfet_03v3 L=1u W=2.25u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=4
+XM7 out_p net2 vdd vdd pfet_03v3 L=1u W=42u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=10
+XM8 out_p ibias vss vss nfet_03v3 L=1u W=2.25u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=20
+XM2 net2 in_p net4 vss nfet_03v3 L=1u W=4.75u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=4
+XM4 net2 net3 vdd vdd pfet_03v3 L=1u W=10u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=4
+XC3 out_p net5 cap_mim_2f0fF c_width=5e-6 c_length=5e-6 m=132
+XR2 net2 net5 vss ppolyf_u_1k r_width=1e-6 r_length=13.37e-6 m=10
+XM9 out_n net1 vdd vdd pfet_03v3 L=1u W=42u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=10
+XM10 out_n ibias vss vss nfet_03v3 L=1u W=2.25u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=20
+XC2 out_n net6 cap_mim_2f0fF c_width=5e-6 c_length=5e-6 m=132
+XR1 net1 net6 vss ppolyf_u_1k r_width=1e-6 r_length=13.37e-6 m=10
+R3 net1 net3 1k m=1
+R4 net2 net3 1k m=1
+.ends
+
+
+* expanding   symbol:  libs/core_passive_array/array_cap_10x1p/array_cap_10x1p.sym # of pins=8
+** sym_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_passive_array/array_cap_10x1p/array_cap_10x1p.sym
+** sch_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_passive_array/array_cap_10x1p/array_cap_10x1p.sch
+.subckt array_cap_10x1p vdd vss c_a c_b data_in clk_1 clk_2 rst_n
+*.PININFO vdd:B vss:B c_a:B c_b:B data_in:I clk_1:I clk_2:I rst_n:I
+XC1 net1 c_b cap_mim_2f0fF c_width=10e-6 c_length=10e-6 m=5
+x1 net3 vdd vss data_in clk_1 clk_2 rst_n c_a net1 switch-cell
+XC2 net2 c_b cap_mim_2f0fF c_width=10e-6 c_length=10e-6 m=5
+x2 net5 vdd vss net3 clk_1 clk_2 rst_n c_a net2 switch-cell
+XC3 net4 c_b cap_mim_2f0fF c_width=10e-6 c_length=10e-6 m=5
+x3 net7 vdd vss net5 clk_1 clk_2 rst_n c_a net4 switch-cell
+XC4 net6 c_b cap_mim_2f0fF c_width=10e-6 c_length=10e-6 m=5
+x4 net9 vdd vss net7 clk_1 clk_2 rst_n c_a net6 switch-cell
+XC5 net8 c_b cap_mim_2f0fF c_width=10e-6 c_length=10e-6 m=5
+x5 net11 vdd vss net9 clk_1 clk_2 rst_n c_a net8 switch-cell
+XC6 net10 c_b cap_mim_2f0fF c_width=10e-6 c_length=10e-6 m=5
+x6 net13 vdd vss net11 clk_1 clk_2 rst_n c_a net10 switch-cell
+XC7 net12 c_b cap_mim_2f0fF c_width=10e-6 c_length=10e-6 m=5
+x7 net15 vdd vss net13 clk_1 clk_2 rst_n c_a net12 switch-cell
+XC8 net14 c_b cap_mim_2f0fF c_width=10e-6 c_length=10e-6 m=5
+x8 net17 vdd vss net15 clk_1 clk_2 rst_n c_a net14 switch-cell
+XC9 net16 c_b cap_mim_2f0fF c_width=10e-6 c_length=10e-6 m=5
+x9 net19 vdd vss net17 clk_1 clk_2 rst_n c_a net16 switch-cell
+XC10 net18 c_b cap_mim_2f0fF c_width=10e-6 c_length=10e-6 m=5
+x10 data_out vdd vss net19 clk_1 clk_2 rst_n c_a net18 switch-cell
+.ends
+
+
+* expanding   symbol:  libs/core_passive_array/array_res_10x10k/array_res_10x10k.sym # of pins=8
+** sym_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_passive_array/array_res_10x10k/array_res_10x10k.sym
+** sch_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_passive_array/array_res_10x10k/array_res_10x10k.sch
+.subckt array_res_10x10k vdd vss r_a r_b data_in clk_1 clk_2 rst_n
+*.PININFO vdd:B vss:B r_a:B r_b:B data_in:I clk_1:I clk_2:I rst_n:I
+x1 net2 vdd vss data_in clk_1 clk_2 rst_n r_b net1 switch-cell
+XR1 r_a net1 vdd ppolyf_u_1k r_width=1e-6 r_length=9.5e-6 m=1
+x2 net4 vdd vss net2 clk_1 clk_2 rst_n r_b net3 switch-cell
+XR2 net1 net3 vdd ppolyf_u_1k r_width=1e-6 r_length=9.5e-6 m=1
+x3 net6 vdd vss net4 clk_1 clk_2 rst_n r_b net5 switch-cell
+XR3 net3 net5 vdd ppolyf_u_1k r_width=1e-6 r_length=9.5e-6 m=1
+x4 net8 vdd vss net6 clk_1 clk_2 rst_n r_b net7 switch-cell
+XR4 net5 net7 vdd ppolyf_u_1k r_width=1e-6 r_length=9.5e-6 m=1
+x5 net10 vdd vss net8 clk_1 clk_2 rst_n r_b net9 switch-cell
+XR5 net7 net9 vdd ppolyf_u_1k r_width=1e-6 r_length=9.5e-6 m=1
+x6 net12 vdd vss net10 clk_1 clk_2 rst_n r_b net11 switch-cell
+XR6 net9 net11 vdd ppolyf_u_1k r_width=1e-6 r_length=9.5e-6 m=1
+x7 net14 vdd vss net12 clk_1 clk_2 rst_n r_b net13 switch-cell
+XR7 net11 net13 vdd ppolyf_u_1k r_width=1e-6 r_length=9.5e-6 m=1
+x8 net21 vdd vss net14 clk_1 clk_2 rst_n r_b net15 switch-cell
+XR8 net13 net15 vdd ppolyf_u_1k r_width=1e-6 r_length=9.5e-6 m=1
+x9 net19 vdd vss net16 clk_1 clk_2 rst_n r_b net17 switch-cell
+XR9 net18 net17 vdd ppolyf_u_1k r_width=1e-6 r_length=9.5e-6 m=1
+x10 data_out vdd vss net19 clk_1 clk_2 rst_n r_b net20 switch-cell
+XR10 net17 net20 vdd ppolyf_u_1k r_width=1e-6 r_length=9.5e-6 m=1
+.ends
+
+
+* expanding   symbol:  libs/core_passive_array/array_res_10x1k/array_res_10x1k.sym # of pins=8
+** sym_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_passive_array/array_res_10x1k/array_res_10x1k.sym
+** sch_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_passive_array/array_res_10x1k/array_res_10x1k.sch
+.subckt array_res_10x1k vdd vss r_a r_b data_in clk_1 clk_2 rst_n
+*.PININFO vdd:B vss:B r_a:B r_b:B data_in:I clk_1:I clk_2:I rst_n:I
+XR1 r_a net1 vdd ppolyf_u r_width=1e-6 r_length=2.2e-6 m=1
+x1 net2 vdd vss data_in clk_1 clk_2 rst_n r_b net1 switch-cell
+x2 net4 vdd vss net2 clk_1 clk_2 rst_n r_b net3 switch-cell
+XR2 net1 net3 vdd ppolyf_u r_width=1e-6 r_length=2.2e-6 m=1
+x3 net6 vdd vss net4 clk_1 clk_2 rst_n r_b net5 switch-cell
+XR3 net3 net5 vdd ppolyf_u r_width=1e-6 r_length=2.2e-6 m=1
+x4 net8 vdd vss net6 clk_1 clk_2 rst_n r_b net7 switch-cell
+XR4 net5 net7 vdd ppolyf_u r_width=1e-6 r_length=2.2e-6 m=1
+x5 net10 vdd vss net8 clk_1 clk_2 rst_n r_b net9 switch-cell
+XR5 net7 net9 vdd ppolyf_u r_width=1e-6 r_length=2.2e-6 m=1
+x6 net12 vdd vss net10 clk_1 clk_2 rst_n r_b net11 switch-cell
+XR6 net9 net11 vdd ppolyf_u r_width=1e-6 r_length=2.2e-6 m=1
+x7 net14 vdd vss net12 clk_1 clk_2 rst_n r_b net13 switch-cell
+XR7 net11 net13 vdd ppolyf_u r_width=1e-6 r_length=2.2e-6 m=1
+x8 net16 vdd vss net14 clk_1 clk_2 rst_n r_b net15 switch-cell
+XR8 net13 net15 vdd ppolyf_u r_width=1e-6 r_length=2.2e-6 m=1
+x9 net18 vdd vss net16 clk_1 clk_2 rst_n r_b net17 switch-cell
+XR9 net15 net17 vdd ppolyf_u r_width=1e-6 r_length=2.2e-6 m=1
+x10 data_out vdd vss net18 clk_1 clk_2 rst_n r_b net19 switch-cell
+XR10 net17 net19 vdd ppolyf_u r_width=1e-6 r_length=2.2e-6 m=1
+.ends
+
+
+* expanding   symbol:  libs/core_switch_matrix/switch_matrix_1x10/switch_matrix_1x10.sym # of pins=0
+** sym_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_switch_matrix/switch_matrix_1x10/switch_matrix_1x10.sym
+** sch_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_switch_matrix/switch_matrix_1x10/switch_matrix_1x10.sch
+.subckt switch_matrix_1x10
+
+x[1] net1[9] net2[9] net3[9] net4[9] net5[9] net6[9] net7[9] net8[9] net9[9] switch-cell
+x[2] net1[8] net2[8] net3[8] net4[8] net5[8] net6[8] net7[8] net8[8] net9[8] switch-cell
+x[3] net1[7] net2[7] net3[7] net4[7] net5[7] net6[7] net7[7] net8[7] net9[7] switch-cell
+x[4] net1[6] net2[6] net3[6] net4[6] net5[6] net6[6] net7[6] net8[6] net9[6] switch-cell
+x[5] net1[5] net2[5] net3[5] net4[5] net5[5] net6[5] net7[5] net8[5] net9[5] switch-cell
+x[6] net1[4] net2[4] net3[4] net4[4] net5[4] net6[4] net7[4] net8[4] net9[4] switch-cell
+x[7] net1[3] net2[3] net3[3] net4[3] net5[3] net6[3] net7[3] net8[3] net9[3] switch-cell
+x[8] net1[2] net2[2] net3[2] net4[2] net5[2] net6[2] net7[2] net8[2] net9[2] switch-cell
+x[9] net1[1] net2[1] net3[1] net4[1] net5[1] net6[1] net7[1] net8[1] net9[1] switch-cell
+x[10] net1[0] net2[0] net3[0] net4[0] net5[0] net6[0] net7[0] net8[0] net9[0] switch-cell
+.ends
+
+
+* expanding   symbol:  libs/core_switch_matrix/switch-cell/switch-cell.sym # of pins=9
+** sym_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_switch_matrix/switch-cell/switch-cell.sym
+** sch_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_switch_matrix/switch-cell/switch-cell.sch
+.subckt switch-cell Q VDD VSS D CLK1 CLK2 RSTN IN OUT
+*.PININFO VDD:B VSS:B CLK1:I D:I IN:B OUT:B RSTN:I Q:O CLK2:I
+*  x4 -  trans-gate  IS MISSING !!!!
+x1 D CLK1 net1 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__dffq_1
+x5 net1 CLK2 Q VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__dffq_1
+x2 RSTN Q net2 VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__nand2_1
+x3 net2 SW VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__inv_1
+.ends
+

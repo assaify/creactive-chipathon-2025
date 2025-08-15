@@ -1,0 +1,49 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1755278675
+use cap_mim_2p0fF_22EL2S  cap_mim_2p0fF_22EL2S_0
+timestamp 1755278675
+transform 1 0 23741 0 1 -20705
+box -13003 -5900 13003 5900
+use switch-cell  x1
+timestamp 1755278155
+transform 1 0 8068 0 1 -8433
+box 2670 -1440 10122 -252
+use switch-cell  x2
+timestamp 1755278155
+transform 1 0 8068 0 1 -9681
+box 2670 -1440 10122 -252
+use switch-cell  x3
+timestamp 1755278155
+transform 1 0 8068 0 1 -10929
+box 2670 -1440 10122 -252
+use switch-cell  x4
+timestamp 1755278155
+transform 1 0 8068 0 1 -12177
+box 2670 -1440 10122 -252
+use switch-cell  x5
+timestamp 1755278155
+transform 1 0 8068 0 1 -13425
+box 2670 -1440 10122 -252
+use switch-cell  x6
+timestamp 1755278155
+transform 1 0 15520 0 1 -8433
+box 2670 -1440 10122 -252
+use switch-cell  x7
+timestamp 1755278155
+transform 1 0 15520 0 1 -9681
+box 2670 -1440 10122 -252
+use switch-cell  x8
+timestamp 1755278155
+transform 1 0 15520 0 1 -10929
+box 2670 -1440 10122 -252
+use switch-cell  x9
+timestamp 1755278155
+transform 1 0 15520 0 1 -12177
+box 2670 -1440 10122 -252
+use switch-cell  x10
+timestamp 1755278155
+transform 1 0 15520 0 1 -13425
+box 2670 -1440 10122 -252
+<< end >>
