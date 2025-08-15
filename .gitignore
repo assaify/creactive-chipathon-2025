@@ -29,3 +29,5 @@ temp/
 
 /designs/program/*.txt
 /designs/program/*.mat
+
+.venv
