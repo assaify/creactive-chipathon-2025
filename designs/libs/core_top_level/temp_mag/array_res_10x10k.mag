@@ -1,0 +1,85 @@
+magic
+tech gf180mcuD
+magscale 1 5
+timestamp 1755279480
+use switch-cell  x1
+timestamp 1755278155
+transform 1 0 537 0 1 2592
+box 1335 -720 5061 -126
+use switch-cell  x2
+timestamp 1755278155
+transform 1 0 537 0 1 1968
+box 1335 -720 5061 -126
+use switch-cell  x3
+timestamp 1755278155
+transform 1 0 537 0 1 1344
+box 1335 -720 5061 -126
+use switch-cell  x4
+timestamp 1755278155
+transform 1 0 537 0 1 720
+box 1335 -720 5061 -126
+use switch-cell  x5
+timestamp 1755278155
+transform 1 0 537 0 1 96
+box 1335 -720 5061 -126
+use switch-cell  x6
+timestamp 1755278155
+transform 1 0 4905 0 1 2592
+box 1335 -720 5061 -126
+use switch-cell  x7
+timestamp 1755278155
+transform 1 0 4905 0 1 1968
+box 1335 -720 5061 -126
+use switch-cell  x8
+timestamp 1755278155
+transform 1 0 4905 0 1 1344
+box 1335 -720 5061 -126
+use switch-cell  x9
+timestamp 1755278155
+transform 1 0 4905 0 1 720
+box 1335 -720 5061 -126
+use switch-cell  x10
+timestamp 1755278155
+transform 1 0 4905 0 1 96
+box 1335 -720 5061 -126
+use ppolyf_u_1k_LUBY7J  XR1
+timestamp 1755276408
+transform 1 0 4584 0 1 -1554
+box -168 -654 168 654
+use ppolyf_u_1k_LUBY7J  XR2
+timestamp 1755276408
+transform 1 0 4860 0 1 -1554
+box -168 -654 168 654
+use ppolyf_u_1k_LUBY7J  XR3
+timestamp 1755276408
+transform 1 0 5136 0 1 -1554
+box -168 -654 168 654
+use ppolyf_u_1k_LUBY7J  XR4
+timestamp 1755276408
+transform 1 0 5412 0 1 -1554
+box -168 -654 168 654
+use ppolyf_u_1k_LUBY7J  XR5
+timestamp 1755276408
+transform 1 0 5688 0 1 -1554
+box -168 -654 168 654
+use ppolyf_u_1k_LUBY7J  XR6
+timestamp 1755276408
+transform 1 0 5964 0 1 -1554
+box -168 -654 168 654
+use ppolyf_u_1k_LUBY7J  XR7
+timestamp 1755276408
+transform 1 0 6240 0 1 -1554
+box -168 -654 168 654
+use ppolyf_u_1k_LUBY7J  XR8
+timestamp 1755276408
+transform 1 0 6516 0 1 -1554
+box -168 -654 168 654
+use ppolyf_u_1k_LUBY7J  XR9
+timestamp 1755276408
+transform 1 0 6792 0 1 -1554
+box -168 -654 168 654
+use ppolyf_u_1k_LUBY7J  XR10
+timestamp 1755276408
+transform 1 0 7068 0 1 -1554
+box -168 -654 168 654
+<< end >>

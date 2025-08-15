@@ -103,7 +103,7 @@ spiceprefix=X
 m=5}
 C {devices/lab_pin.sym} 410 -130 0 1 {name=l1 sig_type=std_logic lab=c_a}
 C {devices/lab_pin.sym} 410 -30 0 0 {name=l2 sig_type=std_logic lab=c_b}
-C {libs/core_switch-matrix/switch-cell/switch-cell.sym} 240 -150 0 0 {name=x1}
+C {libs/core_switch_matrix/switch-cell/switch-cell.sym} 240 -150 0 0 {name=x1}
 C {devices/lab_pin.sym} 410 -150 0 1 {name=l3 sig_type=std_logic lab=vss}
 C {devices/lab_pin.sym} 410 -170 0 1 {name=l4 sig_type=std_logic lab=vdd}
 C {devices/lab_pin.sym} 70 -150 0 0 {name=l5 sig_type=std_logic lab=clk_2}
@@ -118,7 +118,7 @@ spiceprefix=X
 m=5}
 C {devices/lab_pin.sym} 890 -130 0 1 {name=l9 sig_type=std_logic lab=c_a}
 C {devices/lab_pin.sym} 890 -30 0 0 {name=l10 sig_type=std_logic lab=c_b}
-C {libs/core_switch-matrix/switch-cell/switch-cell.sym} 720 -150 0 0 {name=x2}
+C {libs/core_switch_matrix/switch-cell/switch-cell.sym} 720 -150 0 0 {name=x2}
 C {devices/lab_pin.sym} 890 -150 0 1 {name=l11 sig_type=std_logic lab=vss}
 C {devices/lab_pin.sym} 890 -170 0 1 {name=l12 sig_type=std_logic lab=vdd}
 C {devices/lab_pin.sym} 550 -150 0 0 {name=l13 sig_type=std_logic lab=clk_2}
@@ -132,7 +132,7 @@ spiceprefix=X
 m=5}
 C {devices/lab_pin.sym} 1370 -130 0 1 {name=l16 sig_type=std_logic lab=c_a}
 C {devices/lab_pin.sym} 1370 -30 0 0 {name=l17 sig_type=std_logic lab=c_b}
-C {libs/core_switch-matrix/switch-cell/switch-cell.sym} 1200 -150 0 0 {name=x3}
+C {libs/core_switch_matrix/switch-cell/switch-cell.sym} 1200 -150 0 0 {name=x3}
 C {devices/lab_pin.sym} 1370 -150 0 1 {name=l18 sig_type=std_logic lab=vss}
 C {devices/lab_pin.sym} 1370 -170 0 1 {name=l19 sig_type=std_logic lab=vdd}
 C {devices/lab_pin.sym} 1030 -150 0 0 {name=l20 sig_type=std_logic lab=clk_2}
@@ -146,7 +146,7 @@ spiceprefix=X
 m=5}
 C {devices/lab_pin.sym} 1850 -130 0 1 {name=l23 sig_type=std_logic lab=c_a}
 C {devices/lab_pin.sym} 1850 -30 0 0 {name=l24 sig_type=std_logic lab=c_b}
-C {libs/core_switch-matrix/switch-cell/switch-cell.sym} 1680 -150 0 0 {name=x4}
+C {libs/core_switch_matrix/switch-cell/switch-cell.sym} 1680 -150 0 0 {name=x4}
 C {devices/lab_pin.sym} 1850 -150 0 1 {name=l25 sig_type=std_logic lab=vss}
 C {devices/lab_pin.sym} 1850 -170 0 1 {name=l26 sig_type=std_logic lab=vdd}
 C {devices/lab_pin.sym} 1510 -150 0 0 {name=l27 sig_type=std_logic lab=clk_2}
@@ -160,7 +160,7 @@ spiceprefix=X
 m=5}
 C {devices/lab_pin.sym} 2330 -130 0 1 {name=l30 sig_type=std_logic lab=c_a}
 C {devices/lab_pin.sym} 2330 -30 0 0 {name=l31 sig_type=std_logic lab=c_b}
-C {libs/core_switch-matrix/switch-cell/switch-cell.sym} 2160 -150 0 0 {name=x5}
+C {libs/core_switch_matrix/switch-cell/switch-cell.sym} 2160 -150 0 0 {name=x5}
 C {devices/lab_pin.sym} 2330 -150 0 1 {name=l32 sig_type=std_logic lab=vss}
 C {devices/lab_pin.sym} 2330 -170 0 1 {name=l33 sig_type=std_logic lab=vdd}
 C {devices/lab_pin.sym} 1990 -150 0 0 {name=l34 sig_type=std_logic lab=clk_2}
@@ -174,7 +174,7 @@ spiceprefix=X
 m=5}
 C {devices/lab_pin.sym} 2800 -130 0 1 {name=l37 sig_type=std_logic lab=c_a}
 C {devices/lab_pin.sym} 2800 -30 0 0 {name=l38 sig_type=std_logic lab=c_b}
-C {libs/core_switch-matrix/switch-cell/switch-cell.sym} 2630 -150 0 0 {name=x6}
+C {libs/core_switch_matrix/switch-cell/switch-cell.sym} 2630 -150 0 0 {name=x6}
 C {devices/lab_pin.sym} 2800 -150 0 1 {name=l39 sig_type=std_logic lab=vss}
 C {devices/lab_pin.sym} 2800 -170 0 1 {name=l40 sig_type=std_logic lab=vdd}
 C {devices/lab_pin.sym} 2460 -150 0 0 {name=l41 sig_type=std_logic lab=clk_2}
@@ -188,7 +188,7 @@ spiceprefix=X
 m=5}
 C {devices/lab_pin.sym} 3280 -130 0 1 {name=l44 sig_type=std_logic lab=c_a}
 C {devices/lab_pin.sym} 3280 -30 0 0 {name=l45 sig_type=std_logic lab=c_b}
-C {libs/core_switch-matrix/switch-cell/switch-cell.sym} 3110 -150 0 0 {name=x7}
+C {libs/core_switch_matrix/switch-cell/switch-cell.sym} 3110 -150 0 0 {name=x7}
 C {devices/lab_pin.sym} 3280 -150 0 1 {name=l46 sig_type=std_logic lab=vss}
 C {devices/lab_pin.sym} 3280 -170 0 1 {name=l47 sig_type=std_logic lab=vdd}
 C {devices/lab_pin.sym} 2940 -150 0 0 {name=l48 sig_type=std_logic lab=clk_2}
@@ -202,7 +202,7 @@ spiceprefix=X
 m=5}
 C {devices/lab_pin.sym} 3760 -130 0 1 {name=l51 sig_type=std_logic lab=c_a}
 C {devices/lab_pin.sym} 3760 -30 0 0 {name=l52 sig_type=std_logic lab=c_b}
-C {libs/core_switch-matrix/switch-cell/switch-cell.sym} 3590 -150 0 0 {name=x8}
+C {libs/core_switch_matrix/switch-cell/switch-cell.sym} 3590 -150 0 0 {name=x8}
 C {devices/lab_pin.sym} 3760 -150 0 1 {name=l53 sig_type=std_logic lab=vss}
 C {devices/lab_pin.sym} 3760 -170 0 1 {name=l54 sig_type=std_logic lab=vdd}
 C {devices/lab_pin.sym} 3420 -150 0 0 {name=l55 sig_type=std_logic lab=clk_2}
@@ -216,7 +216,7 @@ spiceprefix=X
 m=5}
 C {devices/lab_pin.sym} 4240 -130 0 1 {name=l58 sig_type=std_logic lab=c_a}
 C {devices/lab_pin.sym} 4240 -30 0 0 {name=l59 sig_type=std_logic lab=c_b}
-C {libs/core_switch-matrix/switch-cell/switch-cell.sym} 4070 -150 0 0 {name=x9}
+C {libs/core_switch_matrix/switch-cell/switch-cell.sym} 4070 -150 0 0 {name=x9}
 C {devices/lab_pin.sym} 4240 -150 0 1 {name=l60 sig_type=std_logic lab=vss}
 C {devices/lab_pin.sym} 4240 -170 0 1 {name=l61 sig_type=std_logic lab=vdd}
 C {devices/lab_pin.sym} 3900 -150 0 0 {name=l62 sig_type=std_logic lab=clk_2}
@@ -230,7 +230,7 @@ spiceprefix=X
 m=5}
 C {devices/lab_pin.sym} 4720 -130 0 1 {name=l65 sig_type=std_logic lab=c_a}
 C {devices/lab_pin.sym} 4720 -30 0 0 {name=l66 sig_type=std_logic lab=c_b}
-C {libs/core_switch-matrix/switch-cell/switch-cell.sym} 4550 -150 0 0 {name=x10}
+C {libs/core_switch_matrix/switch-cell/switch-cell.sym} 4550 -150 0 0 {name=x10}
 C {devices/lab_pin.sym} 4720 -150 0 1 {name=l67 sig_type=std_logic lab=vss}
 C {devices/lab_pin.sym} 4720 -170 0 1 {name=l68 sig_type=std_logic lab=vdd}
 C {devices/lab_pin.sym} 4380 -150 0 0 {name=l69 sig_type=std_logic lab=clk_2}

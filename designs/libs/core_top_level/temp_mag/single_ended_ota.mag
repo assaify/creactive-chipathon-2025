@@ -1,0 +1,47 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1755277289
+<< nwell >>
+rect 9294 -330 9302 2090
+use cap_mim_2p0fF_29R4QQ  cap_mim_2p0fF_29R4QQ_0
+timestamp 1755277289
+transform 1 0 13380 0 1 -10137
+box -8810 -8160 8810 8160
+use nfet_03v3_LJL3YZ  XM1
+timestamp 1755277289
+transform 1 0 6996 0 1 -1023
+box -806 -685 806 685
+use nfet_03v3_LJL3YZ  XM2
+timestamp 1755277289
+transform 1 0 8488 0 1 -1023
+box -806 -685 806 685
+use pfet_03v3_6RKJAA  XM3
+timestamp 1755277289
+transform 1 0 6996 0 1 880
+box -806 -1210 806 1210
+use pfet_03v3_6RKJAA  XM4
+timestamp 1755277289
+transform 1 0 8488 0 1 880
+box -806 -1210 806 1210
+use nfet_03v3_D3EZXZ  XM5
+timestamp 1755277289
+transform 1 0 5376 0 1 -773
+box -806 -435 806 435
+use nfet_03v3_D3EZXZ  XM6
+timestamp 1755277289
+transform 1 0 5376 0 1 -1523
+box -806 -435 806 435
+use pfet_03v3_GAFN5T  XM7
+timestamp 1755277289
+transform 1 0 11020 0 1 4080
+box -1718 -4410 1718 4410
+use nfet_03v3_6VPH2F  XM8
+timestamp 1755277289
+transform 1 0 12540 0 1 -773
+box -3238 -435 3238 435
+use ppolyf_u_1k_HU5P4Y  XR2
+timestamp 1755277289
+transform 1 0 14363 0 1 1365
+box -1596 -1695 1596 1695
+<< end >>

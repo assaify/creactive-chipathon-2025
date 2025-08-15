@@ -1,0 +1,329 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1755280221
+use array_cap_10x1p  array_cap_10x1p_0
+timestamp 1755278675
+transform 1 0 151502 0 1 5389
+box 10738 -26605 36744 -8685
+use array_cap_10x1p  array_cap_10x1p_1
+timestamp 1755278675
+transform 1 0 151502 0 1 -13331
+box 10738 -26605 36744 -8685
+use array_cap_10x1p  array_cap_10x1p_2
+timestamp 1755278675
+transform 1 0 151502 0 1 -32051
+box 10738 -26605 36744 -8685
+use array_res_10x1k  array_res_10x1k_0
+timestamp 1755279246
+transform 1 0 147504 0 1 -93408
+box 4752 -7680 20520 300
+use array_res_10x1k  array_res_10x1k_1
+timestamp 1755279246
+transform 1 0 147504 0 1 -110880
+box 4752 -7680 20520 300
+use array_res_10x1k  array_res_10x1k_2
+timestamp 1755279246
+transform 1 0 147504 0 1 -102144
+box 4752 -7680 20520 300
+use array_res_10x10k  array_res_10x10k_0
+timestamp 1755279480
+transform 1 0 148512 0 1 -85440
+box 3744 -4416 19932 4932
+use array_res_10x10k  array_res_10x10k_1
+timestamp 1755279480
+transform 1 0 148512 0 1 -75456
+box 3744 -4416 19932 4932
+use array_res_10x10k  array_res_10x10k_2
+timestamp 1755279480
+transform 1 0 148512 0 1 -65472
+box 3744 -4416 19932 4932
+use single_ended_ota  x1
+timestamp 1755277289
+transform 1 0 27878 0 1 -11655
+box 4570 -18297 22190 8490
+use single_ended_ota  x2
+timestamp 1755277289
+transform 1 0 27878 0 1 -66567
+box 4570 -18297 22190 8490
+use single_ended_ota  x3
+timestamp 1755277289
+transform 1 0 27704 0 1 -39299
+box 4570 -18297 22190 8490
+use differential_ota  x4
+timestamp 1755280221
+transform 1 0 1248 0 1 -44928
+box -8736 -16224 26638 11048
+use differential_ota  x5
+timestamp 1755280221
+transform 1 0 1248 0 1 -73632
+box -8736 -16224 26638 11048
+use differential_ota  x6
+timestamp 1755280221
+transform 1 0 1248 0 1 -102336
+box -8736 -16224 26638 11048
+use array_cap_10x1p  x7
+timestamp 1755278675
+transform 1 0 124046 0 1 5389
+box 10738 -26605 36744 -8685
+use array_cap_10x1p  x8
+timestamp 1755278675
+transform 1 0 124046 0 1 -13331
+box 10738 -26605 36744 -8685
+use array_cap_10x1p  x9
+timestamp 1755278675
+transform 1 0 124046 0 1 -32051
+box 10738 -26605 36744 -8685
+use array_res_10x10k  x10
+timestamp 1755279480
+transform 1 0 131040 0 1 -65472
+box 3744 -4416 19932 4932
+use array_res_10x10k  x11
+timestamp 1755279480
+transform 1 0 131040 0 1 -75456
+box 3744 -4416 19932 4932
+use array_res_10x10k  x12
+timestamp 1755279480
+transform 1 0 131040 0 1 -85440
+box 3744 -4416 19932 4932
+use array_res_10x1k  x13
+timestamp 1755279246
+transform 1 0 130032 0 1 -93408
+box 4752 -7680 20520 300
+use array_res_10x1k  x14
+timestamp 1755279246
+transform 1 0 130032 0 1 -102144
+box 4752 -7680 20520 300
+use array_res_10x1k  x15
+timestamp 1755279246
+transform 1 0 130032 0 1 -110880
+box 4752 -7680 20520 300
+use switch_matrix_1x10  x16
+timestamp 1755278828
+transform 1 0 51095 0 1 -107136
+box 2569 -1440 79411 -252
+use switch_matrix_1x10  x17
+timestamp 1755278828
+transform 1 0 51095 0 1 -105888
+box 2569 -1440 79411 -252
+use switch_matrix_1x10  x18
+timestamp 1755278828
+transform 1 0 51095 0 1 -108384
+box 2569 -1440 79411 -252
+use switch_matrix_1x10  x19
+timestamp 1755278828
+transform 1 0 51095 0 1 -104640
+box 2569 -1440 79411 -252
+use switch_matrix_1x10  x20
+timestamp 1755278828
+transform 1 0 51095 0 1 -103392
+box 2569 -1440 79411 -252
+use switch_matrix_1x10  x21
+timestamp 1755278828
+transform 1 0 51095 0 1 -102144
+box 2569 -1440 79411 -252
+use switch_matrix_1x10  x22
+timestamp 1755278828
+transform 1 0 51095 0 1 -100896
+box 2569 -1440 79411 -252
+use switch_matrix_1x10  x23
+timestamp 1755278828
+transform 1 0 51095 0 1 -99648
+box 2569 -1440 79411 -252
+use switch_matrix_1x10  x24
+timestamp 1755278828
+transform 1 0 51095 0 1 -98400
+box 2569 -1440 79411 -252
+use switch_matrix_1x10  x25
+timestamp 1755278828
+transform 1 0 51095 0 1 -97152
+box 2569 -1440 79411 -252
+use switch_matrix_1x10  x26
+timestamp 1755278828
+transform 1 0 51095 0 1 -95904
+box 2569 -1440 79411 -252
+use switch_matrix_1x10  x27
+timestamp 1755278828
+transform 1 0 51095 0 1 -94656
+box 2569 -1440 79411 -252
+use switch_matrix_1x10  x28
+timestamp 1755278828
+transform 1 0 51095 0 1 -93408
+box 2569 -1440 79411 -252
+use switch_matrix_1x10  x29
+timestamp 1755278828
+transform 1 0 51095 0 1 -92160
+box 2569 -1440 79411 -252
+use switch_matrix_1x10  x30
+timestamp 1755278828
+transform 1 0 51095 0 1 -90912
+box 2569 -1440 79411 -252
+use switch_matrix_1x10  x31
+timestamp 1755278828
+transform 1 0 51095 0 1 -89664
+box 2569 -1440 79411 -252
+use switch_matrix_1x10  x32
+timestamp 1755278828
+transform 1 0 51095 0 1 -88416
+box 2569 -1440 79411 -252
+use switch_matrix_1x10  x33
+timestamp 1755278828
+transform 1 0 51095 0 1 -87168
+box 2569 -1440 79411 -252
+use switch_matrix_1x10  x34
+timestamp 1755278828
+transform 1 0 51095 0 1 -85920
+box 2569 -1440 79411 -252
+use switch_matrix_1x10  x35
+timestamp 1755278828
+transform 1 0 51095 0 1 -84672
+box 2569 -1440 79411 -252
+use switch_matrix_1x10  x36
+timestamp 1755278828
+transform 1 0 51095 0 1 -83424
+box 2569 -1440 79411 -252
+use switch_matrix_1x10  x37
+timestamp 1755278828
+transform 1 0 51095 0 1 -82176
+box 2569 -1440 79411 -252
+use switch_matrix_1x10  x38
+timestamp 1755278828
+transform 1 0 51095 0 1 -80928
+box 2569 -1440 79411 -252
+use switch_matrix_1x10  x39
+timestamp 1755278828
+transform 1 0 51095 0 1 -79680
+box 2569 -1440 79411 -252
+use switch_matrix_1x10  x40
+timestamp 1755278828
+transform 1 0 51095 0 1 -78432
+box 2569 -1440 79411 -252
+use switch_matrix_1x10  x41
+timestamp 1755278828
+transform 1 0 51095 0 1 -77184
+box 2569 -1440 79411 -252
+use switch_matrix_1x10  x42
+timestamp 1755278828
+transform 1 0 51095 0 1 -75936
+box 2569 -1440 79411 -252
+use switch_matrix_1x10  x43
+timestamp 1755278828
+transform 1 0 51095 0 1 -74688
+box 2569 -1440 79411 -252
+use switch_matrix_1x10  x44
+timestamp 1755278828
+transform 1 0 51095 0 1 -73440
+box 2569 -1440 79411 -252
+use switch_matrix_1x10  x45
+timestamp 1755278828
+transform 1 0 51095 0 1 -72192
+box 2569 -1440 79411 -252
+use switch_matrix_1x10  x46
+timestamp 1755278828
+transform 1 0 51095 0 1 -70944
+box 2569 -1440 79411 -252
+use switch_matrix_1x10  x47
+timestamp 1755278828
+transform 1 0 51095 0 1 -69696
+box 2569 -1440 79411 -252
+use switch_matrix_1x10  x48
+timestamp 1755278828
+transform 1 0 51095 0 1 -68448
+box 2569 -1440 79411 -252
+use switch_matrix_1x10  x49
+timestamp 1755278828
+transform 1 0 51095 0 1 -67200
+box 2569 -1440 79411 -252
+use switch_matrix_1x10  x50
+timestamp 1755278828
+transform 1 0 51095 0 1 -65952
+box 2569 -1440 79411 -252
+use switch_matrix_1x10  x51
+timestamp 1755278828
+transform 1 0 51095 0 1 -64704
+box 2569 -1440 79411 -252
+use switch_matrix_1x10  x52
+timestamp 1755278828
+transform 1 0 51095 0 1 -63456
+box 2569 -1440 79411 -252
+use switch_matrix_1x10  x53
+timestamp 1755278828
+transform 1 0 51095 0 1 -62208
+box 2569 -1440 79411 -252
+use switch_matrix_1x10  x54
+timestamp 1755278828
+transform 1 0 51095 0 1 -60960
+box 2569 -1440 79411 -252
+use switch_matrix_1x10  x55
+timestamp 1755278828
+transform 1 0 51095 0 1 -59712
+box 2569 -1440 79411 -252
+use switch_matrix_1x10  x56
+timestamp 1755278828
+transform 1 0 51095 0 1 -58464
+box 2569 -1440 79411 -252
+use switch_matrix_1x10  x57
+timestamp 1755278828
+transform 1 0 51095 0 1 -57216
+box 2569 -1440 79411 -252
+use switch_matrix_1x10  x58
+timestamp 1755278828
+transform 1 0 51095 0 1 -55968
+box 2569 -1440 79411 -252
+use switch_matrix_1x10  x59
+timestamp 1755278828
+transform 1 0 51095 0 1 -54720
+box 2569 -1440 79411 -252
+use switch_matrix_1x10  x60
+timestamp 1755278828
+transform 1 0 51095 0 1 -53472
+box 2569 -1440 79411 -252
+use switch_matrix_1x10  x61
+timestamp 1755278828
+transform 1 0 51095 0 1 -52224
+box 2569 -1440 79411 -252
+use switch_matrix_1x10  x62
+timestamp 1755278828
+transform 1 0 51095 0 1 -50976
+box 2569 -1440 79411 -252
+use switch_matrix_1x10  x63
+timestamp 1755278828
+transform 1 0 51095 0 1 -49728
+box 2569 -1440 79411 -252
+use switch_matrix_1x10  x64
+timestamp 1755278828
+transform 1 0 51095 0 1 -48480
+box 2569 -1440 79411 -252
+use switch_matrix_1x10  x65
+timestamp 1755278828
+transform 1 0 51095 0 1 -47232
+box 2569 -1440 79411 -252
+use switch_matrix_1x10  x66
+timestamp 1755278828
+transform 1 0 51095 0 1 -45984
+box 2569 -1440 79411 -252
+use switch_matrix_1x10  x67
+timestamp 1755278828
+transform 1 0 51095 0 1 -44736
+box 2569 -1440 79411 -252
+use switch_matrix_1x10  x68
+timestamp 1755278828
+transform 1 0 51095 0 1 -43488
+box 2569 -1440 79411 -252
+use switch_matrix_1x10  x69
+timestamp 1755278828
+transform 1 0 51095 0 1 -42240
+box 2569 -1440 79411 -252
+use switch_matrix_1x10  x70
+timestamp 1755278828
+transform 1 0 51095 0 1 -40992
+box 2569 -1440 79411 -252
+use switch_matrix_1x10  x71
+timestamp 1755278828
+transform 1 0 51095 0 1 -39744
+box 2569 -1440 79411 -252
+use switch_matrix_1x10  x72
+timestamp 1755278828
+transform 1 0 51095 0 1 -38496
+box 2569 -1440 79411 -252
+<< end >>

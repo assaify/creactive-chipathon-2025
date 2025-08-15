@@ -1,0 +1,85 @@
+magic
+tech gf180mcuD
+magscale 1 5
+timestamp 1755279246
+use switch-cell  x1
+timestamp 1755278155
+transform 1 0 1041 0 1 276
+box 1335 -720 5061 -126
+use switch-cell  x2
+timestamp 1755278155
+transform 1 0 1041 0 1 -348
+box 1335 -720 5061 -126
+use switch-cell  x3
+timestamp 1755278155
+transform 1 0 1041 0 1 -972
+box 1335 -720 5061 -126
+use switch-cell  x4
+timestamp 1755278155
+transform 1 0 1041 0 1 -1596
+box 1335 -720 5061 -126
+use switch-cell  x5
+timestamp 1755278155
+transform 1 0 1041 0 1 -2220
+box 1335 -720 5061 -126
+use switch-cell  x6
+timestamp 1755278155
+transform 1 0 5199 0 1 276
+box 1335 -720 5061 -126
+use switch-cell  x7
+timestamp 1755278155
+transform 1 0 5199 0 1 -348
+box 1335 -720 5061 -126
+use switch-cell  x8
+timestamp 1755278155
+transform 1 0 5199 0 1 -972
+box 1335 -720 5061 -126
+use switch-cell  x9
+timestamp 1755278155
+transform 1 0 5199 0 1 -1596
+box 1335 -720 5061 -126
+use switch-cell  x10
+timestamp 1755278155
+transform 1 0 5199 0 1 -2220
+box 1335 -720 5061 -126
+use ppolyf_u_T8N9AY  XR1
+timestamp 1755276408
+transform 1 0 5022 0 1 -3571
+box -158 -269 158 269
+use ppolyf_u_T8N9AY  XR2
+timestamp 1755276408
+transform 1 0 5278 0 1 -3571
+box -158 -269 158 269
+use ppolyf_u_T8N9AY  XR3
+timestamp 1755276408
+transform 1 0 5534 0 1 -3571
+box -158 -269 158 269
+use ppolyf_u_T8N9AY  XR4
+timestamp 1755276408
+transform 1 0 5790 0 1 -3571
+box -158 -269 158 269
+use ppolyf_u_T8N9AY  XR5
+timestamp 1755276408
+transform 1 0 6046 0 1 -3571
+box -158 -269 158 269
+use ppolyf_u_T8N9AY  XR6
+timestamp 1755276408
+transform 1 0 6302 0 1 -3571
+box -158 -269 158 269
+use ppolyf_u_T8N9AY  XR7
+timestamp 1755276408
+transform 1 0 6558 0 1 -3571
+box -158 -269 158 269
+use ppolyf_u_T8N9AY  XR8
+timestamp 1755276408
+transform 1 0 6814 0 1 -3571
+box -158 -269 158 269
+use ppolyf_u_T8N9AY  XR9
+timestamp 1755276408
+transform 1 0 7070 0 1 -3571
+box -158 -269 158 269
+use ppolyf_u_T8N9AY  XR10
+timestamp 1755276408
+transform 1 0 7326 0 1 -3571
+box -158 -269 158 269
+<< end >>
