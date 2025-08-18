@@ -4,80 +4,85 @@ K {}
 V {}
 S {}
 E {}
-N 1090 -530 1090 -480 {lab=#net1}
-N 1320 -530 1320 -480 {lab=#net2}
-N 1130 -560 1280 -560 {lab=#net3}
-N 1090 -420 1090 -410 {lab=#net4}
-N 1090 -410 1320 -410 {lab=#net4}
-N 1320 -420 1320 -410 {lab=#net4}
-N 1210 -410 1210 -390 {lab=#net4}
-N 1210 -270 1210 -250 {lab=vss}
-N 910 -250 1210 -250 {lab=vss}
-N 480 -270 480 -250 {lab=vss}
-N 1090 -610 1090 -590 {lab=vdd}
-N 1090 -610 1320 -610 {lab=vdd}
-N 1320 -610 1320 -590 {lab=vdd}
-N 910 -610 1090 -610 {lab=vdd}
-N 480 -300 480 -270 {lab=vss}
-N 1210 -300 1210 -270 {lab=vss}
-N 1090 -590 1090 -560 {lab=vdd}
-N 1320 -590 1320 -560 {lab=vdd}
-N 550 -410 550 -360 {lab=ibias}
-N 480 -410 550 -410 {lab=ibias}
-N 1540 -270 1540 -250 {lab=vss}
-N 1210 -250 1540 -250 {lab=vss}
-N 1540 -530 1540 -390 {lab=out_p}
-N 1500 -310 1500 -300 {lab=ibias}
-N 1170 -310 1500 -310 {lab=ibias}
-N 1170 -310 1170 -300 {lab=ibias}
-N 1540 -300 1540 -270 {lab=vss}
-N 1540 -610 1540 -590 {lab=vdd}
-N 1320 -610 1540 -610 {lab=vdd}
-N 1510 -490 1540 -490 {lab=out_p}
-N 1450 -560 1500 -560 {lab=#net2}
-N 1430 -560 1450 -560 {lab=#net2}
-N 1540 -590 1540 -560 {lab=vdd}
-N 480 -440 480 -410 {lab=ibias}
-N 550 -360 550 -300 {lab=ibias}
-N 480 -410 480 -330 {lab=ibias}
-N 1370 -560 1430 -560 {lab=#net2}
-N 1370 -560 1370 -510 {lab=#net2}
-N 1370 -510 1370 -490 {lab=#net2}
-N 1540 -490 1610 -490 {lab=out_p}
-N 1370 -490 1380 -490 {lab=#net2}
-N 1440 -490 1450 -490 {lab=#net5}
-N 1320 -490 1370 -490 {lab=#net2}
-N 1050 -450 1050 -380 {lab=in_n}
-N 1360 -450 1360 -380 {lab=in_p}
-N 830 -270 830 -250 {lab=vss}
-N 830 -530 830 -390 {lab=out_n}
-N 870 -310 870 -300 {lab=ibias}
-N 830 -300 830 -270 {lab=vss}
-N 830 -610 830 -590 {lab=vdd}
-N 830 -490 860 -490 {lab=out_n}
-N 870 -560 920 -560 {lab=#net1}
-N 920 -560 940 -560 {lab=#net1}
-N 830 -590 830 -560 {lab=vdd}
-N 940 -560 1000 -560 {lab=#net1}
-N 1000 -560 1000 -510 {lab=#net1}
-N 1000 -510 1000 -490 {lab=#net1}
-N 990 -490 1000 -490 {lab=#net1}
-N 920 -490 930 -490 {lab=#net6}
-N 1000 -500 1090 -500 {lab=#net1}
-N 760 -490 830 -490 {lab=out_n}
-N 830 -610 910 -610 {lab=vdd}
-N 480 -250 910 -250 {lab=vss}
-N 520 -300 550 -300 {lab=ibias}
-N 550 -310 1170 -310 {lab=ibias}
-N 480 -610 830 -610 {lab=vdd}
-N 1180 -500 1220 -500 {lab=#net3}
-N 1200 -560 1200 -500 {lab=#net3}
-N 1280 -500 1320 -500 {lab=#net2}
-N 1090 -500 1120 -500 {lab=#net1}
-N 1210 -390 1210 -330 {lab=#net4}
-N 830 -390 830 -330 {lab=out_n}
-N 1540 -390 1540 -330 {lab=out_p}
-C {symbols/nfet_03v3.sym} 1070 -450 0 0 {name=M1
+P 4 6 1380 -590 1380 -100 200 -100 200 -590 1380 -590 1380 -590 {}
+P 4 5 20 -270 180 -270 180 -100 20 -100 20 -270 {}
+T {Two Stage Differential Output Miller OTA} 200 -620 0 0 0.4 0.4 {}
+T {Pinouts} 20 -300 0 0 0.4 0.4 {}
+N 880 -510 880 -440 {lab=#net1}
+N 800 -510 960 -510 {lab=#net1}
+N 860 -440 900 -440 {lab=#net1}
+N 830 -460 930 -460 {lab=VSS}
+N 1000 -480 1000 -340 {lab=#net2}
+N 760 -480 760 -340 {lab=#net3}
+N 960 -440 1000 -440 {lab=#net2}
+N 760 -440 800 -440 {lab=#net3}
+N 760 -280 760 -240 {lab=#net4}
+N 760 -240 1000 -240 {lab=#net4}
+N 1000 -280 1000 -240 {lab=#net4}
+N 880 -240 880 -210 {lab=#net4}
+N 760 -310 1000 -310 {lab=VSS}
+N 880 -320 880 -310 {lab=VSS}
+N 1280 -490 1280 -210 {lab=OUTP}
+N 1000 -440 1090 -440 {lab=#net2}
+N 1090 -520 1090 -440 {lab=#net2}
+N 1090 -520 1240 -520 {lab=#net2}
+N 1170 -440 1190 -440 {lab=#net5}
+N 1090 -440 1110 -440 {lab=#net2}
+N 1250 -440 1280 -440 {lab=OUTP}
+N 480 -480 480 -210 {lab=OUTN}
+N 480 -440 510 -440 {lab=OUTN}
+N 570 -440 590 -440 {lab=#net6}
+N 520 -510 660 -510 {lab=#net3}
+N 640 -440 760 -440 {lab=#net3}
+N 660 -510 670 -510 {lab=#net3}
+N 670 -510 670 -440 {lab=#net3}
+N 1280 -150 1280 -130 {lab=VSS}
+N 300 -130 1280 -130 {lab=VSS}
+N 300 -150 300 -130 {lab=VSS}
+N 880 -150 880 -130 {lab=VSS}
+N 480 -150 480 -130 {lab=VSS}
+N 300 -310 300 -210 {lab=IBIAS}
+N 340 -180 380 -180 {lab=IBIAS}
+N 380 -230 380 -180 {lab=IBIAS}
+N 300 -230 380 -230 {lab=IBIAS}
+N 1240 -190 1240 -180 {lab=IBIAS}
+N 380 -190 1240 -190 {lab=IBIAS}
+N 520 -190 520 -180 {lab=IBIAS}
+N 840 -190 840 -180 {lab=IBIAS}
+N 1280 -180 1290 -180 {lab=VSS}
+N 1290 -180 1290 -150 {lab=VSS}
+N 1280 -150 1290 -150 {lab=VSS}
+N 880 -180 890 -180 {lab=VSS}
+N 890 -180 890 -150 {lab=VSS}
+N 880 -150 890 -150 {lab=VSS}
+N 470 -180 480 -180 {lab=VSS}
+N 470 -180 470 -150 {lab=VSS}
+N 470 -150 480 -150 {lab=VSS}
+N 290 -180 300 -180 {lab=VSS}
+N 290 -180 290 -150 {lab=VSS}
+N 290 -150 300 -150 {lab=VSS}
+N 1280 -560 1280 -550 {lab=VDD}
+N 480 -560 1280 -560 {lab=VDD}
+N 480 -560 480 -540 {lab=VDD}
+N 760 -560 760 -540 {lab=VDD}
+N 1000 -560 1000 -540 {lab=VDD}
+N 1280 -520 1290 -520 {lab=VDD}
+N 1290 -550 1290 -520 {lab=VDD}
+N 1280 -550 1290 -550 {lab=VDD}
+N 1000 -510 1010 -510 {lab=VDD}
+N 1010 -540 1010 -510 {lab=VDD}
+N 1000 -540 1010 -540 {lab=VDD}
+N 750 -510 760 -510 {lab=VDD}
+N 750 -540 750 -510 {lab=VDD}
+N 750 -540 760 -540 {lab=VDD}
+N 470 -510 480 -510 {lab=VDD}
+N 470 -540 470 -510 {lab=VDD}
+N 470 -540 480 -540 {lab=VDD}
+N 450 -440 480 -440 {lab=OUTN}
+N 1280 -440 1310 -440 {lab=OUTP}
+N 1040 -310 1060 -310 {lab=IP}
+N 700 -310 720 -310 {lab=IN}
+C {symbols/nfet_03v3.sym} 740 -310 0 0 {name=M1
 L=1u
 W=4.75u
 nf=1
@@ -91,7 +96,7 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {symbols/pfet_03v3.sym} 1110 -560 0 1 {name=M3
+C {symbols/pfet_03v3.sym} 780 -510 0 1 {name=M3
 L=1u
 W=10u
 nf=1
@@ -105,7 +110,7 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {symbols/nfet_03v3.sym} 1190 -300 0 0 {name=M5
+C {symbols/nfet_03v3.sym} 860 -180 0 0 {name=M5
 L=1u
 W=2.25u
 nf=1
@@ -119,7 +124,7 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {symbols/nfet_03v3.sym} 500 -300 0 1 {name=M6
+C {symbols/nfet_03v3.sym} 320 -180 0 1 {name=M10
 L=1u
 W=2.25u
 nf=1
@@ -133,13 +138,10 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {lab_pin.sym} 480 -610 0 0 {name=p1 sig_type=std_logic lab=vdd}
-C {lab_pin.sym} 1050 -380 0 1 {name=p5 sig_type=std_logic lab=in_n}
-C {lab_pin.sym} 1360 -380 0 0 {name=p6 sig_type=std_logic lab=in_p}
-C {lab_pin.sym} 1610 -490 0 1 {name=p7 sig_type=std_logic lab=out_p}
-C {symbols/pfet_03v3.sym} 1520 -560 0 0 {name=M7
+C {lab_pin.sym} 1310 -440 0 1 {name=p7 sig_type=std_logic lab=OUTP}
+C {symbols/pfet_03v3.sym} 1260 -520 0 0 {name=M6
 L=1u
-W=42u
+W=40u
 nf=1
 m=10
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -151,7 +153,7 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {symbols/nfet_03v3.sym} 1520 -300 0 0 {name=M8
+C {symbols/nfet_03v3.sym} 1260 -180 0 0 {name=M7
 L=1u
 W=2.25u
 nf=1
@@ -165,8 +167,7 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {lab_pin.sym} 480 -440 0 0 {name=p8 sig_type=std_logic lab=ibias}
-C {symbols/nfet_03v3.sym} 1340 -450 0 1 {name=M2
+C {symbols/nfet_03v3.sym} 1020 -310 0 1 {name=M2
 L=1u
 W=4.75u
 nf=1
@@ -180,7 +181,7 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {symbols/pfet_03v3.sym} 1300 -560 0 0 {name=M4
+C {symbols/pfet_03v3.sym} 980 -510 0 0 {name=M4
 L=1u
 W=10u
 nf=1
@@ -194,25 +195,22 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {lab_pin.sym} 480 -250 0 0 {name=p2 sig_type=std_logic lab=vss}
-C {lab_pin.sym} 1320 -450 0 0 {name=p3 sig_type=std_logic lab=vss}
-C {lab_pin.sym} 1090 -450 0 1 {name=p4 sig_type=std_logic lab=vss}
-C {symbols/cap_mim_2f0fF.sym} 1480 -490 1 0 {name=C3
+C {lab_pin.sym} 300 -130 0 0 {name=p2 sig_type=std_logic lab=VSS}
+C {symbols/cap_mim_2f0fF.sym} 1220 -440 1 0 {name=C1
 W=5e-6
 L=5e-6
 model=cap_mim_2f0fF
 spiceprefix=X
 m=132}
-C {symbols/ppolyf_u_1k.sym} 1410 -490 1 0 {name=R2
+C {symbols/ppolyf_u_1k.sym} 1140 -440 1 0 {name=R3
 W=1e-6
 L=13.37e-6
 model=ppolyf_u_1k
 spiceprefix=X
 m=10}
-C {lab_pin.sym} 1410 -510 1 0 {name=p12 sig_type=std_logic lab=vss}
-C {symbols/pfet_03v3.sym} 850 -560 0 1 {name=M9
+C {symbols/pfet_03v3.sym} 500 -510 0 1 {name=M8
 L=1u
-W=42u
+W=40u
 nf=1
 m=10
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -224,7 +222,7 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {symbols/nfet_03v3.sym} 850 -300 0 1 {name=M10
+C {symbols/nfet_03v3.sym} 500 -180 0 1 {name=M9
 L=1u
 W=2.25u
 nf=1
@@ -238,34 +236,44 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {symbols/cap_mim_2f0fF.sym} 890 -490 3 1 {name=C2
+C {symbols/cap_mim_2f0fF.sym} 540 -440 3 1 {name=C2
 W=5e-6
 L=5e-6
 model=cap_mim_2f0fF
 spiceprefix=X
 m=132}
-C {symbols/ppolyf_u_1k.sym} 960 -490 3 1 {name=R1
+C {symbols/ppolyf_u_1k.sym} 620 -440 3 1 {name=R4
 W=1e-6
 L=13.37e-6
 model=ppolyf_u_1k
 spiceprefix=X
 m=10}
-C {lab_pin.sym} 960 -510 3 1 {name=p13 sig_type=std_logic lab=vss}
-C {lab_pin.sym} 760 -490 0 0 {name=p15 sig_type=std_logic lab=out_n}
-C {res.sym} 1150 -500 3 0 {name=R3
-value=1k
-footprint=1206
-device=resistor
+C {lab_pin.sym} 450 -440 0 0 {name=p15 sig_type=std_logic lab=OUTN}
+C {symbols/ppolyf_u_1k.sym} 830 -440 3 1 {name=R1
+W=1e-6
+L=50e-6
+model=ppolyf_u_1k
+spiceprefix=X
 m=1}
-C {res.sym} 1250 -500 1 1 {name=R4
-value=1k
-footprint=1206
-device=resistor
+C {symbols/ppolyf_u_1k.sym} 930 -440 3 1 {name=R2
+W=1e-6
+L=50e-6
+model=ppolyf_u_1k
+spiceprefix=X
 m=1}
-C {iopin.sym} 0 -800 0 0 {name=p9 lab=vdd}
-C {iopin.sym} 0 -780 0 0 {name=p10 lab=vss}
-C {iopin.sym} 0 -760 0 0 {name=p11 lab=ibias}
-C {ipin.sym} 0 -740 0 0 {name=p14 lab=in_n}
-C {ipin.sym} 0 -720 0 0 {name=p16 lab=in_p}
-C {opin.sym} 0 -700 0 0 {name=p17 lab=out_n}
-C {opin.sym} 0 -680 0 0 {name=p18 lab=out_p}
+C {lab_pin.sym} 930 -460 0 1 {name=p8 sig_type=std_logic lab=VSS}
+C {lab_pin.sym} 880 -320 0 1 {name=p9 sig_type=std_logic lab=VSS}
+C {lab_pin.sym} 1140 -460 0 1 {name=p10 sig_type=std_logic lab=VSS}
+C {lab_pin.sym} 300 -310 0 0 {name=p11 sig_type=std_logic lab=IBIAS}
+C {lab_pin.sym} 1060 -310 0 1 {name=p14 sig_type=std_logic lab=IP}
+C {lab_pin.sym} 700 -310 0 0 {name=p16 sig_type=std_logic lab=IN}
+C {devices/title.sym} 160 -50 0 0 {name=l2 author="CreActive"}
+C {lab_pin.sym} 480 -560 0 0 {name=p1 sig_type=std_logic lab=VDD}
+C {lab_pin.sym} 620 -460 0 0 {name=p3 sig_type=std_logic lab=VSS}
+C {ipin.sym} 100 -240 0 0 {name=p4 lab=IP}
+C {ipin.sym} 100 -220 0 0 {name=p5 lab=IN}
+C {iopin.sym} 100 -140 0 0 {name=p6 lab=VDD}
+C {iopin.sym} 100 -120 0 0 {name=p12 lab=VSS}
+C {ipin.sym} 100 -200 0 0 {name=p13 lab=IBIAS}
+C {opin.sym} 100 -180 0 0 {name=p17 lab=OUTP}
+C {opin.sym} 100 -160 0 0 {name=p18 lab=OUTN}
