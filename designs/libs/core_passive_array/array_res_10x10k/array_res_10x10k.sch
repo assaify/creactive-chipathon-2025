@@ -4,10 +4,10 @@ K {}
 V {}
 S {}
 E {}
-P 4 5 40 -330 210 -330 210 -120 40 -120 40 -330 {}
 P 4 5 250 -540 1340 -540 1340 -120 250 -120 250 -540 {}
-T {Pinouts} 40 -380 0 0 0.4 0.4 {}
+P 4 5 40 -350 210 -350 210 -120 40 -120 40 -350 {}
 T {10 x 10k Ohm Resistor Array} 250 -570 0 0 0.4 0.4 {}
+T {Pinouts} 40 -380 0 0 0.4 0.4 {}
 N 440 -250 460 -250 {lab=RA}
 N 720 -450 720 -430 {lab=RB}
 N 340 -390 360 -390 {lab=VSSd}
@@ -134,13 +134,14 @@ C {devices/lab_pin.sym} 760 -310 0 1 {name=l29 sig_type=std_logic lab=BUS[3]}
 C {devices/lab_pin.sym} 680 -310 0 1 {name=l30 sig_type=std_logic lab=BUS[2]}
 C {devices/lab_pin.sym} 600 -310 0 1 {name=l31 sig_type=std_logic lab=BUS[1]}
 C {devices/lab_pin.sym} 520 -310 0 1 {name=l32 sig_type=std_logic lab=BUS[0]}
-C {iopin.sym} 130 -310 0 0 {name=p1 lab=VDDd}
-C {iopin.sym} 130 -290 0 0 {name=p2 lab=VSSd}
-C {iopin.sym} 130 -270 0 0 {name=p3 lab=RA}
-C {iopin.sym} 130 -250 0 0 {name=p4 lab=RB}
-C {ipin.sym} 130 -210 0 0 {name=p5 lab=D_in}
-C {ipin.sym} 130 -190 0 0 {name=p6 lab=PHI_1}
-C {ipin.sym} 130 -170 0 0 {name=p7 lab=PHI_2}
-C {ipin.sym} 130 -150 0 0 {name=p8 lab=enable}
-C {iopin.sym} 130 -230 0 0 {name=p9 lab=VSS}
 C {title.sym} 160 -40 0 0 {name=l1 author="CreActive"}
+C {iopin.sym} 130 -330 0 0 {name=p1 lab=VDDd}
+C {iopin.sym} 130 -310 0 0 {name=p2 lab=VSSd}
+C {iopin.sym} 130 -290 0 0 {name=p3 lab=RA}
+C {iopin.sym} 130 -270 0 0 {name=p4 lab=RB}
+C {ipin.sym} 130 -230 0 0 {name=p5 lab=D_in}
+C {ipin.sym} 130 -210 0 0 {name=p6 lab=PHI_1}
+C {ipin.sym} 130 -190 0 0 {name=p7 lab=PHI_2}
+C {ipin.sym} 130 -170 0 0 {name=p8 lab=enable}
+C {iopin.sym} 130 -250 0 0 {name=p9 lab=VSS}
+C {opin.sym} 130 -150 0 0 {name=p10 lab=D_out}
