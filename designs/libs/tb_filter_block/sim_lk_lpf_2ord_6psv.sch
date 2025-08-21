@@ -130,6 +130,9 @@ T {TGATE BUS: GPIO_A8} 4290 -940 0 0 0.4 0.4 {}
 T {TGATE BUS: GPIO_A9} 4690 -940 0 0 0.4 0.4 {}
 T {R2} 590 -800 0 0 0.4 0.4 {}
 T {R4} 1490 -800 0 0 0.4 0.4 {}
+N 2550 -1160 2610 -1160 {lab=#net1}
+N 2610 -1240 2610 -1160 {lab=#net1}
+N 2610 -1240 2660 -1240 {lab=#net1}
 C {libs/core_analog/single_ended_ota/single_ended_ota.sym} 2510 -1070 0 0 {name=xa1}
 C {libs/core_switch_matrix/tgate_sim/tgate_sim.sym} 3260 -1570 0 0 {name=x6}
 C {lab_pin.sym} 2600 -1070 3 1 {name=p1 sig_type=std_logic lab=P1}
@@ -321,3 +324,5 @@ C {lab_pin.sym} 1590 -1000 3 0 {name=p65 sig_type=std_logic lab="VDDd, 9*VSSd"}
 C {lab_pin.sym} 1610 -1000 3 0 {name=p66 sig_type=std_logic lab="VSSd, 9*VDDd"}
 C {lab_pin.sym} 690 -1000 3 0 {name=p62 sig_type=std_logic lab="VDDd, 9*VSSd"}
 C {lab_pin.sym} 710 -1000 3 0 {name=p63 sig_type=std_logic lab="VSSd, 9*VDDd"}
+C {libs/core_analog/single_ended_ota/bias.sym} 2660 -1160 0 0 {name=x8}
+C {lab_pin.sym} 2660 -1100 0 1 {name=p67 sig_type=std_logic lab=VSS}
