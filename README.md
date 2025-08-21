@@ -19,7 +19,7 @@ The overall design is shown on the block diagram below:
 ## Quick Links
 - [Github Issue on Chipathon Repository](https://github.com/sscs-ose/sscs-chipathon-2025/issues/67)
 - [Progress Tracker](https://docs.google.com/spreadsheets/d/1_3lQBcbkPWE0qjfvSXVyYYxNycXKxWRLHg75SAif4VQ/edit?gid=0#gid=0)
-- [Schematic and Simulation Slide](https://docs.google.com/presentation/d/1U_Cjjdl3jaWu9fqJNGk9T2up9zVVnG0BKYsYs8uDcsg)
+- [Schematic and Simulation](https://github.com/assaify/creactive-chipathon-2025/blob/main/docs/schematic-and-simulation/README.md)
 - [Pin Map](https://docs.google.com/spreadsheets/d/1_3lQBcbkPWE0qjfvSXVyYYxNycXKxWRLHg75SAif4VQ/edit?gid=530173844#gid=530173844)
 - [Area Estimation](docs/layout/README.md)
 
