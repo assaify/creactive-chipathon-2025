@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report-database>
+ <description>GF180 DENSITY DRC Run Report at</description>
+ <original-file>/foss/designs/creactive-chipathon-2025/designs/libs/core_analog/inv_test/inv.gds</original-file>
+ <generator>drc: script='/foss/pdks/gf180mcuD/libs.tech/klayout/macros/gf180mcu_drc.lydrc'</generator>
+ <top-cell>inv</top-cell>
+ <tags>
+  <tag>
+   <name>waived</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>red</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>green</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>blue</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>yellow</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>important</name>
+   <description/>
+  </tag>
+ </tags>
+ <categories>
+  <category>
+   <name>PL.8</name>
+   <description>PL.8 : Poly2 coverage over the entire die shall be 14%.
+                Dummy poly2 lines must be added to meet the minimum poly2 density requirement. : 14%</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M1.4</name>
+   <description>M1.4 : Metal1 coverage over the entire die shall be &gt;30%
+                (Refer to section 13.0 for Dummy Metal fill guidelines.
+                 Customer needs to ensure enough dummy metal to satisfy Metal1 coverage) : 30%</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M2.4</name>
+   <description>M2.4 : Metal2 coverage over the entire die shall be &gt;30%
+                (Refer to section 13.0 for Dummy Metal fill guidelines.
+                 Customer needs to ensure enough dummy metal to satisfy Metal2 coverage) : 30%</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M3.4</name>
+   <description>M3.4 : metal3 coverage over the entire die shall be &gt;30%
+                    (Refer to section 13.0 for Dummy Metal fill guidelines.
+                    Customer needs to ensure enough dummy metal to satisfy metal3 coverage) : 30%</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M4.4</name>
+   <description>M4.4 : metal4 coverage over the entire die shall be &gt;30%
+                    (Refer to section 13.0 for Dummy Metal fill guidelines.
+                    Customer needs to ensure enough dummy metal to satisfy metal4 coverage) : 30%</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M5.4</name>
+   <description>M5.4 : metal5 coverage over the entire die shall be &gt;30%
+                    (Refer to section 13.0 for Dummy Metal fill guidelines.
+                    Customer needs to ensure enough dummy metal to satisfy metal5 coverage) : 30%</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MT.3</name>
+   <description>MT.3 : MetalTop coverage over the entire die shall be &gt;30%
+                                (Refer to section 10.3 for Dummy Metal-fill guidelines.
+                                Customer needs to ensure enough dummy metal to satisfy Metaln coverage) : 30%</description>
+   <categories>
+   </categories>
+  </category>
+ </categories>
+ <cells>
+  <cell>
+   <name>inv</name>
+   <variant/>
+   <layout-name/>
+   <references>
+   </references>
+  </cell>
+ </cells>
+ <items>
+  <item>
+   <tags/>
+   <category>'PL.8'</category>
+   <cell>inv</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-0.785,-1.46;-0.785,-0.36;-0.825,-0.36;-0.825,0;-0.465,0;-0.465,-0.36;-0.505,-0.36;-0.505,-1.46)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'PL.8'</category>
+   <cell>inv</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-0.835,0.77;-0.835,1.15;-0.785,1.15;-0.785,3.25;-0.505,3.25;-0.505,1.15;-0.455,1.15;-0.455,0.77)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>inv</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-0.295,-1.1;-0.295,-0.72;0.085,-0.72;0.085,-0.78;0.415,-0.78;0.415,-0.72;0.795,-0.72;0.795,-1.1;0.415,-1.1;0.415,-1.01;0.085,-1.01;0.085,-1.1)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>inv</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-0.835,-0.37;-0.835,0.01;-0.76,0.01;-0.76,0.77;-0.835,0.77;-0.835,1.15;-0.455,1.15;-0.455,0.77;-0.53,0.77;-0.53,0.01;-0.455,0.01;-0.455,-0.37)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>inv</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-1.375,-1.1;-1.375,-0.72;-1.315,-0.72;-1.315,1.755;-1.395,1.755;-1.395,2.645;-1.015,2.645;-1.015,1.755;-1.085,1.755;-1.085,-0.72;-0.995,-0.72;-0.995,-1.1)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>inv</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-0.275,1.755;-0.275,2.645;0.105,2.645;0.105,2.31;0.455,2.31;0.455,2.645;0.835,2.645;0.835,1.755;0.455,1.755;0.455,2.08;0.105,2.08;0.105,1.755)</value>
+   </values>
+  </item>
+ </items>
+</report-database>

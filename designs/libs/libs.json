@@ -1,0 +1,5 @@
+{
+  "core_top_level_top_level": "/foss/designs/libs/core_top_level/temp_mag/top_level.gds",
+  "tail_current_tail_current": "/foss/designs/libs/core_single_ended_ota/tail_current/gds/tail_current.gds",
+  "core_analog_inv": "/foss/designs/libs/core_analog/inv_test/inv.gds"
+}
