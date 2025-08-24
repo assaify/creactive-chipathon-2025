@@ -1,0 +1,6 @@
+** sch_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_analog/inv_test/inv.sch
+.subckt inv IN OUT VDD VSS
+*.PININFO IN:I OUT:O VDD:B VSS:B
+M1 OUT IN VDD VDD pfet_03v3 L=0.28u W=1.5u nf=1 m=1
+M2 OUT IN VSS VSS nfet_03v3 L=0.28u W=0.5u nf=1 m=1
+.ends
