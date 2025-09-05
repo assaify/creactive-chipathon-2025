@@ -1,0 +1,6 @@
+** sch_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_ota/output_stage/output_stage.sch
+.subckt output_stage D6 VDD G6
+*.PININFO VDD:B G6:I D6:O
+M6 D6 G6 VDD VDD pfet_03v3 L=0.5u W=10.43u nf=1 m=16
+M1 VDD VDD VDD VDD pfet_03v3 L=0.5u W=10.43u nf=1 m=4
+.ends

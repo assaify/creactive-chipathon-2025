@@ -1,0 +1,16 @@
+** sch_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_ota/tail_current/tail_current.sch
+.subckt tail_current IBIAS I1A I2A I1B I2B I1C I2C VSS
+*.PININFO IBIAS:I VSS:B I1A:O I2A:O I1B:O I2B:O I1C:O I2C:O
+M1A I1A IBIAS VSS VSS nfet_03v3 L=0.8u W=3.75u nf=1 m=2
+M2A I2A IBIAS VSS VSS nfet_03v3 L=0.8u W=3.75u nf=1 m=20
+M1B I1B IBIAS VSS VSS nfet_03v3 L=0.8u W=3.75u nf=1 m=2
+M2B I2B IBIAS VSS VSS nfet_03v3 L=0.8u W=3.75u nf=1 m=20
+M1C I1C IBIAS VSS VSS nfet_03v3 L=0.8u W=3.75u nf=1 m=2
+M2C I2C IBIAS VSS VSS nfet_03v3 L=0.8u W=3.75u nf=1 m=20
+MS IBIAS IBIAS VSS VSS nfet_03v3 L=0.8u W=3.75u nf=1 m=2
+M1 IBIAS IBIAS IBIAS VSS nfet_03v3 L=0.8u W=3.75u nf=1 m=2
+M2 I1A I1A I1A VSS nfet_03v3 L=0.8u W=3.75u nf=1 m=2
+M3 I1B I1B I1B VSS nfet_03v3 L=0.8u W=3.75u nf=1 m=2
+M4 I1C I1C I1C VSS nfet_03v3 L=0.8u W=3.75u nf=1 m=2
+M8 VSS VSS VSS VSS nfet_03v3 L=0.8u W=3.75u nf=1 m=28
+.ends

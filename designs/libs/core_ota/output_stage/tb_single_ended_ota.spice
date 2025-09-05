@@ -1,0 +1,226 @@
+** sch_path: /foss/designs/creactive-chipathon-2025/designs/libs/tb_ota/tb_three_single_ended_ota/tb_single_ended_ota.sch
+**.subckt tb_single_ended_ota
+E1 NON_INV1 net2 net1 VSS 0.5
+E2 INVERTING1 net2 net1 VSS -0.5
+Vdm net1 VSS ac 1
+Vcm net2 VSS 1.65
+VDD net3 VSS 3.3
+R1 VDD net3 10 m=1
+IBIAS VDD IBIAS 83u
+VGND 0 VSS 0
+R2 net4 net5 100k m=1
+x3 NON_INV1 NON_INV2 NON_INV3 INVERTING1 INVERTING2 INVERTING3 IBIAS OUT1 OUT2 OUT3 VDD VSS three_single_ended_ota
+E3 NON_INV2 net2 net1 VSS 0.5
+E4 INVERTING2 net2 net1 VSS -0.5
+E5 NON_INV3 net2 net1 VSS 0.5
+E6 INVERTING3 net2 net1 VSS -0.5
+C1 net6 VSS 30p m=1
+C2 net7 VSS 30p m=1
+C3 net8 VSS 30p m=1
+Vmeas OUT1 net6 0
+.save i(vmeas)
+Vmeas1 OUT2 net7 0
+.save i(vmeas1)
+Vmeas2 OUT3 net8 0
+.save i(vmeas2)
+**** begin user architecture code
+
+
+.option wnflag=1
+.option safecurrents
+.option solver=klu
+
+vin1 in1 gnd pulse(0 3.3 0 10n 10n 5u 10u)
+vin2 in2 gnd pulse(0 3.3 0 10n 10n 5u 10u)
+vin3 in3 gnd pulse(0 3.3 0 10n 10n 5u 10u)
+.control
+reset
+save all
+set num_threads=8
+op
+show
+write tb_single_ended_ota.raw
+*dc vin1 -1 4 0.1
+*tran 10n 30u
+ac dec 100 1 100e9
+
+let vout_mag =abs(v(out1))
+let vout_phase_margin = phase(v(out1))*180/pi + 180
+meas ac Aol find vout_mag at = 10
+meas ac UGF when vout_mag=1 fall=1
+meas ac PM find vout_phase_margin when vout_mag=1
+
+*let v_swing=3.22-0.4837
+*let vout_limit={3.22-v_swing*0.01}
+*meas tran tcross WHEN V(OUT)=vout_limit
+*let vena_limit={0.4837+v_swing*0.01}
+*meas tran tstart WHEN v(VOUT)=vena_limit
+*let tsettle=tcross-tstart
+*print tsettle
+
+write tb_single_ended_ota.raw
+
+.endc
+
+
+
+.include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice cap_mim
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice res_typical
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice moscap_typical
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice mimcap_typical
+* .lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice res_statistical
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  libs/core_ota/three_single_ended_ota/three_single_ended_ota.sym # of pins=6
+** sym_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_ota/three_single_ended_ota/three_single_ended_ota.sym
+** sch_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_ota/three_single_ended_ota/three_single_ended_ota.sch
+.subckt three_single_ended_ota IP[1] IP[2] IP[3] IN[1] IN[2] IN[3] IBIAS OUT[1] OUT[2] OUT[3] VDD VSS
+*.ipin IP[1],IP[2],IP[3]
+*.ipin IN[1],IN[2],IN[3]
+*.iopin VDD
+*.iopin VSS
+*.ipin IBIAS
+*.opin OUT[1],OUT[2],OUT[3]
+x1 IN[1] IP[1] I1A net2 net1 VSS input_pair
+x2 net1 net2 VDD active_load
+x3 OUT[1] net3 net2 output_stage
+x4 net2 OUT[1] VSS miller_cap
+x5 net2 VSS nulling_res
+x6 IN[2] IP[2] I1B net5 net4 VSS input_pair
+x11 IN[3] IP[3] I1C net8 net7 VSS input_pair
+x16 IBIAS I1A OUT[1] I1B OUT[2] I1C OUT[3] VSS tail_current
+Vmeas VDD net3 0
+.save i(vmeas)
+Vmeas1 VDD net6 0
+.save i(vmeas1)
+Vmeas2 VDD net9 0
+.save i(vmeas2)
+x7 net4 net5 VDD active_load
+x12 net7 net8 VDD active_load
+x8 OUT[2] net6 net5 output_stage
+x13 OUT[3] net9 net8 output_stage
+x9 net5 OUT[2] VSS miller_cap
+x14 net8 OUT[3] VSS miller_cap
+x10 net5 VSS nulling_res
+x15 net8 VSS nulling_res
+.ends
+
+
+* expanding   symbol:  libs/core_ota/input_pair/input_pair.sym # of pins=6
+** sym_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_ota/input_pair/input_pair.sym
+** sch_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_ota/input_pair/input_pair.sch
+.subckt input_pair IN IP S D2 D1 VSS
+*.iopin VSS
+*.opin S
+*.ipin D1
+*.ipin D2
+*.ipin IN
+*.ipin IP
+XM1 D1 IN S VSS nfet_03v3 L=0.8u W=3.78u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=4
+XM2 D2 IP S VSS nfet_03v3 L=0.8u W=3.78u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=4
+XM3 VSS VSS VSS VSS nfet_03v3 L=0.8u W=3.78u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=4
+.ends
+
+
+* expanding   symbol:  libs/core_ota/active_load/active_load.sym # of pins=3
+** sym_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_ota/active_load/active_load.sym
+** sch_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_ota/active_load/active_load.sch
+.subckt active_load D3 D4 VDD
+*.iopin VDD
+*.opin D3
+*.opin D4
+XM3 D3 D3 VDD VDD pfet_03v3 L=0.8u W=3.65u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=4
+XM4 D4 D3 VDD VDD pfet_03v3 L=0.8u W=3.65u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=4
+XM1 D3 D3 D3 VDD pfet_03v3 L=0.8u W=3.65u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+XM2 D4 D4 D4 VDD pfet_03v3 L=0.8u W=3.65u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+.ends
+
+
+* expanding   symbol:  libs/core_ota/output_stage/output_stage.sym # of pins=3
+** sym_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_ota/output_stage/output_stage.sym
+** sch_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_ota/output_stage/output_stage.sch
+.subckt output_stage D6 VDD G6
+*.iopin VDD
+*.ipin G6
+*.opin D6
+XM6 D6 G6 VDD VDD pfet_03v3 L=0.5u W=10.43u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=16
+XM1 VDD VDD VDD VDD pfet_03v3 L=0.5u W=10.43u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=4
+.ends
+
+
+* expanding   symbol:  libs/core_ota/miller_cap/miller_cap.sym # of pins=3
+** sym_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_ota/miller_cap/miller_cap.sym
+** sch_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_ota/miller_cap/miller_cap.sch
+.subckt miller_cap A B VSS
+*.iopin VSS
+*.ipin A
+*.ipin B
+XC1 B A cap_mim_2f0fF c_width=10e-6 c_length=10e-6 m=30
+XC2 VSS VSS cap_mim_2f0fF c_width=10e-6 c_length=10e-6 m=30
+.ends
+
+
+* expanding   symbol:  libs/core_ota/nulling_res/nulling_res.sym # of pins=3
+** sym_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_ota/nulling_res/nulling_res.sym
+** sch_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_ota/nulling_res/nulling_res.sch
+.subckt nulling_res B VSS
+*.iopin VSS
+*.ipin A
+*.ipin B
+XR1 A B VSS ppolyf_u_1k r_width=1e-6 r_length=13.37e-6 m=10
+XR2 VSS VSS VSS ppolyf_u_1k r_width=1e-6 r_length=13.37e-6 m=5
+.ends
+
+
+* expanding   symbol:  libs/core_ota/tail_current/tail_current.sym # of pins=8
+** sym_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_ota/tail_current/tail_current.sym
+** sch_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_ota/tail_current/tail_current.sch
+.subckt tail_current IBIAS I1A I2A I1B I2B I1C I2C VSS
+*.ipin IBIAS
+*.iopin VSS
+*.opin I1A
+*.opin I2A
+*.opin I1B
+*.opin I2B
+*.opin I1C
+*.opin I2C
+XM1A I1A IBIAS VSS VSS nfet_03v3 L=0.8u W=3.75u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+XM2A I2A IBIAS VSS VSS nfet_03v3 L=0.8u W=3.75u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=20
+XM1B I1B IBIAS VSS VSS nfet_03v3 L=0.8u W=3.75u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+XM2B I2B IBIAS VSS VSS nfet_03v3 L=0.8u W=3.75u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=20
+XM1C I1C IBIAS VSS VSS nfet_03v3 L=0.8u W=3.75u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+XM2C I2C IBIAS VSS VSS nfet_03v3 L=0.8u W=3.75u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=20
+XMS IBIAS IBIAS VSS VSS nfet_03v3 L=0.8u W=3.75u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+XM1 IBIAS IBIAS IBIAS VSS nfet_03v3 L=0.8u W=3.75u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+XM2 I1A I1A I1A VSS nfet_03v3 L=0.8u W=3.75u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+XM3 I1B I1B I1B VSS nfet_03v3 L=0.8u W=3.75u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+XM4 I1C I1C I1C VSS nfet_03v3 L=0.8u W=3.75u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+XM8 VSS VSS VSS VSS nfet_03v3 L=0.8u W=3.75u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=28
+.ends
+
+.end

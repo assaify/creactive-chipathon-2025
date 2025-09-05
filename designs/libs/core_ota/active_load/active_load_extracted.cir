@@ -1,0 +1,12 @@
+* Extracted by KLayout with GF180MCU LVS runset on : 05/09/2025 15:48
+
+.SUBCKT active_load VDD
+M$1 \$3 \$3 \$3 VDD pfet_03v3 L=0.8U W=7.3U AS=3.3215P AD=3.3215P PS=12.77U
++ PD=12.77U
+M$2 VDD \$3 \$3 VDD pfet_03v3 L=0.8U W=14.6U AS=3.796P AD=3.796P PS=16.68U
++ PD=16.68U
+M$3 \$4 \$3 VDD VDD pfet_03v3 L=0.8U W=14.6U AS=3.796P AD=3.796P PS=16.68U
++ PD=16.68U
+M$7 \$4 \$4 \$4 VDD pfet_03v3 L=0.8U W=7.3U AS=3.3215P AD=3.3215P PS=12.77U
++ PD=12.77U
+.ENDS active_load

@@ -1,5 +1,17 @@
 {
-  "core_top_level_top_level": "/foss/designs/libs/core_top_level/temp_mag/top_level.gds",
-  "tail_current_tail_current": "/foss/designs/libs/core_single_ended_ota/tail_current/gds/tail_current.gds",
-  "core_analog_inv": "/foss/designs/libs/core_analog/inv_test/inv.gds"
+  "core_top_level_top_level": "/foss/designs/creactive-chipathon-2025/designs/libs/core_top_level/temp_mag/top_level.gds",
+  "core_ota_input_pair": "/foss/designs/creactive-chipathon-2025/designs/libs/core_ota/input_pair/input_pair.gds",
+  "core_ota_active_load": "/foss/designs/creactive-chipathon-2025/designs/libs/core_ota/active_load/active_load.gds",
+  "three_single_ended_ota_single_ended_ota": "/foss/designs/creactive-chipathon-2025/designs/libs/core_ota/three_single_ended_ota/gds/single_ended_ota.gds",
+  "core_ota_output_stage": "/foss/designs/creactive-chipathon-2025/designs/libs/core_ota/output_stage/output_stage.gds",
+  "output_stage_pmos_1": "/foss/designs/creactive-chipathon-2025/designs/libs/core_ota/output_stage/gds/pmos_1.gds",
+  "tail_current_nmos_1": "/foss/designs/creactive-chipathon-2025/designs/libs/core_ota/tail_current/gds/nmos_1.gds",
+  "tail_current_tail_current": "/foss/designs/creactive-chipathon-2025/designs/libs/core_ota/tail_current/gds/tail_current.gds",
+  "tail_current_nmos_1_4_dummy": "/foss/designs/creactive-chipathon-2025/designs/libs/core_ota/tail_current/gds/nmos_1_4_dummy.gds",
+  "tail_current_nmos_2_4_mid": "/foss/designs/creactive-chipathon-2025/designs/libs/core_ota/tail_current/gds/nmos_2_4_mid.gds",
+  "tail_current_nmos_2_4_last": "/foss/designs/creactive-chipathon-2025/designs/libs/core_ota/tail_current/gds/nmos_2_4_last.gds",
+  "tail_current_nmos_2_4": "/foss/designs/creactive-chipathon-2025/designs/libs/core_ota/tail_current/gds/nmos_2_4.gds",
+  "tail_current_lib_tail_current": "/foss/designs/creactive-chipathon-2025/designs/libs/core_ota/tail_current/gds/lib_tail_current.gds",
+  "core_analog_inv": "/foss/designs/creactive-chipathon-2025/designs/libs/core_analog/inv_test/inv.gds",
+  "core_analog_inv2": "/foss/designs/creactive-chipathon-2025/designs/libs/core_analog/inv_test/inv2.gds"
 }

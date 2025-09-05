@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report-database>
+ <description>GF180 DENSITY DRC Run Report at</description>
+ <original-file>/foss/designs/creactive-chipathon-2025/designs/libs/core_ota/tail_current/gds/tail_current.gds</original-file>
+ <generator>drc: script='/foss/pdks/gf180mcuD/libs.tech/klayout/macros/gf180mcu_drc.lydrc'</generator>
+ <top-cell>tail_current</top-cell>
+ <tags>
+  <tag>
+   <name>waived</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>red</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>green</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>blue</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>yellow</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>important</name>
+   <description/>
+  </tag>
+ </tags>
+ <categories>
+  <category>
+   <name>M2.4</name>
+   <description>M2.4 : Metal2 coverage over the entire die shall be &gt;30%
+                (Refer to section 13.0 for Dummy Metal fill guidelines.
+                 Customer needs to ensure enough dummy metal to satisfy Metal2 coverage) : 30%</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M3.4</name>
+   <description>M3.4 : metal3 coverage over the entire die shall be &gt;30%
+                    (Refer to section 13.0 for Dummy Metal fill guidelines.
+                    Customer needs to ensure enough dummy metal to satisfy metal3 coverage) : 30%</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M4.4</name>
+   <description>M4.4 : metal4 coverage over the entire die shall be &gt;30%
+                    (Refer to section 13.0 for Dummy Metal fill guidelines.
+                    Customer needs to ensure enough dummy metal to satisfy metal4 coverage) : 30%</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M5.4</name>
+   <description>M5.4 : metal5 coverage over the entire die shall be &gt;30%
+                    (Refer to section 13.0 for Dummy Metal fill guidelines.
+                    Customer needs to ensure enough dummy metal to satisfy metal5 coverage) : 30%</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MT.3</name>
+   <description>MT.3 : MetalTop coverage over the entire die shall be &gt;30%
+                                (Refer to section 10.3 for Dummy Metal-fill guidelines.
+                                Customer needs to ensure enough dummy metal to satisfy Metaln coverage) : 30%</description>
+   <categories>
+   </categories>
+  </category>
+ </categories>
+ <cells>
+  <cell>
+   <name>tail_current</name>
+   <variant/>
+   <layout-name/>
+   <references>
+   </references>
+  </cell>
+ </cells>
+ <items>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>tail_current</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-6.91,-9.665;-6.91,-8.915;-6.11,-8.915;-6.11,-9.665)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>tail_current</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (1.93,-9.665;1.93,-8.915;2.73,-8.915;2.73,-9.665)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>tail_current</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-6.91,-8.075;-6.91,-7.325;-6.11,-7.325;-6.11,-8.075)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>tail_current</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (1.93,-8.075;1.93,-7.325;2.73,-7.325;2.73,-8.075)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>tail_current</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-6.91,2.875;-6.91,3.625;-6.11,3.625;-6.11,2.875)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>tail_current</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (1.93,2.875;1.93,3.625;2.73,3.625;2.73,2.875)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>tail_current</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-6.91,4.465;-6.91,5.215;-6.11,5.215;-6.11,4.465)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>tail_current</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (1.93,4.465;1.93,5.215;2.73,5.215;2.73,4.465)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>tail_current</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-26.21,-13.96;-26.21,9.5;-25.71,9.5;-25.71,-13.96)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>tail_current</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-25.43,-13.96;-25.43,9.5;-23.93,9.5;-23.93,-13.96)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>tail_current</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (19.75,-13.96;19.75,9.5;21.25,9.5;21.25,-13.96)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>tail_current</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (21.53,-13.96;21.53,9.5;23.03,9.5;23.03,-13.96)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>tail_current</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-23.43,-15.885;-23.43,-15.785;-23.64,-15.785;-23.64,-14.985;-23.43,-14.985;-23.43,10.535;-23.64,10.535;-23.64,11.335;-23.43,11.335;-23.43,11.435;-23.05,11.435;-23.05,11.335;-22.84,11.335;-22.84,10.535;-23.05,10.535;-23.05,-14.985;-22.84,-14.985;-22.84,-15.785;-23.05,-15.785;-23.05,-15.885)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>tail_current</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-21.83,-15.885;-21.83,-15.785;-22.04,-15.785;-22.04,-14.985;-21.83,-14.985;-21.83,10.535;-22.04,10.535;-22.04,11.335;-21.83,11.335;-21.83,11.435;-21.45,11.435;-21.45,11.335;-21.24,11.335;-21.24,10.535;-21.45,10.535;-21.45,-14.985;-21.24,-14.985;-21.24,-15.785;-21.45,-15.785;-21.45,-15.885)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>tail_current</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-18.63,-15.885;-18.63,-15.785;-18.84,-15.785;-18.84,-14.985;-18.63,-14.985;-18.63,10.535;-18.84,10.535;-18.84,11.335;-18.63,11.335;-18.63,11.435;-18.25,11.435;-18.25,11.335;-18.04,11.335;-18.04,10.535;-18.25,10.535;-18.25,-14.985;-18.04,-14.985;-18.04,-15.785;-18.25,-15.785;-18.25,-15.885)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>tail_current</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-15.43,-15.885;-15.43,-15.785;-15.64,-15.785;-15.64,-14.985;-15.43,-14.985;-15.43,10.535;-15.64,10.535;-15.64,11.335;-15.43,11.335;-15.43,11.435;-15.05,11.435;-15.05,11.335;-14.84,11.335;-14.84,10.535;-15.05,10.535;-15.05,-14.985;-14.84,-14.985;-14.84,-15.785;-15.05,-15.785;-15.05,-15.885)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>tail_current</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-12.23,-15.885;-12.23,-15.785;-12.44,-15.785;-12.44,-14.985;-12.23,-14.985;-12.23,10.535;-12.44,10.535;-12.44,11.335;-12.23,11.335;-12.23,11.435;-11.85,11.435;-11.85,11.335;-11.64,11.335;-11.64,10.535;-11.85,10.535;-11.85,-14.985;-11.64,-14.985;-11.64,-15.785;-11.85,-15.785;-11.85,-15.885)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>tail_current</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-9.03,-15.885;-9.03,-15.785;-9.24,-15.785;-9.24,-14.985;-9.03,-14.985;-9.03,10.535;-9.24,10.535;-9.24,11.335;-9.03,11.335;-9.03,11.435;-8.65,11.435;-8.65,11.335;-8.44,11.335;-8.44,10.535;-8.65,10.535;-8.65,-14.985;-8.44,-14.985;-8.44,-15.785;-8.65,-15.785;-8.65,-15.885)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>tail_current</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-5.83,-15.885;-5.83,-15.785;-6.04,-15.785;-6.04,-14.985;-5.83,-14.985;-5.83,10.535;-6.04,10.535;-6.04,11.335;-5.83,11.335;-5.83,11.435;-5.45,11.435;-5.45,11.335;-5.24,11.335;-5.24,10.535;-5.45,10.535;-5.45,-14.985;-5.24,-14.985;-5.24,-15.785;-5.45,-15.785;-5.45,-15.885)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>tail_current</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-4.23,-10.335;-4.23,11.435;-3.85,11.435;-3.85,-9.955;0.05,-9.955;0.05,-10.335)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>tail_current</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-2.63,-4.81;-2.63,-2.495;-1.93,-1.795;-1.93,11.435;-1.55,11.435;-1.55,-1.955;-2.25,-2.655;-2.25,-4.81)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>tail_current</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-3.15,-9.675;-3.15,-9.295;-0.33,-9.295;-0.33,11.435;0.05,11.435;0.05,-9.675)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>tail_current</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (1.27,-15.885;1.27,-15.785;1.06,-15.785;1.06,-14.985;1.27,-14.985;1.27,10.535;1.06,10.535;1.06,11.335;1.27,11.335;1.27,11.435;1.65,11.435;1.65,11.335;1.86,11.335;1.86,10.535;1.65,10.535;1.65,-14.985;1.86,-14.985;1.86,-15.785;1.65,-15.785;1.65,-15.885)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>tail_current</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (4.47,-15.885;4.47,-15.785;4.26,-15.785;4.26,-14.985;4.47,-14.985;4.47,10.535;4.26,10.535;4.26,11.335;4.47,11.335;4.47,11.435;4.85,11.435;4.85,11.335;5.06,11.335;5.06,10.535;4.85,10.535;4.85,-14.985;5.06,-14.985;5.06,-15.785;4.85,-15.785;4.85,-15.885)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>tail_current</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (7.67,-15.885;7.67,-15.785;7.46,-15.785;7.46,-14.985;7.67,-14.985;7.67,10.535;7.46,10.535;7.46,11.335;7.67,11.335;7.67,11.435;8.05,11.435;8.05,11.335;8.26,11.335;8.26,10.535;8.05,10.535;8.05,-14.985;8.26,-14.985;8.26,-15.785;8.05,-15.785;8.05,-15.885)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>tail_current</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (10.87,-15.885;10.87,-15.785;10.66,-15.785;10.66,-14.985;10.87,-14.985;10.87,10.535;10.66,10.535;10.66,11.335;10.87,11.335;10.87,11.435;11.25,11.435;11.25,11.335;11.46,11.335;11.46,10.535;11.25,10.535;11.25,-14.985;11.46,-14.985;11.46,-15.785;11.25,-15.785;11.25,-15.885)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>tail_current</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (14.07,-15.885;14.07,-15.785;13.86,-15.785;13.86,-14.985;14.07,-14.985;14.07,10.535;13.86,10.535;13.86,11.335;14.07,11.335;14.07,11.435;14.45,11.435;14.45,11.335;14.66,11.335;14.66,10.535;14.45,10.535;14.45,-14.985;14.66,-14.985;14.66,-15.785;14.45,-15.785;14.45,-15.885)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>tail_current</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (17.27,-15.885;17.27,-15.785;17.06,-15.785;17.06,-14.985;17.27,-14.985;17.27,10.535;17.06,10.535;17.06,11.335;17.27,11.335;17.27,11.435;17.65,11.435;17.65,11.335;17.86,11.335;17.86,10.535;17.65,10.535;17.65,-14.985;17.86,-14.985;17.86,-15.785;17.65,-15.785;17.65,-15.885)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>tail_current</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (18.87,-15.885;18.87,-15.785;18.66,-15.785;18.66,-14.985;18.87,-14.985;18.87,10.535;18.66,10.535;18.66,11.335;18.87,11.335;18.87,11.435;19.25,11.435;19.25,11.335;19.46,11.335;19.46,10.535;19.25,10.535;19.25,-14.985;19.46,-14.985;19.46,-15.785;19.25,-15.785;19.25,-15.885)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>tail_current</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-6.91,-9.665;-6.91,-8.915;2.73,-8.915;2.73,-9.665)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>tail_current</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-6.91,-8.075;-6.91,-7.325;2.73,-7.325;2.73,-8.075)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>tail_current</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-6.91,2.875;-6.91,3.625;2.73,3.625;2.73,2.875)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>tail_current</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-6.91,4.465;-6.91,5.215;2.73,5.215;2.73,4.465)</value>
+   </values>
+  </item>
+ </items>
+</report-database>
