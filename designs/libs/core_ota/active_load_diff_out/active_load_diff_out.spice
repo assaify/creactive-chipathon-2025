@@ -1,0 +1,8 @@
+** sch_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_ota/active_load_diff_out/active_load_diff_out.sch
+.subckt active_load_diff_out D3 D4 VDD G
+*.PININFO VDD:B D3:O D4:O G:I
+M3 D3 G VDD VDD pfet_03v3 L=0.8u W=3.65u nf=1 m=4
+M4 D4 G VDD VDD pfet_03v3 L=0.8u W=3.65u nf=1 m=4
+M1 D3 D3 D3 VDD pfet_03v3 L=0.8u W=3.65u nf=1 m=2
+M2 D4 D4 D4 VDD pfet_03v3 L=0.8u W=3.65u nf=1 m=2
+.ends

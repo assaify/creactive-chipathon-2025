@@ -1,34 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report-database>
  <description>DRC Run Report at</description>
- <original-file/>
+ <original-file>/foss/designs/creactive-chipathon-2025/designs/libs/core_ota/active_load_diff_out/active_load_diff_out.gds</original-file>
  <generator>drc: script='/foss/pdks/gf180mcuD/libs.tech/klayout/macros/gf180mcu_drc.lydrc'</generator>
- <top-cell>differential_load_res</top-cell>
+ <top-cell>active_load_diff_out</top-cell>
  <tags>
-  <tag>
-   <name>waived</name>
-   <description/>
-  </tag>
-  <tag>
-   <name>red</name>
-   <description/>
-  </tag>
-  <tag>
-   <name>green</name>
-   <description/>
-  </tag>
-  <tag>
-   <name>blue</name>
-   <description/>
-  </tag>
-  <tag>
-   <name>yellow</name>
-   <description/>
-  </tag>
-  <tag>
-   <name>important</name>
-   <description/>
-  </tag>
  </tags>
  <categories>
   <category>
@@ -3999,7 +3975,7 @@
  </categories>
  <cells>
   <cell>
-   <name>differential_load_res</name>
+   <name>active_load_diff_out</name>
    <variant/>
    <layout-name/>
    <references>
@@ -4007,17 +3983,5 @@
   </cell>
  </cells>
  <items>
-  <item>
-   <tags/>
-   <category>'NP.2'</category>
-   <cell>differential_load_res</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (0.805,4.15;0.805,7.15)|(0.445,7.15;0.445,4.15)</value>
-   </values>
-  </item>
  </items>
 </report-database>

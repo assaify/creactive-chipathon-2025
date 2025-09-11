@@ -1,34 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report-database>
  <description>GF180 ANTENNA DRC Run Report at</description>
- <original-file/>
+ <original-file>/foss/designs/creactive-chipathon-2025/designs/libs/test/test_res.gds</original-file>
  <generator>drc: script='/foss/pdks/gf180mcuD/libs.tech/klayout/macros/gf180mcu_drc.lydrc'</generator>
- <top-cell>differential_load_res</top-cell>
+ <top-cell>test_res</top-cell>
  <tags>
-  <tag>
-   <name>waived</name>
-   <description/>
-  </tag>
-  <tag>
-   <name>red</name>
-   <description/>
-  </tag>
-  <tag>
-   <name>green</name>
-   <description/>
-  </tag>
-  <tag>
-   <name>blue</name>
-   <description/>
-  </tag>
-  <tag>
-   <name>yellow</name>
-   <description/>
-  </tag>
-  <tag>
-   <name>important</name>
-   <description/>
-  </tag>
  </tags>
  <categories>
   <category>
@@ -163,7 +139,7 @@
  </categories>
  <cells>
   <cell>
-   <name>differential_load_res</name>
+   <name>test_res</name>
    <variant/>
    <layout-name/>
    <references>

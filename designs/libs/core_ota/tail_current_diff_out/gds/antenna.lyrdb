@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report-database>
  <description>GF180 ANTENNA DRC Run Report at</description>
- <original-file/>
+ <original-file>/foss/designs/creactive-chipathon-2025/designs/libs/core_ota/tail_current_diff_out/gds/tail_current_diff_out.gds</original-file>
  <generator>drc: script='/foss/pdks/gf180mcuD/libs.tech/klayout/macros/gf180mcu_drc.lydrc'</generator>
- <top-cell>differential_load_res</top-cell>
+ <top-cell>tail_current_diff_out</top-cell>
  <tags>
   <tag>
    <name>waived</name>
@@ -163,7 +163,7 @@
  </categories>
  <cells>
   <cell>
-   <name>differential_load_res</name>
+   <name>tail_current_diff_out</name>
    <variant/>
    <layout-name/>
    <references>

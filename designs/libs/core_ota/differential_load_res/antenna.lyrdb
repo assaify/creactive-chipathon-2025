@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report-database>
  <description>GF180 ANTENNA DRC Run Report at</description>
- <original-file/>
+ <original-file>/foss/designs/creactive-chipathon-2025/designs/libs/core_ota/differential_load_res/differential_load_res.gds</original-file>
  <generator>drc: script='/foss/pdks/gf180mcuD/libs.tech/klayout/macros/gf180mcu_drc.lydrc'</generator>
  <top-cell>differential_load_res</top-cell>
  <tags>

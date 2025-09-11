@@ -1,34 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report-database>
  <description>GF180 DENSITY DRC Run Report at</description>
- <original-file/>
+ <original-file>/foss/designs/creactive-chipathon-2025/designs/libs/test/test_res.gds</original-file>
  <generator>drc: script='/foss/pdks/gf180mcuD/libs.tech/klayout/macros/gf180mcu_drc.lydrc'</generator>
- <top-cell>differential_load_res</top-cell>
+ <top-cell>test_res</top-cell>
  <tags>
-  <tag>
-   <name>waived</name>
-   <description/>
-  </tag>
-  <tag>
-   <name>red</name>
-   <description/>
-  </tag>
-  <tag>
-   <name>green</name>
-   <description/>
-  </tag>
-  <tag>
-   <name>blue</name>
-   <description/>
-  </tag>
-  <tag>
-   <name>yellow</name>
-   <description/>
-  </tag>
-  <tag>
-   <name>important</name>
-   <description/>
-  </tag>
  </tags>
  <categories>
   <category>
@@ -82,7 +58,7 @@
  </categories>
  <cells>
   <cell>
-   <name>differential_load_res</name>
+   <name>test_res</name>
    <variant/>
    <layout-name/>
    <references>
@@ -93,97 +69,37 @@
   <item>
    <tags/>
    <category>'M1.4'</category>
-   <cell>differential_load_res</cell>
+   <cell>test_res</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-2.035,4.76;-2.035,5.14;-1.655,5.14;-1.655,4.76)</value>
+    <value>polygon: (-2.05,1.055;-2.05,2.405;-1.67,2.405;-1.67,1.055)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>'M1.4'</category>
-   <cell>differential_load_res</cell>
+   <cell>test_res</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <comment/>
    <image/>
    <values>
-    <value>polygon: (1.245,4.76;1.245,5.14;1.625,5.14;1.625,4.76)</value>
+    <value>polygon: (-0.68,1.055;-0.68,2.41;-0.3,2.41;-0.3,1.055)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>'M1.4'</category>
-   <cell>differential_load_res</cell>
+   <cell>test_res</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <comment/>
    <image/>
    <values>
-    <value>polygon: (2.905,4.76;2.905,5.14;3.285,5.14;3.285,4.76)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>differential_load_res</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (-2.035,6.16;-2.035,6.54;-1.655,6.54;-1.655,6.16)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>differential_load_res</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (-0.375,6.16;-0.375,6.54;0.005,6.54;0.005,6.16)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>differential_load_res</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (-0.375,4.76;-0.375,5.14;-0.155,5.14;1.245,6.54;1.625,6.54;1.625,6.16;1.405,6.16;0.005,4.76)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>differential_load_res</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (2.905,6.16;2.905,6.54;3.285,6.54;3.285,6.16)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M2.4'</category>
-   <cell>differential_load_res</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (1.245,4.76;-0.155,6.16;-0.375,6.16;-0.375,6.54;0.005,6.54;1.405,5.14;1.625,5.14;1.625,4.76)</value>
+    <value>polygon: (0.98,1.055;0.98,2.585;1.36,2.585;1.36,1.055)</value>
    </values>
   </item>
  </items>

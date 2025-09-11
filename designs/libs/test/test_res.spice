@@ -1,0 +1,5 @@
+** sch_path: /foss/designs/creactive-chipathon-2025/designs/libs/test/test_res.sch
+.subckt test_res A B C
+*.PININFO A:I B:I C:I
+XR1 B A C ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+.ends
