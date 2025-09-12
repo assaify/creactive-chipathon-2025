@@ -1,0 +1,42 @@
+
+Circuit 1 cell ppolyf_u_1k and Circuit 2 cell ppolyf_u_1k are black boxes.
+Warning: Equate pins:  cell ppolyf_u_1k is a placeholder, treated as a black box.
+Warning: Equate pins:  cell ppolyf_u_1k is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: ppolyf_u_1k                     |Circuit 2: ppolyf_u_1k                     
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes ppolyf_u_1k and ppolyf_u_1k are equivalent.
+Flattening unmatched subcell resss in circuit ress (0)(30 instances)
+
+Class ress (0):  Merged 9 parallel devices.
+Class ress (0):  Merged 18 series devices.
+Subcircuit summary:
+Circuit 1: ress                            |Circuit 2: differential_load_res           
+-------------------------------------------|-------------------------------------------
+ppolyf_u_1k (30->3)                        |ppolyf_u_1k (12->3)                        
+Number of devices: 3                       |Number of devices: 3                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: ress                            |Circuit 2: differential_load_res           
+-------------------------------------------|-------------------------------------------
+G                                          |G                                          
+D3                                         |D3                                         
+D4                                         |D4                                         
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes ress and differential_load_res are equivalent.
+
+Final result: Circuits match uniquely.
+.

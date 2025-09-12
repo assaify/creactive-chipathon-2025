@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report-database>
+ <description>GF180 DENSITY DRC Run Report at</description>
+ <original-file>/foss/designs/creactive-chipathon-2025/designs/libs/core_ota/differential_load_res/differential_load_res_lvs.gds</original-file>
+ <generator>drc: script='/foss/pdks/gf180mcuD/libs.tech/klayout/macros/gf180mcu_drc.lydrc'</generator>
+ <top-cell>differential_load_res_lvs</top-cell>
+ <tags>
+  <tag>
+   <name>waived</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>red</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>green</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>blue</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>yellow</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>important</name>
+   <description/>
+  </tag>
+ </tags>
+ <categories>
+  <category>
+   <name>M1.4</name>
+   <description>M1.4 : Metal1 coverage over the entire die shall be &gt;30%
+                (Refer to section 13.0 for Dummy Metal fill guidelines.
+                 Customer needs to ensure enough dummy metal to satisfy Metal1 coverage) : 30%</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M2.4</name>
+   <description>M2.4 : Metal2 coverage over the entire die shall be &gt;30%
+                (Refer to section 13.0 for Dummy Metal fill guidelines.
+                 Customer needs to ensure enough dummy metal to satisfy Metal2 coverage) : 30%</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M3.4</name>
+   <description>M3.4 : metal3 coverage over the entire die shall be &gt;30%
+                    (Refer to section 13.0 for Dummy Metal fill guidelines.
+                    Customer needs to ensure enough dummy metal to satisfy metal3 coverage) : 30%</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M4.4</name>
+   <description>M4.4 : metal4 coverage over the entire die shall be &gt;30%
+                    (Refer to section 13.0 for Dummy Metal fill guidelines.
+                    Customer needs to ensure enough dummy metal to satisfy metal4 coverage) : 30%</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M5.4</name>
+   <description>M5.4 : metal5 coverage over the entire die shall be &gt;30%
+                    (Refer to section 13.0 for Dummy Metal fill guidelines.
+                    Customer needs to ensure enough dummy metal to satisfy metal5 coverage) : 30%</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MT.3</name>
+   <description>MT.3 : MetalTop coverage over the entire die shall be &gt;30%
+                                (Refer to section 10.3 for Dummy Metal-fill guidelines.
+                                Customer needs to ensure enough dummy metal to satisfy Metaln coverage) : 30%</description>
+   <categories>
+   </categories>
+  </category>
+ </categories>
+ <cells>
+  <cell>
+   <name>differential_load_res_lvs</name>
+   <variant/>
+   <layout-name/>
+   <references>
+   </references>
+  </cell>
+ </cells>
+ <items>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>differential_load_res_lvs</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (3.15,1.14;3.15,2.84;3.53,2.84;3.53,1.14)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>differential_load_res_lvs</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (4.55,1.8;4.55,2.84;4.93,2.84;4.93,1.8)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>differential_load_res_lvs</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (5.95,1.14;5.95,2.84;6.33,2.84;6.33,1.14)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>differential_load_res_lvs</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (7.35,1.8;7.35,2.84;7.73,2.84;7.73,1.8)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>differential_load_res_lvs</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (3.15,8.38;3.15,8.76;3.53,8.76;3.53,8.38)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>differential_load_res_lvs</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (5.95,8.38;5.95,8.76;6.33,8.76;6.33,8.38)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>differential_load_res_lvs</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (4.55,8.38;4.55,8.6;3.15,10;3.15,10.38;3.53,10.38;3.53,10.16;4.93,8.76;4.93,8.38)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>differential_load_res_lvs</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (4.55,10;4.55,10.38;4.93,10.38;4.93,10)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>differential_load_res_lvs</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (7.35,8.38;7.35,8.6;5.95,10;5.95,10.38;6.33,10.38;6.33,10.16;7.73,8.76;7.73,8.38)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>differential_load_res_lvs</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (7.35,10;7.35,10.38;7.73,10.38;7.73,10)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>differential_load_res_lvs</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (3.15,15.92;3.15,16.3;3.53,16.3;3.53,15.92)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>differential_load_res_lvs</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (5.95,15.92;5.95,16.3;6.33,16.3;6.33,15.92)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>differential_load_res_lvs</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (4.55,15.92;4.55,16.14;3.15,17.54;3.15,17.92;3.53,17.92;3.53,17.7;4.93,16.3;4.93,15.92)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>differential_load_res_lvs</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (4.55,17.54;4.55,17.92;4.93,17.92;4.93,17.54)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>differential_load_res_lvs</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (7.35,15.92;7.35,16.14;5.95,17.54;5.95,17.92;6.33,17.92;6.33,17.7;7.73,16.3;7.73,15.92)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>differential_load_res_lvs</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (7.35,17.54;7.35,17.92;7.73,17.92;7.73,17.54)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>differential_load_res_lvs</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (3.15,23.46;3.15,23.84;3.53,23.84;3.53,23.46)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>differential_load_res_lvs</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (5.95,23.46;5.95,23.84;6.33,23.84;6.33,23.46)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>differential_load_res_lvs</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (4.55,23.46;4.55,23.68;3.15,25.08;3.15,25.46;3.53,25.46;3.53,25.24;4.93,23.84;4.93,23.46)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>differential_load_res_lvs</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (4.55,25.08;4.55,25.46;4.93,25.46;4.93,25.08)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>differential_load_res_lvs</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (7.35,23.46;7.35,23.68;5.95,25.08;5.95,25.46;6.33,25.46;6.33,25.24;7.73,23.84;7.73,23.46)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>differential_load_res_lvs</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (7.35,25.08;7.35,25.46;7.73,25.46;7.73,25.08)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>differential_load_res_lvs</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (3.15,31;3.15,31.38;3.53,31.38;3.53,31)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>differential_load_res_lvs</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (5.95,31;5.95,31.38;6.33,31.38;6.33,31)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>differential_load_res_lvs</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (4.55,31;4.55,31.22;3.15,32.62;3.15,33;3.53,33;3.53,32.78;4.93,31.38;4.93,31)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>differential_load_res_lvs</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (4.55,32.62;4.55,33;4.93,33;4.93,32.62)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>differential_load_res_lvs</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (7.35,31;7.35,31.22;5.95,32.62;5.95,33;6.33,33;6.33,32.78;7.73,31.38;7.73,31)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>differential_load_res_lvs</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (7.35,32.62;7.35,33;7.73,33;7.73,32.62)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>differential_load_res_lvs</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (3.15,38.54;3.15,38.92;3.53,38.92;3.53,38.54)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>differential_load_res_lvs</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (4.55,38.54;4.55,38.92;6.33,38.92;6.33,38.54)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>differential_load_res_lvs</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (7.35,38.54;7.35,38.92;7.73,38.92;7.73,38.54)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>differential_load_res_lvs</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (0,0;0,41.38;10.88,41.38;10.88,0/0.86,0.86;10.02,0.86;10.02,2.46;8.75,2.46;8.75,2.84;10.02,2.84;10.02,8.38;8.75,8.38;8.75,8.76;10.02,8.76;10.02,10;8.75,10;8.75,10.38;10.02,10.38;10.02,15.92;8.75,15.92;8.75,16.3;10.02,16.3;10.02,17.54;8.75,17.54;8.75,17.92;10.02,17.92;10.02,23.46;8.75,23.46;8.75,23.84;10.02,23.84;10.02,25.08;8.75,25.08;8.75,25.46;10.02,25.46;10.02,31;8.75,31;8.75,31.38;10.02,31.38;10.02,32.62;8.75,32.62;8.75,33;10.02,33;10.02,38.54;8.75,38.54;8.75,38.92;10.02,38.92;10.02,40.52;0.86,40.52;0.86,38.92;2.13,38.92;2.13,38.54;0.86,38.54;0.86,33;2.13,33;2.13,32.62;0.86,32.62;0.86,31.38;2.13,31.38;2.13,31;0.86,31;0.86,25.46;2.13,25.46;2.13,25.08;0.86,25.08;0.86,23.84;2.13,23.84;2.13,23.46;0.86,23.46;0.86,17.92;2.13,17.92;2.13,17.54;0.86,17.54;0.86,16.3;2.13,16.3;2.13,15.92;0.86,15.92;0.86,10.38;2.13,10.38;2.13,10;0.86,10;0.86,8.76;2.13,8.76;2.13,8.38;0.86,8.38;0.86,2.84;2.13,2.84;2.13,2.46;0.86,2.46)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_load_res_lvs</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (3.15,1.14;3.15,1.52;6.33,1.52;6.33,1.14)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_load_res_lvs</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (4.55,1.8;4.55,2.18;7.73,2.18;7.73,1.8)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_load_res_lvs</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (3.15,8.38;3.15,8.76;4.55,10.16;4.55,10.38;4.93,10.38;4.93,10;3.53,8.6;3.53,8.38)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_load_res_lvs</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (5.95,8.38;5.95,8.76;7.35,10.16;7.35,10.38;7.73,10.38;7.73,10;6.33,8.6;6.33,8.38)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_load_res_lvs</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (3.15,15.92;3.15,16.3;4.55,17.7;4.55,17.92;4.93,17.92;4.93,17.54;3.53,16.14;3.53,15.92)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_load_res_lvs</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (5.95,15.92;5.95,16.3;7.35,17.7;7.35,17.92;7.73,17.92;7.73,17.54;6.33,16.14;6.33,15.92)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_load_res_lvs</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (3.15,23.46;3.15,23.84;4.55,25.24;4.55,25.46;4.93,25.46;4.93,25.08;3.53,23.68;3.53,23.46)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_load_res_lvs</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (5.95,23.46;5.95,23.84;7.35,25.24;7.35,25.46;7.73,25.46;7.73,25.08;6.33,23.68;6.33,23.46)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_load_res_lvs</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (3.15,31;3.15,31.38;4.55,32.78;4.55,33;4.93,33;4.93,32.62;3.53,31.22;3.53,31)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_load_res_lvs</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (5.95,31;5.95,31.38;7.35,32.78;7.35,33;7.73,33;7.73,32.62;6.33,31.22;6.33,31)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_load_res_lvs</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (3.15,38.54;3.15,41.38;3.53,41.38;3.53,38.54)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_load_res_lvs</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (5.25,38.54;5.25,41.38;5.63,41.38;5.63,38.54)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_load_res_lvs</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (7.35,38.54;7.35,41.38;7.73,41.38;7.73,38.54)</value>
+   </values>
+  </item>
+ </items>
+</report-database>

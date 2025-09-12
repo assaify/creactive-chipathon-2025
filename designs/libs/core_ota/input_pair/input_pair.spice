@@ -1,0 +1,8 @@
+** sch_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_ota/input_pair/input_pair.sch
+.subckt input_pair IN IP S D2 D1 VSS
+*.PININFO VSS:B S:O D1:I D2:I IN:I IP:I
+M1 D1 IN S VSS nfet_03v3 L=0.8u W=3.78u nf=1 m=4
+M2 D2 IP S VSS nfet_03v3 L=0.8u W=3.78u nf=1 m=4
+M3 D1 D1 D1 VSS nfet_03v3 L=0.8u W=3.78u nf=1 m=2
+M4 D2 D2 D2 VSS nfet_03v3 L=0.8u W=3.78u nf=1 m=2
+.ends

@@ -23,13 +23,13 @@ def find_gds_files(root_dir):
 
 def main():
     # Define the root directory to search
-    root_dir = os.path.join(os.environ.get('DESIGNS', '/foss/designs'), 'libs')
+    root_dir = os.path.join(os.environ.get('DESIGNS', '/foss/designs'), 'creactive-chipathon-2025/designs/libs')
     
     # Find all GDS files
     gds_files = find_gds_files(root_dir)
     
     # Save to @libs.json
-    output_file = os.path.join(os.environ.get('DESIGNS', '/foss/designs'), 'libs', 'libs.json')
+    output_file = os.path.join(os.environ.get('DESIGNS', '/foss/designs'), 'creactive-chipathon-2025/designs/libs', 'libs.json')
     
     with open(output_file, 'w') as f:
         json.dump(gds_files, f, indent=2)

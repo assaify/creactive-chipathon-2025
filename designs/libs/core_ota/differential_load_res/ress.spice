@@ -1,0 +1,39 @@
+* NGSPICE file created from ress.ext - technology: gf180mcuD
+
+.subckt resss a_80_80# a_1208_80# VSUBS
+X0 a_80_80# a_1208_80# VSUBS ppolyf_u_1k r_width=1u r_length=5u
+.ends
+
+.subckt ress D3 D4 G VSS
+Xresss_20 m1_1190_4908# m1_1202_6212# VSS resss
+Xresss_21 m1_642_4704# m1_630_6416# VSS resss
+Xresss_10 m1_630_1892# m1_642_3196# VSS resss
+Xresss_22 m1_630_4908# m1_642_6212# VSS resss
+Xresss_11 VSS VSS VSS resss
+Xresss_23 VSS VSS VSS resss
+Xresss_12 VSS VSS VSS resss
+Xresss_24 VSS VSS VSS resss
+Xresss_25 m1_1202_6212# D4 VSS resss
+Xresss_13 m1_1202_3196# m1_1190_4908# VSS resss
+Xresss_14 m1_1190_3400# m1_1202_4704# VSS resss
+Xresss_26 m1_1190_6416# G VSS resss
+Xresss_15 m1_642_3196# m1_630_4908# VSS resss
+Xresss_27 m1_642_6212# G VSS resss
+Xresss_16 m1_630_3400# m1_642_4704# VSS resss
+Xresss_28 m1_630_6416# D3 VSS resss
+Xresss_17 VSS VSS VSS resss
+Xresss_29 VSS VSS VSS resss
+Xresss_18 VSS VSS VSS resss
+Xresss_19 m1_1202_4704# m1_1190_6416# VSS resss
+Xresss_0 VSS VSS VSS resss
+Xresss_1 m1_910_360# m1_1190_1892# VSS resss
+Xresss_2 m1_630_228# m1_1202_1688# VSS resss
+Xresss_3 m1_910_360# m1_630_1892# VSS resss
+Xresss_4 m1_630_228# m1_642_1688# VSS resss
+Xresss_5 VSS VSS VSS resss
+Xresss_6 VSS VSS VSS resss
+Xresss_7 m1_1202_1688# m1_1190_3400# VSS resss
+Xresss_8 m1_1190_1892# m1_1202_3196# VSS resss
+Xresss_9 m1_642_1688# m1_630_3400# VSS resss
+.ends
+
