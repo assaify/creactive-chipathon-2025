@@ -1,0 +1,56 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1757672677
+<< error_s >>
+rect 288 939 329 946
+rect 65 902 144 939
+rect 269 902 332 939
+rect 65 890 125 902
+rect 269 890 329 902
+rect 65 889 144 890
+rect 50 879 144 889
+rect 269 879 348 890
+rect 50 861 96 879
+rect 50 771 115 861
+rect 125 771 144 879
+rect 50 761 144 771
+rect 50 749 160 761
+rect 225 755 244 784
+rect 273 766 319 861
+rect 69 721 160 749
+rect 72 573 160 721
+rect 254 721 319 766
+rect 329 721 348 879
+rect 254 615 300 721
+rect 72 545 85 573
+rect 105 545 160 573
+rect 72 540 160 545
+rect 72 494 203 540
+rect 72 485 144 494
+rect 157 373 203 494
+rect 124 366 203 373
+rect 124 357 160 366
+rect 72 333 160 357
+rect 64 297 160 333
+rect 72 287 160 297
+rect 244 287 245 316
+rect 49 147 160 287
+rect 273 147 274 287
+rect 309 242 348 316
+rect 309 147 319 242
+rect 50 110 160 147
+rect 50 82 144 110
+use gf180mcu_fd_sc_mcu9t5v0__filltie  gf180mcu_fd_sc_mcu9t5v0__filltie_0
+timestamp 1757672677
+transform 1 0 0 0 1 0
+box -86 -90 310 1098
+use gf180mcu_fd_sc_mcu9t5v0__inv_1  gf180mcu_fd_sc_mcu9t5v0__inv_1_0
+timestamp 1757672677
+transform 1 0 0 0 1 0
+box -86 -90 534 1098
+use gf180mcu_fd_sc_mcu9t5v0__nand2_1  gf180mcu_fd_sc_mcu9t5v0__nand2_1_0
+timestamp 1757672677
+transform 1 0 0 0 1 0
+box -86 -90 646 1098
+<< end >>

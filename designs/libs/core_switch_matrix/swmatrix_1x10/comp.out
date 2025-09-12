@@ -1,0 +1,182 @@
+
+Circuit 1 cell nfet_06v0 and Circuit 2 cell nfet_06v0 are black boxes.
+Warning: Equate pins:  cell nfet_06v0 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell nfet_06v0 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: nfet_06v0                       |Circuit 2: nfet_06v0                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes nfet_06v0 and nfet_06v0 are equivalent.
+
+Circuit 1 cell pfet_06v0 and Circuit 2 cell pfet_06v0 are black boxes.
+Warning: Equate pins:  cell pfet_06v0 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell pfet_06v0 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: pfet_06v0                       |Circuit 2: pfet_06v0                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes pfet_06v0 and pfet_06v0 are equivalent.
+
+Circuit 1 cell nfet_03v3 and Circuit 2 cell nfet_03v3 are black boxes.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: nfet_03v3                       |Circuit 2: nfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes nfet_03v3 and nfet_03v3 are equivalent.
+
+Circuit 1 cell pfet_03v3 and Circuit 2 cell pfet_03v3 are black boxes.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: pfet_03v3                       |Circuit 2: pfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes pfet_03v3 and pfet_03v3 are equivalent.
+Flattening unmatched subcell gf180mcu_fd_sc_mcu9t5v0__latq_1[[0]] in circuit dff_2ph_clk (0)(2 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu9t5v0__latq_1$1 in circuit dff_2ph_clk (1)(2 instances)
+
+Subcircuit summary:
+Circuit 1: dff_2ph_clk                     |Circuit 2: dff_2ph_clk                     
+-------------------------------------------|-------------------------------------------
+nfet_06v0 (16)                             |nfet_06v0 (16)                             
+pfet_06v0 (16)                             |pfet_06v0 (16)                             
+Number of devices: 32                      |Number of devices: 32                      
+Number of nets: 23                         |Number of nets: 23                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: dff_2ph_clk                     |Circuit 2: dff_2ph_clk                     
+-------------------------------------------|-------------------------------------------
+VDDD                                       |VDDD                                       
+VSSD                                       |VSSD                                       
+Q                                          |Q                                          
+D                                          |D                                          
+CLK_PH2                                    |CLK_PH2                                    
+CLK_PH1                                    |CLK_PH1                                    
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes dff_2ph_clk and dff_2ph_clk are equivalent.
+Flattening unmatched subcell gf180mcu_fd_sc_mcu9t5v0__nand2_1[[0]] in circuit tgate (0)(1 instance)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu9t5v0__inv_1[[0]] in circuit tgate (0)(2 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu9t5v0__inv_1$1 in circuit tgate (1)(2 instances)
+Flattening unmatched subcell nfet$1 in circuit tgate (1)(1 instance)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu9t5v0__nand2_1$1 in circuit tgate (1)(1 instance)
+Flattening unmatched subcell pfet$1 in circuit tgate (1)(1 instance)
+
+Class tgate (1):  Merged 22 parallel devices.
+Subcircuit summary:
+Circuit 1: tgate                           |Circuit 2: tgate                           
+-------------------------------------------|-------------------------------------------
+nfet_03v3 (6->1)                           |nfet_03v3 (6->1)                           
+pfet_03v3 (18->1)                          |pfet_03v3 (18->1)                          
+nfet_06v0 (4)                              |nfet_06v0 (4)                              
+pfet_06v0 (4)                              |pfet_06v0 (4)                              
+Number of devices: 10                      |Number of devices: 10                      
+Number of nets: 10                         |Number of nets: 10                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: tgate                           |Circuit 2: tgate                           
+-------------------------------------------|-------------------------------------------
+VDDD                                       |VDDD                                       
+VSSD                                       |VSSD                                       
+T1                                         |T1                                         
+T2                                         |T2                                         
+CON                                        |CON                                        
+EN                                         |EN                                         
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes tgate and tgate are equivalent.
+
+Subcircuit summary:
+Circuit 1: switch_cell                     |Circuit 2: switch_cell                     
+-------------------------------------------|-------------------------------------------
+dff_2ph_clk (1)                            |dff_2ph_clk (1)                            
+tgate (1)                                  |tgate (1)                                  
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 9                          |Number of nets: 9                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: switch_cell                     |Circuit 2: switch_cell                     
+-------------------------------------------|-------------------------------------------
+DATA_OUT                                   |DATA_OUT                                   
+VSSD                                       |VSSD                                       
+VDDD                                       |VDDD                                       
+CLK_PH1                                    |CLK_PH1                                    
+CLK_PH2                                    |CLK_PH2                                    
+DATA_IN                                    |DATA_IN                                    
+T1                                         |T1                                         
+T2                                         |T2                                         
+EN                                         |EN                                         
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes switch_cell and switch_cell are equivalent.
+
+Subcircuit summary:
+Circuit 1: swmatrix_1x10                   |Circuit 2: swmatrix_1x10                   
+-------------------------------------------|-------------------------------------------
+switch_cell (10)                           |switch_cell (10)                           
+Number of devices: 10                      |Number of devices: 10                      
+Number of nets: 27                         |Number of nets: 27                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: swmatrix_1x10                   |Circuit 2: swmatrix_1x10                   
+-------------------------------------------|-------------------------------------------
+EN                                         |EN                                         
+PIN                                        |PIN                                        
+CLK_PH2                                    |CLK_PH2                                    
+CLK_PH1                                    |CLK_PH1                                    
+VDDD                                       |VDDD                                       
+VSSD                                       |VSSD                                       
+BUS[1]                                     |BUS[1]                                     
+DATA_IN                                    |DATA_IN                                    
+BUS[10]                                    |BUS[10]                                    
+DATA_OUT                                   |DATA_OUT                                   
+BUS[9]                                     |BUS[9]                                     
+BUS[3]                                     |BUS[3]                                     
+BUS[7]                                     |BUS[7]                                     
+BUS[5]                                     |BUS[5]                                     
+BUS[6]                                     |BUS[6]                                     
+BUS[4]                                     |BUS[4]                                     
+BUS[8]                                     |BUS[8]                                     
+BUS[2]                                     |BUS[2]                                     
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes swmatrix_1x10 and swmatrix_1x10 are equivalent.
+
+Final result: Circuits match uniquely.
+.

@@ -1,0 +1,11 @@
+** sch_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_switch_matrix/dff_2ph_clk/dff_2ph_clk.sch
+.subckt dff_2ph_clk D CLK_PH1 CLK_PH2 Q VDDD VSSD
+*.PININFO D:I CLK_PH1:I CLK_PH2:I Q:O VDDD:B VSSD:B
+x1 D CLK_PH1 net1 VDDD VDDD VSSD VSSD gf180mcu_fd_sc_mcu9t5v0__latq_1
+x2 net1 CLK_PH2 Q VDDD VDDD VSSD VSSD gf180mcu_fd_sc_mcu9t5v0__latq_1
+**** begin user architecture code
+
+.include /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/spice/gf180mcu_fd_sc_mcu9t5v0.spice
+
+**** end user architecture code
+.ends

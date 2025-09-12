@@ -1,0 +1,127 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1757676927
+<< error_s >>
+rect -2037 -440 -2035 -430
+rect -2035 -450 -2025 -440
+rect -2039 -496 -2037 -494
+rect -2035 -496 -2025 -486
+rect -2039 -506 -2035 -496
+rect -2039 -635 -2037 -506
+rect -1427 -742 -1425 -598
+rect -1429 -752 -1425 -742
+rect -1439 -762 -1429 -752
+rect -1427 -754 -1425 -752
+rect -1439 -808 -1429 -798
+rect -1429 -818 -1427 -808
+rect -2039 -1927 -2037 -1796
+rect -256 -2152 -254 -1874
+<< metal1 >>
+rect -2240 -90 224 90
+rect -2240 -1098 224 -918
+<< via1 >>
+rect -2089 -635 -2037 -479
+rect -1427 -754 -1375 -598
+rect -306 -860 -254 -496
+rect -2089 -1927 -2037 -1771
+rect -1427 -2046 -1375 -1890
+rect -306 -2152 -254 -1788
+<< metal2 >>
+rect -2093 -440 -2037 -406
+rect -2093 -496 -2091 -440
+rect -330 -496 -230 -484
+rect -2093 -635 -2089 -496
+rect -2093 -701 -2037 -635
+rect -1981 -596 -1881 -574
+rect -1981 -652 -1959 -596
+rect -1903 -652 -1881 -596
+rect -1981 -1698 -1881 -652
+rect -1427 -598 -1371 -585
+rect -1375 -752 -1371 -598
+rect -1373 -808 -1371 -752
+rect -1427 -820 -1371 -808
+rect -330 -860 -306 -496
+rect -254 -860 -230 -496
+rect -330 -1100 -230 -860
+rect -2093 -1771 -1881 -1698
+rect -2093 -1927 -2089 -1771
+rect -2037 -1798 -1881 -1771
+rect -1451 -1200 -230 -1100
+rect -174 -752 -74 -730
+rect -174 -808 -152 -752
+rect -96 -808 -74 -752
+rect -2093 -1993 -2037 -1927
+rect -1451 -1890 -1351 -1200
+rect -174 -1776 -74 -808
+rect -1451 -2046 -1427 -1890
+rect -1375 -2046 -1351 -1890
+rect -1451 -2112 -1351 -2046
+rect -310 -1788 -74 -1776
+rect -310 -2152 -306 -1788
+rect -254 -1876 -74 -1788
+rect -310 -2164 -254 -2152
+<< via2 >>
+rect -2091 -479 -2035 -440
+rect -2091 -496 -2089 -479
+rect -2089 -496 -2037 -479
+rect -2037 -496 -2035 -479
+rect -1959 -652 -1903 -596
+rect -1429 -754 -1427 -752
+rect -1427 -754 -1375 -752
+rect -1375 -754 -1373 -752
+rect -1429 -808 -1373 -754
+rect -152 -808 -96 -752
+<< metal3 >>
+rect -2241 -440 224 -418
+rect -2241 -496 -2091 -440
+rect -2035 -496 224 -440
+rect -2241 -518 224 -496
+rect -2241 -596 224 -574
+rect -2241 -652 -1959 -596
+rect -1903 -652 224 -596
+rect -2241 -674 224 -652
+rect -2241 -752 -1359 -730
+rect -2241 -808 -1429 -752
+rect -1373 -808 -1359 -752
+rect -2241 -830 -1359 -808
+rect -174 -752 224 -730
+rect -174 -808 -152 -752
+rect -96 -808 224 -752
+rect -174 -830 224 -808
+use gf180mcu_fd_sc_mcu9t5v0__filltie$1  gf180mcu_fd_sc_mcu9t5v0__filltie$1_0
+timestamp 1757676927
+transform 1 0 0 0 1 -2300
+box -86 -90 310 1098
+use gf180mcu_fd_sc_mcu9t5v0__filltie$1  gf180mcu_fd_sc_mcu9t5v0__filltie$1_1
+timestamp 1757676927
+transform 1 0 0 0 1 -1008
+box -86 -90 310 1098
+use gf180mcu_fd_sc_mcu9t5v0__latq_1  gf180mcu_fd_sc_mcu9t5v0__latq_1_0
+timestamp 1757676927
+transform 1 0 -2240 0 1 -2300
+box -86 -90 2326 1098
+use gf180mcu_fd_sc_mcu9t5v0__latq_1  gf180mcu_fd_sc_mcu9t5v0__latq_1_1
+timestamp 1757676927
+transform 1 0 -2240 0 1 -1008
+box -86 -90 2326 1098
+<< labels >>
+flabel metal1 s -2237 -2389 -2237 -2389 2 FreeSans 73 0 0 0 VSSD
+port 1 nsew
+flabel metal1 s -2237 -1205 -2237 -1205 4 FreeSans 73 0 0 0 VDDD
+port 2 nsew
+flabel metal1 s -2238 -1096 -2238 -1096 2 FreeSans 73 0 0 0 VSSD
+port 1 nsew
+flabel metal1 s -2238 88 -2238 88 4 FreeSans 73 0 0 0 VDDD
+port 2 nsew
+flabel metal3 s 221 -780 221 -780 8 FreeSans 89 0 0 0 Q
+port 3 nsew
+flabel metal3 s -2239 -468 -2239 -468 2 FreeSans 89 0 0 0 CLK_PH1
+port 4 nsew
+flabel metal3 s -2239 -624 -2239 -624 2 FreeSans 89 0 0 0 CLK_PH2
+port 5 nsew
+flabel metal3 s -2239 -780 -2239 -780 2 FreeSans 89 0 0 0 D
+port 6 nsew
+<< properties >>
+string path -11.205 -2.340 1.120 -2.340 
+<< end >>

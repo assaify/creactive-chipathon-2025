@@ -1,0 +1,95 @@
+
+Circuit 1 cell nfet_03v3 and Circuit 2 cell nfet_03v3 are black boxes.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: nfet_03v3                       |Circuit 2: nfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes nfet_03v3 and nfet_03v3 are equivalent.
+
+Circuit 1 cell pfet_03v3 and Circuit 2 cell pfet_03v3 are black boxes.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: pfet_03v3                       |Circuit 2: pfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes pfet_03v3 and pfet_03v3 are equivalent.
+
+Circuit 1 cell gf180mcu_fd_sc_mcu9t5v0__nand2_1 and Circuit 2 cell gf180mcu_fd_sc_mcu9t5v0__nand2_1 are black boxes.
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu9t5v0__nand2_1 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu9t5v0__nand2_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu9t5v0__nand2_ |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__nand2_ 
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+5                                          |5                                          
+6                                          |6                                          
+7                                          |7                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu9t5v0__nand2_1 and gf180mcu_fd_sc_mcu9t5v0__nand2_1 are equivalent.
+
+Circuit 1 cell gf180mcu_fd_sc_mcu9t5v0__inv_1 and Circuit 2 cell gf180mcu_fd_sc_mcu9t5v0__inv_1 are black boxes.
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu9t5v0__inv_1 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell gf180mcu_fd_sc_mcu9t5v0__inv_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu9t5v0__inv_1  |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__inv_1  
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+5                                          |5                                          
+6                                          |6                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu9t5v0__inv_1 and gf180mcu_fd_sc_mcu9t5v0__inv_1 are equivalent.
+
+Subcircuit summary:
+Circuit 1: tgate                           |Circuit 2: tgate                           
+-------------------------------------------|-------------------------------------------
+nfet_03v3 (1)                              |nfet_03v3 (1)                              
+pfet_03v3 (1)                              |pfet_03v3 (1)                              
+gf180mcu_fd_sc_mcu9t5v0__nand2_1 (1)       |gf180mcu_fd_sc_mcu9t5v0__nand2_1 (1)       
+gf180mcu_fd_sc_mcu9t5v0__inv_1 (2)         |gf180mcu_fd_sc_mcu9t5v0__inv_1 (2)         
+Number of devices: 5                       |Number of devices: 5                       
+Number of nets: 9                          |Number of nets: 9                          
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: tgate                           |Circuit 2: tgate                           
+-------------------------------------------|-------------------------------------------
+CON                                        |CON                                        
+EN                                         |EN                                         
+VSSD                                       |VSSD                                       
+VDDD                                       |VDDD                                       
+T2                                         |T2                                         
+T1                                         |T1                                         
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes tgate and tgate are equivalent.
+
+Final result: Circuits match uniquely.
+.

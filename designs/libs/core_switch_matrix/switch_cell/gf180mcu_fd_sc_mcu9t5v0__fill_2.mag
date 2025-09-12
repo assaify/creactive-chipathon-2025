@@ -1,0 +1,23 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1757676927
+<< nwell >>
+rect -86 453 310 1094
+<< pwell >>
+rect -86 -86 310 453
+<< metal1 >>
+rect 0 918 224 1098
+rect 0 -90 224 90
+<< labels >>
+flabel metal1 s 102 1000 102 1000 0 FreeSans 400 0 0 0 VDD
+port 1 nsew
+flabel metal1 s 104 0 104 0 0 FreeSans 400 0 0 0 VSS
+port 2 nsew
+flabel nwell s 69 784 69 784 0 FreeSans 400 0 0 0 VNW
+port 3 nsew
+flabel pwell s 68 -17 68 -17 0 FreeSans 400 0 0 0 VPW
+port 4 nsew
+<< properties >>
+string FIXED_BBOX 0 0 224 1008
+<< end >>

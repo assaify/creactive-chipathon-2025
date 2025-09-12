@@ -1,0 +1,11 @@
+** sch_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_switch_matrix/tgate/tgate.sch
+.subckt tgate CON EN VDDD VSSD T1 T2
+*.PININFO CON:I EN:I VDDD:B VSSD:B T1:B T2:B
+XM1 T2 NCON T1 VSSD nfet_03v3 L=0.28u W=24u nf=6 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+XM2 T2 PCON T1 VDDD pfet_03v3 L=0.28u W=72u nf=6 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+x1 CON EN net1 VDDD VDDD VSSD VSSD gf180mcu_fd_sc_mcu9t5v0__nand2_1
+x2 net1 NCON VDDD VDDD VSSD VSSD gf180mcu_fd_sc_mcu9t5v0__inv_1
+x3 NCON PCON VDDD VDDD VSSD VSSD gf180mcu_fd_sc_mcu9t5v0__inv_1
+.ends

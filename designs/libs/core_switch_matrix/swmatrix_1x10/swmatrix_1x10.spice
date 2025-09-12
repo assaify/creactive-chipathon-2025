@@ -1,0 +1,109 @@
+* NGSPICE file created from swmatrix_1x10.ext - technology: gf180mcuD
+
+.subckt gf180mcu_fd_sc_mcu9t5v0__latq_1$1 D E Q VDD VSS VNW VPW
+X0 VSS a_1020_652# Q VPW nfet_06v0 ad=0.5808p pd=3.52u as=0.5808p ps=3.52u w=1.32u l=0.6u
+X1 a_504_110# a_36_92# VDD VNW pfet_06v0 ad=0.44p pd=2.88u as=0.476p ps=2.18u w=1u l=0.5u
+X2 VDD a_1020_652# Q VNW pfet_06v0 ad=0.8052p pd=4.54u as=0.8052p ps=4.54u w=1.83u l=0.5u
+X3 a_1264_107# a_36_92# a_1020_652# VPW nfet_06v0 ad=0.263p pd=1.49u as=0.182p ps=1.22u w=0.7u l=0.6u
+X4 VSS E a_36_92# VPW nfet_06v0 ad=0.263p pd=1.49u as=0.3476p ps=2.46u w=0.79u l=0.6u
+X5 VSS a_1364_532# a_1264_107# VPW nfet_06v0 ad=0.2054p pd=1.31u as=0.263p ps=1.49u w=0.79u l=0.6u
+X6 VDD E a_36_92# VNW pfet_06v0 ad=0.476p pd=2.18u as=0.6072p ps=3.64u w=1.38u l=0.5u
+X7 VDD a_1364_532# a_1224_652# VNW pfet_06v0 ad=0.3588p pd=1.9u as=0.426p ps=2.08u w=1.38u l=0.5u
+X8 a_872_652# D VDD VNW pfet_06v0 ad=0.12p pd=1.24u as=0.44p ps=2.88u w=1u l=0.5u
+X9 a_1364_532# a_1020_652# VDD VNW pfet_06v0 ad=0.6072p pd=3.64u as=0.3588p ps=1.9u w=1.38u l=0.5u
+X10 a_1020_652# a_504_110# a_872_107# VPW nfet_06v0 ad=0.182p pd=1.22u as=83.99999f ps=0.94u w=0.7u l=0.6u
+X11 a_872_107# D VSS VPW nfet_06v0 ad=83.99999f pd=0.94u as=0.308p ps=2.28u w=0.7u l=0.6u
+X12 a_1020_652# a_36_92# a_872_652# VNW pfet_06v0 ad=0.26p pd=1.52u as=0.12p ps=1.24u w=1u l=0.5u
+X13 a_504_110# a_36_92# VSS VPW nfet_06v0 ad=0.308p pd=2.28u as=0.263p ps=1.49u w=0.7u l=0.6u
+X14 a_1364_532# a_1020_652# VSS VPW nfet_06v0 ad=0.3476p pd=2.46u as=0.2054p ps=1.31u w=0.79u l=0.6u
+X15 a_1224_652# a_504_110# a_1020_652# VNW pfet_06v0 ad=0.426p pd=2.08u as=0.26p ps=1.52u w=1u l=0.5u
+.ends
+
+.subckt dff_2ph_clk Q CLK_PH1 CLK_PH2 D VSSD VDDD
+Xgf180mcu_fd_sc_mcu9t5v0__latq_1$1_0 gf180mcu_fd_sc_mcu9t5v0__latq_1$1_1/Q CLK_PH2
++ Q VDDD VSSD VDDD VSSD gf180mcu_fd_sc_mcu9t5v0__latq_1$1
+Xgf180mcu_fd_sc_mcu9t5v0__latq_1$1_1 D CLK_PH1 gf180mcu_fd_sc_mcu9t5v0__latq_1$1_1/Q
++ VDDD VSSD VDDD VSSD gf180mcu_fd_sc_mcu9t5v0__latq_1$1
+.ends
+
+.subckt gf180mcu_fd_sc_mcu9t5v0__inv_1$1 I VDD VSS ZN VNW VPW
+X0 ZN I VDD VNW pfet_06v0 ad=0.8052p pd=4.54u as=0.8052p ps=4.54u w=1.83u l=0.5u
+X1 ZN I VSS VPW nfet_06v0 ad=0.5808p pd=3.52u as=0.5808p ps=3.52u w=1.32u l=0.6u
+.ends
+
+.subckt nfet$1 G B D S
+X0 D G S B nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
+X1 S G D B nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
+X2 S G D B nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
+X3 S G D B nfet_03v3 ad=2.44p pd=9.22u as=1.04p ps=4.52u w=4u l=0.28u
+X4 D G S B nfet_03v3 ad=1.04p pd=4.52u as=2.44p ps=9.22u w=4u l=0.28u
+X5 D G S B nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
+.ends
+
+.subckt gf180mcu_fd_sc_mcu9t5v0__nand2_1$1 A1 A2 VDD VSS ZN VNW VPW
+X0 ZN A2 VDD VNW pfet_06v0 ad=0.4277p pd=2.165u as=0.7238p ps=4.17u w=1.645u l=0.5u
+X1 VDD A1 ZN VNW pfet_06v0 ad=0.7238p pd=4.17u as=0.4277p ps=2.165u w=1.645u l=0.5u
+X2 ZN A1 a_245_69# VPW nfet_06v0 ad=0.5808p pd=3.52u as=0.2112p ps=1.64u w=1.32u l=0.6u
+X3 a_245_69# A2 VSS VPW nfet_06v0 ad=0.2112p pd=1.64u as=0.5808p ps=3.52u w=1.32u l=0.6u
+.ends
+
+.subckt pfet$1 G S D B
+X0 S G D B pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
+X1 D G S B pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
+X2 D G S B pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
+X3 S G D B pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
+X4 S G D B pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
+X5 S G D B pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
+X6 D G S B pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
+X7 S G D B pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
+X8 D G S B pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
+X9 D G S B pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
+X10 S G D B pfet_03v3 ad=2.6p pd=9.3u as=1.04p ps=4.52u w=4u l=0.28u
+X11 S G D B pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
+X12 D G S B pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
+X13 D G S B pfet_03v3 ad=1.04p pd=4.52u as=2.6p ps=9.3u w=4u l=0.28u
+X14 S G D B pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
+X15 D G S B pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
+X16 S G D B pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
+X17 D G S B pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
+.ends
+
+.subckt tgate T1 T2 CON EN VSSD VDDD
+Xgf180mcu_fd_sc_mcu9t5v0__inv_1$1_0 gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0/I VDDD VSSD
++ nfet$1_0/G VDDD VSSD gf180mcu_fd_sc_mcu9t5v0__inv_1$1
+Xgf180mcu_fd_sc_mcu9t5v0__inv_1$1_1 nfet$1_0/G VDDD VSSD pfet$1_0/G VDDD VSSD gf180mcu_fd_sc_mcu9t5v0__inv_1$1
+Xnfet$1_0 nfet$1_0/G VSSD T1 T2 nfet$1
+Xgf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0 CON EN VDDD VSSD gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0/I
++ VDDD VSSD gf180mcu_fd_sc_mcu9t5v0__nand2_1$1
+Xpfet$1_0 pfet$1_0/G T2 T1 VDDD pfet$1
+.ends
+
+.subckt switch_cell T2 EN T1 DATA_IN DATA_OUT CLK_PH2 CLK_PH1 VDDD VSSD
+Xdff_2ph_clk_0 DATA_OUT CLK_PH1 CLK_PH2 DATA_IN VSSD VDDD dff_2ph_clk
+Xtgate_0 T1 T2 DATA_OUT EN VSSD VDDD tgate
+.ends
+
+.subckt swmatrix_1x10 BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9]
++ BUS[10] PIN VDDD VSSD EN CLK_PH2 CLK_PH1 DATA_IN DATA_OUT
+Xswitch_cell_0 BUS[1] EN PIN DATA_IN switch_cell_1/DATA_IN CLK_PH2 CLK_PH1 VDDD VSSD
++ switch_cell
+Xswitch_cell_1 BUS[2] EN PIN switch_cell_1/DATA_IN switch_cell_2/DATA_IN CLK_PH2 CLK_PH1
++ VDDD VSSD switch_cell
+Xswitch_cell_2 BUS[3] EN PIN switch_cell_2/DATA_IN switch_cell_3/DATA_IN CLK_PH2 CLK_PH1
++ VDDD VSSD switch_cell
+Xswitch_cell_3 BUS[4] EN PIN switch_cell_3/DATA_IN switch_cell_4/DATA_IN CLK_PH2 CLK_PH1
++ VDDD VSSD switch_cell
+Xswitch_cell_4 BUS[5] EN PIN switch_cell_4/DATA_IN switch_cell_5/DATA_IN CLK_PH2 CLK_PH1
++ VDDD VSSD switch_cell
+Xswitch_cell_5 BUS[6] EN PIN switch_cell_5/DATA_IN switch_cell_6/DATA_IN CLK_PH2 CLK_PH1
++ VDDD VSSD switch_cell
+Xswitch_cell_6 BUS[7] EN PIN switch_cell_6/DATA_IN switch_cell_7/DATA_IN CLK_PH2 CLK_PH1
++ VDDD VSSD switch_cell
+Xswitch_cell_7 BUS[8] EN PIN switch_cell_7/DATA_IN switch_cell_8/DATA_IN CLK_PH2 CLK_PH1
++ VDDD VSSD switch_cell
+Xswitch_cell_9 BUS[10] EN PIN switch_cell_9/DATA_IN DATA_OUT CLK_PH2 CLK_PH1 VDDD
++ VSSD switch_cell
+Xswitch_cell_8 BUS[9] EN PIN switch_cell_8/DATA_IN switch_cell_9/DATA_IN CLK_PH2 CLK_PH1
++ VDDD VSSD switch_cell
+.ends
+
