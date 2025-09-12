@@ -1,29 +1,7 @@
 ** sch_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_ota/differential_load_res/differential_load_res.sch
-**.subckt differential_load_res D3 VSS G D4
-*.iopin VSS
-*.ipin D3
-*.ipin D4
-*.ipin G
+.subckt differential_load_res D3 VSS G D4
+*.PININFO VSS:B D3:I D4:I G:I
 XR3 VSS VSS VSS ppolyf_u_1k r_width=1e-6 r_length=5e-6 m=10
-XR4 D3 net1 VSS ppolyf_u_1k r_width=1e-6 r_length=5e-6 m=1
-XR5 net1 net2 VSS ppolyf_u_1k r_width=1e-6 r_length=5e-6 m=1
-XR6 net2 net3 VSS ppolyf_u_1k r_width=1e-6 r_length=5e-6 m=1
-XR7 net3 net4 VSS ppolyf_u_1k r_width=1e-6 r_length=5e-6 m=1
-XR8 net4 net5 VSS ppolyf_u_1k r_width=1e-6 r_length=5e-6 m=1
-XR9 net5 net6 VSS ppolyf_u_1k r_width=1e-6 r_length=5e-6 m=1
-XR10 net6 net7 VSS ppolyf_u_1k r_width=1e-6 r_length=5e-6 m=1
-XR11 net7 net8 VSS ppolyf_u_1k r_width=1e-6 r_length=5e-6 m=1
-XR12 net8 net9 VSS ppolyf_u_1k r_width=1e-6 r_length=5e-6 m=1
-XR13 net9 G VSS ppolyf_u_1k r_width=1e-6 r_length=5e-6 m=1
-XR14 D4 net10 VSS ppolyf_u_1k r_width=1e-6 r_length=5e-6 m=1
-XR15 net10 net11 VSS ppolyf_u_1k r_width=1e-6 r_length=5e-6 m=1
-XR16 net11 net12 VSS ppolyf_u_1k r_width=1e-6 r_length=5e-6 m=1
-XR17 net12 net13 VSS ppolyf_u_1k r_width=1e-6 r_length=5e-6 m=1
-XR18 net13 net14 VSS ppolyf_u_1k r_width=1e-6 r_length=5e-6 m=1
-XR19 net14 net15 VSS ppolyf_u_1k r_width=1e-6 r_length=5e-6 m=1
-XR20 net15 net16 VSS ppolyf_u_1k r_width=1e-6 r_length=5e-6 m=1
-XR21 net16 net17 VSS ppolyf_u_1k r_width=1e-6 r_length=5e-6 m=1
-XR22 net17 net18 VSS ppolyf_u_1k r_width=1e-6 r_length=5e-6 m=1
-XR23 net18 G VSS ppolyf_u_1k r_width=1e-6 r_length=5e-6 m=1
-**.ends
-.end
+XR4 D4 G VSS ppolyf_u_1k r_width=1e-6 r_length=50e-6 m=1
+XR23 D3 G VSS ppolyf_u_1k r_width=1e-6 r_length=50e-6 m=1
+.ends

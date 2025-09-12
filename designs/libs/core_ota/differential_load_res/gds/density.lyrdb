@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report-database>
  <description>GF180 DENSITY DRC Run Report at</description>
- <original-file>/foss/designs/creactive-chipathon-2025/designs/libs/test/test_res.gds</original-file>
+ <original-file>/foss/designs/creactive-chipathon-2025/designs/libs/core_ota/differential_load_res/gds/res_cell.gds</original-file>
  <generator>drc: script='/foss/pdks/gf180mcuD/libs.tech/klayout/macros/gf180mcu_drc.lydrc'</generator>
- <top-cell>test_res</top-cell>
+ <top-cell>res_cell</top-cell>
  <tags>
  </tags>
  <categories>
@@ -58,7 +58,7 @@
  </categories>
  <cells>
   <cell>
-   <name>test_res</name>
+   <name>res_cell</name>
    <variant/>
    <layout-name/>
    <references>
@@ -69,37 +69,61 @@
   <item>
    <tags/>
    <category>'M1.4'</category>
-   <cell>test_res</cell>
+   <cell>res_cell</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-2.05,1.055;-2.05,2.405;-1.67,2.405;-1.67,1.055)</value>
+    <value>polygon: (-0.7,-1.75;-0.7,-1.37;-0.32,-1.37;-0.32,-1.75)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>'M1.4'</category>
-   <cell>test_res</cell>
+   <cell>res_cell</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-0.68,1.055;-0.68,2.41;-0.3,2.41;-0.3,1.055)</value>
+    <value>polygon: (0.39,-1.75;0.39,-1.37;0.77,-1.37;0.77,-1.75)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>'M1.4'</category>
-   <cell>test_res</cell>
+   <cell>res_cell</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <comment/>
    <image/>
    <values>
-    <value>polygon: (0.98,1.055;0.98,2.585;1.36,2.585;1.36,1.055)</value>
+    <value>polygon: (6.31,-1.75;6.31,-1.37;6.69,-1.37;6.69,-1.75)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>res_cell</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (0.39,0.71;0.39,1.09;0.77,1.09;0.77,0.71)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>res_cell</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (6.31,0.71;6.31,1.09;6.69,1.09;6.69,0.71)</value>
    </values>
   </item>
  </items>
