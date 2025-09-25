@@ -1,0 +1,37 @@
+* NGSPICE file created from differential_nulling_res_lvs.ext - technology: gf180mcuD
+
+.subckt res_13p37u a_2882_80# a_80_80# VSUBS
+X0 a_80_80# a_2882_80# VSUBS ppolyf_u_1k r_width=1u r_length=13.37u
+.ends
+
+.subckt differential_nulling_res_lvs VSS A1 A2 B2 B1
+Xres_13p37u_27 VSS VSS VSS res_13p37u
+Xres_13p37u_8 A1 B1 VSS res_13p37u
+Xres_13p37u_16 B2 A2 VSS res_13p37u
+Xres_13p37u_9 A2 B2 VSS res_13p37u
+Xres_13p37u_17 A1 B1 VSS res_13p37u
+Xres_13p37u_18 A1 B1 VSS res_13p37u
+Xres_13p37u_19 B1 A1 VSS res_13p37u
+Xres_13p37u_0 VSS VSS VSS res_13p37u
+Xres_13p37u_1 B2 A2 VSS res_13p37u
+Xres_13p37u_20 A2 B2 VSS res_13p37u
+Xres_13p37u_2 B1 A1 VSS res_13p37u
+Xres_13p37u_10 A1 B1 VSS res_13p37u
+Xres_13p37u_21 B2 A2 VSS res_13p37u
+Xres_13p37u_3 B2 A2 VSS res_13p37u
+Xres_13p37u_22 A2 B2 VSS res_13p37u
+Xres_13p37u_11 A2 B2 VSS res_13p37u
+Xres_13p37u_24 B2 A2 VSS res_13p37u
+Xres_13p37u_23 B1 A1 VSS res_13p37u
+Xres_13p37u_4 B1 A1 VSS res_13p37u
+Xres_13p37u_5 B2 A2 VSS res_13p37u
+Xres_13p37u_12 A1 B1 VSS res_13p37u
+Xres_13p37u_13 VSS VSS VSS res_13p37u
+Xres_13p37u_25 A1 B1 VSS res_13p37u
+Xres_13p37u_6 VSS VSS VSS res_13p37u
+Xres_13p37u_14 VSS VSS VSS res_13p37u
+Xres_13p37u_7 VSS VSS VSS res_13p37u
+Xres_13p37u_26 VSS VSS VSS res_13p37u
+Xres_13p37u_15 VSS VSS VSS res_13p37u
+.ends
+

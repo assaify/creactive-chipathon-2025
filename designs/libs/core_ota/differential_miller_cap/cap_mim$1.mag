@@ -1,0 +1,22 @@
+magic
+tech gf180mcuD
+magscale 1 5
+timestamp 1758510537
+<< mimcap >>
+rect 0 932 1000 1000
+rect 0 68 68 932
+rect 932 68 1000 932
+rect 0 0 1000 68
+<< mimcapcontact >>
+rect 68 68 932 932
+<< metal4 >>
+rect -60 1000 1060 1060
+rect -60 0 0 1000
+rect 1000 0 1060 1000
+rect -60 -60 1060 0
+<< metal5 >>
+rect 0 932 1000 1000
+rect 0 68 68 932
+rect 932 68 1000 932
+rect 0 0 1000 68
+<< end >>

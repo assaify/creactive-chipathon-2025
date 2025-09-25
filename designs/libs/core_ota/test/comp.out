@@ -1,0 +1,42 @@
+Flattening unmatched subcell cap_mim in circuit test_cap (0)(1 instance)
+
+Subcircuit summary:
+Circuit 1: test_cap                        |Circuit 2: test_cap                        
+-------------------------------------------|-------------------------------------------
+cap_mim_2f0_m4m5_noshield (1)              |(no matching element)                      
+(no matching element)                      |cap_mim_2f0fF (1)                          
+Number of devices: 1                       |Number of devices: 1                       
+Number of nets: 2                          |Number of nets: 2                          
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: test_cap                        |Circuit 2: test_cap                        
+
+---------------------------------------------------------------------------------------
+Net: B                                     |Net: B                                     
+  cap_mim_2f0_m4m5_noshield/2 = 1          |  cap_mim_2f0fF/2 = 1                      
+                                           |                                           
+Net: A                                     |Net: A                                     
+  cap_mim_2f0_m4m5_noshield/1 = 1          |  cap_mim_2f0fF/1 = 1                      
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: test_cap                        |Circuit 2: test_cap                        
+
+---------------------------------------------------------------------------------------
+Instance: cap_mim/cap_mim_2f0_m4m5_noshiel |Instance: cap_mim_2f0fF:C1                 
+  1 = 1                                    |  1 = 1                                    
+  2 = 1                                    |  2 = 1                                    
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Port matching may fail to disambiguate symmetries.
+
+Subcircuit pins:
+Circuit 1: test_cap                        |Circuit 2: test_cap                        
+-------------------------------------------|-------------------------------------------
+B                                          |B                                          
+A                                          |A                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes test_cap and test_cap are equivalent.
+
+Final result: Netlists do not match.
+Port matching may fail to disambiguate symmetries.

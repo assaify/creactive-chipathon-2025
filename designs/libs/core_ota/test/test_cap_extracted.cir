@@ -1,0 +1,5 @@
+* Extracted by KLayout with GF180MCU LVS runset on : 19/09/2025 22:49
+
+.SUBCKT test_cap A
+C$1 A \$3 2e-13 cap_mim_2f0_m5m6_noshield A=100P P=40U
+.ENDS test_cap

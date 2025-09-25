@@ -3,34 +3,17 @@
  <description>GF180 DENSITY DRC Run Report at</description>
  <original-file/>
  <generator>drc: script='/foss/pdks/gf180mcuD/libs.tech/klayout/macros/gf180mcu_drc.lydrc'</generator>
- <top-cell>differential_load_res</top-cell>
+ <top-cell>differential_miller_cap</top-cell>
  <tags>
-  <tag>
-   <name>waived</name>
-   <description/>
-  </tag>
-  <tag>
-   <name>red</name>
-   <description/>
-  </tag>
-  <tag>
-   <name>green</name>
-   <description/>
-  </tag>
-  <tag>
-   <name>blue</name>
-   <description/>
-  </tag>
-  <tag>
-   <name>yellow</name>
-   <description/>
-  </tag>
-  <tag>
-   <name>important</name>
-   <description/>
-  </tag>
  </tags>
  <categories>
+  <category>
+   <name>PL.8</name>
+   <description>PL.8 : Poly2 coverage over the entire die shall be 14%.
+                Dummy poly2 lines must be added to meet the minimum poly2 density requirement. : 14%</description>
+   <categories>
+   </categories>
+  </category>
   <category>
    <name>M1.4</name>
    <description>M1.4 : Metal1 coverage over the entire die shall be &gt;30%
@@ -55,34 +38,10 @@
    <categories>
    </categories>
   </category>
-  <category>
-   <name>M4.4</name>
-   <description>M4.4 : metal4 coverage over the entire die shall be &gt;30%
-                    (Refer to section 13.0 for Dummy Metal fill guidelines.
-                    Customer needs to ensure enough dummy metal to satisfy metal4 coverage) : 30%</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>M5.4</name>
-   <description>M5.4 : metal5 coverage over the entire die shall be &gt;30%
-                    (Refer to section 13.0 for Dummy Metal fill guidelines.
-                    Customer needs to ensure enough dummy metal to satisfy metal5 coverage) : 30%</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>MT.3</name>
-   <description>MT.3 : MetalTop coverage over the entire die shall be &gt;30%
-                                (Refer to section 10.3 for Dummy Metal-fill guidelines.
-                                Customer needs to ensure enough dummy metal to satisfy Metaln coverage) : 30%</description>
-   <categories>
-   </categories>
-  </category>
  </categories>
  <cells>
   <cell>
-   <name>differential_load_res</name>
+   <name>differential_miller_cap</name>
    <variant/>
    <layout-name/>
    <references>
@@ -90,101 +49,5 @@
   </cell>
  </cells>
  <items>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>differential_load_res</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (-2.035,4.76;-2.035,5.14;-1.655,5.14;-1.655,4.76)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>differential_load_res</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (1.245,4.76;1.245,5.14;1.625,5.14;1.625,4.76)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>differential_load_res</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (2.905,4.76;2.905,5.14;3.285,5.14;3.285,4.76)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>differential_load_res</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (-2.035,6.16;-2.035,6.54;-1.655,6.54;-1.655,6.16)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>differential_load_res</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (-0.375,6.16;-0.375,6.54;0.005,6.54;0.005,6.16)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>differential_load_res</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (-0.375,4.76;-0.375,5.14;-0.155,5.14;1.245,6.54;1.625,6.54;1.625,6.16;1.405,6.16;0.005,4.76)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>differential_load_res</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (2.905,6.16;2.905,6.54;3.285,6.54;3.285,6.16)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M2.4'</category>
-   <cell>differential_load_res</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (1.245,4.76;-0.155,6.16;-0.375,6.16;-0.375,6.54;0.005,6.54;1.405,5.14;1.625,5.14;1.625,4.76)</value>
-   </values>
-  </item>
  </items>
 </report-database>

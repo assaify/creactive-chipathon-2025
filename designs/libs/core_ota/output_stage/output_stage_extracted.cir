@@ -1,4 +1,4 @@
-* Extracted by KLayout with GF180MCU LVS runset on : 04/09/2025 17:23
+* Extracted by KLayout with GF180MCU LVS runset on : 24/09/2025 18:09
 
 .SUBCKT output_stage VDD G6 D6
 M$1 VDD VDD VDD VDD pfet_03v3 L=0.5U W=41.72U AS=22.3202P AD=22.3202P PS=66.86U

@@ -12,6 +12,8 @@
   "active_load_diff_out_pmos_1": "/foss/designs/creactive-chipathon-2025/designs/libs/core_ota/active_load_diff_out/gds/pmos_1.gds",
   "active_load_diff_out_pmos_6": "/foss/designs/creactive-chipathon-2025/designs/libs/core_ota/active_load_diff_out/gds/pmos_6.gds",
   "core_ota_res_test2": "/foss/designs/creactive-chipathon-2025/designs/libs/core_ota/test/res_test2.gds",
+  "core_ota_test_cap": "/foss/designs/creactive-chipathon-2025/designs/libs/core_ota/differential_miller_cap/test_cap.gds",
+  "core_ota_test_cap2": "/foss/designs/creactive-chipathon-2025/designs/libs/core_ota/test/test_cap2.gds",
   "core_ota_res_test": "/foss/designs/creactive-chipathon-2025/designs/libs/core_ota/test/res_test.gds",
   "core_ota_differential_load_res": "/foss/designs/creactive-chipathon-2025/designs/libs/core_ota/differential_load_res/differential_load_res.gds",
   "differential_load_res_res_1": "/foss/designs/creactive-chipathon-2025/designs/libs/core_ota/differential_load_res/gds/res_1.gds",
@@ -21,6 +23,7 @@
   "three_single_ended_ota_single_ended_ota": "/foss/designs/creactive-chipathon-2025/designs/libs/core_ota/three_single_ended_ota/gds/single_ended_ota.gds",
   "core_ota_input_pair_diff_out": "/foss/designs/creactive-chipathon-2025/designs/libs/core_ota/input_pair_diff_out/input_pair_diff_out.gds",
   "input_pair_diff_out_nmos_6": "/foss/designs/creactive-chipathon-2025/designs/libs/core_ota/input_pair_diff_out/gds/nmos_6.gds",
+  "core_ota_differential_nulling_res_lvs": "/foss/designs/creactive-chipathon-2025/designs/libs/core_ota/differential_nulling_res/differential_nulling_res_lvs.gds",
   "core_ota_differential_nulling_res": "/foss/designs/creactive-chipathon-2025/designs/libs/core_ota/differential_nulling_res/differential_nulling_res.gds",
   "differential_nulling_res_res_13p37u": "/foss/designs/creactive-chipathon-2025/designs/libs/core_ota/differential_nulling_res/gds/res_13p37u.gds",
   "core_ota_output_stage": "/foss/designs/creactive-chipathon-2025/designs/libs/core_ota/output_stage/output_stage.gds",
@@ -32,7 +35,11 @@
   "tail_current_nmos_2_4_last": "/foss/designs/creactive-chipathon-2025/designs/libs/core_ota/tail_current/gds/nmos_2_4_last.gds",
   "tail_current_nmos_2_4": "/foss/designs/creactive-chipathon-2025/designs/libs/core_ota/tail_current/gds/nmos_2_4.gds",
   "tail_current_lib_tail_current": "/foss/designs/creactive-chipathon-2025/designs/libs/core_ota/tail_current/gds/lib_tail_current.gds",
+  "core_ota_differential_output_ota": "/foss/designs/creactive-chipathon-2025/designs/libs/core_ota/differential_output_ota/differential_output_ota.gds",
+  "core_ota_differential_miller_cap": "/foss/designs/creactive-chipathon-2025/designs/libs/core_ota/differential_miller_cap/differential_miller_cap.gds",
   "core_ota_three_differential_output_ota": "/foss/designs/creactive-chipathon-2025/designs/libs/core_ota/three_differential_output_ota/three_differential_output_ota.gds",
+  "three_differential_output_ota_one_differential_output_ota": "/foss/designs/creactive-chipathon-2025/designs/libs/core_ota/three_differential_output_ota/gds/one_differential_output_ota.gds",
+  "three_differential_output_ota_res_cap": "/foss/designs/creactive-chipathon-2025/designs/libs/core_ota/three_differential_output_ota/gds/res_cap.gds",
   "core_analog_inv": "/foss/designs/creactive-chipathon-2025/designs/libs/core_analog/inv_test/inv.gds",
   "core_analog_inv2": "/foss/designs/creactive-chipathon-2025/designs/libs/core_analog/inv_test/inv2.gds"
 }

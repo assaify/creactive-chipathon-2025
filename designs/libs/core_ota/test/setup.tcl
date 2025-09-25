@@ -1,0 +1,1 @@
+/foss/designs/../pdks/gf180mcuD/libs.tech/netgen/setup.tcl
