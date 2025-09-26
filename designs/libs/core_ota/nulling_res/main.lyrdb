@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report-database>
  <description>DRC Run Report at</description>
- <original-file>/foss/designs/creactive-chipathon-2025/designs/libs/core_ota/input_pair/input_pair.gds</original-file>
+ <original-file>/foss/designs/creactive-chipathon-2025/designs/libs/core_ota/nulling_res/nulling_res.gds</original-file>
  <generator>drc: script='/foss/pdks/gf180mcuD/libs.tech/klayout/macros/gf180mcu_drc.lydrc'</generator>
- <top-cell>input_pair</top-cell>
+ <top-cell>nulling_res</top-cell>
  <tags>
  </tags>
  <categories>
@@ -3975,7 +3975,7 @@
  </categories>
  <cells>
   <cell>
-   <name>input_pair</name>
+   <name>nulling_res</name>
    <variant/>
    <layout-name/>
    <references>
