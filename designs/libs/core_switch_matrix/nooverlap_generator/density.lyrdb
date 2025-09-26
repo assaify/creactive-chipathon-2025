@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report-database>
+ <description>GF180 DENSITY DRC Run Report at</description>
+ <original-file>/foss/designs/creactive-chipathon-2025/designs/libs/core_switch_matrix/nooverlap_generator/nooverlap_generator.gds</original-file>
+ <generator>drc: script='/foss/pdks/gf180mcuD/libs.tech/klayout/macros/gf180mcu_drc.lydrc'</generator>
+ <top-cell>nooverlap_generator</top-cell>
+ <tags>
+ </tags>
+ <categories>
+  <category>
+   <name>M2.4</name>
+   <description>M2.4 : Metal2 coverage over the entire die shall be &gt;30%
+                (Refer to section 13.0 for Dummy Metal fill guidelines.
+                 Customer needs to ensure enough dummy metal to satisfy Metal2 coverage) : 30%</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M3.4</name>
+   <description>M3.4 : metal3 coverage over the entire die shall be &gt;30%
+                    (Refer to section 13.0 for Dummy Metal fill guidelines.
+                    Customer needs to ensure enough dummy metal to satisfy metal3 coverage) : 30%</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M4.4</name>
+   <description>M4.4 : metal4 coverage over the entire die shall be &gt;30%
+                    (Refer to section 13.0 for Dummy Metal fill guidelines.
+                    Customer needs to ensure enough dummy metal to satisfy metal4 coverage) : 30%</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M5.4</name>
+   <description>M5.4 : metal5 coverage over the entire die shall be &gt;30%
+                    (Refer to section 13.0 for Dummy Metal fill guidelines.
+                    Customer needs to ensure enough dummy metal to satisfy metal5 coverage) : 30%</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MT.3</name>
+   <description>MT.3 : MetalTop coverage over the entire die shall be &gt;30%
+                                (Refer to section 10.3 for Dummy Metal-fill guidelines.
+                                Customer needs to ensure enough dummy metal to satisfy Metaln coverage) : 30%</description>
+   <categories>
+   </categories>
+  </category>
+ </categories>
+ <cells>
+  <cell>
+   <name>nooverlap_generator</name>
+   <variant/>
+   <layout-name/>
+   <references>
+   </references>
+  </cell>
+ </cells>
+ <items>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>nooverlap_generator</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (6.525,-5.79;6.525,-4.32;6.85,-4.32;6.85,-5.79)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>nooverlap_generator</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (9.325,-5.26;9.325,-3.94;9.63,-3.94;9.63,-5.26)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>nooverlap_generator</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (4.22,-4.14;4.22,-2.67;4.545,-2.67;4.545,-4.14)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>nooverlap_generator</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (23.325,-5.79;23.325,-4.32;23.93,-4.32;23.93,1.1;24.33,1.1;24.33,-5.79)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>nooverlap_generator</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (6.525,0.41;6.525,1.88;6.85,1.88;6.85,0.41)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>nooverlap_generator</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (22.645,-4.04;22.645,1.88;23.65,1.88;23.65,0.41;23.045,0.41;23.045,-4.04)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>nooverlap_generator</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (9.325,0.94;9.325,2.26;9.63,2.26;9.63,0.94)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>nooverlap_generator</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (3.09,0.6;3.09,2.44;3.43,2.44;3.43,0.6)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>nooverlap_generator</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (0.925,0.94;0.925,2.66;1.23,2.66;1.23,0.94)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>nooverlap_generator</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (0.925,-5.26;0.925,-3.94;1.475,-3.94;1.475,0.41;1.55,0.41;1.55,3.44;1.875,3.44;1.875,-5.26)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>nooverlap_generator</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (4.205,2.06;4.205,3.44;4.545,3.44;4.545,2.06)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>nooverlap_generator</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (6.525,-4.82;6.525,-4.32;25.415,-4.32;25.415,-4.82)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>nooverlap_generator</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (4.22,-4.04;4.22,-3.54;23.045,-3.54;23.045,-4.04)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>nooverlap_generator</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (3.09,0.6;3.09,1.1;24.33,1.1;24.33,0.6)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>nooverlap_generator</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (6.525,1.38;6.525,1.88;25.415,1.88;25.415,1.38)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>nooverlap_generator</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-0.905,2.16;-0.905,2.66;1.23,2.66;1.23,2.16)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>nooverlap_generator</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (1.55,2.94;1.55,3.44;4.545,3.44;4.545,2.94)</value>
+   </values>
+  </item>
+ </items>
+</report-database>

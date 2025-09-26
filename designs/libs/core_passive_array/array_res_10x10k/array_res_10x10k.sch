@@ -9,21 +9,21 @@ P 4 5 0 -350 230 -350 230 -120 0 -120 0 -350 {}
 T {10 x 10k Ohm Resistor Array} 250 -570 0 0 0.4 0.4 {}
 T {Pinouts} 0 -380 0 0 0.4 0.4 {}
 N 320 -260 340 -260 {lab=RA}
-N 400 -260 420 -260 {lab=#net1}
-N 480 -260 500 -260 {lab=#net2}
-N 560 -260 580 -260 {lab=#net3}
-N 640 -260 660 -260 {lab=#net4}
-N 720 -260 740 -260 {lab=#net5}
-N 800 -260 820 -260 {lab=#net6}
-N 880 -260 900 -260 {lab=#net7}
-N 960 -260 980 -260 {lab=#net8}
-N 1040 -260 1060 -260 {lab=#net9}
+N 400 -260 420 -260 {lab=BUS[1]}
+N 480 -260 500 -260 {lab=BUS[2]}
+N 560 -260 580 -260 {lab=BUS[3]}
+N 640 -260 660 -260 {lab=BUS[4]}
+N 720 -260 740 -260 {lab=BUS[5]}
+N 800 -260 820 -260 {lab=BUS[6]}
+N 880 -260 900 -260 {lab=BUS[7]}
+N 960 -260 980 -260 {lab=BUS[8]}
+N 1040 -260 1060 -260 {lab=BUS[9]}
 N 570 -430 590 -430 {lab=CLK_PH2}
 N 570 -450 590 -450 {lab=CLK_PH1}
 N 570 -470 590 -470 {lab="DATA_IN, Q[1:9]"}
 N 890 -470 910 -470 {lab="Q[1:9], DATA_OUT"}
-N 890 -450 910 -450 {lab=BUS[1:10]}
-N 890 -430 910 -430 {lab=RB}
+N 890 -450 910 -450 {lab=RB}
+N 890 -430 910 -430 {lab=#net1}
 N 890 -410 910 -410 {lab=VDDD}
 N 890 -390 910 -390 {lab=VSSD}
 N 570 -410 590 -410 {lab=EN}
@@ -44,7 +44,7 @@ model=ppolyf_u_1k
 spiceprefix=X
 m=1}
 C {devices/lab_pin.sym} 320 -260 0 0 {name=l83 sig_type=std_logic lab=RA}
-C {devices/lab_pin.sym} 910 -430 0 1 {name=l85 sig_type=std_logic lab=RB}
+C {devices/lab_pin.sym} 910 -450 0 1 {name=l85 sig_type=std_logic lab=RB}
 C {symbols/ppolyf_u_1k.sym} 450 -260 1 0 {name=R2
 W=1e-6
 L=9.5e-6
@@ -108,7 +108,7 @@ C {devices/lab_pin.sym} 910 -410 0 1 {name=l4 sig_type=std_logic lab=VDDD}
 C {devices/lab_pin.sym} 570 -430 0 0 {name=l5 sig_type=std_logic lab=CLK_PH2}
 C {devices/lab_pin.sym} 570 -450 0 0 {name=l6 sig_type=std_logic lab=CLK_PH1}
 C {devices/lab_pin.sym} 570 -410 0 0 {name=l7 sig_type=std_logic lab=EN}
-C {devices/lab_pin.sym} 910 -450 0 1 {name=l8 sig_type=std_logic lab=BUS[1:10]}
+C {devices/lab_pin.sym} 910 -430 0 1 {name=l8 sig_type=std_logic lab=BUS[1:10]}
 C {lab_pin.sym} 570 -470 0 0 {name=p11 sig_type=std_logic lab="DATA_IN, Q[1:9]"}
 C {lab_pin.sym} 910 -470 0 1 {name=p12 sig_type=std_logic lab="Q[1:9], DATA_OUT"}
 C {iopin.sym} 110 -330 0 0 {name=p13 lab=VDDD}
