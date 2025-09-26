@@ -5,6 +5,30 @@
  <generator>drc: script='/foss/pdks/gf180mcuD/libs.tech/klayout/macros/gf180mcu_drc.lydrc'</generator>
  <top-cell>one_differential_output_ota</top-cell>
  <tags>
+  <tag>
+   <name>waived</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>red</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>green</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>blue</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>yellow</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>important</name>
+   <description/>
+  </tag>
  </tags>
  <categories>
   <category>
@@ -3983,29 +4007,5 @@
   </cell>
  </cells>
  <items>
-  <item>
-   <tags/>
-   <category>'MT.1'</category>
-   <cell>one_differential_output_ota</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (24.325,220.23;8.15,220.23)|(7.965,220.63;24.325,220.63)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'MT.1'</category>
-   <cell>one_differential_output_ota</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (74.47,220.23;58.255,220.23)|(58.255,220.63;74.655,220.63)</value>
-   </values>
-  </item>
  </items>
 </report-database>

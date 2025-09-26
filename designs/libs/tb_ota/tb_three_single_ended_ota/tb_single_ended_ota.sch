@@ -12,8 +12,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=11
+x1=1.44727e-05
+x2=1.6372656e-05
 divx=5
 subdivx=8
 xlabmag=1.0
@@ -34,8 +34,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+11
+x1=1.44727e-05
+x2=1.6372656e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -57,8 +57,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=11
+x1=1.44727e-05
+x2=1.6372656e-05
 divx=5
 subdivx=8
 xlabmag=1.0
@@ -79,8 +79,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+11
+x1=1.44727e-05
+x2=1.6372656e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -94,15 +94,15 @@ node="i(vmeas2)
 i(vmeas1)
 i(vmeas)"}
 B 2 1860 -1770 2660 -1370 {flags=graph
-y1=-8e-05
-y2=0.00088
+y1=-2.4e-06
+y2=0.0015
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+11
+x1=1.44727e-05
+x2=1.6372656e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -111,8 +111,10 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-color=4
-node=i(v.x3.vmeas3)}
+color="4 5 6"
+node="i(v.x3.vmeas)
+i(v.x3.vmeas1)
+\\"Diff;i(v.x3.vmeas) i(v.x3.vmeas1) -\\""}
 B 2 1060 -1770 1860 -1370 {flags=graph
 y1=-180
 y2=180
@@ -121,8 +123,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=11
+x1=1.44727e-05
+x2=1.6372656e-05
 divx=5
 subdivx=8
 xlabmag=1.0
@@ -135,6 +137,26 @@ unitx=1
 logx=1
 logy=0
 }
+B 2 1860 -2170 2660 -1770 {flags=graph
+y1=0
+y2=3.3
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=1.44727e-05
+x2=1.6372656e-05
+divx=5
+subdivx=4
+xlabmag=1.0
+ylabmag=1.0
+dataset=-1
+unitx=1
+logx=0
+logy=0
+color=4
+node=in1}
 T {tcleval(Aol: [to_eng [xschem raw value Aol 0]]
 UGF: [to_eng [xschem raw value ugf 0]]
 PM: [to_eng [xschem raw value pm 0]])} 20 -1190 0 0 0.6 0.6 {floater=1}
@@ -249,8 +271,8 @@ op
 show
 write tb_single_ended_ota.raw
 *dc vin1 -1 4 0.1
-*tran 10n 30u
-ac dec 100 1 100e9
+tran 10n 30u
+*ac dec 100 1 100e9
 
 let vout_mag =abs(v(out1))
 let vout_phase_margin = phase(v(out1))*180/pi + 180
@@ -331,8 +353,8 @@ C {lab_pin.sym} 780 -860 2 0 {name=p5 sig_type=std_logic lab=IBIAS}
 C {lab_pin.sym} 740 -860 2 1 {name=p6 sig_type=std_logic lab=VDD}
 C {lab_pin.sym} 740 -680 0 0 {name=p7 sig_type=std_logic lab=VSS}
 C {lab_pin.sym} 810 -770 2 0 {name=p8 sig_type=std_logic lab=OUT[1..3]}
-C {lab_pin.sym} 650 -790 2 1 {name=p12 sig_type=std_logic lab=NON_INV[1..3]}
-C {lab_pin.sym} 650 -750 2 1 {name=p13 sig_type=std_logic lab=INVERTING[1..3]}
+C {lab_pin.sym} 650 -790 2 1 {name=p12 sig_type=std_logic lab=in[1..3]}
+C {lab_pin.sym} 650 -750 2 1 {name=p13 sig_type=std_logic lab=out[1..3]}
 C {devices/vcvs.sym} 950 -370 0 1 {name=E3 value=0.5}
 C {devices/vcvs.sym} 1110 -370 0 0 {name=E4 value=-0.5}
 C {devices/vcvs.sym} 1230 -370 0 1 {name=E5 value=0.5}
