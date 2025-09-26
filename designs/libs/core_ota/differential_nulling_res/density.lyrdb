@@ -5,30 +5,6 @@
  <generator>drc: script='/foss/pdks/gf180mcuD/libs.tech/klayout/macros/gf180mcu_drc.lydrc'</generator>
  <top-cell>differential_nulling_res</top-cell>
  <tags>
-  <tag>
-   <name>waived</name>
-   <description/>
-  </tag>
-  <tag>
-   <name>red</name>
-   <description/>
-  </tag>
-  <tag>
-   <name>green</name>
-   <description/>
-  </tag>
-  <tag>
-   <name>blue</name>
-   <description/>
-  </tag>
-  <tag>
-   <name>yellow</name>
-   <description/>
-  </tag>
-  <tag>
-   <name>important</name>
-   <description/>
-  </tag>
  </tags>
  <categories>
   <category>
@@ -99,7 +75,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (10.605,-8.495;10.605,-8.115;11.265,-8.115;11.265,-8.495)</value>
+    <value>polygon: (-4.845,-5.395;-4.845,-4.895;60.195,-4.895;60.195,-5.395)</value>
    </values>
   </item>
   <item>
@@ -111,7 +87,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (11.545,-8.495;11.545,-7.995;10.885,-7.335;10.885,-7.055;10.605,-7.055;10.605,-6.675;11.265,-6.675;11.265,-7.175;11.925,-7.835;11.925,-8.115;12.205,-8.115;12.205,-8.495)</value>
+    <value>polygon: (-5.625,-4.615;-5.625,-4.115;60.975,-4.115;60.975,-4.615)</value>
    </values>
   </item>
   <item>
@@ -123,7 +99,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (11.545,-7.055;11.545,-6.555;10.885,-5.895;10.885,-5.615;10.605,-5.615;10.605,-5.235;11.265,-5.235;11.265,-5.735;11.925,-6.395;11.925,-6.675;12.205,-6.675;12.205,-7.055)</value>
+    <value>polygon: (-4.065,-3.525;-4.065,-3.145;-3.685,-3.145;-3.685,-3.525)</value>
    </values>
   </item>
   <item>
@@ -135,7 +111,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (11.545,-5.615;11.545,-5.235;12.205,-5.235;12.205,-5.615)</value>
+    <value>polygon: (10.225,-3.525;10.225,-3.145;10.605,-3.145;10.605,-3.525)</value>
    </values>
   </item>
   <item>
@@ -147,7 +123,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-4.065,-3.485;-4.065,-3.105;-3.685,-3.105;-3.685,-3.485)</value>
+    <value>polygon: (12.205,-3.525;12.205,-3.145;12.585,-3.145;12.585,-3.525)</value>
    </values>
   </item>
   <item>
@@ -159,7 +135,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (10.225,-3.485;10.225,-3.105;10.605,-3.105;10.605,-3.485)</value>
+    <value>polygon: (26.495,-3.525;26.495,-3.145;26.875,-3.145;26.875,-3.525)</value>
    </values>
   </item>
   <item>
@@ -171,7 +147,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (12.205,-3.485;12.205,-3.105;12.585,-3.105;12.585,-3.485)</value>
+    <value>polygon: (28.475,-3.525;28.475,-3.145;28.855,-3.145;28.855,-3.525)</value>
    </values>
   </item>
   <item>
@@ -183,7 +159,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (26.495,-3.485;26.495,-3.105;26.875,-3.105;26.875,-3.485)</value>
+    <value>polygon: (42.765,-3.525;42.765,-3.145;43.145,-3.145;43.145,-3.525)</value>
    </values>
   </item>
   <item>
@@ -195,7 +171,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (28.475,-3.485;28.475,-3.105;28.855,-3.105;28.855,-3.485)</value>
+    <value>polygon: (44.745,-3.525;44.745,-3.145;45.125,-3.145;45.125,-3.525)</value>
    </values>
   </item>
   <item>
@@ -207,7 +183,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (42.765,-3.485;42.765,-3.105;43.145,-3.105;43.145,-3.485)</value>
+    <value>polygon: (59.035,-3.525;59.035,-3.145;59.415,-3.145;59.415,-3.525)</value>
    </values>
   </item>
   <item>
@@ -219,7 +195,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (44.745,-3.485;44.745,-3.105;45.125,-3.105;45.125,-3.485)</value>
+    <value>polygon: (-4.845,-2.085;-4.845,-1.705;-3.685,-1.705;-3.685,-2.085)</value>
    </values>
   </item>
   <item>
@@ -231,7 +207,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (59.035,-3.485;59.035,-3.105;59.415,-3.105;59.415,-3.485)</value>
+    <value>polygon: (10.225,-2.085;10.225,-1.705;11.265,-1.705;11.265,-2.085)</value>
    </values>
   </item>
   <item>
@@ -243,7 +219,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-4.065,-2.085;-4.065,-1.705;-3.685,-1.705;-3.685,-2.085)</value>
+    <value>polygon: (26.495,-2.085;26.495,-1.705;27.535,-1.705;27.535,-2.085)</value>
    </values>
   </item>
   <item>
@@ -255,7 +231,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (10.225,-2.085;10.225,-1.705;10.605,-1.705;10.605,-2.085)</value>
+    <value>polygon: (42.765,-2.085;42.765,-1.705;43.805,-1.705;43.805,-2.085)</value>
    </values>
   </item>
   <item>
@@ -267,7 +243,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (12.205,-2.085;12.205,-1.705;12.585,-1.705;12.585,-2.085)</value>
+    <value>polygon: (59.035,-2.085;59.035,-1.705;60.975,-1.705;60.975,-2.085)</value>
    </values>
   </item>
   <item>
@@ -279,7 +255,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (26.495,-2.085;26.495,-1.705;26.875,-1.705;26.875,-2.085)</value>
+    <value>polygon: (-5.625,-0.645;-5.625,-0.265;-3.685,-0.265;-3.685,-0.645)</value>
    </values>
   </item>
   <item>
@@ -291,7 +267,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (28.475,-2.085;28.475,-1.705;28.855,-1.705;28.855,-2.085)</value>
+    <value>polygon: (11.545,-2.085;11.545,-1.585;10.885,-0.925;10.885,-0.645;10.225,-0.645;10.225,-0.265;11.265,-0.265;11.265,-0.765;11.925,-1.425;11.925,-1.705;12.585,-1.705;12.585,-2.085)</value>
    </values>
   </item>
   <item>
@@ -303,7 +279,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (42.765,-2.085;42.765,-1.705;43.145,-1.705;43.145,-2.085)</value>
+    <value>polygon: (27.815,-2.085;27.815,-1.585;27.155,-0.925;27.155,-0.645;26.495,-0.645;26.495,-0.265;27.535,-0.265;27.535,-0.765;28.195,-1.425;28.195,-1.705;28.855,-1.705;28.855,-2.085)</value>
    </values>
   </item>
   <item>
@@ -315,7 +291,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (44.745,-2.085;44.745,-1.705;45.125,-1.705;45.125,-2.085)</value>
+    <value>polygon: (44.085,-2.085;44.085,-1.585;43.425,-0.925;43.425,-0.645;42.765,-0.645;42.765,-0.265;43.805,-0.265;43.805,-0.765;44.465,-1.425;44.465,-1.705;45.125,-1.705;45.125,-2.085)</value>
    </values>
   </item>
   <item>
@@ -327,7 +303,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (59.035,-2.085;59.035,-1.705;59.415,-1.705;59.415,-2.085)</value>
+    <value>polygon: (59.035,-0.645;59.035,-0.265;60.195,-0.265;60.195,-0.645)</value>
    </values>
   </item>
   <item>
@@ -339,7 +315,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-4.065,-0.685;-4.065,-0.305;-3.685,-0.305;-3.685,-0.685)</value>
+    <value>polygon: (-4.845,0.795;-4.845,1.175;-3.685,1.175;-3.685,0.795)</value>
    </values>
   </item>
   <item>
@@ -351,7 +327,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (10.225,-0.685;10.225,-0.305;10.605,-0.305;10.605,-0.685)</value>
+    <value>polygon: (11.545,-0.645;11.545,-0.145;10.885,0.515;10.885,0.795;10.225,0.795;10.225,1.175;11.265,1.175;11.265,0.675;11.925,0.015;11.925,-0.265;12.585,-0.265;12.585,-0.645)</value>
    </values>
   </item>
   <item>
@@ -363,7 +339,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (12.205,-0.685;12.205,-0.305;12.585,-0.305;12.585,-0.685)</value>
+    <value>polygon: (27.815,-0.645;27.815,-0.145;27.155,0.515;27.155,0.795;26.495,0.795;26.495,1.175;27.535,1.175;27.535,0.675;28.195,0.015;28.195,-0.265;28.855,-0.265;28.855,-0.645)</value>
    </values>
   </item>
   <item>
@@ -375,7 +351,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (26.495,-0.685;26.495,-0.305;26.875,-0.305;26.875,-0.685)</value>
+    <value>polygon: (44.085,-0.645;44.085,-0.145;43.425,0.515;43.425,0.795;42.765,0.795;42.765,1.175;43.805,1.175;43.805,0.675;44.465,0.015;44.465,-0.265;45.125,-0.265;45.125,-0.645)</value>
    </values>
   </item>
   <item>
@@ -387,7 +363,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (28.475,-0.685;28.475,-0.305;28.855,-0.305;28.855,-0.685)</value>
+    <value>polygon: (59.035,0.795;59.035,1.175;60.975,1.175;60.975,0.795)</value>
    </values>
   </item>
   <item>
@@ -399,7 +375,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (42.765,-0.685;42.765,-0.305;43.145,-0.305;43.145,-0.685)</value>
+    <value>polygon: (-5.625,2.235;-5.625,2.615;-3.685,2.615;-3.685,2.235)</value>
    </values>
   </item>
   <item>
@@ -411,7 +387,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (44.745,-0.685;44.745,-0.305;45.125,-0.305;45.125,-0.685)</value>
+    <value>polygon: (11.545,0.795;11.545,1.295;10.885,1.955;10.885,2.235;10.225,2.235;10.225,2.615;11.265,2.615;11.265,2.115;11.925,1.455;11.925,1.175;12.585,1.175;12.585,0.795)</value>
    </values>
   </item>
   <item>
@@ -423,7 +399,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (59.035,-0.685;59.035,-0.305;59.415,-0.305;59.415,-0.685)</value>
+    <value>polygon: (27.815,0.795;27.815,1.295;27.155,1.955;27.155,2.235;26.495,2.235;26.495,2.615;27.535,2.615;27.535,2.115;28.195,1.455;28.195,1.175;28.855,1.175;28.855,0.795)</value>
    </values>
   </item>
   <item>
@@ -435,7 +411,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-4.065,0.715;-4.065,1.095;-3.685,1.095;-3.685,0.715)</value>
+    <value>polygon: (44.085,0.795;44.085,1.295;43.425,1.955;43.425,2.235;42.765,2.235;42.765,2.615;43.805,2.615;43.805,2.115;44.465,1.455;44.465,1.175;45.125,1.175;45.125,0.795)</value>
    </values>
   </item>
   <item>
@@ -447,7 +423,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (10.225,0.715;10.225,1.095;10.605,1.095;10.605,0.715)</value>
+    <value>polygon: (59.035,2.235;59.035,2.615;60.195,2.615;60.195,2.235)</value>
    </values>
   </item>
   <item>
@@ -459,7 +435,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (12.205,0.715;12.205,1.095;12.585,1.095;12.585,0.715)</value>
+    <value>polygon: (-4.845,3.675;-4.845,4.055;-3.685,4.055;-3.685,3.675)</value>
    </values>
   </item>
   <item>
@@ -471,7 +447,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (26.495,0.715;26.495,1.095;26.875,1.095;26.875,0.715)</value>
+    <value>polygon: (11.545,2.235;11.545,2.735;10.885,3.395;10.885,3.675;10.225,3.675;10.225,4.055;11.265,4.055;11.265,3.555;11.925,2.895;11.925,2.615;12.585,2.615;12.585,2.235)</value>
    </values>
   </item>
   <item>
@@ -483,7 +459,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (28.475,0.715;28.475,1.095;28.855,1.095;28.855,0.715)</value>
+    <value>polygon: (11.545,3.675;11.545,4.055;12.585,4.055;12.585,3.675)</value>
    </values>
   </item>
   <item>
@@ -495,7 +471,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (42.765,0.715;42.765,1.095;43.145,1.095;43.145,0.715)</value>
+    <value>polygon: (27.815,2.235;27.815,2.735;27.155,3.395;27.155,3.675;26.495,3.675;26.495,4.055;27.535,4.055;27.535,3.555;28.195,2.895;28.195,2.615;28.855,2.615;28.855,2.235)</value>
    </values>
   </item>
   <item>
@@ -507,7 +483,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (44.745,0.715;44.745,1.095;45.125,1.095;45.125,0.715)</value>
+    <value>polygon: (27.815,3.675;27.815,4.055;28.855,4.055;28.855,3.675)</value>
    </values>
   </item>
   <item>
@@ -519,7 +495,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (59.035,0.715;59.035,1.095;59.415,1.095;59.415,0.715)</value>
+    <value>polygon: (44.085,2.235;44.085,2.735;43.425,3.395;43.425,3.675;42.765,3.675;42.765,4.055;43.805,4.055;43.805,3.555;44.465,2.895;44.465,2.615;45.125,2.615;45.125,2.235)</value>
    </values>
   </item>
   <item>
@@ -531,7 +507,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-4.065,2.115;-4.065,2.495;-3.685,2.495;-3.685,2.115)</value>
+    <value>polygon: (44.085,3.675;44.085,4.055;45.125,4.055;45.125,3.675)</value>
    </values>
   </item>
   <item>
@@ -543,7 +519,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (10.225,2.115;10.225,2.495;10.605,2.495;10.605,2.115)</value>
+    <value>polygon: (59.035,3.675;59.035,4.055;60.975,4.055;60.975,3.675)</value>
    </values>
   </item>
   <item>
@@ -555,7 +531,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (12.205,2.115;12.205,2.495;12.585,2.495;12.585,2.115)</value>
+    <value>polygon: (-4.065,5.115;-4.065,5.495;-3.685,5.495;-3.685,5.115)</value>
    </values>
   </item>
   <item>
@@ -567,7 +543,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (26.495,2.115;26.495,2.495;26.875,2.495;26.875,2.115)</value>
+    <value>polygon: (10.225,5.115;10.225,5.495;10.605,5.495;10.605,5.115)</value>
    </values>
   </item>
   <item>
@@ -579,7 +555,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (28.475,2.115;28.475,2.495;28.855,2.495;28.855,2.115)</value>
+    <value>polygon: (12.205,5.115;12.205,5.495;12.585,5.495;12.585,5.115)</value>
    </values>
   </item>
   <item>
@@ -591,7 +567,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (42.765,2.115;42.765,2.495;43.145,2.495;43.145,2.115)</value>
+    <value>polygon: (26.495,5.115;26.495,5.495;26.875,5.495;26.875,5.115)</value>
    </values>
   </item>
   <item>
@@ -603,7 +579,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (44.745,2.115;44.745,2.495;45.125,2.495;45.125,2.115)</value>
+    <value>polygon: (28.475,5.115;28.475,5.495;28.855,5.495;28.855,5.115)</value>
    </values>
   </item>
   <item>
@@ -615,7 +591,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (59.035,2.115;59.035,2.495;59.415,2.495;59.415,2.115)</value>
+    <value>polygon: (42.765,5.115;42.765,5.495;43.145,5.495;43.145,5.115)</value>
    </values>
   </item>
   <item>
@@ -627,7 +603,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-4.065,3.515;-4.065,3.895;-3.685,3.895;-3.685,3.515)</value>
+    <value>polygon: (44.745,5.115;44.745,5.495;45.125,5.495;45.125,5.115)</value>
    </values>
   </item>
   <item>
@@ -639,7 +615,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (10.225,3.515;10.225,3.895;10.605,3.895;10.605,3.515)</value>
+    <value>polygon: (59.035,5.115;59.035,5.495;59.415,5.495;59.415,5.115)</value>
    </values>
   </item>
   <item>
@@ -651,7 +627,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (12.205,3.515;12.205,3.895;12.585,3.895;12.585,3.515)</value>
+    <value>polygon: (-4.825,6.085;-4.825,6.585;60.71,6.585;60.71,6.085)</value>
    </values>
   </item>
   <item>
@@ -663,7 +639,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (26.495,3.515;26.495,3.895;26.875,3.895;26.875,3.515)</value>
+    <value>polygon: (-4.825,6.865;-4.825,7.365;60.71,7.365;60.71,6.865)</value>
    </values>
   </item>
   <item>
@@ -675,547 +651,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (28.475,3.515;28.475,3.895;28.855,3.895;28.855,3.515)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>differential_nulling_res</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (42.765,3.515;42.765,3.895;43.145,3.895;43.145,3.515)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>differential_nulling_res</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (44.745,3.515;44.745,3.895;45.125,3.895;45.125,3.515)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>differential_nulling_res</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (59.035,3.515;59.035,3.895;59.415,3.895;59.415,3.515)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>differential_nulling_res</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (-4.065,4.915;-4.065,5.295;-3.685,5.295;-3.685,4.915)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>differential_nulling_res</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (10.225,4.915;10.225,5.295;10.605,5.295;10.605,4.915)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>differential_nulling_res</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (12.205,4.915;12.205,5.295;12.585,5.295;12.585,4.915)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>differential_nulling_res</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (26.495,4.915;26.495,5.295;26.875,5.295;26.875,4.915)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>differential_nulling_res</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (28.475,4.915;28.475,5.295;28.855,5.295;28.855,4.915)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>differential_nulling_res</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (42.765,4.915;42.765,5.295;43.145,5.295;43.145,4.915)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>differential_nulling_res</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (44.745,4.915;44.745,5.295;45.125,5.295;45.125,4.915)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>differential_nulling_res</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (59.035,4.915;59.035,5.295;59.415,5.295;59.415,4.915)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>differential_nulling_res</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (-4.825,6.065;-4.825,6.565;60.71,6.565;60.71,6.065)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>differential_nulling_res</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (-4.825,6.845;-4.825,7.345;60.71,7.345;60.71,6.845)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>differential_nulling_res</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (22.57,15.215;22.57,16.915;22.95,16.915;22.95,15.215)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>differential_nulling_res</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (23.97,15.875;23.97,16.915;24.35,16.915;24.35,15.875)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>differential_nulling_res</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (25.37,15.215;25.37,16.915;25.75,16.915;25.75,15.215)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>differential_nulling_res</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (26.77,15.875;26.77,16.915;27.15,16.915;27.15,15.875)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>differential_nulling_res</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (22.57,22.455;22.57,22.835;22.95,22.835;22.95,22.455)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>differential_nulling_res</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (25.37,22.455;25.37,22.835;25.75,22.835;25.75,22.455)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>differential_nulling_res</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (23.97,22.455;23.97,22.675;22.57,24.075;22.57,24.455;22.95,24.455;22.95,24.235;24.35,22.835;24.35,22.455)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>differential_nulling_res</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (23.97,24.075;23.97,24.455;24.35,24.455;24.35,24.075)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>differential_nulling_res</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (26.77,22.455;26.77,22.675;25.37,24.075;25.37,24.455;25.75,24.455;25.75,24.235;27.15,22.835;27.15,22.455)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>differential_nulling_res</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (26.77,24.075;26.77,24.455;27.15,24.455;27.15,24.075)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>differential_nulling_res</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (22.57,29.995;22.57,30.375;22.95,30.375;22.95,29.995)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>differential_nulling_res</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (25.37,29.995;25.37,30.375;25.75,30.375;25.75,29.995)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>differential_nulling_res</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (23.97,29.995;23.97,30.215;22.57,31.615;22.57,31.995;22.95,31.995;22.95,31.775;24.35,30.375;24.35,29.995)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>differential_nulling_res</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (23.97,31.615;23.97,31.995;24.35,31.995;24.35,31.615)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>differential_nulling_res</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (26.77,29.995;26.77,30.215;25.37,31.615;25.37,31.995;25.75,31.995;25.75,31.775;27.15,30.375;27.15,29.995)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>differential_nulling_res</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (26.77,31.615;26.77,31.995;27.15,31.995;27.15,31.615)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>differential_nulling_res</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (22.57,37.535;22.57,37.915;22.95,37.915;22.95,37.535)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>differential_nulling_res</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (25.37,37.535;25.37,37.915;25.75,37.915;25.75,37.535)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>differential_nulling_res</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (23.97,37.535;23.97,37.755;22.57,39.155;22.57,39.535;22.95,39.535;22.95,39.315;24.35,37.915;24.35,37.535)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>differential_nulling_res</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (23.97,39.155;23.97,39.535;24.35,39.535;24.35,39.155)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>differential_nulling_res</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (26.77,37.535;26.77,37.755;25.37,39.155;25.37,39.535;25.75,39.535;25.75,39.315;27.15,37.915;27.15,37.535)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>differential_nulling_res</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (26.77,39.155;26.77,39.535;27.15,39.535;27.15,39.155)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>differential_nulling_res</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (22.57,45.075;22.57,45.455;22.95,45.455;22.95,45.075)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>differential_nulling_res</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (25.37,45.075;25.37,45.455;25.75,45.455;25.75,45.075)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>differential_nulling_res</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (23.97,45.075;23.97,45.295;22.57,46.695;22.57,47.075;22.95,47.075;22.95,46.855;24.35,45.455;24.35,45.075)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>differential_nulling_res</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (23.97,46.695;23.97,47.075;24.35,47.075;24.35,46.695)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>differential_nulling_res</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (26.77,45.075;26.77,45.295;25.37,46.695;25.37,47.075;25.75,47.075;25.75,46.855;27.15,45.455;27.15,45.075)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>differential_nulling_res</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (26.77,46.695;26.77,47.075;27.15,47.075;27.15,46.695)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>differential_nulling_res</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (22.57,52.615;22.57,52.995;22.95,52.995;22.95,52.615)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>differential_nulling_res</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (23.97,52.615;23.97,52.995;25.75,52.995;25.75,52.615)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>differential_nulling_res</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (26.77,52.615;26.77,52.995;27.15,52.995;27.15,52.615)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>differential_nulling_res</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (19.42,14.075;19.42,55.455;30.3,55.455;30.3,14.075/20.28,14.935;29.44,14.935;29.44,16.535;28.17,16.535;28.17,16.915;29.44,16.915;29.44,22.455;28.17,22.455;28.17,22.835;29.44,22.835;29.44,24.075;28.17,24.075;28.17,24.455;29.44,24.455;29.44,29.995;28.17,29.995;28.17,30.375;29.44,30.375;29.44,31.615;28.17,31.615;28.17,31.995;29.44,31.995;29.44,37.535;28.17,37.535;28.17,37.915;29.44,37.915;29.44,39.155;28.17,39.155;28.17,39.535;29.44,39.535;29.44,45.075;28.17,45.075;28.17,45.455;29.44,45.455;29.44,46.695;28.17,46.695;28.17,47.075;29.44,47.075;29.44,52.615;28.17,52.615;28.17,52.995;29.44,52.995;29.44,54.595;20.28,54.595;20.28,52.995;21.55,52.995;21.55,52.615;20.28,52.615;20.28,47.075;21.55,47.075;21.55,46.695;20.28,46.695;20.28,45.455;21.55,45.455;21.55,45.075;20.28,45.075;20.28,39.535;21.55,39.535;21.55,39.155;20.28,39.155;20.28,37.915;21.55,37.915;21.55,37.535;20.28,37.535;20.28,31.995;21.55,31.995;21.55,31.615;20.28,31.615;20.28,30.375;21.55,30.375;21.55,29.995;20.28,29.995;20.28,24.455;21.55,24.455;21.55,24.075;20.28,24.075;20.28,22.835;21.55,22.835;21.55,22.455;20.28,22.455;20.28,16.915;21.55,16.915;21.55,16.535;20.28,16.535)</value>
+    <value>polygon: (-6.785,-6.555;-6.785,8.525;62.135,8.525;62.135,-6.555/-5.925,-5.695;61.275,-5.695;61.275,7.665;-5.925,7.665)</value>
    </values>
   </item>
   <item>
@@ -1227,7 +663,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (10.885,-8.495;10.885,-7.835;11.545,-7.175;11.545,-6.675;11.925,-6.675;11.925,-7.335;11.265,-7.995;11.265,-8.495)</value>
+    <value>polygon: (-4.065,-6.265;-4.065,-3.145;-3.685,-3.145;-3.685,-6.265)</value>
    </values>
   </item>
   <item>
@@ -1239,7 +675,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (10.885,-7.055;10.885,-6.395;11.545,-5.735;11.545,-5.235;11.925,-5.235;11.925,-5.895;11.265,-6.555;11.265,-7.055)</value>
+    <value>polygon: (10.225,-6.265;10.225,-3.145;10.605,-3.145;10.605,-6.265)</value>
    </values>
   </item>
   <item>
@@ -1251,7 +687,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (27.155,-1.955;27.155,6.45;27.535,6.45;27.535,-1.955)</value>
+    <value>polygon: (12.205,-6.265;12.205,-3.145;12.585,-3.145;12.585,-6.265)</value>
    </values>
   </item>
   <item>
@@ -1263,7 +699,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (27.815,-1.955;27.815,6.45;28.195,6.45;28.195,-1.955)</value>
+    <value>polygon: (26.495,-6.265;26.495,-3.145;26.875,-3.145;26.875,-6.265)</value>
    </values>
   </item>
   <item>
@@ -1275,7 +711,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (43.425,-1.955;43.425,6.45;43.805,6.45;43.805,-1.955)</value>
+    <value>polygon: (28.475,-6.265;28.475,-3.145;28.855,-3.145;28.855,-6.265)</value>
    </values>
   </item>
   <item>
@@ -1287,7 +723,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (44.085,-1.955;44.085,6.45;44.465,6.45;44.465,-1.955)</value>
+    <value>polygon: (42.765,-6.265;42.765,-3.145;43.145,-3.145;43.145,-6.265)</value>
    </values>
   </item>
   <item>
@@ -1299,7 +735,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (59.695,-1.955;59.695,6.45;60.075,6.45;60.075,-1.955)</value>
+    <value>polygon: (44.745,-6.265;44.745,-3.145;45.125,-3.145;45.125,-6.265)</value>
    </values>
   </item>
   <item>
@@ -1311,7 +747,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (60.355,-1.955;60.355,6.45;60.735,6.45;60.735,-1.955)</value>
+    <value>polygon: (59.035,-6.265;59.035,-3.145;59.415,-3.145;59.415,-6.265)</value>
    </values>
   </item>
   <item>
@@ -1323,7 +759,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (22.57,15.215;22.57,15.595;25.75,15.595;25.75,15.215)</value>
+    <value>polygon: (27.815,-5.395;27.815,-1.705;28.195,-1.705;28.195,-5.395)</value>
    </values>
   </item>
   <item>
@@ -1335,7 +771,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (23.97,15.875;23.97,16.255;27.15,16.255;27.15,15.875)</value>
+    <value>polygon: (10.885,-2.085;10.885,-1.425;11.545,-0.765;11.545,-0.265;11.925,-0.265;11.925,-0.925;11.265,-1.585;11.265,-2.085)</value>
    </values>
   </item>
   <item>
@@ -1347,7 +783,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (22.57,22.455;22.57,22.835;23.97,24.235;23.97,24.455;24.35,24.455;24.35,24.075;22.95,22.675;22.95,22.455)</value>
+    <value>polygon: (27.155,-4.615;27.155,-1.425;27.815,-0.765;27.815,-0.265;28.195,-0.265;28.195,-0.925;27.535,-1.585;27.535,-4.615)</value>
    </values>
   </item>
   <item>
@@ -1359,7 +795,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (25.37,22.455;25.37,22.835;26.77,24.235;26.77,24.455;27.15,24.455;27.15,24.075;25.75,22.675;25.75,22.455)</value>
+    <value>polygon: (43.425,-2.085;43.425,-1.425;44.085,-0.765;44.085,-0.265;44.465,-0.265;44.465,-0.925;43.805,-1.585;43.805,-2.085)</value>
    </values>
   </item>
   <item>
@@ -1371,7 +807,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (22.57,29.995;22.57,30.375;23.97,31.775;23.97,31.995;24.35,31.995;24.35,31.615;22.95,30.215;22.95,29.995)</value>
+    <value>polygon: (10.885,-0.645;10.885,0.015;11.545,0.675;11.545,1.175;11.925,1.175;11.925,0.515;11.265,-0.145;11.265,-0.645)</value>
    </values>
   </item>
   <item>
@@ -1383,7 +819,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (25.37,29.995;25.37,30.375;26.77,31.775;26.77,31.995;27.15,31.995;27.15,31.615;25.75,30.215;25.75,29.995)</value>
+    <value>polygon: (27.155,-0.645;27.155,0.015;27.815,0.675;27.815,1.175;28.195,1.175;28.195,0.515;27.535,-0.145;27.535,-0.645)</value>
    </values>
   </item>
   <item>
@@ -1395,7 +831,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (22.57,37.535;22.57,37.915;23.97,39.315;23.97,39.535;24.35,39.535;24.35,39.155;22.95,37.755;22.95,37.535)</value>
+    <value>polygon: (43.425,-0.645;43.425,0.015;44.085,0.675;44.085,1.175;44.465,1.175;44.465,0.515;43.805,-0.145;43.805,-0.645)</value>
    </values>
   </item>
   <item>
@@ -1407,7 +843,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (25.37,37.535;25.37,37.915;26.77,39.315;26.77,39.535;27.15,39.535;27.15,39.155;25.75,37.755;25.75,37.535)</value>
+    <value>polygon: (-5.625,-4.615;-5.625,2.615;-5.125,2.615;-5.125,-4.615)</value>
    </values>
   </item>
   <item>
@@ -1419,7 +855,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (22.57,45.075;22.57,45.455;23.97,46.855;23.97,47.075;24.35,47.075;24.35,46.695;22.95,45.295;22.95,45.075)</value>
+    <value>polygon: (10.885,0.795;10.885,1.455;11.545,2.115;11.545,2.615;11.925,2.615;11.925,1.955;11.265,1.295;11.265,0.795)</value>
    </values>
   </item>
   <item>
@@ -1431,7 +867,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (25.37,45.075;25.37,45.455;26.77,46.855;26.77,47.075;27.15,47.075;27.15,46.695;25.75,45.295;25.75,45.075)</value>
+    <value>polygon: (27.155,0.795;27.155,1.455;27.815,2.115;27.815,2.615;28.195,2.615;28.195,1.955;27.535,1.295;27.535,0.795)</value>
    </values>
   </item>
   <item>
@@ -1443,7 +879,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (22.57,52.615;22.57,55.455;22.95,55.455;22.95,52.615)</value>
+    <value>polygon: (43.425,0.795;43.425,1.455;44.085,2.115;44.085,2.615;44.465,2.615;44.465,1.955;43.805,1.295;43.805,0.795)</value>
    </values>
   </item>
   <item>
@@ -1455,7 +891,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (24.67,52.615;24.67,55.455;25.05,55.455;25.05,52.615)</value>
+    <value>polygon: (59.695,-5.395;59.695,2.615;60.195,2.615;60.195,-5.395)</value>
    </values>
   </item>
   <item>
@@ -1467,7 +903,175 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (26.77,52.615;26.77,55.455;27.15,55.455;27.15,52.615)</value>
+    <value>polygon: (-4.845,-5.395;-4.845,4.055;-4.345,4.055;-4.345,-5.395)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_nulling_res</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (27.155,2.235;27.155,2.895;27.815,3.555;27.815,4.055;28.195,4.055;28.195,3.395;27.535,2.735;27.535,2.235)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_nulling_res</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (60.475,-4.615;60.475,4.055;60.975,4.055;60.975,-4.615)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_nulling_res</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (10.885,3.675;10.885,6.585;11.265,6.585;11.265,3.675)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_nulling_res</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (43.425,3.675;43.425,6.585;43.805,6.585;43.805,3.675)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_nulling_res</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (10.885,2.235;10.885,2.895;11.545,3.555;11.545,7.365;11.925,7.365;11.925,3.395;11.265,2.735;11.265,2.235)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_nulling_res</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (43.425,2.235;43.425,2.895;44.085,3.555;44.085,7.365;44.465,7.365;44.465,3.395;43.805,2.735;43.805,2.235)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_nulling_res</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-4.065,5.115;-4.065,8.235;-3.685,8.235;-3.685,5.115)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_nulling_res</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (10.225,5.115;10.225,8.235;10.605,8.235;10.605,5.115)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_nulling_res</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (12.205,5.115;12.205,8.235;12.585,8.235;12.585,5.115)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_nulling_res</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (26.495,5.115;26.495,8.235;26.875,8.235;26.875,5.115)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_nulling_res</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (28.475,5.115;28.475,8.235;28.855,8.235;28.855,5.115)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_nulling_res</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (42.765,5.115;42.765,8.235;43.145,8.235;43.145,5.115)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_nulling_res</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (44.745,5.115;44.745,8.235;45.125,8.235;45.125,5.115)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_nulling_res</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (59.035,5.115;59.035,8.235;59.415,8.235;59.415,5.115)</value>
    </values>
   </item>
  </items>

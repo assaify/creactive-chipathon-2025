@@ -1,0 +1,42 @@
+
+Circuit 1 cell ppolyf_u_1k and Circuit 2 cell ppolyf_u_1k are black boxes.
+Warning: Equate pins:  cell ppolyf_u_1k is a placeholder, treated as a black box.
+Warning: Equate pins:  cell ppolyf_u_1k is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: ppolyf_u_1k                     |Circuit 2: ppolyf_u_1k                     
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes ppolyf_u_1k and ppolyf_u_1k are equivalent.
+Flattening unmatched subcell res_13p37u in circuit differential_nulling_res_lvs (1)(28 instances)
+
+Class differential_nulling_res_lvs (1):  Merged 25 parallel devices.
+Subcircuit summary:
+Circuit 1: differential_nulling_res        |Circuit 2: differential_nulling_res_lvs    
+-------------------------------------------|-------------------------------------------
+ppolyf_u_1k (28->3)                        |ppolyf_u_1k (28->3)                        
+Number of devices: 3                       |Number of devices: 3                       
+Number of nets: 5                          |Number of nets: 5                          
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: differential_nulling_res        |Circuit 2: differential_nulling_res_lvs    
+-------------------------------------------|-------------------------------------------
+B2                                         |B2                                         
+A2                                         |A2                                         
+B1                                         |B1                                         
+A1                                         |A1                                         
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes differential_nulling_res and differential_nulling_res_lvs are equivalent.
+
+Final result: Circuits match uniquely.
+.

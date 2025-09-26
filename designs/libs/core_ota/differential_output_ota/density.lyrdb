@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report-database>
+ <description>GF180 DENSITY DRC Run Report at</description>
+ <original-file>/foss/designs/creactive-chipathon-2025/designs/libs/core_ota/differential_output_ota/differential_output_ota.gds</original-file>
+ <generator>drc: script='/foss/pdks/gf180mcuD/libs.tech/klayout/macros/gf180mcu_drc.lydrc'</generator>
+ <top-cell>differential_output_ota</top-cell>
+ <tags>
+  <tag>
+   <name>waived</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>red</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>green</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>blue</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>yellow</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>important</name>
+   <description/>
+  </tag>
+ </tags>
+ <categories>
+  <category>
+   <name>M2.4</name>
+   <description>M2.4 : Metal2 coverage over the entire die shall be &gt;30%
+                (Refer to section 13.0 for Dummy Metal fill guidelines.
+                 Customer needs to ensure enough dummy metal to satisfy Metal2 coverage) : 30%</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M3.4</name>
+   <description>M3.4 : metal3 coverage over the entire die shall be &gt;30%
+                    (Refer to section 13.0 for Dummy Metal fill guidelines.
+                    Customer needs to ensure enough dummy metal to satisfy metal3 coverage) : 30%</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M4.4</name>
+   <description>M4.4 : metal4 coverage over the entire die shall be &gt;30%
+                    (Refer to section 13.0 for Dummy Metal fill guidelines.
+                    Customer needs to ensure enough dummy metal to satisfy metal4 coverage) : 30%</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M5.4</name>
+   <description>M5.4 : metal5 coverage over the entire die shall be &gt;30%
+                    (Refer to section 13.0 for Dummy Metal fill guidelines.
+                    Customer needs to ensure enough dummy metal to satisfy metal5 coverage) : 30%</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MT.3</name>
+   <description>MT.3 : MetalTop coverage over the entire die shall be &gt;30%
+                                (Refer to section 10.3 for Dummy Metal-fill guidelines.
+                                Customer needs to ensure enough dummy metal to satisfy Metaln coverage) : 30%</description>
+   <categories>
+   </categories>
+  </category>
+ </categories>
+ <cells>
+  <cell>
+   <name>differential_output_ota</name>
+   <variant/>
+   <layout-name/>
+   <references>
+   </references>
+  </cell>
+ </cells>
+ <items>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_output_ota</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-4.27,-5.1;-5.67,-3.7;-5.89,-3.7;-5.89,-3.32;-5.51,-3.32;-4.11,-4.72;-3.89,-4.72;-3.89,-5.1)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_output_ota</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (3.27,-5.1;1.87,-3.7;1.65,-3.7;1.65,-3.32;2.03,-3.32;3.43,-4.72;3.65,-4.72;3.65,-5.1)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_output_ota</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (10.81,-5.1;9.41,-3.7;9.19,-3.7;9.19,-3.32;9.57,-3.32;10.97,-4.72;11.19,-4.72;11.19,-5.1)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_output_ota</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (18.35,-5.1;16.95,-3.7;16.73,-3.7;16.73,-3.32;17.11,-3.32;18.51,-4.72;18.73,-4.72;18.73,-5.1)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_output_ota</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-4.27,-2.3;-5.67,-0.9;-5.89,-0.9;-5.89,-0.52;-5.51,-0.52;-4.11,-1.92;-3.89,-1.92;-3.89,-2.3)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_output_ota</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (3.27,-2.3;1.87,-0.9;1.65,-0.9;1.65,-0.52;2.03,-0.52;3.43,-1.92;3.65,-1.92;3.65,-2.3)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_output_ota</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (10.81,-2.3;9.41,-0.9;9.19,-0.9;9.19,-0.52;9.57,-0.52;10.97,-1.92;11.19,-1.92;11.19,-2.3)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_output_ota</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (18.35,-2.3;16.95,-0.9;16.73,-0.9;16.73,-0.52;17.11,-0.52;18.51,-1.92;18.73,-1.92;18.73,-2.3)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_output_ota</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-1.35,-0.2;-1.35,0.18;-0.93,0.18;-0.93,3.81;-0.55,3.81;-0.55,-0.2)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_output_ota</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-0.48,-5.8;-0.48,-5.42;-0.27,-5.42;-0.27,3.81;0.11,3.81;0.11,-5.42;0.32,-5.42;0.32,-5.8)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_output_ota</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (5.97,-3;5.97,-2.62;6.23,-2.62;6.23,5.77;4.25,5.77;4.25,6.15;13.11,6.15;13.11,5.77;6.61,5.77;6.61,-2.62;6.87,-2.62;6.87,-3)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_output_ota</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-0.93,10.4;-0.93,10.78;2.96,10.78;2.96,10.4)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_output_ota</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (4.33,10.44;4.33,10.78;4.72,10.78;5.34,11.4;5.86,11.4;5.86,11.06;5.48,11.06;4.86,10.44)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_output_ota</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (6.97,10.44;6.97,10.78;7.36,10.78;7.98,11.4;8.5,11.4;8.5,11.06;8.12,11.06;7.5,10.44)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_output_ota</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-0.93,11.06;-0.93,11.44;2.96,11.44;2.96,11.06)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_output_ota</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (4.25,15.69;4.25,16.07;13.11,16.07;13.11,15.69)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_output_ota</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-14.805,4.105;-14.805,4.915;-14.595,4.915;-14.595,16.34;-14.215,16.34;-14.215,4.915;-14.005,4.915;-14.005,4.105)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_output_ota</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-12.605,4.105;-12.605,4.915;-12.395,4.915;-12.395,16.34;-12.015,16.34;-12.015,4.915;-11.805,4.915;-11.805,4.105)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_output_ota</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-10.565,4.105;-10.565,4.915;-10.355,4.915;-10.355,16.34;-9.975,16.34;-9.975,4.915;-9.765,4.915;-9.765,4.105)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_output_ota</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-8.525,4.105;-8.525,4.915;-8.315,4.915;-8.315,16.34;-7.935,16.34;-7.935,4.915;-7.725,4.915;-7.725,4.105)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_output_ota</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-6.325,4.105;-6.325,4.915;-6.115,4.915;-6.115,16.34;-5.735,16.34;-5.735,4.915;-5.525,4.915;-5.525,4.105)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_output_ota</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (18.325,4.105;18.325,4.915;18.535,4.915;18.535,16.34;18.915,16.34;18.915,4.915;19.125,4.915;19.125,4.105)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_output_ota</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (20.525,4.105;20.525,4.915;20.735,4.915;20.735,16.34;21.115,16.34;21.115,4.915;21.325,4.915;21.325,4.105)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_output_ota</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (22.565,4.105;22.565,4.915;22.775,4.915;22.775,16.34;23.155,16.34;23.155,4.915;23.365,4.915;23.365,4.105)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_output_ota</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (24.605,4.105;24.605,4.915;24.815,4.915;24.815,16.34;25.195,16.34;25.195,4.915;25.405,4.915;25.405,4.105)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_output_ota</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (26.805,4.105;26.805,4.915;27.015,4.915;27.015,16.34;27.395,16.34;27.395,4.915;27.605,4.915;27.605,4.105)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_output_ota</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-4.125,17.52;-4.125,18.32;-3.745,18.32;-3.745,18.11;-0.93,18.11;-0.93,18.32;-0.55,18.32;-0.55,17.52;-0.93,17.52;-0.93,17.73;-3.745,17.73;-3.745,17.52)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_output_ota</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-0.27,17.52;-0.27,18.32;0.11,18.32;0.11,18.11;16.545,18.11;16.545,18.32;16.925,18.32;16.925,17.52;16.545,17.52;16.545,17.73;0.11,17.73;0.11,17.52)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_output_ota</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (5.55,19.67;5.55,20.05;13.73,20.05;13.73,19.67)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_output_ota</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (4.23,20.33;4.23,20.71;13.73,20.71;13.73,20.33)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_output_ota</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (4.89,21.365;4.89,24.415;5.27,24.415;5.27,23.08;7.53,23.08;7.53,24.415;7.91,24.415;7.91,21.365;7.53,21.365;7.53,22.7;5.27,22.7;5.27,21.365)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_output_ota</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-0.93,25.06;-0.93,25.44;2.96,25.44;2.96,25.06)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_output_ota</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (5.32,25.1;4.7,25.72;4.31,25.72;4.31,26.06;4.84,26.06;5.46,25.44;5.84,25.44;5.84,25.1)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_output_ota</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (7.96,25.1;7.34,25.72;6.95,25.72;6.95,26.06;7.48,26.06;8.1,25.44;8.48,25.44;8.48,25.1)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_output_ota</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-0.93,25.72;-0.93,26.1;2.96,26.1;2.96,25.72)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_output_ota</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (4.89,26.745;4.89,29.795;5.27,29.795;5.27,28.46;7.53,28.46;7.53,29.795;7.91,29.795;7.91,26.745;7.53,26.745;7.53,28.08;5.27,28.08;5.27,26.745)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_output_ota</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (4.23,30.45;4.23,30.83;13.73,30.83;13.73,30.45)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_output_ota</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (5.55,31.11;5.55,31.49;13.73,31.49;13.73,31.11)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_output_ota</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-14.595,19.5;-14.595,30.925;-14.805,30.925;-14.805,31.735;-14.005,31.735;-14.005,30.925;-14.215,30.925;-14.215,19.5)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_output_ota</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-12.395,19.5;-12.395,30.925;-12.605,30.925;-12.605,31.735;-11.805,31.735;-11.805,30.925;-12.015,30.925;-12.015,19.5)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_output_ota</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-10.355,19.5;-10.355,30.925;-10.565,30.925;-10.565,31.735;-9.765,31.735;-9.765,30.925;-9.975,30.925;-9.975,19.5)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_output_ota</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-8.315,19.5;-8.315,30.925;-8.525,30.925;-8.525,31.735;-7.725,31.735;-7.725,30.925;-7.935,30.925;-7.935,19.5)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_output_ota</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-6.115,19.5;-6.115,30.925;-6.325,30.925;-6.325,31.735;-5.525,31.735;-5.525,30.925;-5.735,30.925;-5.735,19.5)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_output_ota</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (18.535,19.5;18.535,30.925;18.325,30.925;18.325,31.735;19.125,31.735;19.125,30.925;18.915,30.925;18.915,19.5)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_output_ota</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (20.735,19.5;20.735,30.925;20.525,30.925;20.525,31.735;21.325,31.735;21.325,30.925;21.115,30.925;21.115,19.5)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_output_ota</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (22.775,19.5;22.775,30.925;22.565,30.925;22.565,31.735;23.365,31.735;23.365,30.925;23.155,30.925;23.155,19.5)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_output_ota</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (24.815,19.5;24.815,30.925;24.605,30.925;24.605,31.735;25.405,31.735;25.405,30.925;25.195,30.925;25.195,19.5)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>differential_output_ota</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (27.015,19.5;27.015,30.925;26.805,30.925;26.805,31.735;27.605,31.735;27.605,30.925;27.395,30.925;27.395,19.5)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>differential_output_ota</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (6,22.7;6,23.08;6.21,23.08;6.21,28.08;6,28.08;6,28.46;6.8,28.46;6.8,28.08;6.59,28.08;6.59,23.08;6.8,23.08;6.8,22.7)</value>
+   </values>
+  </item>
+ </items>
+</report-database>

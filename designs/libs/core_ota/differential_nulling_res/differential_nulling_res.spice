@@ -1,0 +1,7 @@
+** sch_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_ota/differential_nulling_res/differential_nulling_res.sch
+.subckt differential_nulling_res A1 A2 B1 B2 VSS
+*.PININFO VSS:B A[1..2]:I B[1..2]:I
+XR2 VSS VSS VSS ppolyf_u_1k r_width=1e-6 r_length=13.37e-6 m=8
+XR1 A1 B1 VSS ppolyf_u_1k r_width=1e-6 r_length=13.37e-6 m=10
+XR3 A2 B2 VSS ppolyf_u_1k r_width=1e-6 r_length=13.37e-6 m=10
+.ends

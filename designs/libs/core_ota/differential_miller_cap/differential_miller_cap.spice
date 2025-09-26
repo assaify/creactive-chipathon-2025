@@ -1,0 +1,115 @@
+* NGSPICE file created from differential_miller_cap.ext - technology: gf180mcuD
+
+.subckt cap_mim$2 m4_n120_n120# m4_0_0#
+X0 m4_0_0# m4_n120_n120# cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+.ends
+
+.subckt cap_mim m4_n120_n120# m4_0_0#
+X0 m4_0_0# m4_n120_n120# cap_mim_2f0_m4m5_noshield c_width=5u c_length=10u
+.ends
+
+.subckt cap_mim$1 m4_n120_n120# m4_0_0#
+X0 m4_0_0# m4_n120_n120# cap_mim_2f0_m4m5_noshield c_width=10u c_length=10u
+.ends
+
+.subckt differential_miller_cap B2 T2 T1 B1 VSS
+Xcap_mim$2_0 VSS VSS cap_mim$2
+Xcap_mim$2_1 VSS VSS cap_mim$2
+Xcap_mim$2_2 VSS VSS cap_mim$2
+Xcap_mim_0 VSS VSS cap_mim
+Xcap_mim$2_3 VSS VSS cap_mim$2
+Xcap_mim_1 VSS VSS cap_mim
+Xcap_mim_2 VSS VSS cap_mim
+Xcap_mim_3 VSS VSS cap_mim
+Xcap_mim_4 VSS VSS cap_mim
+Xcap_mim_5 VSS VSS cap_mim
+Xcap_mim_6 VSS VSS cap_mim
+Xcap_mim$1_50 B2 T2 cap_mim$1
+Xcap_mim_7 VSS VSS cap_mim
+Xcap_mim$1_51 B1 T1 cap_mim$1
+Xcap_mim$1_40 B2 T2 cap_mim$1
+Xcap_mim_8 VSS VSS cap_mim
+Xcap_mim$1_30 B2 T2 cap_mim$1
+Xcap_mim$1_52 B1 T1 cap_mim$1
+Xcap_mim$1_41 B1 T1 cap_mim$1
+Xcap_mim_9 VSS VSS cap_mim
+Xcap_mim$1_31 B1 T1 cap_mim$1
+Xcap_mim$1_20 B2 T2 cap_mim$1
+Xcap_mim$1_42 B2 T2 cap_mim$1
+Xcap_mim$1_53 B2 T2 cap_mim$1
+Xcap_mim_30 VSS VSS cap_mim
+Xcap_mim$1_10 B2 T2 cap_mim$1
+Xcap_mim$1_32 B1 T1 cap_mim$1
+Xcap_mim$1_21 B1 T1 cap_mim$1
+Xcap_mim$1_43 B1 T1 cap_mim$1
+Xcap_mim$1_54 B2 T2 cap_mim$1
+Xcap_mim_20 VSS VSS cap_mim
+Xcap_mim_31 VSS VSS cap_mim
+Xcap_mim$1_11 B1 T1 cap_mim$1
+Xcap_mim$1_22 B2 T2 cap_mim$1
+Xcap_mim$1_33 B2 T2 cap_mim$1
+Xcap_mim$1_44 B1 T1 cap_mim$1
+Xcap_mim$1_55 B1 T1 cap_mim$1
+Xcap_mim_10 VSS VSS cap_mim
+Xcap_mim_21 VSS VSS cap_mim
+Xcap_mim_32 VSS VSS cap_mim
+Xcap_mim$1_12 B1 T1 cap_mim$1
+Xcap_mim$1_23 B1 T1 cap_mim$1
+Xcap_mim$1_34 B2 T2 cap_mim$1
+Xcap_mim$1_56 B1 T1 cap_mim$1
+Xcap_mim$1_45 B2 T2 cap_mim$1
+Xcap_mim_11 VSS VSS cap_mim
+Xcap_mim_22 VSS VSS cap_mim
+Xcap_mim_33 VSS VSS cap_mim
+Xcap_mim$1_13 B2 T2 cap_mim$1
+Xcap_mim$1_24 B1 T1 cap_mim$1
+Xcap_mim$1_35 B1 T1 cap_mim$1
+Xcap_mim$1_57 B2 T2 cap_mim$1
+Xcap_mim$1_46 B2 T2 cap_mim$1
+Xcap_mim_12 VSS VSS cap_mim
+Xcap_mim_23 VSS VSS cap_mim
+Xcap_mim$1_14 B2 T2 cap_mim$1
+Xcap_mim$1_36 B1 T1 cap_mim$1
+Xcap_mim$1_25 B2 T2 cap_mim$1
+Xcap_mim$1_58 B2 T2 cap_mim$1
+Xcap_mim$1_47 B1 T1 cap_mim$1
+Xcap_mim_13 VSS VSS cap_mim
+Xcap_mim_24 VSS VSS cap_mim
+Xcap_mim$1_15 B1 T1 cap_mim$1
+Xcap_mim$1_37 B2 T2 cap_mim$1
+Xcap_mim$1_26 B2 T2 cap_mim$1
+Xcap_mim$1_48 B1 T1 cap_mim$1
+Xcap_mim$1_59 B1 T1 cap_mim$1
+Xcap_mim_25 VSS VSS cap_mim
+Xcap_mim_14 VSS VSS cap_mim
+Xcap_mim$1_16 B1 T1 cap_mim$1
+Xcap_mim$1_38 B2 T2 cap_mim$1
+Xcap_mim$1_27 B1 T1 cap_mim$1
+Xcap_mim$1_49 B2 T2 cap_mim$1
+Xcap_mim_15 VSS VSS cap_mim
+Xcap_mim_26 VSS VSS cap_mim
+Xcap_mim$1_17 B2 T2 cap_mim$1
+Xcap_mim$1_0 B2 T2 cap_mim$1
+Xcap_mim$1_28 B1 T1 cap_mim$1
+Xcap_mim$1_39 B1 T1 cap_mim$1
+Xcap_mim_16 VSS VSS cap_mim
+Xcap_mim_27 VSS VSS cap_mim
+Xcap_mim$1_18 B2 T2 cap_mim$1
+Xcap_mim$1_29 B2 T2 cap_mim$1
+Xcap_mim$1_1 B1 T1 cap_mim$1
+Xcap_mim_17 VSS VSS cap_mim
+Xcap_mim_28 VSS VSS cap_mim
+Xcap_mim$1_2 B2 T2 cap_mim$1
+Xcap_mim$1_19 B1 T1 cap_mim$1
+Xcap_mim_18 VSS VSS cap_mim
+Xcap_mim_29 VSS VSS cap_mim
+Xcap_mim$1_3 B1 T1 cap_mim$1
+Xcap_mim_19 VSS VSS cap_mim
+Xcap_mim$1_4 B1 T1 cap_mim$1
+Xcap_mim$1_5 B2 T2 cap_mim$1
+Xcap_mim$1_6 B2 T2 cap_mim$1
+Xcap_mim$1_7 B1 T1 cap_mim$1
+Xcap_mim$1_8 B1 T1 cap_mim$1
+Xcap_mim$1_9 B2 T2 cap_mim$1
+.ends
+

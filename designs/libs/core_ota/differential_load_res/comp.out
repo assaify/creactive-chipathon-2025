@@ -12,12 +12,12 @@ Circuit 1: ppolyf_u_1k                     |Circuit 2: ppolyf_u_1k
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes ppolyf_u_1k and ppolyf_u_1k are equivalent.
-Flattening unmatched subcell resss in circuit ress (0)(30 instances)
+Flattening unmatched subcell res_cell in circuit differential_load_res (0)(30 instances)
 
-Class ress (0):  Merged 9 parallel devices.
-Class ress (0):  Merged 18 series devices.
+Class differential_load_res (0):  Merged 9 parallel devices.
+Class differential_load_res (0):  Merged 18 series devices.
 Subcircuit summary:
-Circuit 1: ress                            |Circuit 2: differential_load_res           
+Circuit 1: differential_load_res           |Circuit 2: differential_load_res           
 -------------------------------------------|-------------------------------------------
 ppolyf_u_1k (30->3)                        |ppolyf_u_1k (12->3)                        
 Number of devices: 3                       |Number of devices: 3                       
@@ -28,15 +28,15 @@ Resolving symmetries by pin name.
 Netlists match uniquely.
 
 Subcircuit pins:
-Circuit 1: ress                            |Circuit 2: differential_load_res           
+Circuit 1: differential_load_res           |Circuit 2: differential_load_res           
 -------------------------------------------|-------------------------------------------
-G                                          |G                                          
-D3                                         |D3                                         
 D4                                         |D4                                         
+D3                                         |D3                                         
+G                                          |G                                          
 VSS                                        |VSS                                        
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
-Device classes ress and differential_load_res are equivalent.
+Device classes differential_load_res and differential_load_res are equivalent.
 
 Final result: Circuits match uniquely.
 .

@@ -1,0 +1,39 @@
+
+Circuit 1 cell cap_mim_2f0fF and Circuit 2 cell cap_mim_2f0fF are black boxes.
+Warning: Equate pins:  cell cap_mim_2f0fF is a placeholder, treated as a black box.
+Warning: Equate pins:  cell cap_mim_2f0fF is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: cap_mim_2f0fF                   |Circuit 2: cap_mim_2f0fF                   
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes cap_mim_2f0fF and cap_mim_2f0fF are equivalent.
+Flattening unmatched subcell cap_mim$1 in circuit differential_miller_cap (1)(20 instances)
+
+Subcircuit summary:
+Circuit 1: differential_miller_cap         |Circuit 2: differential_miller_cap         
+-------------------------------------------|-------------------------------------------
+cap_mim_2f0fF (20)                         |cap_mim_2f0fF (20)                         
+Number of devices: 20                      |Number of devices: 20                      
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Resolving symmetries by net name.
+Netlists match with 3 symmetries.
+
+Subcircuit pins:
+Circuit 1: differential_miller_cap         |Circuit 2: differential_miller_cap         
+-------------------------------------------|-------------------------------------------
+T2                                         |B2 **Mismatch**                            
+T1                                         |B1 **Mismatch**                            
+B2                                         |T2 **Mismatch**                            
+B1                                         |T1 **Mismatch**                            
+---------------------------------------------------------------------------------------
+Cell pin lists for differential_miller_cap and differential_miller_cap altered to match.
+Device classes differential_miller_cap and differential_miller_cap are equivalent.
+
+Final result: Top level cell failed pin matching.

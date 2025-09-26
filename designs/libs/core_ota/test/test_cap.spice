@@ -1,0 +1,10 @@
+* NGSPICE file created from test_cap.ext - technology: gf180mcuD
+
+.subckt cap_mim A B
+X0 A B cap_mim_2f0_m4m5_noshield c_width=10u c_length=10u
+.ends
+
+.subckt test_cap A B
+Xcap_mim A B cap_mim
+.ends
+

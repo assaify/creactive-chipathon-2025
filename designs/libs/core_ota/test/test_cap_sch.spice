@@ -1,0 +1,5 @@
+** sch_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_ota/test/test_cap.sch
+.subckt test_cap A B
+*.PININFO A:B B:B
+XC1 A B cap_mim_2f0fF c_width=10e-6 c_length=10e-6 m=1
+.ends

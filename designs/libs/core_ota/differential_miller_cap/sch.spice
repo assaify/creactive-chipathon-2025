@@ -1,0 +1,24 @@
+** sch_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_ota/differential_miller_cap/differential_miller_cap.sch
+.subckt differential_miller_cap T2 B2 B1 T1
+*.PININFO VSS:B T[1..2]:I B[1..2]:I
+XC11 B2 T2 cap_mim_2f0fF c_width=10e-6 c_length=10e-6 m=1
+XC12 B2 T2 cap_mim_2f0fF c_width=10e-6 c_length=10e-6 m=1
+XC13 B2 T2 cap_mim_2f0fF c_width=10e-6 c_length=10e-6 m=1
+XC14 B2 T2 cap_mim_2f0fF c_width=10e-6 c_length=10e-6 m=1
+XC15 B2 T2 cap_mim_2f0fF c_width=10e-6 c_length=10e-6 m=1
+XC16 B2 T2 cap_mim_2f0fF c_width=10e-6 c_length=10e-6 m=1
+XC17 B2 T2 cap_mim_2f0fF c_width=10e-6 c_length=10e-6 m=1
+XC18 B2 T2 cap_mim_2f0fF c_width=10e-6 c_length=10e-6 m=1
+XC19 B2 T2 cap_mim_2f0fF c_width=10e-6 c_length=10e-6 m=1
+XC110 B2 T2 cap_mim_2f0fF c_width=10e-6 c_length=10e-6 m=1
+XC21 B1 T1 cap_mim_2f0fF c_width=10e-6 c_length=10e-6 m=1
+XC22 B1 T1 cap_mim_2f0fF c_width=10e-6 c_length=10e-6 m=1
+XC23 B1 T1 cap_mim_2f0fF c_width=10e-6 c_length=10e-6 m=1
+XC24 B1 T1 cap_mim_2f0fF c_width=10e-6 c_length=10e-6 m=1
+XC25 B1 T1 cap_mim_2f0fF c_width=10e-6 c_length=10e-6 m=1
+XC26 B1 T1 cap_mim_2f0fF c_width=10e-6 c_length=10e-6 m=1
+XC27 B1 T1 cap_mim_2f0fF c_width=10e-6 c_length=10e-6 m=1
+XC28 B1 T1 cap_mim_2f0fF c_width=10e-6 c_length=10e-6 m=1
+XC29 B1 T1 cap_mim_2f0fF c_width=10e-6 c_length=10e-6 m=1
+XC210 B1 T1 cap_mim_2f0fF c_width=10e-6 c_length=10e-6 m=1
+.ends

@@ -1,0 +1,7 @@
+** sch_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_ota/differential_load_res/differential_load_res.sch
+.subckt differential_load_res D3 VSS G D4
+*.PININFO VSS:B D3:I D4:I G:I
+XR3 VSS VSS VSS ppolyf_u_1k r_width=1e-6 r_length=5e-6 m=10
+XR4 D4 G VSS ppolyf_u_1k r_width=1e-6 r_length=50e-6 m=1
+XR23 D3 G VSS ppolyf_u_1k r_width=1e-6 r_length=50e-6 m=1
+.ends

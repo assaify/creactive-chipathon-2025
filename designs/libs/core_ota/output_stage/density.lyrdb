@@ -5,6 +5,30 @@
  <generator>drc: script='/foss/pdks/gf180mcuD/libs.tech/klayout/macros/gf180mcu_drc.lydrc'</generator>
  <top-cell>output_stage</top-cell>
  <tags>
+  <tag>
+   <name>waived</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>red</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>green</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>blue</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>yellow</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>important</name>
+   <description/>
+  </tag>
  </tags>
  <categories>
   <category>
@@ -68,6 +92,114 @@
    <image/>
    <values>
     <value>polygon: (3.93,-13.8;3.93,-12.99;4.14,-12.99;4.14,-1.565;4.52,-1.565;4.52,-12.99;4.73,-12.99;4.73,-13.8)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>output_stage</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (6.13,-13.8;6.13,-12.99;6.34,-12.99;6.34,-1.565;6.72,-1.565;6.72,-12.99;6.93,-12.99;6.93,-13.8)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>output_stage</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (8.17,-13.8;8.17,-12.99;8.38,-12.99;8.38,-1.565;8.76,-1.565;8.76,-12.99;8.97,-12.99;8.97,-13.8)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>output_stage</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (10.21,-13.8;10.21,-12.99;10.42,-12.99;10.42,-1.565;10.8,-1.565;10.8,-12.99;11.01,-12.99;11.01,-13.8)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>output_stage</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (12.41,-13.8;12.41,-12.99;12.62,-12.99;12.62,-1.565;13,-1.565;13,-12.99;13.21,-12.99;13.21,-13.8)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>output_stage</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (4.14,1.595;4.14,13.02;3.93,13.02;3.93,13.83;4.73,13.83;4.73,13.02;4.52,13.02;4.52,1.595)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>output_stage</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (6.34,1.595;6.34,13.02;6.13,13.02;6.13,13.83;6.93,13.83;6.93,13.02;6.72,13.02;6.72,1.595)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>output_stage</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (8.38,1.595;8.38,13.02;8.17,13.02;8.17,13.83;8.97,13.83;8.97,13.02;8.76,13.02;8.76,1.595)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>output_stage</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (10.42,1.595;10.42,13.02;10.21,13.02;10.21,13.83;11.01,13.83;11.01,13.02;10.8,13.02;10.8,1.595)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>output_stage</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (12.62,1.595;12.62,13.02;12.41,13.02;12.41,13.83;13.21,13.83;13.21,13.02;13,13.02;13,1.595)</value>
    </values>
   </item>
  </items>

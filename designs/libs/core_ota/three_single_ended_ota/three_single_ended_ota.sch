@@ -15,14 +15,12 @@ T {OTA B} 230 -470 0 0 0.4 0.4 {}
 T {OTA C} 860 -470 0 0 0.4 0.4 {}
 T {Tail Current} 860 -730 0 0 0.4 0.4 {}
 N 340 -680 340 -620 {lab=#net1}
-N 460 -680 460 -620 {lab=#net2}
 N 460 -640 580 -640 {lab=#net2}
 N 550 -730 710 -730 {lab=#net2}
 N 550 -730 550 -640 {lab=#net2}
 N 400 -810 400 -790 {lab=VDD}
 N 760 -810 760 -770 {lab=VDD}
 N 610 -600 610 -590 {lab=VSS}
-N 760 -690 760 -640 {lab=OUT[1]}
 N 740 -640 760 -640 {lab=OUT[1]}
 N 640 -640 670 -640 {lab=#net3}
 N 700 -600 700 -590 {lab=VSS}
@@ -66,10 +64,10 @@ N 1070 -520 1070 -500 {lab=VSS}
 N 900 -660 900 -640 {lab=IBIAS}
 N 980 -660 980 -640 {lab=I1A}
 N 1130 -660 1130 -640 {lab=OUT[2]}
-N 1030 -660 1030 -640 {lab=OUT[1]}
-N 1030 -680 1030 -660 {lab=OUT[1]}
-N 1230 -660 1230 -640 {lab=OUT[2]}
-N 1230 -680 1230 -660 {lab=OUT[2]}
+N 1030 -660 1030 -640 {lab=#net10}
+N 1030 -680 1030 -660 {lab=#net10}
+N 1230 -660 1230 -640 {lab=OUT[3]}
+N 1230 -680 1230 -660 {lab=OUT[3]}
 N 400 -810 700 -810 {lab=VDD}
 N 390 -420 690 -420 {lab=VDD}
 N 1020 -420 1320 -420 {lab=VDD}
@@ -79,6 +77,9 @@ N 1320 -420 1380 -420 {lab=VDD}
 N 1080 -660 1080 -640 {lab=I1B}
 N 1130 -680 1130 -660 {lab=OUT[2]}
 N 1180 -660 1180 -640 {lab=I1C}
+N 460 -640 460 -620 {lab=#net2}
+N 760 -700 760 -690 {lab=#net11}
+N 460 -680 460 -640 {lab=#net2}
 C {title.sym} 160 -40 0 0 {name=l1 author="CreActive"}
 C {ipin.sym} 100 -220 0 0 {name=p8 lab=IP[1:3]}
 C {ipin.sym} 100 -200 0 0 {name=p9 lab=IN[1:3]}
@@ -117,8 +118,8 @@ C {lab_pin.sym} 1070 -500 0 0 {name=p4 sig_type=std_logic lab=VSS}
 C {lab_pin.sym} 900 -660 0 1 {name=p5 sig_type=std_logic lab=IBIAS}
 C {lab_pin.sym} 980 -660 0 1 {name=p6 sig_type=std_logic lab=I1A}
 C {lab_pin.sym} 1080 -660 0 1 {name=p7 sig_type=std_logic lab=I1B}
-C {lab_pin.sym} 1030 -680 0 1 {name=p33 sig_type=std_logic lab=OUT[1]}
-C {lab_pin.sym} 1230 -680 0 1 {name=p34 sig_type=std_logic lab=OUT[2]}
+C {lab_pin.sym} 1030 -740 0 1 {name=p33 sig_type=std_logic lab=OUT[1]}
+C {lab_pin.sym} 1230 -680 0 1 {name=p34 sig_type=std_logic lab=OUT[3]}
 C {libs/core_ota/output_stage/output_stage.sym} 740 -340 0 0 {name=x8}
 C {libs/core_ota/output_stage/output_stage.sym} 1370 -340 0 0 {name=x13}
 C {libs/core_ota/miller_cap/miller_cap.sym} 690 -240 0 0 {name=x9}
@@ -131,3 +132,5 @@ C {libs/core_ota/active_load/active_load.sym} 400 -730 0 0 {name=x2}
 C {libs/core_ota/active_load/active_load.sym} 390 -340 0 0 {name=x7}
 C {libs/core_ota/active_load/active_load.sym} 1020 -340 0 0 {name=x12}
 C {libs/core_ota/tail_current/tail_current.sym} 1070 -580 0 0 {name=x16}
+C {ammeter.sym} 760 -670 0 0 {name=Vmeas savecurrent=true spice_ignore=0}
+C {ammeter.sym} 1030 -710 0 0 {name=Vmeas1 savecurrent=true spice_ignore=0}
