@@ -1,0 +1,120 @@
+** sch_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_ota/three_differential_output_ota/three_differential_output_ota.sch
+.subckt three_differential_output_ota IP[1] IP[2] IP[3] IN[1] IN[2] IN[3] IBIAS OP[1] OP[2] OP[3] VDD VSS ON[1] ON[2] ON[3]
+*.PININFO IP[1:3]:I IN[1:3]:I VDD:B VSS:B IBIAS:I OP[1:3]:O ON[1:3]:O
+x1 IN[1] IP[1] I1A net1 net3 VSS input_pair
+x3 OP[1] VDD net1 output_stage
+x4 net2 OP[1] VSS miller_cap
+x5 net1 net2 VSS nulling_res
+x2 net3 net1 VDD net4 active_load_diff_out
+x6 net3 VSS net4 net1 differential_load_res
+x7 ON[1] VDD net3 output_stage
+x8 net5 ON[1] VSS miller_cap
+x9 net3 net5 VSS nulling_res
+x10 IN[2] IP[2] I1B net6 net8 VSS input_pair
+x11 OP[2] VDD net6 output_stage
+x12 net7 OP[2] VSS miller_cap
+x13 net6 net7 VSS nulling_res
+x14 net8 net6 VDD net9 active_load_diff_out
+x15 net8 VSS net9 net6 differential_load_res
+x17 ON[2] VDD net8 output_stage
+x18 net10 ON[2] VSS miller_cap
+x19 net8 net10 VSS nulling_res
+x16 IN[3] IP[3] I1C net11 net13 VSS input_pair
+x20 OP[3] VDD net11 output_stage
+x21 net12 OP[3] VSS miller_cap
+x22 net11 net12 VSS nulling_res
+x23 net13 net11 VDD net14 active_load_diff_out
+x24 net13 VSS net14 net11 differential_load_res
+x25 ON[3] VDD net13 output_stage
+x26 net15 ON[3] VSS miller_cap
+x27 net13 net15 VSS nulling_res
+x28 IBIAS I1A OP[1] ON[1] I1B OP[2] ON[2] I1C OP[3] ON[3] VSS tail_current_diff_out
+.ends
+
+* expanding   symbol:  libs/core_ota/input_pair/input_pair.sym # of pins=6
+** sym_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_ota/input_pair/input_pair.sym
+** sch_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_ota/input_pair/input_pair.sch
+.subckt input_pair IN IP S D2 D1 VSS
+*.PININFO VSS:B S:O D1:I D2:I IN:I IP:I
+M1 D1 IN S VSS nfet_03v3 L=0.8u W=3.78u nf=1 m=4
+M2 D2 IP S VSS nfet_03v3 L=0.8u W=3.78u nf=1 m=4
+M3 D1 D1 D1 VSS nfet_03v3 L=0.8u W=3.78u nf=1 m=2
+M4 D2 D2 D2 VSS nfet_03v3 L=0.8u W=3.78u nf=1 m=2
+.ends
+
+
+* expanding   symbol:  libs/core_ota/output_stage/output_stage.sym # of pins=3
+** sym_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_ota/output_stage/output_stage.sym
+** sch_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_ota/output_stage/output_stage.sch
+.subckt output_stage D6 VDD G6
+*.PININFO VDD:B G6:I D6:O
+M6 D6 G6 VDD VDD pfet_03v3 L=0.5u W=10.43u nf=1 m=16
+M1 VDD VDD VDD VDD pfet_03v3 L=0.5u W=10.43u nf=1 m=4
+.ends
+
+
+* expanding   symbol:  libs/core_ota/miller_cap/miller_cap.sym # of pins=3
+** sym_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_ota/miller_cap/miller_cap.sym
+** sch_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_ota/miller_cap/miller_cap.sch
+.subckt miller_cap A B VSS
+*.PININFO VSS:B A:I B:I
+XC2 VSS VSS cap_mim_2f0fF c_width=10e-6 c_length=10e-6 m=30
+XC1 B A cap_mim_2f0fF c_width=10e-6 c_length=10e-6 m=30
+.ends
+
+
+* expanding   symbol:  libs/core_ota/nulling_res/nulling_res.sym # of pins=3
+** sym_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_ota/nulling_res/nulling_res.sym
+** sch_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_ota/nulling_res/nulling_res.sch
+.subckt nulling_res A B VSS
+*.PININFO VSS:B A:I B:I
+XR2 VSS VSS VSS ppolyf_u_1k r_width=1e-6 r_length=13.37e-6 m=5
+XR1 A B VSS ppolyf_u_1k r_width=1e-6 r_length=13.37e-6 m=10
+.ends
+
+
+* expanding   symbol:  libs/core_ota/active_load_diff_out/active_load_diff_out.sym # of pins=4
+** sym_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_ota/active_load_diff_out/active_load_diff_out.sym
+** sch_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_ota/active_load_diff_out/active_load_diff_out.sch
+.subckt active_load_diff_out D3 D4 VDD G
+*.PININFO VDD:B D3:O D4:O G:I
+M3 D3 G VDD VDD pfet_03v3 L=0.8u W=3.65u nf=1 m=4
+M4 D4 G VDD VDD pfet_03v3 L=0.8u W=3.65u nf=1 m=4
+M1 D3 D3 D3 VDD pfet_03v3 L=0.8u W=3.65u nf=1 m=2
+M2 D4 D4 D4 VDD pfet_03v3 L=0.8u W=3.65u nf=1 m=2
+.ends
+
+
+* expanding   symbol:  libs/core_ota/differential_load_res/differential_load_res.sym # of pins=4
+** sym_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_ota/differential_load_res/differential_load_res.sym
+** sch_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_ota/differential_load_res/differential_load_res.sch
+.subckt differential_load_res D3 VSS G D4
+*.PININFO VSS:B D3:I D4:I G:I
+XR3 VSS VSS VSS ppolyf_u_1k r_width=1e-6 r_length=5e-6 m=10
+XR4 D4 G VSS ppolyf_u_1k r_width=1e-6 r_length=50e-6 m=1
+XR23 D3 G VSS ppolyf_u_1k r_width=1e-6 r_length=50e-6 m=1
+.ends
+
+
+* expanding   symbol:  libs/core_ota/tail_current_diff_out/tail_current_diff_out.sym # of pins=11
+** sym_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_ota/tail_current_diff_out/tail_current_diff_out.sym
+** sch_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_ota/tail_current_diff_out/tail_current_diff_out.sch
+.subckt tail_current_diff_out IBIAS I1A I2A I3A I1B I2B I3B I1C I2C I3C VSS
+*.PININFO IBIAS:I VSS:B I1A:O I2A:O I1B:O I2B:O I1C:O I2C:O I3A:O I3B:O I3C:O
+M1A I1A IBIAS VSS VSS nfet_03v3 L=0.8u W=3.75u nf=1 m=2
+M2A I2A IBIAS VSS VSS nfet_03v3 L=0.8u W=3.75u nf=1 m=20
+M1B I1B IBIAS VSS VSS nfet_03v3 L=0.8u W=3.75u nf=1 m=2
+M2B I2B IBIAS VSS VSS nfet_03v3 L=0.8u W=3.75u nf=1 m=20
+M1C I1C IBIAS VSS VSS nfet_03v3 L=0.8u W=3.75u nf=1 m=2
+M2C I2C IBIAS VSS VSS nfet_03v3 L=0.8u W=3.75u nf=1 m=20
+MS IBIAS IBIAS VSS VSS nfet_03v3 L=0.8u W=3.75u nf=1 m=2
+M1 IBIAS IBIAS IBIAS VSS nfet_03v3 L=0.8u W=3.75u nf=1 m=2
+M2 I1A I1A I1A VSS nfet_03v3 L=0.8u W=3.75u nf=1 m=2
+M3 I1B I1B I1B VSS nfet_03v3 L=0.8u W=3.75u nf=1 m=2
+M4 I1C I1C I1C VSS nfet_03v3 L=0.8u W=3.75u nf=1 m=2
+M8 VSS VSS VSS VSS nfet_03v3 L=0.8u W=3.75u nf=1 m=20
+M3A I3A IBIAS VSS VSS nfet_03v3 L=0.8u W=3.75u nf=1 m=20
+M3B I3B IBIAS VSS VSS nfet_03v3 L=0.8u W=3.75u nf=1 m=20
+M3C I3C IBIAS VSS VSS nfet_03v3 L=0.8u W=3.75u nf=1 m=20
+.ends
+

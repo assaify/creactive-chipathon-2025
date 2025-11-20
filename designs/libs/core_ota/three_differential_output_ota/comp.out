@@ -1,0 +1,1942 @@
+
+Circuit 1 cell ppolyf_u_1k and Circuit 2 cell ppolyf_u_1k are black boxes.
+Warning: Equate pins:  cell ppolyf_u_1k is a placeholder, treated as a black box.
+Warning: Equate pins:  cell ppolyf_u_1k is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: ppolyf_u_1k                     |Circuit 2: ppolyf_u_1k                     
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes ppolyf_u_1k and ppolyf_u_1k are equivalent.
+
+Cell pfet_03v3 (1) disconnected node: drain
+Cell pfet_03v3 (1) disconnected node: gate
+Cell pfet_03v3 (1) disconnected node: source
+Cell pfet_03v3 (1) disconnected node: bulk
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: pfet_03v3                       |Circuit 2: pfet_03v3                       
+-------------------------------------------|-------------------------------------------
+(no matching pin)                          |drain                                      
+(no matching pin)                          |gate                                       
+(no matching pin)                          |source                                     
+(no matching pin)                          |bulk                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes pfet_03v3 and pfet_03v3 are equivalent.
+
+Cell nfet_03v3 (1) disconnected node: drain
+Cell nfet_03v3 (1) disconnected node: gate
+Cell nfet_03v3 (1) disconnected node: source
+Cell nfet_03v3 (1) disconnected node: bulk
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: nfet_03v3                       |Circuit 2: nfet_03v3                       
+-------------------------------------------|-------------------------------------------
+(no matching pin)                          |drain                                      
+(no matching pin)                          |gate                                       
+(no matching pin)                          |source                                     
+(no matching pin)                          |bulk                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes nfet_03v3 and nfet_03v3 are equivalent.
+Flattening unmatched subcell res_cell$1 in circuit differential_load_res (0)(30 instances)
+
+Class differential_load_res (0):  Merged 9 parallel devices.
+Class differential_load_res (0):  Merged 18 series devices.
+Subcircuit summary:
+Circuit 1: differential_load_res           |Circuit 2: differential_load_res           
+-------------------------------------------|-------------------------------------------
+ppolyf_u_1k (30->3)                        |ppolyf_u_1k (12->3)                        
+Number of devices: 3                       |Number of devices: 3                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: differential_load_res           |Circuit 2: differential_load_res           
+-------------------------------------------|-------------------------------------------
+D4                                         |D4                                         
+D3                                         |D3                                         
+G                                          |G                                          
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes differential_load_res and differential_load_res are equivalent.
+Flattening unmatched subcell pfet$2 in circuit output_stage (0)(2 instances)
+Flattening unmatched subcell pfet$1 in circuit output_stage (0)(4 instances)
+
+Class output_stage (0):  Merged 18 parallel devices.
+Subcircuit summary:
+Circuit 1: output_stage                    |Circuit 2: output_stage                    
+-------------------------------------------|-------------------------------------------
+pfet_03v3 (20->2)                          |pfet_03v3 (20->2)                          
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 11                         |Number of nets: 11                         
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: output_stage                    |Circuit 2: output_stage                    
+
+---------------------------------------------------------------------------------------
+Net: /pfet$1_0/dummy_8                     |Net: dummy_11                              
+  pfet_03v3/proxybulk = 1                  |  pfet_03v3/proxy4 = 1                     
+                                           |                                           
+Net: /pfet$1_0/dummy_7                     |Net: dummy_10                              
+  pfet_03v3/proxysource = 1                |  pfet_03v3/proxy3 = 1                     
+                                           |                                           
+Net: /pfet$1_0/dummy_6                     |Net: dummy_9                               
+  pfet_03v3/proxygate = 1                  |  pfet_03v3/proxy2 = 1                     
+                                           |                                           
+Net: /pfet$1_0/dummy_5                     |Net: dummy_8                               
+  pfet_03v3/proxydrain = 1                 |  pfet_03v3/proxy1 = 1                     
+                                           |                                           
+Net: /pfet$2_0/dummy_22                    |Net: dummy_7                               
+  pfet_03v3/proxybulk = 1                  |  pfet_03v3/proxy4 = 1                     
+                                           |                                           
+Net: /pfet$2_0/dummy_21                    |Net: dummy_6                               
+  pfet_03v3/proxysource = 1                |  pfet_03v3/proxy3 = 1                     
+                                           |                                           
+Net: /pfet$2_0/dummy_20                    |Net: dummy_5                               
+  pfet_03v3/proxygate = 1                  |  pfet_03v3/proxy2 = 1                     
+                                           |                                           
+Net: /pfet$2_0/dummy_19                    |Net: dummy_4                               
+  pfet_03v3/proxydrain = 1                 |  pfet_03v3/proxy1 = 1                     
+                                           |                                           
+Net: G6                                    |Net: G6                                    
+  pfet_03v3/2 = 1                          |  pfet_03v3/gate = 1                       
+                                           |                                           
+Net: D6                                    |Net: D6                                    
+  pfet_03v3/(1|3) = 1                      |  pfet_03v3/(drain|source) = 1             
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: VDD                                   |Net: VDD                                   
+  pfet_03v3/(1|3) = 3                      |  pfet_03v3/(drain|source) = 3             
+  pfet_03v3/4 = 2                          |  pfet_03v3/bulk = 2                       
+  pfet_03v3/2 = 1                          |  pfet_03v3/gate = 1                       
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: output_stage                    |Circuit 2: output_stage                    
+
+---------------------------------------------------------------------------------------
+Instance: pfet$1_0/pfet_03v3:0             |Instance: pfet_03v3:1                      
+  (1,3) = (6,6)                            |  proxy1 = 1                               
+  2 = 6                                    |  proxy2 = 1                               
+  4 = 6                                    |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (6,6)                   
+  proxysource = 1                          |  gate = 6                                 
+  proxybulk = 1                            |  bulk = 6                                 
+                                           |                                           
+Instance: pfet$2_0/pfet_03v3:0             |Instance: pfet_03v3:6                      
+  (1,3) = (6,1)                            |  proxy1 = 1                               
+  2 = 1                                    |  proxy2 = 1                               
+  4 = 6                                    |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (6,1)                   
+  proxysource = 1                          |  gate = 1                                 
+  proxybulk = 1                            |  bulk = 6                                 
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Port matching may fail to disambiguate symmetries.
+  Flattening non-matched subcircuits output_stage output_stage
+Flattening unmatched subcell nmos_6$1 in circuit input_pair (0)(2 instances)
+
+Class input_pair (0):  Merged 8 parallel devices.
+Subcircuit summary:
+Circuit 1: input_pair                      |Circuit 2: input_pair                      
+-------------------------------------------|-------------------------------------------
+nfet_03v3 (12->4)                          |nfet_03v3 (12->4)                          
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 22                         |Number of nets: 22                         
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: input_pair                      |Circuit 2: input_pair                      
+
+---------------------------------------------------------------------------------------
+Net: S                                     |Net: S                                     
+  nfet_03v3/(1|3) = 2                      |  nfet_03v3/(drain|source) = 2             
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: /nmos_6$1_1/dummy_26                  |Net: dummy_22                              
+  nfet_03v3/proxybulk = 1                  |  nfet_03v3/proxy4 = 1                     
+                                           |                                           
+Net: /nmos_6$1_0/dummy_26                  |Net: dummy_18                              
+  nfet_03v3/proxybulk = 1                  |  nfet_03v3/proxy4 = 1                     
+                                           |                                           
+Net: /nmos_6$1_1/dummy_25                  |Net: dummy_21                              
+  nfet_03v3/proxysource = 1                |  nfet_03v3/proxy3 = 1                     
+                                           |                                           
+Net: /nmos_6$1_0/dummy_25                  |Net: dummy_17                              
+  nfet_03v3/proxysource = 1                |  nfet_03v3/proxy3 = 1                     
+                                           |                                           
+Net: /nmos_6$1_1/dummy_24                  |Net: dummy_20                              
+  nfet_03v3/proxygate = 1                  |  nfet_03v3/proxy2 = 1                     
+                                           |                                           
+Net: /nmos_6$1_0/dummy_24                  |Net: dummy_16                              
+  nfet_03v3/proxygate = 1                  |  nfet_03v3/proxy2 = 1                     
+                                           |                                           
+Net: /nmos_6$1_1/dummy_23                  |Net: dummy_19                              
+  nfet_03v3/proxydrain = 1                 |  nfet_03v3/proxy1 = 1                     
+                                           |                                           
+Net: /nmos_6$1_0/dummy_23                  |Net: dummy_15                              
+  nfet_03v3/proxydrain = 1                 |  nfet_03v3/proxy1 = 1                     
+                                           |                                           
+Net: /nmos_6$1_0/dummy_30                  |Net: dummy_14                              
+  nfet_03v3/proxybulk = 1                  |  nfet_03v3/proxy4 = 1                     
+                                           |                                           
+Net: /nmos_6$1_0/dummy_18                  |Net: dummy_10                              
+  nfet_03v3/proxybulk = 1                  |  nfet_03v3/proxy4 = 1                     
+                                           |                                           
+Net: /nmos_6$1_0/dummy_29                  |Net: dummy_13                              
+  nfet_03v3/proxysource = 1                |  nfet_03v3/proxy3 = 1                     
+                                           |                                           
+Net: /nmos_6$1_0/dummy_17                  |Net: dummy_9                               
+  nfet_03v3/proxysource = 1                |  nfet_03v3/proxy3 = 1                     
+                                           |                                           
+Net: /nmos_6$1_0/dummy_28                  |Net: dummy_12                              
+  nfet_03v3/proxygate = 1                  |  nfet_03v3/proxy2 = 1                     
+                                           |                                           
+Net: /nmos_6$1_0/dummy_16                  |Net: dummy_8                               
+  nfet_03v3/proxygate = 1                  |  nfet_03v3/proxy2 = 1                     
+                                           |                                           
+Net: /nmos_6$1_0/dummy_27                  |Net: dummy_11                              
+  nfet_03v3/proxydrain = 1                 |  nfet_03v3/proxy1 = 1                     
+                                           |                                           
+Net: /nmos_6$1_0/dummy_15                  |Net: dummy_7                               
+  nfet_03v3/proxydrain = 1                 |  nfet_03v3/proxy1 = 1                     
+                                           |                                           
+Net: IP                                    |Net: IP                                    
+  nfet_03v3/2 = 1                          |  nfet_03v3/gate = 1                       
+                                           |                                           
+Net: IN                                    |Net: IN                                    
+  nfet_03v3/2 = 1                          |  nfet_03v3/gate = 1                       
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: D2                                    |Net: D2                                    
+  nfet_03v3/(1|3) = 3                      |  nfet_03v3/(drain|source) = 3             
+  nfet_03v3/2 = 1                          |  nfet_03v3/gate = 1                       
+                                           |                                           
+Net: D1                                    |Net: D1                                    
+  nfet_03v3/(1|3) = 3                      |  nfet_03v3/(drain|source) = 3             
+  nfet_03v3/2 = 1                          |  nfet_03v3/gate = 1                       
+                                           |                                           
+Net: VSS                                   |Net: VSS                                   
+  nfet_03v3/4 = 4                          |  nfet_03v3/bulk = 4                       
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: input_pair                      |Circuit 2: input_pair                      
+
+---------------------------------------------------------------------------------------
+Instance: nmos_6$1_1/nfet_03v3:2           |Instance: nfet_03v3:4                      
+  (1,3) = (4,4)                            |  proxy1 = 1                               
+  2 = 4                                    |  proxy2 = 1                               
+  4 = 4                                    |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (4,4)                   
+  proxysource = 1                          |  gate = 4                                 
+  proxybulk = 1                            |  bulk = 4                                 
+                                           |                                           
+Instance: nmos_6$1_0/nfet_03v3:2           |Instance: nfet_03v3:3                      
+  (1,3) = (4,4)                            |  proxy1 = 1                               
+  2 = 4                                    |  proxy2 = 1                               
+  4 = 4                                    |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (4,4)                   
+  proxysource = 1                          |  gate = 4                                 
+  proxybulk = 1                            |  bulk = 4                                 
+                                           |                                           
+Instance: nmos_6$1_0/nfet_03v3:3           |Instance: nfet_03v3:2                      
+  (1,3) = (4,2)                            |  proxy1 = 1                               
+  2 = 1                                    |  proxy2 = 1                               
+  4 = 4                                    |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (4,2)                   
+  proxysource = 1                          |  gate = 1                                 
+  proxybulk = 1                            |  bulk = 4                                 
+                                           |                                           
+Instance: nmos_6$1_0/nfet_03v3:0           |Instance: nfet_03v3:1                      
+  (1,3) = (4,2)                            |  proxy1 = 1                               
+  2 = 1                                    |  proxy2 = 1                               
+  4 = 4                                    |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (4,2)                   
+  proxysource = 1                          |  gate = 1                                 
+  proxybulk = 1                            |  bulk = 4                                 
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Port matching may fail to disambiguate symmetries.
+  Flattening non-matched subcircuits input_pair input_pair
+Flattening unmatched subcell nmos_mid_4_6 in circuit tail_current_diff_out (0)(1 instance)
+Flattening unmatched subcell nmos_mid_dummy in circuit tail_current_diff_out (0)(4 instances)
+Flattening unmatched subcell nfet$6 in circuit tail_current_diff_out (0)(8 instances)
+Flattening unmatched subcell nmos_2_4_mid in circuit tail_current_diff_out (0)(2 instances)
+Flattening unmatched subcell nmos_1$4 in circuit tail_current_diff_out (0)(10 instances)
+Flattening unmatched subcell nfet$7 in circuit tail_current_diff_out (0)(6 instances)
+Flattening unmatched subcell nmos_mid_right_2_6 in circuit tail_current_diff_out (0)(2 instances)
+Flattening unmatched subcell nmos_last_dummy in circuit tail_current_diff_out (0)(2 instances)
+Flattening unmatched subcell nfet in circuit tail_current_diff_out (0)(4 instances)
+Flattening unmatched subcell nmos_1$3 in circuit tail_current_diff_out (0)(8 instances)
+Flattening unmatched subcell nmos_2_6 in circuit tail_current_diff_out (0)(6 instances)
+Flattening unmatched subcell nmos_1 in circuit tail_current_diff_out (0)(72 instances)
+Flattening unmatched subcell nmos_mid_left_2_6 in circuit tail_current_diff_out (0)(2 instances)
+
+Class tail_current_diff_out (0):  Merged 141 parallel devices.
+Subcircuit summary:
+Circuit 1: tail_current_diff_out           |Circuit 2: tail_current_diff_out           
+-------------------------------------------|-------------------------------------------
+nfet_03v3 (156->15)                        |nfet_03v3 (156->15)                        
+Number of devices: 15                      |Number of devices: 15                      
+Number of nets: 71                         |Number of nets: 71                         
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: tail_current_diff_out           |Circuit 2: tail_current_diff_out           
+
+---------------------------------------------------------------------------------------
+Net: /nmos_mid_right_2_6_0/dummy_39        |Net: dummy_71                              
+  nfet_03v3/proxybulk = 1                  |  nfet_03v3/proxy4 = 1                     
+                                           |                                           
+Net: /nmos_mid_right_2_6_0/dummy_35        |Net: dummy_67                              
+  nfet_03v3/proxybulk = 1                  |  nfet_03v3/proxy4 = 1                     
+                                           |                                           
+Net: /nmos_mid_right_2_6_0/dummy_31        |Net: dummy_63                              
+  nfet_03v3/proxybulk = 1                  |  nfet_03v3/proxy4 = 1                     
+                                           |                                           
+Net: /nmos_mid_right_2_6_0/dummy_23        |Net: dummy_35                              
+  nfet_03v3/proxybulk = 1                  |  nfet_03v3/proxy4 = 1                     
+                                           |                                           
+Net: /nmos_mid_right_2_6_0/dummy_19        |Net: dummy_27                              
+  nfet_03v3/proxybulk = 1                  |  nfet_03v3/proxy4 = 1                     
+                                           |                                           
+Net: /nmos_mid_right_2_6_0/dummy_15        |Net: dummy_19                              
+  nfet_03v3/proxybulk = 1                  |  nfet_03v3/proxy4 = 1                     
+                                           |                                           
+Net: /nmos_mid_right_2_6_0/dummy_38        |Net: dummy_70                              
+  nfet_03v3/proxysource = 1                |  nfet_03v3/proxy3 = 1                     
+                                           |                                           
+Net: /nmos_mid_right_2_6_0/dummy_34        |Net: dummy_66                              
+  nfet_03v3/proxysource = 1                |  nfet_03v3/proxy3 = 1                     
+                                           |                                           
+Net: /nmos_mid_right_2_6_0/dummy_30        |Net: dummy_62                              
+  nfet_03v3/proxysource = 1                |  nfet_03v3/proxy3 = 1                     
+                                           |                                           
+Net: /nmos_mid_right_2_6_0/dummy_22        |Net: dummy_34                              
+  nfet_03v3/proxysource = 1                |  nfet_03v3/proxy3 = 1                     
+                                           |                                           
+Net: /nmos_mid_right_2_6_0/dummy_18        |Net: dummy_26                              
+  nfet_03v3/proxysource = 1                |  nfet_03v3/proxy3 = 1                     
+                                           |                                           
+Net: /nmos_mid_right_2_6_0/dummy_14        |Net: dummy_18                              
+  nfet_03v3/proxysource = 1                |  nfet_03v3/proxy3 = 1                     
+                                           |                                           
+Net: /nmos_mid_right_2_6_0/dummy_37        |Net: dummy_69                              
+  nfet_03v3/proxygate = 1                  |  nfet_03v3/proxy2 = 1                     
+                                           |                                           
+Net: /nmos_mid_right_2_6_0/dummy_33        |Net: dummy_65                              
+  nfet_03v3/proxygate = 1                  |  nfet_03v3/proxy2 = 1                     
+                                           |                                           
+Net: /nmos_mid_right_2_6_0/dummy_29        |Net: dummy_61                              
+  nfet_03v3/proxygate = 1                  |  nfet_03v3/proxy2 = 1                     
+                                           |                                           
+Net: /nmos_mid_right_2_6_0/dummy_21        |Net: dummy_33                              
+  nfet_03v3/proxygate = 1                  |  nfet_03v3/proxy2 = 1                     
+                                           |                                           
+Net: /nmos_mid_right_2_6_0/dummy_17        |Net: dummy_25                              
+  nfet_03v3/proxygate = 1                  |  nfet_03v3/proxy2 = 1                     
+                                           |                                           
+Net: /nmos_mid_right_2_6_0/dummy_13        |Net: dummy_17                              
+  nfet_03v3/proxygate = 1                  |  nfet_03v3/proxy2 = 1                     
+                                           |                                           
+Net: /nmos_mid_right_2_6_0/dummy_36        |Net: dummy_68                              
+  nfet_03v3/proxydrain = 1                 |  nfet_03v3/proxy1 = 1                     
+                                           |                                           
+Net: /nmos_mid_right_2_6_0/dummy_32        |Net: dummy_64                              
+  nfet_03v3/proxydrain = 1                 |  nfet_03v3/proxy1 = 1                     
+                                           |                                           
+Net: /nmos_mid_right_2_6_0/dummy_28        |Net: dummy_60                              
+  nfet_03v3/proxydrain = 1                 |  nfet_03v3/proxy1 = 1                     
+                                           |                                           
+Net: /nmos_mid_right_2_6_0/dummy_20        |Net: dummy_32                              
+  nfet_03v3/proxydrain = 1                 |  nfet_03v3/proxy1 = 1                     
+                                           |                                           
+Net: /nmos_mid_right_2_6_0/dummy_16        |Net: dummy_24                              
+  nfet_03v3/proxydrain = 1                 |  nfet_03v3/proxy1 = 1                     
+                                           |                                           
+Net: /nmos_mid_right_2_6_0/dummy_12        |Net: dummy_16                              
+  nfet_03v3/proxydrain = 1                 |  nfet_03v3/proxy1 = 1                     
+                                           |                                           
+Net: /nmos_mid_4_6_0//nmos_2_4_mid_0//nfet |Net: dummy_59                              
+  nfet_03v3/proxybulk = 1                  |  nfet_03v3/proxy4 = 1                     
+                                           |                                           
+Net: /nmos_mid_4_6_0//nmos_2_4_mid_0//nfet |Net: dummy_58                              
+  nfet_03v3/proxybulk = 1                  |  nfet_03v3/proxy3 = 1                     
+                                           |                                           
+Net: /nmos_mid_4_6_0//nmos_2_4_mid_0//nfet |Net: dummy_57                              
+  nfet_03v3/proxybulk = 1                  |  nfet_03v3/proxy2 = 1                     
+                                           |                                           
+Net: /nmos_mid_4_6_0//nmos_2_4_mid_0//nfet |Net: dummy_56                              
+  nfet_03v3/proxysource = 1                |  nfet_03v3/proxy1 = 1                     
+                                           |                                           
+Net: /nmos_mid_4_6_0//nmos_2_4_mid_0//nfet |Net: dummy_55                              
+  nfet_03v3/proxysource = 1                |  nfet_03v3/proxy4 = 1                     
+                                           |                                           
+Net: /nmos_mid_4_6_0//nmos_2_4_mid_0//nfet |Net: dummy_51                              
+  nfet_03v3/proxysource = 1                |  nfet_03v3/proxy4 = 1                     
+                                           |                                           
+Net: /nmos_mid_4_6_0//nmos_2_4_mid_0//nfet |Net: dummy_47                              
+  nfet_03v3/proxygate = 1                  |  nfet_03v3/proxy4 = 1                     
+                                           |                                           
+Net: /nmos_mid_4_6_0//nmos_2_4_mid_0//nfet |Net: dummy_54                              
+  nfet_03v3/proxygate = 1                  |  nfet_03v3/proxy3 = 1                     
+                                           |                                           
+Net: /nmos_mid_4_6_0//nmos_2_4_mid_0//nfet |Net: dummy_50                              
+  nfet_03v3/proxygate = 1                  |  nfet_03v3/proxy3 = 1                     
+                                           |                                           
+Net: /nmos_mid_4_6_0//nmos_2_4_mid_0//nfet |Net: dummy_46                              
+  nfet_03v3/proxydrain = 1                 |  nfet_03v3/proxy3 = 1                     
+                                           |                                           
+Net: /nmos_mid_4_6_0//nmos_2_4_mid_0//nfet |Net: dummy_53                              
+  nfet_03v3/proxydrain = 1                 |  nfet_03v3/proxy2 = 1                     
+                                           |                                           
+Net: /nmos_mid_4_6_0//nmos_2_4_mid_0//nfet |Net: dummy_49                              
+  nfet_03v3/proxydrain = 1                 |  nfet_03v3/proxy2 = 1                     
+                                           |                                           
+Net: /nmos_mid_4_6_0//nmos_2_4_mid_0//nmos |Net: dummy_45                              
+  nfet_03v3/proxybulk = 1                  |  nfet_03v3/proxy2 = 1                     
+                                           |                                           
+Net: /nmos_mid_4_6_0//nmos_2_4_mid_0//nmos |Net: dummy_52                              
+  nfet_03v3/proxybulk = 1                  |  nfet_03v3/proxy1 = 1                     
+                                           |                                           
+Net: /nmos_mid_4_6_0//nmos_2_4_mid_0//nmos |Net: dummy_48                              
+  nfet_03v3/proxybulk = 1                  |  nfet_03v3/proxy1 = 1                     
+                                           |                                           
+Net: /nmos_mid_4_6_0//nmos_2_4_mid_0//nmos |Net: dummy_44                              
+  nfet_03v3/proxysource = 1                |  nfet_03v3/proxy1 = 1                     
+                                           |                                           
+Net: /nmos_mid_4_6_0//nmos_2_4_mid_0//nmos |Net: dummy_43                              
+  nfet_03v3/proxysource = 1                |  nfet_03v3/proxy4 = 1                     
+                                           |                                           
+Net: /nmos_mid_4_6_0//nmos_2_4_mid_0//nmos |Net: dummy_42                              
+  nfet_03v3/proxysource = 1                |  nfet_03v3/proxy3 = 1                     
+                                           |                                           
+Net: /nmos_mid_4_6_0//nmos_2_4_mid_0//nmos |Net: dummy_41                              
+  nfet_03v3/proxygate = 1                  |  nfet_03v3/proxy2 = 1                     
+                                           |                                           
+Net: /nmos_mid_4_6_0//nmos_2_4_mid_0//nmos |Net: dummy_40                              
+  nfet_03v3/proxygate = 1                  |  nfet_03v3/proxy1 = 1                     
+                                           |                                           
+Net: /nmos_mid_4_6_0//nmos_2_4_mid_0//nmos |Net: dummy_39                              
+  nfet_03v3/proxygate = 1                  |  nfet_03v3/proxy4 = 1                     
+                                           |                                           
+Net: /nmos_mid_4_6_0//nmos_2_4_mid_0//nmos |Net: dummy_38                              
+  nfet_03v3/proxydrain = 1                 |  nfet_03v3/proxy3 = 1                     
+                                           |                                           
+Net: /nmos_mid_4_6_0//nmos_2_4_mid_0//nmos |Net: dummy_37                              
+  nfet_03v3/proxydrain = 1                 |  nfet_03v3/proxy2 = 1                     
+                                           |                                           
+Net: /nmos_mid_4_6_0//nmos_2_4_mid_0//nmos |Net: dummy_36                              
+  nfet_03v3/proxydrain = 1                 |  nfet_03v3/proxy1 = 1                     
+                                           |                                           
+Net: /nmos_mid_4_6_0//nmos_2_4_mid_0//nmos |Net: dummy_31                              
+  nfet_03v3/proxybulk = 1                  |  nfet_03v3/proxy4 = 1                     
+                                           |                                           
+Net: /nmos_mid_4_6_0//nmos_2_4_mid_0//nmos |Net: dummy_23                              
+  nfet_03v3/proxysource = 1                |  nfet_03v3/proxy4 = 1                     
+                                           |                                           
+Net: /nmos_mid_4_6_0//nmos_2_4_mid_0//nmos |Net: dummy_15                              
+  nfet_03v3/proxygate = 1                  |  nfet_03v3/proxy4 = 1                     
+                                           |                                           
+Net: /nmos_mid_4_6_0//nmos_2_4_mid_0//nmos |Net: dummy_30                              
+  nfet_03v3/proxydrain = 1                 |  nfet_03v3/proxy3 = 1                     
+                                           |                                           
+Net: /nmos_mid_4_6_0//nmos_2_4_mid_0//nmos |Net: dummy_22                              
+  nfet_03v3/proxybulk = 1                  |  nfet_03v3/proxy3 = 1                     
+                                           |                                           
+Net: /nmos_mid_4_6_0//nmos_2_4_mid_0//nmos |Net: dummy_14                              
+  nfet_03v3/proxysource = 1                |  nfet_03v3/proxy3 = 1                     
+                                           |                                           
+Net: /nmos_mid_4_6_0//nmos_2_4_mid_0//nmos |Net: dummy_29                              
+  nfet_03v3/proxygate = 1                  |  nfet_03v3/proxy2 = 1                     
+                                           |                                           
+Net: /nmos_mid_4_6_0//nmos_2_4_mid_0//nmos |Net: dummy_21                              
+  nfet_03v3/proxydrain = 1                 |  nfet_03v3/proxy2 = 1                     
+                                           |                                           
+Net: /nmos_mid_4_6_0//nmos_mid_dummy_0//nf |Net: dummy_13                              
+  nfet_03v3/proxybulk = 1                  |  nfet_03v3/proxy2 = 1                     
+                                           |                                           
+Net: /nmos_mid_4_6_0//nmos_mid_dummy_0//nf |Net: dummy_28                              
+  nfet_03v3/proxysource = 1                |  nfet_03v3/proxy1 = 1                     
+                                           |                                           
+Net: /nmos_mid_4_6_0//nmos_mid_dummy_0//nf |Net: dummy_20                              
+  nfet_03v3/proxygate = 1                  |  nfet_03v3/proxy1 = 1                     
+                                           |                                           
+Net: /nmos_mid_4_6_0//nmos_mid_dummy_0//nf |Net: dummy_12                              
+  nfet_03v3/proxydrain = 1                 |  nfet_03v3/proxy1 = 1                     
+                                           |                                           
+Net: I3C                                   |Net: I3C                                   
+  nfet_03v3/(1|3) = 1                      |  nfet_03v3/(drain|source) = 1             
+                                           |                                           
+Net: I3B                                   |Net: I3B                                   
+  nfet_03v3/(1|3) = 1                      |  nfet_03v3/(drain|source) = 1             
+                                           |                                           
+Net: I3A                                   |Net: I3A                                   
+  nfet_03v3/(1|3) = 1                      |  nfet_03v3/(drain|source) = 1             
+                                           |                                           
+Net: I2C                                   |Net: I2C                                   
+  nfet_03v3/(1|3) = 1                      |  nfet_03v3/(drain|source) = 1             
+                                           |                                           
+Net: I2B                                   |Net: I2B                                   
+  nfet_03v3/(1|3) = 1                      |  nfet_03v3/(drain|source) = 1             
+                                           |                                           
+Net: I2A                                   |Net: I2A                                   
+  nfet_03v3/(1|3) = 1                      |  nfet_03v3/(drain|source) = 1             
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: IBIAS                                 |Net: IBIAS                                 
+  nfet_03v3/(1|3) = 3                      |  nfet_03v3/gate = 11                      
+  nfet_03v3/2 = 11                         |  nfet_03v3/(drain|source) = 3             
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: I1C                                   |Net: I1C                                   
+  nfet_03v3/(1|3) = 3                      |  nfet_03v3/(drain|source) = 3             
+  nfet_03v3/2 = 1                          |  nfet_03v3/gate = 1                       
+                                           |                                           
+Net: I1B                                   |Net: I1B                                   
+  nfet_03v3/(1|3) = 3                      |  nfet_03v3/(drain|source) = 3             
+  nfet_03v3/2 = 1                          |  nfet_03v3/gate = 1                       
+                                           |                                           
+Net: I1A                                   |Net: I1A                                   
+  nfet_03v3/(1|3) = 3                      |  nfet_03v3/(drain|source) = 3             
+  nfet_03v3/2 = 1                          |  nfet_03v3/gate = 1                       
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: VSS                                   |Net: VSS                                   
+  nfet_03v3/(1|3) = 12                     |  nfet_03v3/(drain|source) = 12            
+  nfet_03v3/2 = 1                          |  nfet_03v3/bulk = 15                      
+  nfet_03v3/4 = 15                         |  nfet_03v3/gate = 1                       
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: tail_current_diff_out           |Circuit 2: tail_current_diff_out           
+
+---------------------------------------------------------------------------------------
+Instance: nmos_mid_right_2_6_0/nfet_03v3:6 |Instance: nfet_03v3:3C                     
+  (1,3) = (28,1)                           |  proxy1 = 1                               
+  2 = 14                                   |  proxy2 = 1                               
+  4 = 28                                   |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (28,1)                  
+  proxysource = 1                          |  gate = 14                                
+  proxybulk = 1                            |  bulk = 28                                
+                                           |                                           
+Instance: nmos_mid_right_2_6_0/nfet_03v3:5 |Instance: nfet_03v3:3B                     
+  (1,3) = (28,1)                           |  proxy1 = 1                               
+  2 = 14                                   |  proxy2 = 1                               
+  4 = 28                                   |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (28,1)                  
+  proxysource = 1                          |  gate = 14                                
+  proxybulk = 1                            |  bulk = 28                                
+                                           |                                           
+Instance: nmos_mid_right_2_6_0/nfet_03v3:4 |Instance: nfet_03v3:3A                     
+  (1,3) = (28,1)                           |  proxy1 = 1                               
+  2 = 14                                   |  proxy2 = 1                               
+  4 = 28                                   |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (28,1)                  
+  proxysource = 1                          |  gate = 14                                
+  proxybulk = 1                            |  bulk = 28                                
+                                           |                                           
+Instance: nmos_mid_right_2_6_0/nfet_03v3:2 |Instance: nfet_03v3:2C                     
+  (1,3) = (28,1)                           |  proxy1 = 1                               
+  2 = 14                                   |  proxy2 = 1                               
+  4 = 28                                   |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (28,1)                  
+  proxysource = 1                          |  gate = 14                                
+  proxybulk = 1                            |  bulk = 28                                
+                                           |                                           
+Instance: nmos_mid_right_2_6_0/nfet_03v3:1 |Instance: nfet_03v3:2B                     
+  (1,3) = (28,1)                           |  proxy1 = 1                               
+  2 = 14                                   |  proxy2 = 1                               
+  4 = 28                                   |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (28,1)                  
+  proxysource = 1                          |  gate = 14                                
+  proxybulk = 1                            |  bulk = 28                                
+                                           |                                           
+Instance: nmos_mid_right_2_6_0/nfet_03v3:0 |Instance: nfet_03v3:2A                     
+  (1,3) = (28,1)                           |  proxy1 = 1                               
+  2 = 14                                   |  proxy2 = 1                               
+  4 = 28                                   |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (28,1)                  
+  proxysource = 1                          |  gate = 14                                
+  proxybulk = 1                            |  bulk = 28                                
+                                           |                                           
+Instance: nmos_mid_4_6_0//nmos_2_4_mid_0// |Instance: nfet_03v3:8                      
+  (1,3) = (4,4)                            |  proxy1 = 1                               
+  2 = 4                                    |  proxy2 = 1                               
+  4 = 28                                   |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (28,28)                 
+  proxysource = 1                          |  gate = 28                                
+  proxybulk = 1                            |  bulk = 28                                
+                                           |                                           
+Instance: nmos_mid_4_6_0//nmos_2_4_mid_0// |Instance: nfet_03v3:4                      
+  (1,3) = (4,4)                            |  proxy1 = 1                               
+  2 = 4                                    |  proxy2 = 1                               
+  4 = 28                                   |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (4,4)                   
+  proxysource = 1                          |  gate = 4                                 
+  proxybulk = 1                            |  bulk = 28                                
+                                           |                                           
+Instance: nmos_mid_4_6_0//nmos_2_4_mid_0// |Instance: nfet_03v3:3                      
+  (1,3) = (4,4)                            |  proxy1 = 1                               
+  2 = 4                                    |  proxy2 = 1                               
+  4 = 28                                   |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (4,4)                   
+  proxysource = 1                          |  gate = 4                                 
+  proxybulk = 1                            |  bulk = 28                                
+                                           |                                           
+Instance: nmos_mid_4_6_0//nmos_2_4_mid_0// |Instance: nfet_03v3:2                      
+  (1,3) = (28,4)                           |  proxy1 = 1                               
+  2 = 14                                   |  proxy2 = 1                               
+  4 = 28                                   |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (4,4)                   
+  proxysource = 1                          |  gate = 4                                 
+  proxybulk = 1                            |  bulk = 28                                
+                                           |                                           
+Instance: nmos_mid_4_6_0//nmos_2_4_mid_0// |Instance: nfet_03v3:1                      
+  (1,3) = (28,4)                           |  proxy1 = 1                               
+  2 = 14                                   |  proxy2 = 1                               
+  4 = 28                                   |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (14,14)                 
+  proxysource = 1                          |  gate = 14                                
+  proxybulk = 1                            |  bulk = 28                                
+                                           |                                           
+Instance: nmos_mid_4_6_0//nmos_2_4_mid_0// |Instance: nfet_03v3:S                      
+  (1,3) = (28,4)                           |  proxy1 = 1                               
+  2 = 14                                   |  proxy2 = 1                               
+  4 = 28                                   |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (28,14)                 
+  proxysource = 1                          |  gate = 14                                
+  proxybulk = 1                            |  bulk = 28                                
+                                           |                                           
+Instance: nmos_mid_4_6_0//nmos_2_4_mid_0// |Instance: nfet_03v3:1C                     
+  (1,3) = (28,14)                          |  proxy1 = 1                               
+  2 = 14                                   |  proxy2 = 1                               
+  4 = 28                                   |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (28,4)                  
+  proxysource = 1                          |  gate = 14                                
+  proxybulk = 1                            |  bulk = 28                                
+                                           |                                           
+Instance: nmos_mid_4_6_0//nmos_2_4_mid_0// |Instance: nfet_03v3:1B                     
+  (1,3) = (14,14)                          |  proxy1 = 1                               
+  2 = 14                                   |  proxy2 = 1                               
+  4 = 28                                   |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (28,4)                  
+  proxysource = 1                          |  gate = 14                                
+  proxybulk = 1                            |  bulk = 28                                
+                                           |                                           
+Instance: nmos_mid_4_6_0//nmos_mid_dummy_0 |Instance: nfet_03v3:1A                     
+  (1,3) = (28,28)                          |  proxy1 = 1                               
+  2 = 28                                   |  proxy2 = 1                               
+  4 = 28                                   |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (28,4)                  
+  proxysource = 1                          |  gate = 14                                
+  proxybulk = 1                            |  bulk = 28                                
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Port matching may fail to disambiguate symmetries.
+  Flattening non-matched subcircuits tail_current_diff_out tail_current_diff_out
+Flattening unmatched subcell one_differential_output_ota in circuit all (0)(3 instances)
+Flattening unmatched subcell differential_output_ota in circuit all (0)(3 instances)
+Flattening unmatched subcell res_cap in circuit all (0)(3 instances)
+Flattening unmatched subcell differential_miller_cap$1 in circuit all (0)(3 instances)
+Flattening unmatched subcell cap_mim$4 in circuit all (0)(102 instances)
+Flattening unmatched subcell cap_mim in circuit all (0)(180 instances)
+Flattening unmatched subcell cap_mim$5 in circuit all (0)(12 instances)
+Flattening unmatched subcell differential_nulling_res$1 in circuit all (0)(3 instances)
+Flattening unmatched subcell res_13p37u in circuit all (0)(84 instances)
+Flattening unmatched subcell miller_cap in circuit three_differential_output_ota (1)(6 instances)
+Flattening unmatched subcell nulling_res in circuit three_differential_output_ota (1)(6 instances)
+Flattening unmatched subcell active_load_diff_out in circuit three_differential_output_ota (1)(3 instances)
+
+Class all (0):  Merged 375 parallel devices.
+Class three_differential_output_ota (1):  Merged 10 parallel devices.
+Subcircuit summary:
+Circuit 1: all                             |Circuit 2: three_differential_output_ota   
+-------------------------------------------|-------------------------------------------
+differential_load_res (3)                  |differential_load_res (3)                  
+pfet_03v3 (120->7)                         |pfet_03v3 (156->19) **Mismatch**           
+nfet_03v3 (192->21)                        |nfet_03v3 (192->27) **Mismatch**           
+cap_mim_2f0_m4m5_noshield (294->7)         |(no matching element)                      
+ppolyf_u_1k (84->7)                        |ppolyf_u_1k (90->7)                        
+(no matching element)                      |cap_mim_2f0fF (360->12)                    
+Number of devices: 45 **Mismatch**         |Number of devices: 68 **Mismatch**         
+Number of nets: 139 **Mismatch**           |Number of nets: 217 **Mismatch**           
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: all                             |Circuit 2: three_differential_output_ota   
+
+---------------------------------------------------------------------------------------
+Net: OP3                                   |Net: OP[1]                                 
+  pfet_03v3/(1|3) = 1                      |  pfet_03v3/(drain|source) = 1             
+  cap_mim_2f0_m4m5_noshield/2 = 1          |  cap_mim_2f0fF/1 = 1                      
+  nfet_03v3/(1|3) = 1                      |  nfet_03v3/(drain|source) = 1             
+                                           |                                           
+Net: ON3                                   |Net: ON[1]                                 
+  pfet_03v3/(1|3) = 1                      |  pfet_03v3/(drain|source) = 1             
+  cap_mim_2f0_m4m5_noshield/2 = 1          |  cap_mim_2f0fF/1 = 1                      
+  nfet_03v3/(1|3) = 1                      |  nfet_03v3/(drain|source) = 1             
+                                           |                                           
+Net: OP2                                   |Net: OP[2]                                 
+  pfet_03v3/(1|3) = 1                      |  pfet_03v3/(drain|source) = 1             
+  cap_mim_2f0_m4m5_noshield/2 = 1          |  cap_mim_2f0fF/1 = 1                      
+  nfet_03v3/(1|3) = 1                      |  nfet_03v3/(drain|source) = 1             
+                                           |                                           
+Net: ON2                                   |Net: ON[2]                                 
+  pfet_03v3/(1|3) = 1                      |  pfet_03v3/(drain|source) = 1             
+  cap_mim_2f0_m4m5_noshield/2 = 1          |  cap_mim_2f0fF/1 = 1                      
+  nfet_03v3/(1|3) = 1                      |  nfet_03v3/(drain|source) = 1             
+                                           |                                           
+Net: OP1                                   |Net: OP[3]                                 
+  pfet_03v3/(1|3) = 1                      |  pfet_03v3/(drain|source) = 1             
+  cap_mim_2f0_m4m5_noshield/2 = 1          |  cap_mim_2f0fF/1 = 1                      
+  nfet_03v3/(1|3) = 1                      |  nfet_03v3/(drain|source) = 1             
+                                           |                                           
+Net: ON1                                   |Net: ON[3]                                 
+  pfet_03v3/(1|3) = 1                      |  pfet_03v3/(drain|source) = 1             
+  cap_mim_2f0_m4m5_noshield/2 = 1          |  cap_mim_2f0fF/1 = 1                      
+  nfet_03v3/(1|3) = 1                      |  nfet_03v3/(drain|source) = 1             
+                                           |                                           
+Net: IP3                                   |Net: net4                                  
+  nfet_03v3/2 = 1                          |  pfet_03v3/gate = 2                       
+                                           |  differential_load_res/G = 1              
+                                           |                                           
+Net: IN3                                   |Net: net9                                  
+  nfet_03v3/2 = 1                          |  pfet_03v3/gate = 2                       
+                                           |  differential_load_res/G = 1              
+                                           |                                           
+Net: IP2                                   |Net: net14                                 
+  nfet_03v3/2 = 1                          |  pfet_03v3/gate = 2                       
+                                           |  differential_load_res/G = 1              
+                                           |                                           
+Net: IN2                                   |Net: IN[1]                                 
+  nfet_03v3/2 = 1                          |  nfet_03v3/gate = 1                       
+                                           |                                           
+Net: IP1                                   |Net: IP[1]                                 
+  nfet_03v3/2 = 1                          |  nfet_03v3/gate = 1                       
+                                           |                                           
+Net: IN1                                   |Net: IN[2]                                 
+  nfet_03v3/2 = 1                          |  nfet_03v3/gate = 1                       
+                                           |                                           
+Net: /tail_current_diff_out_0//nmos_mid_4_ |Net: IP[2]                                 
+  nfet_03v3/proxydrain = 1                 |  nfet_03v3/gate = 1                       
+                                           |                                           
+Net: /tail_current_diff_out_0//nmos_mid_4_ |Net: IN[3]                                 
+  nfet_03v3/proxygate = 1                  |  nfet_03v3/gate = 1                       
+                                           |                                           
+Net: /tail_current_diff_out_0//nmos_mid_4_ |Net: IP[3]                                 
+  nfet_03v3/proxysource = 1                |  nfet_03v3/gate = 1                       
+                                           |                                           
+Net: /tail_current_diff_out_0//nmos_mid_4_ |Net: output_stage:3/dummy_4                
+  nfet_03v3/proxybulk = 1                  |  pfet_03v3/proxy1 = 1                     
+                                           |                                           
+Net: /tail_current_diff_out_0//nmos_mid_4_ |Net: output_stage:3/dummy_8                
+  nfet_03v3/proxydrain = 1                 |  pfet_03v3/proxy1 = 1                     
+                                           |                                           
+Net: /tail_current_diff_out_0//nmos_mid_4_ |Net: output_stage:7/dummy_4                
+  nfet_03v3/proxydrain = 1                 |  pfet_03v3/proxy1 = 1                     
+                                           |                                           
+Net: /tail_current_diff_out_0//nmos_mid_4_ |Net: output_stage:11/dummy_4               
+  nfet_03v3/proxydrain = 1                 |  pfet_03v3/proxy1 = 1                     
+                                           |                                           
+Net: /tail_current_diff_out_0//nmos_mid_4_ |Net: output_stage:17/dummy_4               
+  nfet_03v3/proxygate = 1                  |  pfet_03v3/proxy1 = 1                     
+                                           |                                           
+Net: /tail_current_diff_out_0//nmos_mid_4_ |Net: output_stage:20/dummy_4               
+  nfet_03v3/proxygate = 1                  |  pfet_03v3/proxy1 = 1                     
+                                           |                                           
+Net: /tail_current_diff_out_0//nmos_mid_4_ |Net: output_stage:25/dummy_4               
+  nfet_03v3/proxygate = 1                  |  pfet_03v3/proxy1 = 1                     
+                                           |                                           
+Net: /tail_current_diff_out_0//nmos_mid_4_ |Net: active_load_diff_out:2/dummy_5        
+  nfet_03v3/proxysource = 1                |  pfet_03v3/proxy1 = 1                     
+                                           |                                           
+Net: /tail_current_diff_out_0//nmos_mid_4_ |Net: active_load_diff_out:2/dummy_9        
+  nfet_03v3/proxysource = 1                |  pfet_03v3/proxy1 = 1                     
+                                           |                                           
+Net: /tail_current_diff_out_0//nmos_mid_4_ |Net: active_load_diff_out:2/dummy_13       
+  nfet_03v3/proxysource = 1                |  pfet_03v3/proxy1 = 1                     
+                                           |                                           
+Net: /tail_current_diff_out_0//nmos_mid_4_ |Net: active_load_diff_out:2/dummy_17       
+  nfet_03v3/proxybulk = 1                  |  pfet_03v3/proxy1 = 1                     
+                                           |                                           
+Net: /tail_current_diff_out_0//nmos_mid_4_ |Net: active_load_diff_out:14/dummy_5       
+  nfet_03v3/proxybulk = 1                  |  pfet_03v3/proxy1 = 1                     
+                                           |                                           
+Net: /tail_current_diff_out_0//nmos_mid_4_ |Net: active_load_diff_out:14/dummy_9       
+  nfet_03v3/proxybulk = 1                  |  pfet_03v3/proxy1 = 1                     
+                                           |                                           
+Net: /tail_current_diff_out_0//nmos_mid_4_ |Net: active_load_diff_out:14/dummy_13      
+  nfet_03v3/proxydrain = 1                 |  pfet_03v3/proxy1 = 1                     
+                                           |                                           
+Net: /tail_current_diff_out_0//nmos_mid_4_ |Net: active_load_diff_out:14/dummy_17      
+  nfet_03v3/proxygate = 1                  |  pfet_03v3/proxy1 = 1                     
+                                           |                                           
+Net: /tail_current_diff_out_0//nmos_mid_4_ |Net: active_load_diff_out:23/dummy_5       
+  nfet_03v3/proxysource = 1                |  pfet_03v3/proxy1 = 1                     
+                                           |                                           
+Net: /tail_current_diff_out_0//nmos_mid_4_ |Net: active_load_diff_out:23/dummy_9       
+  nfet_03v3/proxybulk = 1                  |  pfet_03v3/proxy1 = 1                     
+                                           |                                           
+Net: /tail_current_diff_out_0//nmos_mid_4_ |Net: active_load_diff_out:23/dummy_13      
+  nfet_03v3/proxydrain = 1                 |  pfet_03v3/proxy1 = 1                     
+                                           |                                           
+Net: /tail_current_diff_out_0//nmos_mid_4_ |Net: active_load_diff_out:23/dummy_17      
+  nfet_03v3/proxydrain = 1                 |  pfet_03v3/proxy1 = 1                     
+                                           |                                           
+Net: /tail_current_diff_out_0//nmos_mid_4_ |Net: output_stage:3/dummy_5                
+  nfet_03v3/proxydrain = 1                 |  pfet_03v3/proxy2 = 1                     
+                                           |                                           
+Net: /tail_current_diff_out_0//nmos_mid_4_ |Net: output_stage:3/dummy_9                
+  nfet_03v3/proxygate = 1                  |  pfet_03v3/proxy2 = 1                     
+                                           |                                           
+Net: /tail_current_diff_out_0//nmos_mid_4_ |Net: output_stage:7/dummy_5                
+  nfet_03v3/proxygate = 1                  |  pfet_03v3/proxy2 = 1                     
+                                           |                                           
+Net: /tail_current_diff_out_0//nmos_mid_4_ |Net: output_stage:11/dummy_5               
+  nfet_03v3/proxygate = 1                  |  pfet_03v3/proxy2 = 1                     
+                                           |                                           
+Net: /tail_current_diff_out_0//nmos_mid_4_ |Net: output_stage:17/dummy_5               
+  nfet_03v3/proxysource = 1                |  pfet_03v3/proxy2 = 1                     
+                                           |                                           
+Net: /tail_current_diff_out_0//nmos_mid_4_ |Net: output_stage:20/dummy_5               
+  nfet_03v3/proxysource = 1                |  pfet_03v3/proxy2 = 1                     
+                                           |                                           
+Net: /tail_current_diff_out_0//nmos_mid_4_ |Net: output_stage:25/dummy_5               
+  nfet_03v3/proxysource = 1                |  pfet_03v3/proxy2 = 1                     
+                                           |                                           
+Net: /tail_current_diff_out_0//nmos_mid_4_ |Net: active_load_diff_out:2/dummy_6        
+  nfet_03v3/proxybulk = 1                  |  pfet_03v3/proxy2 = 1                     
+                                           |                                           
+Net: /tail_current_diff_out_0//nmos_mid_4_ |Net: active_load_diff_out:2/dummy_10       
+  nfet_03v3/proxybulk = 1                  |  pfet_03v3/proxy2 = 1                     
+                                           |                                           
+Net: /tail_current_diff_out_0//nmos_mid_4_ |Net: active_load_diff_out:2/dummy_14       
+  nfet_03v3/proxybulk = 1                  |  pfet_03v3/proxy2 = 1                     
+                                           |                                           
+Net: /tail_current_diff_out_0//nmos_mid_ri |Net: active_load_diff_out:2/dummy_18       
+  nfet_03v3/proxydrain = 1                 |  pfet_03v3/proxy2 = 1                     
+                                           |                                           
+Net: /tail_current_diff_out_0//nmos_mid_ri |Net: active_load_diff_out:14/dummy_6       
+  nfet_03v3/proxydrain = 1                 |  pfet_03v3/proxy2 = 1                     
+                                           |                                           
+Net: /tail_current_diff_out_0//nmos_mid_ri |Net: active_load_diff_out:14/dummy_10      
+  nfet_03v3/proxydrain = 1                 |  pfet_03v3/proxy2 = 1                     
+                                           |                                           
+Net: /tail_current_diff_out_0//nmos_mid_ri |Net: active_load_diff_out:14/dummy_14      
+  nfet_03v3/proxydrain = 1                 |  pfet_03v3/proxy2 = 1                     
+                                           |                                           
+Net: /tail_current_diff_out_0//nmos_mid_ri |Net: active_load_diff_out:14/dummy_18      
+  nfet_03v3/proxydrain = 1                 |  pfet_03v3/proxy2 = 1                     
+                                           |                                           
+Net: /tail_current_diff_out_0//nmos_mid_ri |Net: active_load_diff_out:23/dummy_6       
+  nfet_03v3/proxydrain = 1                 |  pfet_03v3/proxy2 = 1                     
+                                           |                                           
+Net: /tail_current_diff_out_0//nmos_mid_ri |Net: active_load_diff_out:23/dummy_10      
+  nfet_03v3/proxygate = 1                  |  pfet_03v3/proxy2 = 1                     
+                                           |                                           
+Net: /tail_current_diff_out_0//nmos_mid_ri |Net: active_load_diff_out:23/dummy_14      
+  nfet_03v3/proxygate = 1                  |  pfet_03v3/proxy2 = 1                     
+                                           |                                           
+Net: /tail_current_diff_out_0//nmos_mid_ri |Net: active_load_diff_out:23/dummy_18      
+  nfet_03v3/proxygate = 1                  |  pfet_03v3/proxy2 = 1                     
+                                           |                                           
+Net: /tail_current_diff_out_0//nmos_mid_ri |Net: output_stage:3/dummy_6                
+  nfet_03v3/proxygate = 1                  |  pfet_03v3/proxy3 = 1                     
+                                           |                                           
+Net: /tail_current_diff_out_0//nmos_mid_ri |Net: output_stage:3/dummy_10               
+  nfet_03v3/proxygate = 1                  |  pfet_03v3/proxy3 = 1                     
+                                           |                                           
+Net: /tail_current_diff_out_0//nmos_mid_ri |Net: output_stage:7/dummy_6                
+  nfet_03v3/proxygate = 1                  |  pfet_03v3/proxy3 = 1                     
+                                           |                                           
+Net: /tail_current_diff_out_0//nmos_mid_ri |Net: output_stage:11/dummy_6               
+  nfet_03v3/proxysource = 1                |  pfet_03v3/proxy3 = 1                     
+                                           |                                           
+Net: /tail_current_diff_out_0//nmos_mid_ri |Net: output_stage:17/dummy_6               
+  nfet_03v3/proxysource = 1                |  pfet_03v3/proxy3 = 1                     
+                                           |                                           
+Net: /tail_current_diff_out_0//nmos_mid_ri |Net: output_stage:20/dummy_6               
+  nfet_03v3/proxysource = 1                |  pfet_03v3/proxy3 = 1                     
+                                           |                                           
+Net: /tail_current_diff_out_0//nmos_mid_ri |Net: output_stage:25/dummy_6               
+  nfet_03v3/proxysource = 1                |  pfet_03v3/proxy3 = 1                     
+                                           |                                           
+Net: /tail_current_diff_out_0//nmos_mid_ri |Net: active_load_diff_out:2/dummy_7        
+  nfet_03v3/proxysource = 1                |  pfet_03v3/proxy3 = 1                     
+                                           |                                           
+Net: /tail_current_diff_out_0//nmos_mid_ri |Net: active_load_diff_out:2/dummy_11       
+  nfet_03v3/proxysource = 1                |  pfet_03v3/proxy3 = 1                     
+                                           |                                           
+Net: /tail_current_diff_out_0//nmos_mid_ri |Net: active_load_diff_out:2/dummy_15       
+  nfet_03v3/proxybulk = 1                  |  pfet_03v3/proxy3 = 1                     
+                                           |                                           
+Net: /tail_current_diff_out_0//nmos_mid_ri |Net: active_load_diff_out:2/dummy_19       
+  nfet_03v3/proxybulk = 1                  |  pfet_03v3/proxy3 = 1                     
+                                           |                                           
+Net: /tail_current_diff_out_0//nmos_mid_ri |Net: active_load_diff_out:14/dummy_7       
+  nfet_03v3/proxybulk = 1                  |  pfet_03v3/proxy3 = 1                     
+                                           |                                           
+Net: /tail_current_diff_out_0//nmos_mid_ri |Net: active_load_diff_out:14/dummy_11      
+  nfet_03v3/proxybulk = 1                  |  pfet_03v3/proxy3 = 1                     
+                                           |                                           
+Net: /tail_current_diff_out_0//nmos_mid_ri |Net: active_load_diff_out:14/dummy_15      
+  nfet_03v3/proxybulk = 1                  |  pfet_03v3/proxy3 = 1                     
+                                           |                                           
+Net: /tail_current_diff_out_0//nmos_mid_ri |Net: active_load_diff_out:14/dummy_19      
+  nfet_03v3/proxybulk = 1                  |  pfet_03v3/proxy3 = 1                     
+                                           |                                           
+Net: /one_differential_output_ota_0//diffe |Net: active_load_diff_out:23/dummy_7       
+  differential_load_res/G = 1              |  pfet_03v3/proxy3 = 1                     
+                                           |                                           
+Net: /one_differential_output_ota_1//diffe |Net: active_load_diff_out:23/dummy_11      
+  differential_load_res/G = 1              |  pfet_03v3/proxy3 = 1                     
+                                           |                                           
+Net: /one_differential_output_ota_2//diffe |Net: active_load_diff_out:23/dummy_15      
+  differential_load_res/G = 1              |  pfet_03v3/proxy3 = 1                     
+                                           |                                           
+Net: /one_differential_output_ota_0//diffe |Net: active_load_diff_out:23/dummy_19      
+  pfet_03v3/proxydrain = 1                 |  pfet_03v3/proxy3 = 1                     
+                                           |                                           
+Net: /one_differential_output_ota_0//diffe |Net: output_stage:3/dummy_7                
+  pfet_03v3/proxydrain = 1                 |  pfet_03v3/proxy4 = 1                     
+                                           |                                           
+Net: /one_differential_output_ota_0//diffe |Net: output_stage:3/dummy_11               
+  pfet_03v3/proxydrain = 1                 |  pfet_03v3/proxy4 = 1                     
+                                           |                                           
+Net: /one_differential_output_ota_1//diffe |Net: output_stage:7/dummy_7                
+  pfet_03v3/proxydrain = 1                 |  pfet_03v3/proxy4 = 1                     
+                                           |                                           
+Net: /one_differential_output_ota_1//diffe |Net: output_stage:11/dummy_7               
+  pfet_03v3/proxydrain = 1                 |  pfet_03v3/proxy4 = 1                     
+                                           |                                           
+Net: /one_differential_output_ota_2//diffe |Net: output_stage:17/dummy_7               
+  pfet_03v3/proxydrain = 1                 |  pfet_03v3/proxy4 = 1                     
+                                           |                                           
+Net: /one_differential_output_ota_2//diffe |Net: output_stage:20/dummy_7               
+  pfet_03v3/proxydrain = 1                 |  pfet_03v3/proxy4 = 1                     
+                                           |                                           
+Net: /one_differential_output_ota_0//diffe |Net: output_stage:25/dummy_7               
+  pfet_03v3/proxygate = 1                  |  pfet_03v3/proxy4 = 1                     
+                                           |                                           
+Net: /one_differential_output_ota_0//diffe |Net: active_load_diff_out:2/dummy_8        
+  pfet_03v3/proxygate = 1                  |  pfet_03v3/proxy4 = 1                     
+                                           |                                           
+Net: /one_differential_output_ota_0//diffe |Net: active_load_diff_out:2/dummy_12       
+  pfet_03v3/proxygate = 1                  |  pfet_03v3/proxy4 = 1                     
+                                           |                                           
+Net: /one_differential_output_ota_1//diffe |Net: active_load_diff_out:2/dummy_16       
+  pfet_03v3/proxygate = 1                  |  pfet_03v3/proxy4 = 1                     
+                                           |                                           
+Net: /one_differential_output_ota_1//diffe |Net: active_load_diff_out:2/dummy_20       
+  pfet_03v3/proxygate = 1                  |  pfet_03v3/proxy4 = 1                     
+                                           |                                           
+Net: /one_differential_output_ota_2//diffe |Net: active_load_diff_out:14/dummy_8       
+  pfet_03v3/proxygate = 1                  |  pfet_03v3/proxy4 = 1                     
+                                           |                                           
+Net: /one_differential_output_ota_2//diffe |Net: active_load_diff_out:14/dummy_12      
+  pfet_03v3/proxygate = 1                  |  pfet_03v3/proxy4 = 1                     
+                                           |                                           
+Net: /one_differential_output_ota_0//diffe |Net: active_load_diff_out:14/dummy_16      
+  pfet_03v3/proxysource = 1                |  pfet_03v3/proxy4 = 1                     
+                                           |                                           
+Net: /one_differential_output_ota_0//diffe |Net: active_load_diff_out:14/dummy_20      
+  pfet_03v3/proxysource = 1                |  pfet_03v3/proxy4 = 1                     
+                                           |                                           
+Net: /one_differential_output_ota_0//diffe |Net: active_load_diff_out:23/dummy_8       
+  pfet_03v3/proxysource = 1                |  pfet_03v3/proxy4 = 1                     
+                                           |                                           
+Net: /one_differential_output_ota_1//diffe |Net: active_load_diff_out:23/dummy_12      
+  pfet_03v3/proxysource = 1                |  pfet_03v3/proxy4 = 1                     
+                                           |                                           
+Net: /one_differential_output_ota_1//diffe |Net: active_load_diff_out:23/dummy_16      
+  pfet_03v3/proxysource = 1                |  pfet_03v3/proxy4 = 1                     
+                                           |                                           
+Net: /one_differential_output_ota_2//diffe |Net: active_load_diff_out:23/dummy_20      
+  pfet_03v3/proxysource = 1                |  pfet_03v3/proxy4 = 1                     
+                                           |                                           
+Net: /one_differential_output_ota_2//diffe |Net: input_pair:1/dummy_7                  
+  pfet_03v3/proxysource = 1                |  nfet_03v3/proxy1 = 1                     
+                                           |                                           
+Net: /one_differential_output_ota_0//diffe |Net: input_pair:1/dummy_11                 
+  pfet_03v3/proxybulk = 1                  |  nfet_03v3/proxy1 = 1                     
+                                           |                                           
+Net: /one_differential_output_ota_0//diffe |Net: input_pair:10/dummy_7                 
+  pfet_03v3/proxybulk = 1                  |  nfet_03v3/proxy1 = 1                     
+                                           |                                           
+Net: /one_differential_output_ota_0//diffe |Net: input_pair:10/dummy_11                
+  pfet_03v3/proxybulk = 1                  |  nfet_03v3/proxy1 = 1                     
+                                           |                                           
+Net: /one_differential_output_ota_1//diffe |Net: input_pair:16/dummy_7                 
+  pfet_03v3/proxybulk = 1                  |  nfet_03v3/proxy1 = 1                     
+                                           |                                           
+Net: /one_differential_output_ota_1//diffe |Net: input_pair:16/dummy_11                
+  pfet_03v3/proxybulk = 1                  |  nfet_03v3/proxy1 = 1                     
+                                           |                                           
+Net: /one_differential_output_ota_2//diffe |Net: input_pair:1/dummy_8                  
+  pfet_03v3/proxybulk = 1                  |  nfet_03v3/proxy2 = 1                     
+                                           |                                           
+Net: /one_differential_output_ota_2//diffe |Net: input_pair:1/dummy_12                 
+  pfet_03v3/proxybulk = 1                  |  nfet_03v3/proxy2 = 1                     
+                                           |                                           
+Net: /one_differential_output_ota_0//diffe |Net: input_pair:10/dummy_8                 
+  nfet_03v3/proxydrain = 1                 |  nfet_03v3/proxy2 = 1                     
+                                           |                                           
+Net: /one_differential_output_ota_0//diffe |Net: input_pair:10/dummy_12                
+  nfet_03v3/proxydrain = 1                 |  nfet_03v3/proxy2 = 1                     
+                                           |                                           
+Net: /one_differential_output_ota_1//diffe |Net: input_pair:16/dummy_8                 
+  nfet_03v3/proxydrain = 1                 |  nfet_03v3/proxy2 = 1                     
+                                           |                                           
+Net: /one_differential_output_ota_1//diffe |Net: input_pair:16/dummy_12                
+  nfet_03v3/proxydrain = 1                 |  nfet_03v3/proxy2 = 1                     
+                                           |                                           
+Net: /one_differential_output_ota_2//diffe |Net: input_pair:1/dummy_9                  
+  nfet_03v3/proxydrain = 1                 |  nfet_03v3/proxy3 = 1                     
+                                           |                                           
+Net: /one_differential_output_ota_2//diffe |Net: input_pair:1/dummy_13                 
+  nfet_03v3/proxydrain = 1                 |  nfet_03v3/proxy3 = 1                     
+                                           |                                           
+Net: /one_differential_output_ota_0//diffe |Net: input_pair:10/dummy_9                 
+  nfet_03v3/proxygate = 1                  |  nfet_03v3/proxy3 = 1                     
+                                           |                                           
+Net: /one_differential_output_ota_0//diffe |Net: input_pair:10/dummy_13                
+  nfet_03v3/proxygate = 1                  |  nfet_03v3/proxy3 = 1                     
+                                           |                                           
+Net: /one_differential_output_ota_1//diffe |Net: input_pair:16/dummy_9                 
+  nfet_03v3/proxygate = 1                  |  nfet_03v3/proxy3 = 1                     
+                                           |                                           
+Net: /one_differential_output_ota_1//diffe |Net: input_pair:16/dummy_13                
+  nfet_03v3/proxygate = 1                  |  nfet_03v3/proxy3 = 1                     
+                                           |                                           
+Net: /one_differential_output_ota_2//diffe |Net: input_pair:1/dummy_10                 
+  nfet_03v3/proxygate = 1                  |  nfet_03v3/proxy4 = 1                     
+                                           |                                           
+Net: /one_differential_output_ota_2//diffe |Net: input_pair:1/dummy_14                 
+  nfet_03v3/proxygate = 1                  |  nfet_03v3/proxy4 = 1                     
+                                           |                                           
+Net: /one_differential_output_ota_0//diffe |Net: input_pair:10/dummy_10                
+  nfet_03v3/proxysource = 1                |  nfet_03v3/proxy4 = 1                     
+                                           |                                           
+Net: /one_differential_output_ota_0//diffe |Net: input_pair:10/dummy_14                
+  nfet_03v3/proxysource = 1                |  nfet_03v3/proxy4 = 1                     
+                                           |                                           
+Net: /one_differential_output_ota_1//diffe |Net: input_pair:16/dummy_10                
+  nfet_03v3/proxysource = 1                |  nfet_03v3/proxy4 = 1                     
+                                           |                                           
+Net: /one_differential_output_ota_1//diffe |Net: input_pair:16/dummy_14                
+  nfet_03v3/proxysource = 1                |  nfet_03v3/proxy4 = 1                     
+                                           |                                           
+Net: /one_differential_output_ota_2//diffe |Net: input_pair:1/dummy_15                 
+  nfet_03v3/proxysource = 1                |  nfet_03v3/proxy1 = 1                     
+                                           |                                           
+Net: /one_differential_output_ota_2//diffe |Net: input_pair:1/dummy_19                 
+  nfet_03v3/proxysource = 1                |  nfet_03v3/proxy1 = 1                     
+                                           |                                           
+Net: /one_differential_output_ota_0//diffe |Net: input_pair:10/dummy_15                
+  nfet_03v3/proxybulk = 1                  |  nfet_03v3/proxy1 = 1                     
+                                           |                                           
+Net: /one_differential_output_ota_0//diffe |Net: input_pair:10/dummy_19                
+  nfet_03v3/proxybulk = 1                  |  nfet_03v3/proxy1 = 1                     
+                                           |                                           
+Net: /one_differential_output_ota_1//diffe |Net: input_pair:16/dummy_15                
+  nfet_03v3/proxybulk = 1                  |  nfet_03v3/proxy1 = 1                     
+                                           |                                           
+Net: /one_differential_output_ota_1//diffe |Net: input_pair:16/dummy_19                
+  nfet_03v3/proxybulk = 1                  |  nfet_03v3/proxy1 = 1                     
+                                           |                                           
+Net: /one_differential_output_ota_2//diffe |Net: tail_current_diff_out:28/dummy_56     
+  nfet_03v3/proxybulk = 1                  |  nfet_03v3/proxy1 = 1                     
+                                           |                                           
+Net: /one_differential_output_ota_2//diffe |Net: input_pair:1/dummy_16                 
+  nfet_03v3/proxybulk = 1                  |  nfet_03v3/proxy2 = 1                     
+                                           |                                           
+Net: /one_differential_output_ota_0//diffe |Net: input_pair:1/dummy_20                 
+  nfet_03v3/proxydrain = 1                 |  nfet_03v3/proxy2 = 1                     
+                                           |                                           
+Net: /one_differential_output_ota_0//diffe |Net: input_pair:10/dummy_16                
+  nfet_03v3/proxygate = 1                  |  nfet_03v3/proxy2 = 1                     
+                                           |                                           
+Net: /one_differential_output_ota_0//diffe |Net: input_pair:10/dummy_20                
+  nfet_03v3/proxysource = 1                |  nfet_03v3/proxy2 = 1                     
+                                           |                                           
+Net: /one_differential_output_ota_0//diffe |Net: input_pair:16/dummy_16                
+  nfet_03v3/proxybulk = 1                  |  nfet_03v3/proxy2 = 1                     
+                                           |                                           
+Net: VDD                                   |Net: VDD                                   
+  pfet_03v3/(1|3) = 8                      |  pfet_03v3/(drain|source) = 14            
+  pfet_03v3/4 = 7                          |  pfet_03v3/bulk = 19                      
+  pfet_03v3/2 = 1                          |  pfet_03v3/gate = 1                       
+                                           |                                           
+Net: VSS                                   |Net: VSS                                   
+  differential_load_res/D3 = 3             |  nfet_03v3/bulk = 27                      
+  differential_load_res/D4 = 3             |  cap_mim_2f0fF/1 = 6                      
+  nfet_03v3/4 = 21                         |  cap_mim_2f0fF/2 = 6                      
+  ppolyf_u_1k/(1|2) = 8                    |  ppolyf_u_1k/(1|2) = 2                    
+  ppolyf_u_1k/3 = 7                        |  ppolyf_u_1k/3 = 7                        
+  differential_load_res/VSS = 3            |  differential_load_res/VSS = 3            
+  nfet_03v3/2 = 1                          |  nfet_03v3/(drain|source) = 12            
+  cap_mim_2f0_m4m5_noshield/1 = 1          |  nfet_03v3/gate = 1                       
+  cap_mim_2f0_m4m5_noshield/2 = 1          |                                           
+  pfet_03v3/2 = 6                          |                                           
+  nfet_03v3/(1|3) = 18                     |                                           
+                                           |                                           
+(no matching net)                          |Net: input_pair:1/dummy_17                 
+                                           |  nfet_03v3/proxy3 = 1                     
+                                           |                                           
+(no matching net)                          |Net: input_pair:1/dummy_21                 
+                                           |  nfet_03v3/proxy3 = 1                     
+                                           |                                           
+(no matching net)                          |Net: input_pair:10/dummy_17                
+                                           |  nfet_03v3/proxy3 = 1                     
+                                           |                                           
+(no matching net)                          |Net: input_pair:10/dummy_21                
+                                           |  nfet_03v3/proxy3 = 1                     
+                                           |                                           
+(no matching net)                          |Net: input_pair:16/dummy_17                
+                                           |  nfet_03v3/proxy3 = 1                     
+                                           |                                           
+(no matching net)                          |Net: input_pair:16/dummy_21                
+                                           |  nfet_03v3/proxy3 = 1                     
+                                           |                                           
+(no matching net)                          |Net: tail_current_diff_out:28/dummy_58     
+                                           |  nfet_03v3/proxy3 = 1                     
+                                           |                                           
+(no matching net)                          |Net: input_pair:1/dummy_18                 
+                                           |  nfet_03v3/proxy4 = 1                     
+                                           |                                           
+(no matching net)                          |Net: input_pair:1/dummy_22                 
+                                           |  nfet_03v3/proxy4 = 1                     
+                                           |                                           
+(no matching net)                          |Net: input_pair:10/dummy_18                
+                                           |  nfet_03v3/proxy4 = 1                     
+                                           |                                           
+(no matching net)                          |Net: input_pair:10/dummy_22                
+                                           |  nfet_03v3/proxy4 = 1                     
+                                           |                                           
+(no matching net)                          |Net: input_pair:16/dummy_18                
+                                           |  nfet_03v3/proxy4 = 1                     
+                                           |                                           
+(no matching net)                          |Net: input_pair:16/dummy_22                
+                                           |  nfet_03v3/proxy4 = 1                     
+                                           |                                           
+(no matching net)                          |Net: tail_current_diff_out:28/dummy_59     
+                                           |  nfet_03v3/proxy4 = 1                     
+                                           |                                           
+(no matching net)                          |Net: tail_current_diff_out:28/dummy_12     
+                                           |  nfet_03v3/proxy1 = 1                     
+                                           |                                           
+(no matching net)                          |Net: tail_current_diff_out:28/dummy_20     
+                                           |  nfet_03v3/proxy1 = 1                     
+                                           |                                           
+(no matching net)                          |Net: tail_current_diff_out:28/dummy_28     
+                                           |  nfet_03v3/proxy1 = 1                     
+                                           |                                           
+(no matching net)                          |Net: tail_current_diff_out:28/dummy_13     
+                                           |  nfet_03v3/proxy2 = 1                     
+                                           |                                           
+(no matching net)                          |Net: tail_current_diff_out:28/dummy_21     
+                                           |  nfet_03v3/proxy2 = 1                     
+                                           |                                           
+(no matching net)                          |Net: tail_current_diff_out:28/dummy_29     
+                                           |  nfet_03v3/proxy2 = 1                     
+                                           |                                           
+(no matching net)                          |Net: tail_current_diff_out:28/dummy_14     
+                                           |  nfet_03v3/proxy3 = 1                     
+                                           |                                           
+(no matching net)                          |Net: tail_current_diff_out:28/dummy_22     
+                                           |  nfet_03v3/proxy3 = 1                     
+                                           |                                           
+(no matching net)                          |Net: tail_current_diff_out:28/dummy_30     
+                                           |  nfet_03v3/proxy3 = 1                     
+                                           |                                           
+(no matching net)                          |Net: tail_current_diff_out:28/dummy_15     
+                                           |  nfet_03v3/proxy4 = 1                     
+                                           |                                           
+(no matching net)                          |Net: tail_current_diff_out:28/dummy_23     
+                                           |  nfet_03v3/proxy4 = 1                     
+                                           |                                           
+(no matching net)                          |Net: tail_current_diff_out:28/dummy_31     
+                                           |  nfet_03v3/proxy4 = 1                     
+                                           |                                           
+(no matching net)                          |Net: tail_current_diff_out:28/dummy_16     
+                                           |  nfet_03v3/proxy1 = 1                     
+                                           |                                           
+(no matching net)                          |Net: tail_current_diff_out:28/dummy_24     
+                                           |  nfet_03v3/proxy1 = 1                     
+                                           |                                           
+(no matching net)                          |Net: tail_current_diff_out:28/dummy_32     
+                                           |  nfet_03v3/proxy1 = 1                     
+                                           |                                           
+(no matching net)                          |Net: tail_current_diff_out:28/dummy_60     
+                                           |  nfet_03v3/proxy1 = 1                     
+                                           |                                           
+(no matching net)                          |Net: tail_current_diff_out:28/dummy_64     
+                                           |  nfet_03v3/proxy1 = 1                     
+                                           |                                           
+(no matching net)                          |Net: tail_current_diff_out:28/dummy_68     
+                                           |  nfet_03v3/proxy1 = 1                     
+                                           |                                           
+(no matching net)                          |Net: tail_current_diff_out:28/dummy_17     
+                                           |  nfet_03v3/proxy2 = 1                     
+                                           |                                           
+(no matching net)                          |Net: tail_current_diff_out:28/dummy_25     
+                                           |  nfet_03v3/proxy2 = 1                     
+                                           |                                           
+(no matching net)                          |Net: tail_current_diff_out:28/dummy_33     
+                                           |  nfet_03v3/proxy2 = 1                     
+                                           |                                           
+(no matching net)                          |Net: tail_current_diff_out:28/dummy_61     
+                                           |  nfet_03v3/proxy2 = 1                     
+                                           |                                           
+(no matching net)                          |Net: tail_current_diff_out:28/dummy_65     
+                                           |  nfet_03v3/proxy2 = 1                     
+                                           |                                           
+(no matching net)                          |Net: tail_current_diff_out:28/dummy_69     
+                                           |  nfet_03v3/proxy2 = 1                     
+                                           |                                           
+(no matching net)                          |Net: tail_current_diff_out:28/dummy_18     
+                                           |  nfet_03v3/proxy3 = 1                     
+                                           |                                           
+(no matching net)                          |Net: tail_current_diff_out:28/dummy_26     
+                                           |  nfet_03v3/proxy3 = 1                     
+                                           |                                           
+(no matching net)                          |Net: tail_current_diff_out:28/dummy_34     
+                                           |  nfet_03v3/proxy3 = 1                     
+                                           |                                           
+(no matching net)                          |Net: tail_current_diff_out:28/dummy_62     
+                                           |  nfet_03v3/proxy3 = 1                     
+                                           |                                           
+(no matching net)                          |Net: tail_current_diff_out:28/dummy_66     
+                                           |  nfet_03v3/proxy3 = 1                     
+                                           |                                           
+(no matching net)                          |Net: tail_current_diff_out:28/dummy_70     
+                                           |  nfet_03v3/proxy3 = 1                     
+                                           |                                           
+(no matching net)                          |Net: tail_current_diff_out:28/dummy_19     
+                                           |  nfet_03v3/proxy4 = 1                     
+                                           |                                           
+(no matching net)                          |Net: tail_current_diff_out:28/dummy_27     
+                                           |  nfet_03v3/proxy4 = 1                     
+                                           |                                           
+(no matching net)                          |Net: tail_current_diff_out:28/dummy_35     
+                                           |  nfet_03v3/proxy4 = 1                     
+                                           |                                           
+(no matching net)                          |Net: tail_current_diff_out:28/dummy_63     
+                                           |  nfet_03v3/proxy4 = 1                     
+                                           |                                           
+(no matching net)                          |Net: tail_current_diff_out:28/dummy_67     
+                                           |  nfet_03v3/proxy4 = 1                     
+                                           |                                           
+(no matching net)                          |Net: tail_current_diff_out:28/dummy_71     
+                                           |  nfet_03v3/proxy4 = 1                     
+                                           |                                           
+(no matching net)                          |Net: tail_current_diff_out:28/dummy_36     
+                                           |  nfet_03v3/proxy1 = 1                     
+                                           |                                           
+(no matching net)                          |Net: tail_current_diff_out:28/dummy_37     
+                                           |  nfet_03v3/proxy2 = 1                     
+                                           |                                           
+(no matching net)                          |Net: tail_current_diff_out:28/dummy_38     
+                                           |  nfet_03v3/proxy3 = 1                     
+                                           |                                           
+(no matching net)                          |Net: tail_current_diff_out:28/dummy_39     
+                                           |  nfet_03v3/proxy4 = 1                     
+                                           |                                           
+(no matching net)                          |Net: tail_current_diff_out:28/dummy_40     
+                                           |  nfet_03v3/proxy1 = 1                     
+                                           |                                           
+(no matching net)                          |Net: tail_current_diff_out:28/dummy_41     
+                                           |  nfet_03v3/proxy2 = 1                     
+                                           |                                           
+(no matching net)                          |Net: tail_current_diff_out:28/dummy_42     
+                                           |  nfet_03v3/proxy3 = 1                     
+                                           |                                           
+(no matching net)                          |Net: tail_current_diff_out:28/dummy_43     
+                                           |  nfet_03v3/proxy4 = 1                     
+                                           |                                           
+(no matching net)                          |Net: tail_current_diff_out:28/dummy_44     
+                                           |  nfet_03v3/proxy1 = 1                     
+                                           |                                           
+(no matching net)                          |Net: tail_current_diff_out:28/dummy_48     
+                                           |  nfet_03v3/proxy1 = 1                     
+                                           |                                           
+(no matching net)                          |Net: tail_current_diff_out:28/dummy_52     
+                                           |  nfet_03v3/proxy1 = 1                     
+                                           |                                           
+(no matching net)                          |Net: tail_current_diff_out:28/dummy_45     
+                                           |  nfet_03v3/proxy2 = 1                     
+                                           |                                           
+(no matching net)                          |Net: tail_current_diff_out:28/dummy_49     
+                                           |  nfet_03v3/proxy2 = 1                     
+                                           |                                           
+(no matching net)                          |Net: tail_current_diff_out:28/dummy_53     
+                                           |  nfet_03v3/proxy2 = 1                     
+                                           |                                           
+(no matching net)                          |Net: tail_current_diff_out:28/dummy_46     
+                                           |  nfet_03v3/proxy3 = 1                     
+                                           |                                           
+(no matching net)                          |Net: tail_current_diff_out:28/dummy_50     
+                                           |  nfet_03v3/proxy3 = 1                     
+                                           |                                           
+(no matching net)                          |Net: tail_current_diff_out:28/dummy_54     
+                                           |  nfet_03v3/proxy3 = 1                     
+                                           |                                           
+(no matching net)                          |Net: tail_current_diff_out:28/dummy_47     
+                                           |  nfet_03v3/proxy4 = 1                     
+                                           |                                           
+(no matching net)                          |Net: tail_current_diff_out:28/dummy_51     
+                                           |  nfet_03v3/proxy4 = 1                     
+                                           |                                           
+(no matching net)                          |Net: tail_current_diff_out:28/dummy_55     
+                                           |  nfet_03v3/proxy4 = 1                     
+                                           |                                           
+(no matching net)                          |Net: net1                                  
+                                           |  nfet_03v3/(drain|source) = 3             
+                                           |  nfet_03v3/gate = 1                       
+                                           |  pfet_03v3/gate = 2                       
+                                           |  ppolyf_u_1k/(1|2) = 1                    
+                                           |  pfet_03v3/(drain|source) = 3             
+                                           |  differential_load_res/D4 = 1             
+                                           |                                           
+(no matching net)                          |Net: net6                                  
+                                           |  nfet_03v3/(drain|source) = 3             
+                                           |  nfet_03v3/gate = 1                       
+                                           |  pfet_03v3/gate = 2                       
+                                           |  ppolyf_u_1k/(1|2) = 1                    
+                                           |  pfet_03v3/(drain|source) = 3             
+                                           |  differential_load_res/D4 = 1             
+                                           |                                           
+(no matching net)                          |Net: net11                                 
+                                           |  nfet_03v3/(drain|source) = 3             
+                                           |  nfet_03v3/gate = 1                       
+                                           |  pfet_03v3/gate = 2                       
+                                           |  ppolyf_u_1k/(1|2) = 1                    
+                                           |  pfet_03v3/(drain|source) = 3             
+                                           |  differential_load_res/D4 = 1             
+                                           |                                           
+(no matching net)                          |Net: net3                                  
+                                           |  nfet_03v3/(drain|source) = 3             
+                                           |  nfet_03v3/gate = 1                       
+                                           |  pfet_03v3/(drain|source) = 3             
+                                           |  pfet_03v3/gate = 2                       
+                                           |  differential_load_res/D3 = 1             
+                                           |  ppolyf_u_1k/(1|2) = 1                    
+                                           |                                           
+(no matching net)                          |Net: net8                                  
+                                           |  nfet_03v3/(drain|source) = 3             
+                                           |  nfet_03v3/gate = 1                       
+                                           |  pfet_03v3/(drain|source) = 3             
+                                           |  pfet_03v3/gate = 2                       
+                                           |  differential_load_res/D3 = 1             
+                                           |  ppolyf_u_1k/(1|2) = 1                    
+                                           |                                           
+(no matching net)                          |Net: net13                                 
+                                           |  nfet_03v3/(drain|source) = 3             
+                                           |  nfet_03v3/gate = 1                       
+                                           |  pfet_03v3/(drain|source) = 3             
+                                           |  pfet_03v3/gate = 2                       
+                                           |  differential_load_res/D3 = 1             
+                                           |  ppolyf_u_1k/(1|2) = 1                    
+                                           |                                           
+(no matching net)                          |Net: tail_current_diff_out:28/dummy_57     
+                                           |  nfet_03v3/proxy2 = 1                     
+                                           |                                           
+(no matching net)                          |Net: input_pair:16/dummy_20                
+                                           |  nfet_03v3/proxy2 = 1                     
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: /one_differential_output_ota_2//res_c |Net: net15                                 
+  cap_mim_2f0_m4m5_noshield/1 = 1          |  cap_mim_2f0fF/2 = 1                      
+  ppolyf_u_1k/(1|2) = 1                    |  ppolyf_u_1k/(1|2) = 1                    
+                                           |                                           
+Net: /one_differential_output_ota_2//res_c |Net: net12                                 
+  cap_mim_2f0_m4m5_noshield/1 = 1          |  cap_mim_2f0fF/2 = 1                      
+  ppolyf_u_1k/(1|2) = 1                    |  ppolyf_u_1k/(1|2) = 1                    
+                                           |                                           
+Net: /one_differential_output_ota_1//res_c |Net: net10                                 
+  cap_mim_2f0_m4m5_noshield/1 = 1          |  cap_mim_2f0fF/2 = 1                      
+  ppolyf_u_1k/(1|2) = 1                    |  ppolyf_u_1k/(1|2) = 1                    
+                                           |                                           
+Net: /one_differential_output_ota_1//res_c |Net: net7                                  
+  cap_mim_2f0_m4m5_noshield/1 = 1          |  cap_mim_2f0fF/2 = 1                      
+  ppolyf_u_1k/(1|2) = 1                    |  ppolyf_u_1k/(1|2) = 1                    
+                                           |                                           
+Net: /one_differential_output_ota_0//res_c |Net: net5                                  
+  cap_mim_2f0_m4m5_noshield/1 = 1          |  cap_mim_2f0fF/2 = 1                      
+  ppolyf_u_1k/(1|2) = 1                    |  ppolyf_u_1k/(1|2) = 1                    
+                                           |                                           
+Net: /one_differential_output_ota_0//res_c |Net: net2                                  
+  cap_mim_2f0_m4m5_noshield/1 = 1          |  cap_mim_2f0fF/2 = 1                      
+  ppolyf_u_1k/(1|2) = 1                    |  ppolyf_u_1k/(1|2) = 1                    
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: IBIAS                                 |Net: IBIAS                                 
+  nfet_03v3/(1|3) = 3                      |  nfet_03v3/gate = 11                      
+  nfet_03v3/2 = 11                         |  nfet_03v3/(drain|source) = 3             
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: tail_current_diff_out_0/I1A           |Net: I1C                                   
+  nfet_03v3/(1|3) = 5                      |  nfet_03v3/(drain|source) = 5             
+  nfet_03v3/2 = 1                          |  nfet_03v3/gate = 1                       
+                                           |                                           
+Net: tail_current_diff_out_0/I1B           |Net: I1B                                   
+  nfet_03v3/(1|3) = 5                      |  nfet_03v3/(drain|source) = 5             
+  nfet_03v3/2 = 1                          |  nfet_03v3/gate = 1                       
+                                           |                                           
+Net: tail_current_diff_out_0/I1C           |Net: I1A                                   
+  nfet_03v3/(1|3) = 5                      |  nfet_03v3/(drain|source) = 5             
+  nfet_03v3/2 = 1                          |  nfet_03v3/gate = 1                       
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: all                             |Circuit 2: three_differential_output_ota   
+
+---------------------------------------------------------------------------------------
+Instance: one_differential_output_ota_0//d |Instance: output_stage:3/pfet_03v3:6       
+  (1,3) = (16,3)                           |  proxy1 = 1                               
+  2 = 72                                   |  proxy2 = 1                               
+  4 = 16                                   |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (34,3)                  
+  proxysource = 1                          |  gate = 11                                
+  proxybulk = 1                            |  bulk = 34                                
+                                           |                                           
+Instance: one_differential_output_ota_0//d |Instance: output_stage:3/pfet_03v3:1       
+  (1,3) = (16,16)                          |  proxy1 = 1                               
+  2 = 16                                   |  proxy2 = 1                               
+  4 = 16                                   |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (34,34)                 
+  proxysource = 1                          |  gate = 34                                
+  proxybulk = 1                            |  bulk = 34                                
+                                           |                                           
+Instance: one_differential_output_ota_0//d |Instance: active_load_diff_out:2/pfet_03v3 
+  (1,3) = (16,3)                           |  proxy1 = 1                               
+  2 = 72                                   |  proxy2 = 1                               
+  4 = 16                                   |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (34,11)                 
+  proxysource = 1                          |  gate = 3                                 
+  proxybulk = 1                            |  bulk = 34                                
+                                           |                                           
+Instance: one_differential_output_ota_1//d |Instance: active_load_diff_out:2/pfet_03v3 
+  (1,3) = (16,3)                           |  proxy1 = 1                               
+  2 = 72                                   |  proxy2 = 1                               
+  4 = 16                                   |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (34,11)                 
+  proxysource = 1                          |  gate = 3                                 
+  proxybulk = 1                            |  bulk = 34                                
+                                           |                                           
+Instance: one_differential_output_ota_1//d |Instance: active_load_diff_out:2/pfet_03v3 
+  (1,3) = (16,3)                           |  proxy1 = 1                               
+  2 = 72                                   |  proxy2 = 1                               
+  4 = 16                                   |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (11,11)                 
+  proxysource = 1                          |  gate = 11                                
+  proxybulk = 1                            |  bulk = 34                                
+                                           |                                           
+Instance: one_differential_output_ota_2//d |Instance: active_load_diff_out:2/pfet_03v3 
+  (1,3) = (16,3)                           |  proxy1 = 1                               
+  2 = 72                                   |  proxy2 = 1                               
+  4 = 16                                   |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (11,11)                 
+  proxysource = 1                          |  gate = 11                                
+  proxybulk = 1                            |  bulk = 34                                
+                                           |                                           
+Instance: one_differential_output_ota_2//d |Instance: output_stage:7/pfet_03v3:6       
+  (1,3) = (16,3)                           |  proxy1 = 1                               
+  2 = 72                                   |  proxy2 = 1                               
+  4 = 16                                   |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (34,3)                  
+  proxysource = 1                          |  gate = 11                                
+  proxybulk = 1                            |  bulk = 34                                
+                                           |                                           
+Instance: one_differential_output_ota_0//d |Instance: output_stage:11/pfet_03v3:6      
+  (1,3) = (72,6)                           |  proxy1 = 1                               
+  2 = 1                                    |  proxy2 = 1                               
+  4 = 72                                   |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (34,3)                  
+  proxysource = 1                          |  gate = 11                                
+  proxybulk = 1                            |  bulk = 34                                
+                                           |                                           
+Instance: one_differential_output_ota_0//d |Instance: active_load_diff_out:14/pfet_03v 
+  (1,3) = (72,6)                           |  proxy1 = 1                               
+  2 = 1                                    |  proxy2 = 1                               
+  4 = 72                                   |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (34,11)                 
+  proxysource = 1                          |  gate = 3                                 
+  proxybulk = 1                            |  bulk = 34                                
+                                           |                                           
+Instance: one_differential_output_ota_1//d |Instance: active_load_diff_out:14/pfet_03v 
+  (1,3) = (72,6)                           |  proxy1 = 1                               
+  2 = 1                                    |  proxy2 = 1                               
+  4 = 72                                   |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (34,11)                 
+  proxysource = 1                          |  gate = 3                                 
+  proxybulk = 1                            |  bulk = 34                                
+                                           |                                           
+Instance: one_differential_output_ota_1//d |Instance: active_load_diff_out:14/pfet_03v 
+  (1,3) = (72,6)                           |  proxy1 = 1                               
+  2 = 1                                    |  proxy2 = 1                               
+  4 = 72                                   |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (11,11)                 
+  proxysource = 1                          |  gate = 11                                
+  proxybulk = 1                            |  bulk = 34                                
+                                           |                                           
+Instance: one_differential_output_ota_2//d |Instance: active_load_diff_out:14/pfet_03v 
+  (1,3) = (72,6)                           |  proxy1 = 1                               
+  2 = 1                                    |  proxy2 = 1                               
+  4 = 72                                   |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (11,11)                 
+  proxysource = 1                          |  gate = 11                                
+  proxybulk = 1                            |  bulk = 34                                
+                                           |                                           
+Instance: one_differential_output_ota_2//d |Instance: output_stage:17/pfet_03v3:6      
+  (1,3) = (72,6)                           |  proxy1 = 1                               
+  2 = 1                                    |  proxy2 = 1                               
+  4 = 72                                   |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (34,3)                  
+  proxysource = 1                          |  gate = 11                                
+  proxybulk = 1                            |  bulk = 34                                
+                                           |                                           
+Instance: one_differential_output_ota_0//d |Instance: output_stage:20/pfet_03v3:6      
+  (1,3) = (72,72)                          |  proxy1 = 1                               
+  2 = 72                                   |  proxy2 = 1                               
+  4 = 72                                   |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (34,3)                  
+  proxysource = 1                          |  gate = 11                                
+  proxybulk = 1                            |  bulk = 34                                
+                                           |                                           
+Instance: tail_current_diff_out_0//nmos_mi |Instance: active_load_diff_out:23/pfet_03v 
+  (1,3) = (14,14)                          |  proxy1 = 1                               
+  2 = 14                                   |  proxy2 = 1                               
+  4 = 72                                   |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (34,11)                 
+  proxysource = 1                          |  gate = 3                                 
+  proxybulk = 1                            |  bulk = 34                                
+                                           |                                           
+Instance: tail_current_diff_out_0//nmos_mi |Instance: active_load_diff_out:23/pfet_03v 
+  (1,3) = (72,6)                           |  proxy1 = 1                               
+  2 = 14                                   |  proxy2 = 1                               
+  4 = 72                                   |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (34,11)                 
+  proxysource = 1                          |  gate = 3                                 
+  proxybulk = 1                            |  bulk = 34                                
+                                           |                                           
+Instance: tail_current_diff_out_0//nmos_mi |Instance: active_load_diff_out:23/pfet_03v 
+  (1,3) = (72,6)                           |  proxy1 = 1                               
+  2 = 14                                   |  proxy2 = 1                               
+  4 = 72                                   |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (11,11)                 
+  proxysource = 1                          |  gate = 11                                
+  proxybulk = 1                            |  bulk = 34                                
+                                           |                                           
+Instance: tail_current_diff_out_0//nmos_mi |Instance: active_load_diff_out:23/pfet_03v 
+  (1,3) = (72,6)                           |  proxy1 = 1                               
+  2 = 14                                   |  proxy2 = 1                               
+  4 = 72                                   |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (11,11)                 
+  proxysource = 1                          |  gate = 11                                
+  proxybulk = 1                            |  bulk = 34                                
+                                           |                                           
+Instance: tail_current_diff_out_0//nmos_mi |Instance: output_stage:25/pfet_03v3:6      
+  (1,3) = (6,6)                            |  proxy1 = 1                               
+  2 = 6                                    |  proxy2 = 1                               
+  4 = 72                                   |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (34,3)                  
+  proxysource = 1                          |  gate = 11                                
+  proxybulk = 1                            |  bulk = 34                                
+                                           |                                           
+Instance: tail_current_diff_out_0//nmos_mi |Instance: input_pair:1/nfet_03v3:1         
+  (1,3) = (6,6)                            |  proxy1 = 1                               
+  2 = 6                                    |  proxy2 = 1                               
+  4 = 72                                   |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (11,6)                  
+  proxysource = 1                          |  gate = 1                                 
+  proxybulk = 1                            |  bulk = 64                                
+                                           |                                           
+Instance: tail_current_diff_out_0//nmos_mi |Instance: input_pair:1/nfet_03v3:2         
+  (1,3) = (6,6)                            |  proxy1 = 1                               
+  2 = 6                                    |  proxy2 = 1                               
+  4 = 72                                   |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (11,6)                  
+  proxysource = 1                          |  gate = 1                                 
+  proxybulk = 1                            |  bulk = 64                                
+                                           |                                           
+Instance: tail_current_diff_out_0//nmos_mi |Instance: input_pair:10/nfet_03v3:1        
+  (1,3) = (72,14)                          |  proxy1 = 1                               
+  2 = 14                                   |  proxy2 = 1                               
+  4 = 72                                   |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (11,6)                  
+  proxysource = 1                          |  gate = 1                                 
+  proxybulk = 1                            |  bulk = 64                                
+                                           |                                           
+Instance: tail_current_diff_out_0//nmos_mi |Instance: input_pair:10/nfet_03v3:2        
+  (1,3) = (72,3)                           |  proxy1 = 1                               
+  2 = 14                                   |  proxy2 = 1                               
+  4 = 72                                   |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (11,6)                  
+  proxysource = 1                          |  gate = 1                                 
+  proxybulk = 1                            |  bulk = 64                                
+                                           |                                           
+Instance: tail_current_diff_out_0//nmos_mi |Instance: input_pair:16/nfet_03v3:1        
+  (1,3) = (72,3)                           |  proxy1 = 1                               
+  2 = 14                                   |  proxy2 = 1                               
+  4 = 72                                   |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (11,6)                  
+  proxysource = 1                          |  gate = 1                                 
+  proxybulk = 1                            |  bulk = 64                                
+                                           |                                           
+Instance: tail_current_diff_out_0//nmos_mi |Instance: input_pair:16/nfet_03v3:2        
+  (1,3) = (72,3)                           |  proxy1 = 1                               
+  2 = 14                                   |  proxy2 = 1                               
+  4 = 72                                   |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (11,6)                  
+  proxysource = 1                          |  gate = 1                                 
+  proxybulk = 1                            |  bulk = 64                                
+                                           |                                           
+Instance: tail_current_diff_out_0//nmos_mi |Instance: input_pair:1/nfet_03v3:3         
+  (1,3) = (72,3)                           |  proxy1 = 1                               
+  2 = 14                                   |  proxy2 = 1                               
+  4 = 72                                   |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (11,11)                 
+  proxysource = 1                          |  gate = 11                                
+  proxybulk = 1                            |  bulk = 64                                
+                                           |                                           
+Instance: tail_current_diff_out_0//nmos_mi |Instance: input_pair:1/nfet_03v3:4         
+  (1,3) = (72,3)                           |  proxy1 = 1                               
+  2 = 14                                   |  proxy2 = 1                               
+  4 = 72                                   |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (11,11)                 
+  proxysource = 1                          |  gate = 11                                
+  proxybulk = 1                            |  bulk = 64                                
+                                           |                                           
+Instance: tail_current_diff_out_0//nmos_mi |Instance: input_pair:10/nfet_03v3:3        
+  (1,3) = (72,3)                           |  proxy1 = 1                               
+  2 = 14                                   |  proxy2 = 1                               
+  4 = 72                                   |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (11,11)                 
+  proxysource = 1                          |  gate = 11                                
+  proxybulk = 1                            |  bulk = 64                                
+                                           |                                           
+Instance: one_differential_output_ota_0//r |Instance: input_pair:10/nfet_03v3:4        
+  1 = 72                                   |  proxy1 = 1                               
+  2 = 72                                   |  proxy2 = 1                               
+                                           |  proxy3 = 1                               
+                                           |  proxy4 = 1                               
+                                           |  (drain,source) = (11,11)                 
+                                           |  gate = 11                                
+                                           |  bulk = 64                                
+                                           |                                           
+                                           |                                           
+Instance: one_differential_output_ota_0//r |Instance: input_pair:16/nfet_03v3:3        
+  1 = 2                                    |  proxy1 = 1                               
+  2 = 3                                    |  proxy2 = 1                               
+                                           |  proxy3 = 1                               
+                                           |  proxy4 = 1                               
+                                           |  (drain,source) = (11,11)                 
+                                           |  gate = 11                                
+                                           |  bulk = 64                                
+                                           |                                           
+                                           |                                           
+Instance: one_differential_output_ota_0//r |Instance: input_pair:16/nfet_03v3:4        
+  1 = 2                                    |  proxy1 = 1                               
+  2 = 3                                    |  proxy2 = 1                               
+                                           |  proxy3 = 1                               
+                                           |  proxy4 = 1                               
+                                           |  (drain,source) = (11,11)                 
+                                           |  gate = 11                                
+                                           |  bulk = 64                                
+                                           |                                           
+                                           |                                           
+Instance: one_differential_output_ota_1//r |Instance: tail_current_diff_out:28/nfet_03 
+  1 = 2                                    |  proxy1 = 1                               
+  2 = 3                                    |  proxy2 = 1                               
+                                           |  proxy3 = 1                               
+                                           |  proxy4 = 1                               
+                                           |  (drain,source) = (64,64)                 
+                                           |  gate = 64                                
+                                           |  bulk = 64                                
+                                           |                                           
+                                           |                                           
+Instance: one_differential_output_ota_1//r |Instance: tail_current_diff_out:28/nfet_03 
+  1 = 2                                    |  proxy1 = 1                               
+  2 = 3                                    |  proxy2 = 1                               
+                                           |  proxy3 = 1                               
+                                           |  proxy4 = 1                               
+                                           |  (drain,source) = (64,6)                  
+                                           |  gate = 14                                
+                                           |  bulk = 64                                
+                                           |                                           
+                                           |                                           
+Instance: one_differential_output_ota_2//r |Instance: tail_current_diff_out:28/nfet_03 
+  1 = 2                                    |  proxy1 = 1                               
+  2 = 3                                    |  proxy2 = 1                               
+                                           |  proxy3 = 1                               
+                                           |  proxy4 = 1                               
+                                           |  (drain,source) = (64,6)                  
+                                           |  gate = 14                                
+                                           |  bulk = 64                                
+                                           |                                           
+                                           |                                           
+Instance: one_differential_output_ota_2//r |Instance: tail_current_diff_out:28/nfet_03 
+  1 = 2                                    |  proxy1 = 1                               
+  2 = 3                                    |  proxy2 = 1                               
+                                           |  proxy3 = 1                               
+                                           |  proxy4 = 1                               
+                                           |  (drain,source) = (64,6)                  
+                                           |  gate = 14                                
+                                           |  bulk = 64                                
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: tail_current_diff_out:28/nfet_03 
+                                           |  proxy1 = 1                               
+                                           |  proxy2 = 1                               
+                                           |  proxy3 = 1                               
+                                           |  proxy4 = 1                               
+                                           |  (drain,source) = (64,3)                  
+                                           |  gate = 14                                
+                                           |  bulk = 64                                
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: tail_current_diff_out:28/nfet_03 
+                                           |  proxy1 = 1                               
+                                           |  proxy2 = 1                               
+                                           |  proxy3 = 1                               
+                                           |  proxy4 = 1                               
+                                           |  (drain,source) = (64,3)                  
+                                           |  gate = 14                                
+                                           |  bulk = 64                                
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: tail_current_diff_out:28/nfet_03 
+                                           |  proxy1 = 1                               
+                                           |  proxy2 = 1                               
+                                           |  proxy3 = 1                               
+                                           |  proxy4 = 1                               
+                                           |  (drain,source) = (64,3)                  
+                                           |  gate = 14                                
+                                           |  bulk = 64                                
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: tail_current_diff_out:28/nfet_03 
+                                           |  proxy1 = 1                               
+                                           |  proxy2 = 1                               
+                                           |  proxy3 = 1                               
+                                           |  proxy4 = 1                               
+                                           |  (drain,source) = (64,3)                  
+                                           |  gate = 14                                
+                                           |  bulk = 64                                
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: tail_current_diff_out:28/nfet_03 
+                                           |  proxy1 = 1                               
+                                           |  proxy2 = 1                               
+                                           |  proxy3 = 1                               
+                                           |  proxy4 = 1                               
+                                           |  (drain,source) = (64,3)                  
+                                           |  gate = 14                                
+                                           |  bulk = 64                                
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: tail_current_diff_out:28/nfet_03 
+                                           |  proxy1 = 1                               
+                                           |  proxy2 = 1                               
+                                           |  proxy3 = 1                               
+                                           |  proxy4 = 1                               
+                                           |  (drain,source) = (64,3)                  
+                                           |  gate = 14                                
+                                           |  bulk = 64                                
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: tail_current_diff_out:28/nfet_03 
+                                           |  proxy1 = 1                               
+                                           |  proxy2 = 1                               
+                                           |  proxy3 = 1                               
+                                           |  proxy4 = 1                               
+                                           |  (drain,source) = (64,14)                 
+                                           |  gate = 14                                
+                                           |  bulk = 64                                
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: tail_current_diff_out:28/nfet_03 
+                                           |  proxy1 = 1                               
+                                           |  proxy2 = 1                               
+                                           |  proxy3 = 1                               
+                                           |  proxy4 = 1                               
+                                           |  (drain,source) = (14,14)                 
+                                           |  gate = 14                                
+                                           |  bulk = 64                                
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: tail_current_diff_out:28/nfet_03 
+                                           |  proxy1 = 1                               
+                                           |  proxy2 = 1                               
+                                           |  proxy3 = 1                               
+                                           |  proxy4 = 1                               
+                                           |  (drain,source) = (6,6)                   
+                                           |  gate = 6                                 
+                                           |  bulk = 64                                
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: tail_current_diff_out:28/nfet_03 
+                                           |  proxy1 = 1                               
+                                           |  proxy2 = 1                               
+                                           |  proxy3 = 1                               
+                                           |  proxy4 = 1                               
+                                           |  (drain,source) = (6,6)                   
+                                           |  gate = 6                                 
+                                           |  bulk = 64                                
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: tail_current_diff_out:28/nfet_03 
+                                           |  proxy1 = 1                               
+                                           |  proxy2 = 1                               
+                                           |  proxy3 = 1                               
+                                           |  proxy4 = 1                               
+                                           |  (drain,source) = (6,6)                   
+                                           |  gate = 6                                 
+                                           |  bulk = 64                                
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: miller_cap:4/cap_mim_2f0fF:C2    
+                                           |  1 = 64                                   
+                                           |  2 = 64                                   
+                                           |                                           
+(no matching instance)                     |Instance: miller_cap:8/cap_mim_2f0fF:C2    
+                                           |  1 = 64                                   
+                                           |  2 = 64                                   
+                                           |                                           
+(no matching instance)                     |Instance: miller_cap:12/cap_mim_2f0fF:C2   
+                                           |  1 = 64                                   
+                                           |  2 = 64                                   
+                                           |                                           
+(no matching instance)                     |Instance: miller_cap:18/cap_mim_2f0fF:C2   
+                                           |  1 = 64                                   
+                                           |  2 = 64                                   
+                                           |                                           
+(no matching instance)                     |Instance: miller_cap:21/cap_mim_2f0fF:C2   
+                                           |  1 = 64                                   
+                                           |  2 = 64                                   
+                                           |                                           
+(no matching instance)                     |Instance: miller_cap:26/cap_mim_2f0fF:C2   
+                                           |  1 = 64                                   
+                                           |  2 = 64                                   
+                                           |                                           
+(no matching instance)                     |Instance: miller_cap:4/cap_mim_2f0fF:C1    
+                                           |  1 = 3                                    
+                                           |  2 = 2                                    
+                                           |                                           
+(no matching instance)                     |Instance: miller_cap:8/cap_mim_2f0fF:C1    
+                                           |  1 = 3                                    
+                                           |  2 = 2                                    
+                                           |                                           
+(no matching instance)                     |Instance: miller_cap:12/cap_mim_2f0fF:C1   
+                                           |  1 = 3                                    
+                                           |  2 = 2                                    
+                                           |                                           
+(no matching instance)                     |Instance: miller_cap:18/cap_mim_2f0fF:C1   
+                                           |  1 = 3                                    
+                                           |  2 = 2                                    
+                                           |                                           
+(no matching instance)                     |Instance: miller_cap:21/cap_mim_2f0fF:C1   
+                                           |  1 = 3                                    
+                                           |  2 = 2                                    
+                                           |                                           
+(no matching instance)                     |Instance: miller_cap:26/cap_mim_2f0fF:C1   
+                                           |  1 = 3                                    
+                                           |  2 = 2                                    
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Port matching may fail to disambiguate symmetries.
+
+Subcircuit pins:
+Circuit 1: all                             |Circuit 2: three_differential_output_ota   
+-------------------------------------------|-------------------------------------------
+OP3                                        |OP[1] **Mismatch**                         
+ON3                                        |ON[1] **Mismatch**                         
+OP2                                        |OP[2] **Mismatch**                         
+ON2                                        |ON[2] **Mismatch**                         
+OP1                                        |OP[3] **Mismatch**                         
+ON1                                        |ON[3] **Mismatch**                         
+IP3                                        |(no pin, node is net4)                     
+IN3                                        |(no pin, node is net9)                     
+IP2                                        |(no pin, node is net14)                    
+IN2                                        |IN[1] **Mismatch**                         
+IP1                                        |IP[1] **Mismatch**                         
+IN1                                        |IN[2] **Mismatch**                         
+VDD                                        |(no pin, node is input_pair:16/dummy_20)   
+VSS                                        |(no pin, node is tail_current_diff_out:28/ 
+IBIAS                                      |IBIAS                                      
+(no pin, node is VSS)                      |IP[2]                                      
+(no pin, node is VSS)                      |IP[3]                                      
+(no pin, node is VSS)                      |IN[3]                                      
+(no pin, node is VSS)                      |VDD                                        
+(no pin, node is VSS)                      |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists for all and three_differential_output_ota altered to match.
+Device classes all and three_differential_output_ota are equivalent.
+
+Final result: Top level cell failed pin matching.
