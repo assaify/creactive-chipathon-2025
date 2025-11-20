@@ -1,0 +1,596 @@
+** sch_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_top_level/m3_creactive_v2/m3_creactive.sch
+.subckt m3_creactive DATA CLK VDD VSS EN A[1] A[2] A[3] A[4] A[5] A[6] A[7] A[8] A[9] A[10] IBIAS2 IBIAS1
+*.PININFO DATA:I CLK:I VDD:B VSS:B EN:I A[1:10]:B IBIAS2:B IBIAS1:B
+xac[1] VDD VSS SWM_OUT CLK_PH1 CLK_PH2 ENABLE XACD_OUT[1] PIN[22] PIN[23] array_cap_10x1p
+xac[2] VDD VSS XACD_OUT[1] CLK_PH1 CLK_PH2 ENABLE XACD_OUT[2] PIN[24] PIN[25] array_cap_10x1p
+xac[3] VDD VSS XACD_OUT[2] CLK_PH1 CLK_PH2 ENABLE XACD_OUT[3] PIN[26] PIN[27] array_cap_10x1p
+xac[4] VDD VSS XACD_OUT[3] CLK_PH1 CLK_PH2 ENABLE XACD_OUT[4] PIN[28] PIN[29] array_cap_10x1p
+xac[5] VDD VSS XACD_OUT[4] CLK_PH1 CLK_PH2 ENABLE XACD_OUT[5] PIN[30] PIN[31] array_cap_10x1p
+xac[6] VDD VSS XACD_OUT[5] CLK_PH1 CLK_PH2 ENABLE XACD_OUT[6] PIN[32] PIN[33] array_cap_10x1p
+xarh[1] VDD VSS XARL_OUT[6] CLK_PH1 CLK_PH2 ENABLE XARH_OUT[1] PIN[46] PIN[47] array_res_10x10k
+xarh[2] VDD VSS XARH_OUT[1] CLK_PH1 CLK_PH2 ENABLE XARH_OUT[2] PIN[48] PIN[49] array_res_10x10k
+xarh[3] VDD VSS XARH_OUT[2] CLK_PH1 CLK_PH2 ENABLE XARH_OUT[3] PIN[50] PIN[51] array_res_10x10k
+xarh[4] VDD VSS XARH_OUT[3] CLK_PH1 CLK_PH2 ENABLE XARH_OUT[4] PIN[52] PIN[53] array_res_10x10k
+xarh[5] VDD VSS XARH_OUT[4] CLK_PH1 CLK_PH2 ENABLE XARH_OUT[5] PIN[54] PIN[55] array_res_10x10k
+xarh[6] VDD VSS XARH_OUT[5] CLK_PH1 CLK_PH2 ENABLE XARH_OUT[6] PIN[56] PIN[57] array_res_10x10k
+xarl[1] VDD VSS XACD_OUT[6] CLK_PH1 CLK_PH2 ENABLE XARL_OUT[1] PIN[34] PIN[35] array_res_10x1k
+xarl[2] VDD VSS XARL_OUT[1] CLK_PH1 CLK_PH2 ENABLE XARL_OUT[2] PIN[36] PIN[37] array_res_10x1k
+xarl[3] VDD VSS XARL_OUT[2] CLK_PH1 CLK_PH2 ENABLE XARL_OUT[3] PIN[38] PIN[39] array_res_10x1k
+xarl[4] VDD VSS XARL_OUT[3] CLK_PH1 CLK_PH2 ENABLE XARL_OUT[4] PIN[40] PIN[41] array_res_10x1k
+xarl[5] VDD VSS XARL_OUT[4] CLK_PH1 CLK_PH2 ENABLE XARL_OUT[5] PIN[42] PIN[43] array_res_10x1k
+xarl[6] VDD VSS XARL_OUT[5] CLK_PH1 CLK_PH2 ENABLE XARL_OUT[6] PIN[44] PIN[45] array_res_10x1k
+x1 DATA SWM_OUT CLK_PH1 CLK EN CLK_PH2 ENABLE PIN[1] PIN[2] PIN[3] PIN[4] PIN[5] PIN[6] PIN[7] PIN[8] PIN[9] PIN[10] PIN[11]
++ PIN[12] PIN[13] PIN[14] PIN[15] PIN[16] PIN[17] PIN[18] PIN[19] PIN[20] PIN[21] PIN[22] PIN[23] PIN[24] PIN[25] PIN[26] PIN[27] PIN[28]
++ PIN[29] PIN[30] PIN[31] PIN[32] PIN[33] PIN[34] PIN[35] PIN[36] PIN[37] PIN[38] PIN[39] PIN[40] PIN[41] PIN[42] PIN[43] PIN[44] PIN[45]
++ PIN[46] PIN[47] PIN[48] PIN[49] PIN[50] PIN[51] PIN[52] PIN[53] PIN[54] PIN[55] PIN[56] PIN[57] A[0] A[1] A[2] A[3] A[4] A[5] A[6] A[7]
++ A[8] A[9] VDD VSS swmatrix_57x10
+x2 PIN[3] PIN[6] PIN[9] PIN[2] PIN[5] PIN[8] IBIAS1 PIN[1] PIN[4] PIN[7] VDD VSS three_single_ended_ota
+x3 PIN[13] PIN[17] PIN[21] PIN[12] PIN[16] PIN[20] IBIAS2 PIN[11] PIN[15] PIN[19] VDD VSS PIN[10] PIN[14] PIN[18]
++ three_differential_output_ota
+.ends
+
+* expanding   symbol:  libs/core_passive_array/array_cap_10x1p/array_cap_10x1p.sym # of pins=9
+** sym_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_passive_array/array_cap_10x1p/array_cap_10x1p.sym
+** sch_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_passive_array/array_cap_10x1p/array_cap_10x1p.sch
+.subckt array_cap_10x1p VDDD VSSD DATA_IN CLK_PH1 CLK_PH2 EN DATA_OUT CA CB
+*.PININFO VDDD:B VSSD:B CA:B CB:B DATA_IN:I CLK_PH1:I CLK_PH2:I EN:I DATA_OUT:O
+XC[1] BUS[1] CB cap_mim_2f0fF c_width=10e-6 c_length=10e-6 m=5
+XC[2] BUS[2] CB cap_mim_2f0fF c_width=10e-6 c_length=10e-6 m=5
+XC[3] BUS[3] CB cap_mim_2f0fF c_width=10e-6 c_length=10e-6 m=5
+XC[4] BUS[4] CB cap_mim_2f0fF c_width=10e-6 c_length=10e-6 m=5
+XC[5] BUS[5] CB cap_mim_2f0fF c_width=10e-6 c_length=10e-6 m=5
+XC[6] BUS[6] CB cap_mim_2f0fF c_width=10e-6 c_length=10e-6 m=5
+XC[7] BUS[7] CB cap_mim_2f0fF c_width=10e-6 c_length=10e-6 m=5
+XC[8] BUS[8] CB cap_mim_2f0fF c_width=10e-6 c_length=10e-6 m=5
+XC[9] BUS[9] CB cap_mim_2f0fF c_width=10e-6 c_length=10e-6 m=5
+XC[10] BUS[10] CB cap_mim_2f0fF c_width=10e-6 c_length=10e-6 m=5
+sw[1] DATA_IN CLK_PH1 CLK_PH2 EN Q[1] CA BUS[1] VDDD VSSD switch_cell
+sw[2] Q[1] CLK_PH1 CLK_PH2 EN Q[2] CA BUS[2] VDDD VSSD switch_cell
+sw[3] Q[2] CLK_PH1 CLK_PH2 EN Q[3] CA BUS[3] VDDD VSSD switch_cell
+sw[4] Q[3] CLK_PH1 CLK_PH2 EN Q[4] CA BUS[4] VDDD VSSD switch_cell
+sw[5] Q[4] CLK_PH1 CLK_PH2 EN Q[5] CA BUS[5] VDDD VSSD switch_cell
+sw[6] Q[5] CLK_PH1 CLK_PH2 EN Q[6] CA BUS[6] VDDD VSSD switch_cell
+sw[7] Q[6] CLK_PH1 CLK_PH2 EN Q[7] CA BUS[7] VDDD VSSD switch_cell
+sw[8] Q[7] CLK_PH1 CLK_PH2 EN Q[8] CA BUS[8] VDDD VSSD switch_cell
+sw[9] Q[8] CLK_PH1 CLK_PH2 EN Q[9] CA BUS[9] VDDD VSSD switch_cell
+sw[10] Q[9] CLK_PH1 CLK_PH2 EN DATA_OUT CA BUS[10] VDDD VSSD switch_cell
+.ends
+
+
+* expanding   symbol:  libs/core_passive_array/array_res_10x10k/array_res_10x10k.sym # of pins=9
+** sym_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_passive_array/array_res_10x10k/array_res_10x10k.sym
+** sch_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_passive_array/array_res_10x10k/array_res_10x10k.sch
+.subckt array_res_10x10k VDDD VSSD DATA_IN CLK_PH1 CLK_PH2 EN DATA_OUT RA RB
+*.PININFO RA:B RB:B VDDD:B VSSD:B DATA_IN:I CLK_PH1:I CLK_PH2:I EN:I DATA_OUT:O
+XR1 RA BUS[1] VSSD ppolyf_u_1k r_width=1e-6 r_length=9.5e-6 m=1
+XR2 BUS[1] BUS[2] VSSD ppolyf_u_1k r_width=1e-6 r_length=9.5e-6 m=1
+XR3 BUS[2] BUS[3] VSSD ppolyf_u_1k r_width=1e-6 r_length=9.5e-6 m=1
+XR4 BUS[3] BUS[4] VSSD ppolyf_u_1k r_width=1e-6 r_length=9.5e-6 m=1
+XR5 BUS[4] BUS[5] VSSD ppolyf_u_1k r_width=1e-6 r_length=9.5e-6 m=1
+XR6 BUS[5] BUS[6] VSSD ppolyf_u_1k r_width=1e-6 r_length=9.5e-6 m=1
+XR7 BUS[6] BUS[7] VSSD ppolyf_u_1k r_width=1e-6 r_length=9.5e-6 m=1
+XR8 BUS[7] BUS[8] VSSD ppolyf_u_1k r_width=1e-6 r_length=9.5e-6 m=1
+XR9 BUS[8] BUS[9] VSSD ppolyf_u_1k r_width=1e-6 r_length=9.5e-6 m=1
+XR10 BUS[9] BUS[10] VSSD ppolyf_u_1k r_width=1e-6 r_length=9.5e-6 m=1
+sw[1] DATA_IN CLK_PH1 CLK_PH2 EN Q[1] RB BUS[1] VDDD VSSD switch_cell
+sw[2] Q[1] CLK_PH1 CLK_PH2 EN Q[2] RB BUS[2] VDDD VSSD switch_cell
+sw[3] Q[2] CLK_PH1 CLK_PH2 EN Q[3] RB BUS[3] VDDD VSSD switch_cell
+sw[4] Q[3] CLK_PH1 CLK_PH2 EN Q[4] RB BUS[4] VDDD VSSD switch_cell
+sw[5] Q[4] CLK_PH1 CLK_PH2 EN Q[5] RB BUS[5] VDDD VSSD switch_cell
+sw[6] Q[5] CLK_PH1 CLK_PH2 EN Q[6] RB BUS[6] VDDD VSSD switch_cell
+sw[7] Q[6] CLK_PH1 CLK_PH2 EN Q[7] RB BUS[7] VDDD VSSD switch_cell
+sw[8] Q[7] CLK_PH1 CLK_PH2 EN Q[8] RB BUS[8] VDDD VSSD switch_cell
+sw[9] Q[8] CLK_PH1 CLK_PH2 EN Q[9] RB BUS[9] VDDD VSSD switch_cell
+sw[10] Q[9] CLK_PH1 CLK_PH2 EN DATA_OUT RB BUS[10] VDDD VSSD switch_cell
+.ends
+
+
+* expanding   symbol:  libs/core_passive_array/array_res_10x1k/array_res_10x1k.sym # of pins=9
+** sym_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_passive_array/array_res_10x1k/array_res_10x1k.sym
+** sch_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_passive_array/array_res_10x1k/array_res_10x1k.sch
+.subckt array_res_10x1k VDDD VSSD DATA_IN CLK_PH1 CLK_PH2 EN DATA_OUT RA RB
+*.PININFO RA:B RB:B VDDD:B VSSD:B DATA_IN:I CLK_PH1:I CLK_PH2:I EN:I DATA_OUT:O
+XR1 RA BUS[1] VSSD ppolyf_u r_width=1e-6 r_length=2.2e-6 m=1
+XR2 BUS[1] BUS[2] VSSD ppolyf_u r_width=1e-6 r_length=2.2e-6 m=1
+XR3 BUS[2] BUS[3] VSSD ppolyf_u r_width=1e-6 r_length=2.2e-6 m=1
+XR4 BUS[3] BUS[4] VSSD ppolyf_u r_width=1e-6 r_length=2.2e-6 m=1
+XR5 BUS[4] BUS[5] VSSD ppolyf_u r_width=1e-6 r_length=2.2e-6 m=1
+XR6 BUS[5] BUS[6] VSSD ppolyf_u r_width=1e-6 r_length=2.2e-6 m=1
+XR7 BUS[6] BUS[7] VSSD ppolyf_u r_width=1e-6 r_length=2.2e-6 m=1
+XR8 BUS[7] BUS[8] VSSD ppolyf_u r_width=1e-6 r_length=2.2e-6 m=1
+XR9 BUS[8] BUS[9] VSSD ppolyf_u r_width=1e-6 r_length=2.2e-6 m=1
+XR10 BUS[9] BUS[10] VSSD ppolyf_u r_width=1e-6 r_length=2.2e-6 m=1
+sw[1] DATA_IN CLK_PH1 CLK_PH2 EN Q[1] RB BUS[1] VDDD VSSD switch_cell
+sw[2] Q[1] CLK_PH1 CLK_PH2 EN Q[2] RB BUS[2] VDDD VSSD switch_cell
+sw[3] Q[2] CLK_PH1 CLK_PH2 EN Q[3] RB BUS[3] VDDD VSSD switch_cell
+sw[4] Q[3] CLK_PH1 CLK_PH2 EN Q[4] RB BUS[4] VDDD VSSD switch_cell
+sw[5] Q[4] CLK_PH1 CLK_PH2 EN Q[5] RB BUS[5] VDDD VSSD switch_cell
+sw[6] Q[5] CLK_PH1 CLK_PH2 EN Q[6] RB BUS[6] VDDD VSSD switch_cell
+sw[7] Q[6] CLK_PH1 CLK_PH2 EN Q[7] RB BUS[7] VDDD VSSD switch_cell
+sw[8] Q[7] CLK_PH1 CLK_PH2 EN Q[8] RB BUS[8] VDDD VSSD switch_cell
+sw[9] Q[8] CLK_PH1 CLK_PH2 EN Q[9] RB BUS[9] VDDD VSSD switch_cell
+sw[10] Q[9] CLK_PH1 CLK_PH2 EN DATA_OUT RB BUS[10] VDDD VSSD switch_cell
+.ends
+
+
+* expanding   symbol:  libs/core_switch_matrix/swmatrix_57x10/swmatrix_57x10.sym # of pins=11
+** sym_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_switch_matrix/swmatrix_57x10/swmatrix_57x10.sym
+** sch_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_switch_matrix/swmatrix_57x10/swmatrix_57x10.sch
+.subckt swmatrix_57x10 DATA_IN DATA_OUT CLK_PH1 CLK EN CLK_PH2 ENABLE PIN[1] PIN[2] PIN[3] PIN[4] PIN[5] PIN[6] PIN[7] PIN[8]
++ PIN[9] PIN[10] PIN[11] PIN[12] PIN[13] PIN[14] PIN[15] PIN[16] PIN[17] PIN[18] PIN[19] PIN[20] PIN[21] PIN[22] PIN[23] PIN[24] PIN[25]
++ PIN[26] PIN[27] PIN[28] PIN[29] PIN[30] PIN[31] PIN[32] PIN[33] PIN[34] PIN[35] PIN[36] PIN[37] PIN[38] PIN[39] PIN[40] PIN[41] PIN[42]
++ PIN[43] PIN[44] PIN[45] PIN[46] PIN[47] PIN[48] PIN[49] PIN[50] PIN[51] PIN[52] PIN[53] PIN[54] PIN[55] PIN[56] PIN[57] BUS[1] BUS[2]
++ BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] VDDD VSSD
+*.PININFO DATA_IN:I CLK:I DATA_OUT:O VDDD:B VSSD:B EN:I PIN[1:57]:B BUS[1:10]:B CLK_PH1:O CLK_PH2:O ENABLE:O
+row[1] D_IN CLK_PH1 CLK_PH2 ENABLE Q[1] PIN[1] BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] VDDD VSSD
++ swmatrix_1x10
+row[2] Q[1] CLK_PH1 CLK_PH2 ENABLE Q[2] PIN[2] BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] VDDD VSSD
++ swmatrix_1x10
+row[3] Q[2] CLK_PH1 CLK_PH2 ENABLE Q[3] PIN[3] BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] VDDD VSSD
++ swmatrix_1x10
+row[4] Q[3] CLK_PH1 CLK_PH2 ENABLE Q[4] PIN[4] BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] VDDD VSSD
++ swmatrix_1x10
+row[5] Q[4] CLK_PH1 CLK_PH2 ENABLE Q[5] PIN[5] BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] VDDD VSSD
++ swmatrix_1x10
+row[6] Q[5] CLK_PH1 CLK_PH2 ENABLE Q[6] PIN[6] BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] VDDD VSSD
++ swmatrix_1x10
+row[7] Q[6] CLK_PH1 CLK_PH2 ENABLE Q[7] PIN[7] BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] VDDD VSSD
++ swmatrix_1x10
+row[8] Q[7] CLK_PH1 CLK_PH2 ENABLE Q[8] PIN[8] BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] VDDD VSSD
++ swmatrix_1x10
+row[9] Q[8] CLK_PH1 CLK_PH2 ENABLE Q[9] PIN[9] BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] VDDD VSSD
++ swmatrix_1x10
+row[10] Q[9] CLK_PH1 CLK_PH2 ENABLE Q[10] PIN[10] BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] VDDD VSSD
++ swmatrix_1x10
+row[11] Q[10] CLK_PH1 CLK_PH2 ENABLE Q[11] PIN[11] BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] VDDD
++ VSSD swmatrix_1x10
+row[12] Q[11] CLK_PH1 CLK_PH2 ENABLE Q[12] PIN[12] BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] VDDD
++ VSSD swmatrix_1x10
+row[13] Q[12] CLK_PH1 CLK_PH2 ENABLE Q[13] PIN[13] BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] VDDD
++ VSSD swmatrix_1x10
+row[14] Q[13] CLK_PH1 CLK_PH2 ENABLE Q[14] PIN[14] BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] VDDD
++ VSSD swmatrix_1x10
+row[15] Q[14] CLK_PH1 CLK_PH2 ENABLE Q[15] PIN[15] BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] VDDD
++ VSSD swmatrix_1x10
+row[16] Q[15] CLK_PH1 CLK_PH2 ENABLE Q[16] PIN[16] BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] VDDD
++ VSSD swmatrix_1x10
+row[17] Q[16] CLK_PH1 CLK_PH2 ENABLE Q[17] PIN[17] BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] VDDD
++ VSSD swmatrix_1x10
+row[18] Q[17] CLK_PH1 CLK_PH2 ENABLE Q[18] PIN[18] BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] VDDD
++ VSSD swmatrix_1x10
+row[19] Q[18] CLK_PH1 CLK_PH2 ENABLE Q[19] PIN[19] BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] VDDD
++ VSSD swmatrix_1x10
+row[20] Q[19] CLK_PH1 CLK_PH2 ENABLE Q[20] PIN[20] BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] VDDD
++ VSSD swmatrix_1x10
+row[21] Q[20] CLK_PH1 CLK_PH2 ENABLE Q[21] PIN[21] BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] VDDD
++ VSSD swmatrix_1x10
+row[22] Q[21] CLK_PH1 CLK_PH2 ENABLE Q[22] PIN[22] BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] VDDD
++ VSSD swmatrix_1x10
+row[23] Q[22] CLK_PH1 CLK_PH2 ENABLE Q[23] PIN[23] BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] VDDD
++ VSSD swmatrix_1x10
+row[24] Q[23] CLK_PH1 CLK_PH2 ENABLE Q[24] PIN[24] BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] VDDD
++ VSSD swmatrix_1x10
+row[25] Q[24] CLK_PH1 CLK_PH2 ENABLE Q[25] PIN[25] BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] VDDD
++ VSSD swmatrix_1x10
+row[26] Q[25] CLK_PH1 CLK_PH2 ENABLE Q[26] PIN[26] BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] VDDD
++ VSSD swmatrix_1x10
+row[27] Q[26] CLK_PH1 CLK_PH2 ENABLE Q[27] PIN[27] BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] VDDD
++ VSSD swmatrix_1x10
+row[28] Q[27] CLK_PH1 CLK_PH2 ENABLE Q[28] PIN[28] BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] VDDD
++ VSSD swmatrix_1x10
+row[29] Q[28] CLK_PH1 CLK_PH2 ENABLE Q[29] PIN[29] BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] VDDD
++ VSSD swmatrix_1x10
+row[30] Q[29] CLK_PH1 CLK_PH2 ENABLE Q[30] PIN[30] BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] VDDD
++ VSSD swmatrix_1x10
+row[31] Q[30] CLK_PH1 CLK_PH2 ENABLE Q[31] PIN[31] BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] VDDD
++ VSSD swmatrix_1x10
+row[32] Q[31] CLK_PH1 CLK_PH2 ENABLE Q[32] PIN[32] BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] VDDD
++ VSSD swmatrix_1x10
+row[33] Q[32] CLK_PH1 CLK_PH2 ENABLE Q[33] PIN[33] BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] VDDD
++ VSSD swmatrix_1x10
+row[34] Q[33] CLK_PH1 CLK_PH2 ENABLE Q[34] PIN[34] BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] VDDD
++ VSSD swmatrix_1x10
+row[35] Q[34] CLK_PH1 CLK_PH2 ENABLE Q[35] PIN[35] BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] VDDD
++ VSSD swmatrix_1x10
+row[36] Q[35] CLK_PH1 CLK_PH2 ENABLE Q[36] PIN[36] BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] VDDD
++ VSSD swmatrix_1x10
+row[37] Q[36] CLK_PH1 CLK_PH2 ENABLE Q[37] PIN[37] BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] VDDD
++ VSSD swmatrix_1x10
+row[38] Q[37] CLK_PH1 CLK_PH2 ENABLE Q[38] PIN[38] BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] VDDD
++ VSSD swmatrix_1x10
+row[39] Q[38] CLK_PH1 CLK_PH2 ENABLE Q[39] PIN[39] BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] VDDD
++ VSSD swmatrix_1x10
+row[40] Q[39] CLK_PH1 CLK_PH2 ENABLE Q[40] PIN[40] BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] VDDD
++ VSSD swmatrix_1x10
+row[41] Q[40] CLK_PH1 CLK_PH2 ENABLE Q[41] PIN[41] BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] VDDD
++ VSSD swmatrix_1x10
+row[42] Q[41] CLK_PH1 CLK_PH2 ENABLE Q[42] PIN[42] BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] VDDD
++ VSSD swmatrix_1x10
+row[43] Q[42] CLK_PH1 CLK_PH2 ENABLE Q[43] PIN[43] BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] VDDD
++ VSSD swmatrix_1x10
+row[44] Q[43] CLK_PH1 CLK_PH2 ENABLE Q[44] PIN[44] BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] VDDD
++ VSSD swmatrix_1x10
+row[45] Q[44] CLK_PH1 CLK_PH2 ENABLE Q[45] PIN[45] BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] VDDD
++ VSSD swmatrix_1x10
+row[46] Q[45] CLK_PH1 CLK_PH2 ENABLE Q[46] PIN[46] BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] VDDD
++ VSSD swmatrix_1x10
+row[47] Q[46] CLK_PH1 CLK_PH2 ENABLE Q[47] PIN[47] BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] VDDD
++ VSSD swmatrix_1x10
+row[48] Q[47] CLK_PH1 CLK_PH2 ENABLE Q[48] PIN[48] BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] VDDD
++ VSSD swmatrix_1x10
+row[49] Q[48] CLK_PH1 CLK_PH2 ENABLE Q[49] PIN[49] BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] VDDD
++ VSSD swmatrix_1x10
+row[50] Q[49] CLK_PH1 CLK_PH2 ENABLE Q[50] PIN[50] BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] VDDD
++ VSSD swmatrix_1x10
+row[51] Q[50] CLK_PH1 CLK_PH2 ENABLE Q[51] PIN[51] BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] VDDD
++ VSSD swmatrix_1x10
+row[52] Q[51] CLK_PH1 CLK_PH2 ENABLE Q[52] PIN[52] BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] VDDD
++ VSSD swmatrix_1x10
+row[53] Q[52] CLK_PH1 CLK_PH2 ENABLE Q[53] PIN[53] BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] VDDD
++ VSSD swmatrix_1x10
+row[54] Q[53] CLK_PH1 CLK_PH2 ENABLE Q[54] PIN[54] BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] VDDD
++ VSSD swmatrix_1x10
+row[55] Q[54] CLK_PH1 CLK_PH2 ENABLE Q[55] PIN[55] BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] VDDD
++ VSSD swmatrix_1x10
+row[56] Q[55] CLK_PH1 CLK_PH2 ENABLE Q[56] PIN[56] BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] VDDD
++ VSSD swmatrix_1x10
+row[57] Q[56] CLK_PH1 CLK_PH2 ENABLE DATA_OUT PIN[57] BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] VDDD
++ VSSD swmatrix_1x10
+x1 net12 net2 net3 VDDD VSSD nooverlap_generator
+x2 net2 net4 VDDD VDDD VSSD VSSD gf180mcu_fd_sc_mcu9t5v0__inv_4
+x3 net3 net5 VDDD VDDD VSSD VSSD gf180mcu_fd_sc_mcu9t5v0__inv_4
+x4 net4 CLK_PH1 VDDD VDDD VSSD VSSD gf180mcu_fd_sc_mcu9t5v0__inv_8
+x5 net5 CLK_PH2 VDDD VDDD VSSD VSSD gf180mcu_fd_sc_mcu9t5v0__inv_8
+x6 EN net6 VDDD VDDD VSSD VSSD gf180mcu_fd_sc_mcu9t5v0__inv_2
+x7 net1 net6 net12 VDDD VDDD VSSD VSSD gf180mcu_fd_sc_mcu9t5v0__and2_1
+x8 EN net8 VDDD VDDD VSSD VSSD gf180mcu_fd_sc_mcu9t5v0__inv_2
+x9 net7 net8 net10 VDDD VDDD VSSD VSSD gf180mcu_fd_sc_mcu9t5v0__and2_1
+x10 net10 net9 VDDD VDDD VSSD VSSD gf180mcu_fd_sc_mcu9t5v0__inv_4
+x11 net9 D_IN VDDD VDDD VSSD VSSD gf180mcu_fd_sc_mcu9t5v0__inv_8
+x12 EN net11 VDDD VDDD VSSD VSSD gf180mcu_fd_sc_mcu9t5v0__inv_4
+x13 net11 ENABLE VDDD VDDD VSSD VSSD gf180mcu_fd_sc_mcu9t5v0__inv_8
+x14 CLK net1 VDDD VSSD schmitt_trigger
+x15 DATA_IN net7 VDDD VSSD schmitt_trigger
+.ends
+
+
+* expanding   symbol:  libs/core_ota/three_single_ended_ota/three_single_ended_ota.sym # of pins=6
+** sym_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_ota/three_single_ended_ota/three_single_ended_ota.sym
+** sch_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_ota/three_single_ended_ota/three_single_ended_ota.sch
+.subckt three_single_ended_ota IP[1] IP[2] IP[3] IN[1] IN[2] IN[3] IBIAS OUT[1] OUT[2] OUT[3] VDD VSS
+*.PININFO IP[1:3]:I IN[1:3]:I VDD:B VSS:B IBIAS:I OUT[1:3]:O
+x1 IN[1] IP[1] I1A net2 net1 VSS input_pair
+x3 net11 VDD net2 output_stage
+x4 net3 OUT[1] VSS miller_cap
+x5 net2 net3 VSS nulling_res
+x6 IN[2] IP[2] I1B net5 net4 VSS input_pair
+x11 IN[3] IP[3] I1C net8 net7 VSS input_pair
+x8 OUT[2] VDD net5 output_stage
+x13 OUT[3] VDD net8 output_stage
+x9 net6 OUT[2] VSS miller_cap
+x14 net9 OUT[3] VSS miller_cap
+x10 net5 net6 VSS nulling_res
+x15 net8 net9 VSS nulling_res
+x2 net1 net2 VDD active_load
+x7 net4 net5 VDD active_load
+x12 net7 net8 VDD active_load
+x16 IBIAS I1A net10 I1B OUT[2] I1C OUT[3] VSS tail_current
+Vmeas net11 OUT[1] 0
+.save i(vmeas)
+Vmeas1 OUT[1] net10 0
+.save i(vmeas1)
+.ends
+
+
+* expanding   symbol:  libs/core_ota/three_differential_output_ota/three_differential_output_ota.sym # of pins=7
+** sym_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_ota/three_differential_output_ota/three_differential_output_ota.sym
+** sch_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_ota/three_differential_output_ota/three_differential_output_ota.sch
+.subckt three_differential_output_ota IP[1] IP[2] IP[3] IN[1] IN[2] IN[3] IBIAS OP[1] OP[2] OP[3] VDD VSS ON[1] ON[2] ON[3]
+*.PININFO IP[1:3]:I IN[1:3]:I VDD:B VSS:B IBIAS:I OP[1:3]:O ON[1:3]:O
+x1 IN[1] IP[1] I1A net1 net3 VSS input_pair
+x3 OP[1] VDD net1 output_stage
+x4 net2 OP[1] VSS miller_cap
+x5 net1 net2 VSS nulling_res
+x2 net3 net1 VDD net4 active_load_diff_out
+x6 net3 VSS net4 net1 differential_load_res
+x7 ON[1] VDD net3 output_stage
+x8 net5 ON[1] VSS miller_cap
+x9 net3 net5 VSS nulling_res
+x10 IN[2] IP[2] I1B net6 net8 VSS input_pair
+x11 OP[2] VDD net6 output_stage
+x12 net7 OP[2] VSS miller_cap
+x13 net6 net7 VSS nulling_res
+x14 net8 net6 VDD net9 active_load_diff_out
+x15 net8 VSS net9 net6 differential_load_res
+x17 ON[2] VDD net8 output_stage
+x18 net10 ON[2] VSS miller_cap
+x19 net8 net10 VSS nulling_res
+x16 IN[3] IP[3] I1C net11 net13 VSS input_pair
+x20 OP[3] VDD net11 output_stage
+x21 net12 OP[3] VSS miller_cap
+x22 net11 net12 VSS nulling_res
+x23 net13 net11 VDD net14 active_load_diff_out
+x24 net13 VSS net14 net11 differential_load_res
+x25 ON[3] VDD net13 output_stage
+x26 net15 ON[3] VSS miller_cap
+x27 net13 net15 VSS nulling_res
+x28 IBIAS I1A OP[1] ON[1] I1B OP[2] ON[2] I1C OP[3] ON[3] VSS tail_current_diff_out
+.ends
+
+
+* expanding   symbol:  libs/core_switch_matrix/switch_cell/switch_cell.sym # of pins=9
+** sym_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_switch_matrix/switch_cell/switch_cell.sym
+** sch_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_switch_matrix/switch_cell/switch_cell.sch
+.subckt switch_cell DATA_IN CLK_PH1 CLK_PH2 EN DATA_OUT T1 T2 VDDD VSSD
+*.PININFO DATA_IN:I CLK_PH1:I CLK_PH2:I DATA_OUT:O VDDD:B VSSD:B EN:I T1:B T2:B
+x1 DATA_IN CLK_PH1 CLK_PH2 DATA_OUT VDDD VSSD dff_2ph_clk
+x2 DATA_OUT EN VDDD VSSD T1 T2 tgate
+.ends
+
+
+* expanding   symbol:  libs/core_switch_matrix/swmatrix_1x10/swmatrix_1x10.sym # of pins=9
+** sym_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_switch_matrix/swmatrix_1x10/swmatrix_1x10.sym
+** sch_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_switch_matrix/swmatrix_1x10/swmatrix_1x10.sch
+.subckt swmatrix_1x10 DATA_IN CLK_PH1 CLK_PH2 EN DATA_OUT PIN BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8] BUS[9]
++ BUS[10] VDDD VSSD
+*.PININFO DATA_IN:I CLK_PH1:I CLK_PH2:I DATA_OUT:O VDDD:B VSSD:B EN:I PIN:B BUS[1:10]:B
+xsw[1] DATA_IN CLK_PH1 CLK_PH2 EN Q[1] PIN BUS[1] VDDD VSSD switch_cell
+xsw[2] Q[1] CLK_PH1 CLK_PH2 EN Q[2] PIN BUS[2] VDDD VSSD switch_cell
+xsw[3] Q[2] CLK_PH1 CLK_PH2 EN Q[3] PIN BUS[3] VDDD VSSD switch_cell
+xsw[4] Q[3] CLK_PH1 CLK_PH2 EN Q[4] PIN BUS[4] VDDD VSSD switch_cell
+xsw[5] Q[4] CLK_PH1 CLK_PH2 EN Q[5] PIN BUS[5] VDDD VSSD switch_cell
+xsw[6] Q[5] CLK_PH1 CLK_PH2 EN Q[6] PIN BUS[6] VDDD VSSD switch_cell
+xsw[7] Q[6] CLK_PH1 CLK_PH2 EN Q[7] PIN BUS[7] VDDD VSSD switch_cell
+xsw[8] Q[7] CLK_PH1 CLK_PH2 EN Q[8] PIN BUS[8] VDDD VSSD switch_cell
+xsw[9] Q[8] CLK_PH1 CLK_PH2 EN Q[9] PIN BUS[9] VDDD VSSD switch_cell
+xsw[10] Q[9] CLK_PH1 CLK_PH2 EN DATA_OUT PIN BUS[10] VDDD VSSD switch_cell
+.ends
+
+
+* expanding   symbol:  libs/core_switch_matrix/nooverlap_generator/nooverlap_generator.sym # of pins=5
+** sym_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_switch_matrix/nooverlap_generator/nooverlap_generator.sym
+** sch_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_switch_matrix/nooverlap_generator/nooverlap_generator.sch
+.subckt nooverlap_generator CLK CLK_PH1 CLK_PH2 VDDD VSSD
+*.PININFO CLK:I CLK_PH1:O VDDD:B VSSD:B CLK_PH2:O
+x1 net17 net15 net1 VDDD VDDD VSSD VSSD gf180mcu_fd_sc_mcu9t5v0__nand2_1
+x2 net16 net18 net8 VDDD VDDD VSSD VSSD gf180mcu_fd_sc_mcu9t5v0__nand2_1
+x3 net1 CLK_PH2 VDDD VDDD VSSD VSSD gf180mcu_fd_sc_mcu9t5v0__inv_1
+x4 CLK_PH2 net2 VDDD VDDD VSSD VSSD gf180mcu_fd_sc_mcu9t5v0__inv_1
+x5 net2 net3 VDDD VDDD VSSD VSSD gf180mcu_fd_sc_mcu9t5v0__inv_1
+x6 net3 net4 VDDD VDDD VSSD VSSD gf180mcu_fd_sc_mcu9t5v0__inv_1
+x7 net4 net5 VDDD VDDD VSSD VSSD gf180mcu_fd_sc_mcu9t5v0__inv_1
+x8 net5 net6 VDDD VDDD VSSD VSSD gf180mcu_fd_sc_mcu9t5v0__inv_1
+x9 net6 net7 VDDD VDDD VSSD VSSD gf180mcu_fd_sc_mcu9t5v0__inv_1
+x10 net7 net16 VDDD VDDD VSSD VSSD gf180mcu_fd_sc_mcu9t5v0__inv_1
+x11 net8 CLK_PH1 VDDD VDDD VSSD VSSD gf180mcu_fd_sc_mcu9t5v0__inv_1
+x12 CLK_PH1 net9 VDDD VDDD VSSD VSSD gf180mcu_fd_sc_mcu9t5v0__inv_1
+x13 net9 net10 VDDD VDDD VSSD VSSD gf180mcu_fd_sc_mcu9t5v0__inv_1
+x14 net10 net11 VDDD VDDD VSSD VSSD gf180mcu_fd_sc_mcu9t5v0__inv_1
+x15 net11 net12 VDDD VDDD VSSD VSSD gf180mcu_fd_sc_mcu9t5v0__inv_1
+x16 net12 net13 VDDD VDDD VSSD VSSD gf180mcu_fd_sc_mcu9t5v0__inv_1
+x17 net13 net14 VDDD VDDD VSSD VSSD gf180mcu_fd_sc_mcu9t5v0__inv_1
+x18 net14 net15 VDDD VDDD VSSD VSSD gf180mcu_fd_sc_mcu9t5v0__inv_1
+x19 net17 net18 VDDD VDDD VSSD VSSD gf180mcu_fd_sc_mcu9t5v0__inv_1
+x20 CLK net17 VDDD VDDD VSSD VSSD gf180mcu_fd_sc_mcu9t5v0__inv_1
+.ends
+
+
+* expanding   symbol:  libs/core_switch_matrix/schmitt_trigger/schmitt_trigger.sym # of pins=4
+** sym_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_switch_matrix/schmitt_trigger/schmitt_trigger.sym
+** sch_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_switch_matrix/schmitt_trigger/schmitt_trigger.sch
+.subckt schmitt_trigger IN OUT VDDD VSSD
+*.PININFO IN:I OUT:O VDDD:B VSSD:B
+XM1 net1 IN VSSD VSSD nfet_03v3 L=0.28u W=0.5u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=12
+XM2 net2 IN net1 VSSD nfet_03v3 L=0.28u W=0.5u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=12
+XM3 VDDD net2 net1 VSSD nfet_03v3 L=0.56u W=0.5u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+XM4 net3 IN VDDD VDDD pfet_03v3 L=0.28u W=1.5u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=12
+XM5 net2 IN net3 VDDD pfet_03v3 L=0.28u W=1.5u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=12
+XM6 VSSD net2 net3 VDDD pfet_03v3 L=0.56u W=1.5u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+XM7 OUT net2 VSSD VSSD nfet_03v3 L=0.28u W=0.5u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+XM8 OUT net2 VDDD VDDD pfet_03v3 L=0.28u W=1.5u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+.ends
+
+
+* expanding   symbol:  libs/core_ota/input_pair/input_pair.sym # of pins=6
+** sym_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_ota/input_pair/input_pair.sym
+** sch_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_ota/input_pair/input_pair.sch
+.subckt input_pair IN IP S D2 D1 VSS
+*.PININFO VSS:B S:O D1:I D2:I IN:I IP:I
+XM1 D1 IN S VSS nfet_03v3 L=0.8u W=3.78u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=4
+XM2 D2 IP S VSS nfet_03v3 L=0.8u W=3.78u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=4
+XM3 D1 D1 D1 VSS nfet_03v3 L=0.8u W=3.78u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+XM4 D2 D2 D2 VSS nfet_03v3 L=0.8u W=3.78u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+.ends
+
+
+* expanding   symbol:  libs/core_ota/output_stage/output_stage.sym # of pins=3
+** sym_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_ota/output_stage/output_stage.sym
+** sch_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_ota/output_stage/output_stage.sch
+.subckt output_stage D6 VDD G6
+*.PININFO VDD:B G6:I D6:O
+XM6 D6 G6 VDD VDD pfet_03v3 L=0.5u W=10.43u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=16
+XM1 VDD VDD VDD VDD pfet_03v3 L=0.5u W=10.43u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=4
+.ends
+
+
+* expanding   symbol:  libs/core_ota/miller_cap/miller_cap.sym # of pins=3
+** sym_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_ota/miller_cap/miller_cap.sym
+** sch_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_ota/miller_cap/miller_cap.sch
+.subckt miller_cap A B VSS
+*.PININFO VSS:B A:I B:I
+XC2 VSS VSS cap_mim_2f0fF c_width=10e-6 c_length=10e-6 m=30
+XC1 B A cap_mim_2f0fF c_width=10e-6 c_length=10e-6 m=30
+.ends
+
+
+* expanding   symbol:  libs/core_ota/nulling_res/nulling_res.sym # of pins=3
+** sym_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_ota/nulling_res/nulling_res.sym
+** sch_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_ota/nulling_res/nulling_res.sch
+.subckt nulling_res A B VSS
+*.PININFO VSS:B A:I B:I
+XR2 VSS VSS VSS ppolyf_u_1k r_width=1e-6 r_length=13.37e-6 m=5
+XR1 A B VSS ppolyf_u_1k r_width=1e-6 r_length=13.37e-6 m=10
+.ends
+
+
+* expanding   symbol:  libs/core_ota/active_load/active_load.sym # of pins=3
+** sym_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_ota/active_load/active_load.sym
+** sch_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_ota/active_load/active_load.sch
+.subckt active_load D3 D4 VDD
+*.PININFO VDD:B D3:O D4:O
+XM3 D3 D3 VDD VDD pfet_03v3 L=0.8u W=3.65u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=4
+XM4 D4 D3 VDD VDD pfet_03v3 L=0.8u W=3.65u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=4
+XM1 D3 D3 D3 VDD pfet_03v3 L=0.8u W=3.65u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+XM2 D4 D4 D4 VDD pfet_03v3 L=0.8u W=3.65u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+.ends
+
+
+* expanding   symbol:  libs/core_ota/tail_current/tail_current.sym # of pins=8
+** sym_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_ota/tail_current/tail_current.sym
+** sch_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_ota/tail_current/tail_current.sch
+.subckt tail_current IBIAS I1A I2A I1B I2B I1C I2C VSS
+*.PININFO IBIAS:I VSS:B I1A:O I2A:O I1B:O I2B:O I1C:O I2C:O
+XM1A I1A IBIAS VSS VSS nfet_03v3 L=0.8u W=3.75u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+XM2A I2A IBIAS VSS VSS nfet_03v3 L=0.8u W=3.75u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=20
+XM1B I1B IBIAS VSS VSS nfet_03v3 L=0.8u W=3.75u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+XM2B I2B IBIAS VSS VSS nfet_03v3 L=0.8u W=3.75u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=20
+XM1C I1C IBIAS VSS VSS nfet_03v3 L=0.8u W=3.75u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+XM2C I2C IBIAS VSS VSS nfet_03v3 L=0.8u W=3.75u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=20
+XMS IBIAS IBIAS VSS VSS nfet_03v3 L=0.8u W=3.75u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+XM1 IBIAS IBIAS IBIAS VSS nfet_03v3 L=0.8u W=3.75u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+XM2 I1A I1A I1A VSS nfet_03v3 L=0.8u W=3.75u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+XM3 I1B I1B I1B VSS nfet_03v3 L=0.8u W=3.75u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+XM4 I1C I1C I1C VSS nfet_03v3 L=0.8u W=3.75u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+XM8 VSS VSS VSS VSS nfet_03v3 L=0.8u W=3.75u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=28
+.ends
+
+
+* expanding   symbol:  libs/core_ota/active_load_diff_out/active_load_diff_out.sym # of pins=4
+** sym_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_ota/active_load_diff_out/active_load_diff_out.sym
+** sch_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_ota/active_load_diff_out/active_load_diff_out.sch
+.subckt active_load_diff_out D3 D4 VDD G
+*.PININFO VDD:B D3:O D4:O G:I
+XM3 D3 G VDD VDD pfet_03v3 L=0.8u W=3.65u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=4
+XM4 D4 G VDD VDD pfet_03v3 L=0.8u W=3.65u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=4
+XM1 D3 D3 D3 VDD pfet_03v3 L=0.8u W=3.65u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+XM2 D4 D4 D4 VDD pfet_03v3 L=0.8u W=3.65u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+.ends
+
+
+* expanding   symbol:  libs/core_ota/differential_load_res/differential_load_res.sym # of pins=4
+** sym_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_ota/differential_load_res/differential_load_res.sym
+** sch_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_ota/differential_load_res/differential_load_res.sch
+.subckt differential_load_res D3 VSS G D4
+*.PININFO VSS:B D3:I D4:I G:I
+XR3 VSS VSS VSS ppolyf_u_1k r_width=1e-6 r_length=5e-6 m=10
+XR4 D4 G VSS ppolyf_u_1k r_width=1e-6 r_length=50e-6 m=1
+XR23 D3 G VSS ppolyf_u_1k r_width=1e-6 r_length=50e-6 m=1
+.ends
+
+
+* expanding   symbol:  libs/core_ota/tail_current_diff_out/tail_current_diff_out.sym # of pins=11
+** sym_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_ota/tail_current_diff_out/tail_current_diff_out.sym
+** sch_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_ota/tail_current_diff_out/tail_current_diff_out.sch
+.subckt tail_current_diff_out IBIAS I1A I2A I3A I1B I2B I3B I1C I2C I3C VSS
+*.PININFO IBIAS:I VSS:B I1A:O I2A:O I1B:O I2B:O I1C:O I2C:O I3A:O I3B:O I3C:O
+XM1A I1A IBIAS VSS VSS nfet_03v3 L=0.8u W=3.75u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+XM2A I2A IBIAS VSS VSS nfet_03v3 L=0.8u W=3.75u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=20
+XM1B I1B IBIAS VSS VSS nfet_03v3 L=0.8u W=3.75u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+XM2B I2B IBIAS VSS VSS nfet_03v3 L=0.8u W=3.75u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=20
+XM1C I1C IBIAS VSS VSS nfet_03v3 L=0.8u W=3.75u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+XM2C I2C IBIAS VSS VSS nfet_03v3 L=0.8u W=3.75u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=20
+XMS IBIAS IBIAS VSS VSS nfet_03v3 L=0.8u W=3.75u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+XM1 IBIAS IBIAS IBIAS VSS nfet_03v3 L=0.8u W=3.75u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+XM2 I1A I1A I1A VSS nfet_03v3 L=0.8u W=3.75u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+XM3 I1B I1B I1B VSS nfet_03v3 L=0.8u W=3.75u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+XM4 I1C I1C I1C VSS nfet_03v3 L=0.8u W=3.75u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+XM8 VSS VSS VSS VSS nfet_03v3 L=0.8u W=3.75u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=20
+XM3A I3A IBIAS VSS VSS nfet_03v3 L=0.8u W=3.75u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=20
+XM3B I3B IBIAS VSS VSS nfet_03v3 L=0.8u W=3.75u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=20
+XM3C I3C IBIAS VSS VSS nfet_03v3 L=0.8u W=3.75u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=20
+.ends
+
+
+* expanding   symbol:  libs/core_switch_matrix/dff_2ph_clk/dff_2ph_clk.sym # of pins=6
+** sym_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_switch_matrix/dff_2ph_clk/dff_2ph_clk.sym
+** sch_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_switch_matrix/dff_2ph_clk/dff_2ph_clk.sch
+.subckt dff_2ph_clk D CLK_PH1 CLK_PH2 Q VDDD VSSD
+*.PININFO D:I CLK_PH1:I CLK_PH2:I Q:O VDDD:B VSSD:B
+x1 D CLK_PH1 net1 VDDD VDDD VSSD VSSD gf180mcu_fd_sc_mcu9t5v0__latq_1
+x2 net1 CLK_PH2 Q VDDD VDDD VSSD VSSD gf180mcu_fd_sc_mcu9t5v0__latq_1
+**** begin user architecture code
+
+.include /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/spice/gf180mcu_fd_sc_mcu9t5v0.spice
+
+**** end user architecture code
+.ends
+
+
+* expanding   symbol:  libs/core_switch_matrix/tgate/tgate.sym # of pins=6
+** sym_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_switch_matrix/tgate/tgate.sym
+** sch_path: /foss/designs/creactive-chipathon-2025/designs/libs/core_switch_matrix/tgate/tgate.sch
+.subckt tgate CON EN VDDD VSSD T1 T2
+*.PININFO CON:I EN:I VDDD:B VSSD:B T1:B T2:B
+XM1 T2 NCON T1 VSSD nfet_03v3 L=0.28u W=4u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=6
+XM2 T2 PCON T1 VDDD pfet_03v3 L=0.28u W=4u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=18
+x1 CON EN net1 VDDD VDDD VSSD VSSD gf180mcu_fd_sc_mcu9t5v0__nand2_1
+x2 net1 NCON VDDD VDDD VSSD VSSD gf180mcu_fd_sc_mcu9t5v0__inv_1
+x3 NCON PCON VDDD VDDD VSSD VSSD gf180mcu_fd_sc_mcu9t5v0__inv_1
+**** begin user architecture code
+
+.include /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/spice/gf180mcu_fd_sc_mcu9t5v0.spice
+
+**** end user architecture code
+.ends
+

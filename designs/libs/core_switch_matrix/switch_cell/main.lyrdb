@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report-database>
  <description>DRC Run Report at</description>
- <original-file>/foss/designs/creactive-chipathon-2025/designs/libs/core_switch_matrix/switch_cell/switch_cell.gds</original-file>
+ <original-file>/foss/designs/creactive-chipathon-2025/designs/libs/core_switch_matrix/switch_cell/m3_switch_cell_v2.gds</original-file>
  <generator>drc: script='/foss/pdks/gf180mcuD/libs.tech/klayout/macros/gf180mcu_drc.lydrc'</generator>
- <top-cell>switch_cell</top-cell>
+ <top-cell>m3_switch_cell_v2</top-cell>
  <tags>
  </tags>
  <categories>
@@ -3975,7 +3975,7 @@
  </categories>
  <cells>
   <cell>
-   <name>switch_cell</name>
+   <name>m3_switch_cell_v2</name>
    <variant/>
    <layout-name/>
    <references>
@@ -3983,5 +3983,17 @@
   </cell>
  </cells>
  <items>
+  <item>
+   <tags/>
+   <category>'NW.1a_LV'</category>
+   <cell>m3_switch_cell_v2</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (6.535,-15.705;-3.625,-15.705)|(-3.625,-15.445;5.715,-15.445)</value>
+   </values>
+  </item>
  </items>
 </report-database>

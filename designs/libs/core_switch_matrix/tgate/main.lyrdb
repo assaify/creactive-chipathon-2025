@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report-database>
  <description>DRC Run Report at</description>
- <original-file>/foss/designs/creactive-chipathon-2025/designs/libs/core_switch_matrix/tgate/tgate.gds</original-file>
+ <original-file>/foss/designs/creactive-chipathon-2025/designs/libs/core_switch_matrix/tgate/m3_tgate_v2.gds</original-file>
  <generator>drc: script='/foss/pdks/gf180mcuD/libs.tech/klayout/macros/gf180mcu_drc.lydrc'</generator>
- <top-cell>tgate</top-cell>
+ <top-cell>m3_tgate_v2</top-cell>
  <tags>
  </tags>
  <categories>
@@ -3975,7 +3975,7 @@
  </categories>
  <cells>
   <cell>
-   <name>tgate</name>
+   <name>m3_tgate_v2</name>
    <variant/>
    <layout-name/>
    <references>

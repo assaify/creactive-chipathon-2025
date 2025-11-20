@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report-database>
  <description>DRC Run Report at</description>
- <original-file>/foss/designs/creactive-chipathon-2025/designs/libs/core_switch_matrix/swmatrix_57x10/swmatrix_57x10.gds</original-file>
+ <original-file>/foss/designs/creactive-chipathon-2025/designs/libs/core_switch_matrix/swmatrix_57x10/m3_swmatrix_57x10_v2.gds</original-file>
  <generator>drc: script='/foss/pdks/gf180mcuD/libs.tech/klayout/macros/gf180mcu_drc.lydrc'</generator>
- <top-cell>swmatrix_57x10</top-cell>
+ <top-cell>m3_swmatrix_57x10_v2</top-cell>
  <tags>
  </tags>
  <categories>
@@ -3975,7 +3975,7 @@
  </categories>
  <cells>
   <cell>
-   <name>swmatrix_57x10</name>
+   <name>m3_swmatrix_57x10_v2</name>
    <variant/>
    <layout-name/>
    <references>
@@ -3983,101 +3983,5 @@
   </cell>
  </cells>
  <items>
-  <item>
-   <tags/>
-   <category>'V1.3a'</category>
-   <cell>swmatrix_57x10</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (244.205,43.56;244.205,43.82;244.465,43.82;244.465,43.56)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'V1.3a'</category>
-   <cell>swmatrix_57x10</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (244.725,43.56;244.725,43.82;244.985,43.82;244.985,43.56)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'V1.3a'</category>
-   <cell>swmatrix_57x10</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (245.245,43.56;245.245,43.82;245.505,43.82;245.505,43.56)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'V1.3a'</category>
-   <cell>swmatrix_57x10</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (245.765,43.56;245.765,43.82;246.025,43.82;246.025,43.56)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'V1.3a'</category>
-   <cell>swmatrix_57x10</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (244.205,44.08;244.205,44.34;244.465,44.34;244.465,44.08)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'V1.3a'</category>
-   <cell>swmatrix_57x10</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (244.725,44.08;244.725,44.34;244.985,44.34;244.985,44.08)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'V1.3a'</category>
-   <cell>swmatrix_57x10</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (245.245,44.08;245.245,44.34;245.505,44.34;245.505,44.08)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'V1.3a'</category>
-   <cell>swmatrix_57x10</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (245.765,44.08;245.765,44.34;246.025,44.34;246.025,44.08)</value>
-   </values>
-  </item>
  </items>
 </report-database>

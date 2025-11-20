@@ -85,9 +85,9 @@ C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_8.sym} 1710 -600 0 0 {name=x5 VGND=V
 C {lab_pin.sym} 120 -420 0 0 {name=p15 sig_type=std_logic lab=DATA_IN}
 C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_2.sym} 710 -560 0 0 {name=x6 VGND=VSSD VNB=VDDD VPB=VSSD VPWR=VDDD prefix=gf180mcu_fd_sc_mcu9t5v0__ }
 C {lab_pin.sym} 630 -560 0 0 {name=p16 sig_type=std_logic lab=EN}
-C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/and2_1.sym} 850 -580 0 0 {name=x7 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/and2_1.sym} 850 -580 0 0 {name=x7 VGND=VSSD VNB=VDDD VPB=VSSD VPWR=VDDD prefix=gf180mcu_fd_sc_mcu9t5v0__ }
 C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_2.sym} 710 -430 0 0 {name=x8 VGND=VSSD VNB=VDDD VPB=VSSD VPWR=VDDD prefix=gf180mcu_fd_sc_mcu9t5v0__ }
-C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/and2_1.sym} 850 -450 0 0 {name=x9 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/and2_1.sym} 850 -450 0 0 {name=x9 VGND=VSSD VNB=VDDD VPB=VSSD VPWR=VDDD prefix=gf180mcu_fd_sc_mcu9t5v0__ }
 C {lab_pin.sym} 630 -430 0 0 {name=p17 sig_type=std_logic lab=EN}
 C {lab_pin.sym} 1790 -480 0 1 {name=p18 sig_type=std_logic lab=D_IN}
 C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_4.sym} 1610 -480 0 0 {name=x10 VGND=VSSD VNB=VDDD VPB=VSSD VPWR=VDDD prefix=gf180mcu_fd_sc_mcu9t5v0__ }
@@ -96,17 +96,20 @@ C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_4.sym} 1610 -540 0 0 {name=x12 VGND=
 C {libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_8.sym} 1710 -540 0 0 {name=x13 VGND=VSSD VNB=VDDD VPB=VSSD VPWR=VDDD prefix=gf180mcu_fd_sc_mcu9t5v0__ }
 C {lab_pin.sym} 1790 -540 0 1 {name=p21 sig_type=std_logic lab=ENABLE}
 C {lab_pin.sym} 1530 -540 0 0 {name=p22 sig_type=std_logic lab=EN}
-C {ipin.sym} 1660 -300 0 0 {name=p19 lab=DATA_IN}
-C {ipin.sym} 1660 -280 0 0 {name=p20 lab=CLK}
-C {opin.sym} 1660 -240 0 0 {name=p24 lab=DATA_OUT}
-C {iopin.sym} 1660 -180 0 0 {name=p25 lab=VDDD}
-C {iopin.sym} 1660 -160 0 0 {name=p26 lab=VSSD}
-C {ipin.sym} 1660 -260 0 0 {name=p27 lab=EN}
-C {iopin.sym} 1660 -220 0 0 {name=p28 lab=PIN[1:57]}
-C {iopin.sym} 1660 -200 0 0 {name=p29 lab=BUS[1:10]}
+C {ipin.sym} 1590 -300 0 0 {name=p19 lab=DATA_IN}
+C {ipin.sym} 1590 -280 0 0 {name=p20 lab=CLK}
+C {opin.sym} 1680 -300 0 0 {name=p24 lab=DATA_OUT}
+C {iopin.sym} 1680 -170 0 0 {name=p25 lab=VDDD}
+C {iopin.sym} 1680 -150 0 0 {name=p26 lab=VSSD}
+C {ipin.sym} 1590 -260 0 0 {name=p27 lab=EN}
+C {iopin.sym} 1680 -210 0 0 {name=p28 lab=PIN[1:57]}
+C {iopin.sym} 1680 -190 0 0 {name=p29 lab=BUS[1:10]}
 C {libs/core_switch_matrix/schmitt_trigger/schmitt_trigger.sym} 260 -600 0 0 {name=x14}
 C {lab_pin.sym} 400 -550 0 1 {name=p23 sig_type=std_logic lab=VSSD}
 C {lab_pin.sym} 400 -570 0 1 {name=p30 sig_type=std_logic lab=VDDD}
 C {libs/core_switch_matrix/schmitt_trigger/schmitt_trigger.sym} 260 -420 0 0 {name=x15}
 C {lab_pin.sym} 400 -370 0 1 {name=p31 sig_type=std_logic lab=VSSD}
 C {lab_pin.sym} 400 -390 0 1 {name=p32 sig_type=std_logic lab=VDDD}
+C {opin.sym} 1680 -280 0 0 {name=p33 lab=CLK_PH1}
+C {opin.sym} 1680 -260 0 0 {name=p34 lab=CLK_PH2}
+C {opin.sym} 1680 -240 0 0 {name=p35 lab=ENABLE}
