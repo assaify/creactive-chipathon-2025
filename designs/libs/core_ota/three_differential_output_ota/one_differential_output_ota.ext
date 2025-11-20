@@ -1,0 +1,354 @@
+timestamp 1587512122
+version 8.3
+tech gf180mcuD
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 60
+use differential_output_ota differential_output_ota_0 1 0 3198 0 1 38852
+use res_cap res_cap_0 1 0 0 0 1 0
+node "m1_6700_37640#" 4 926.069 6700 37640 v 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8112 416 223288 6028 0 0 0 0 0 0
+node "m1_6936_37796#" 2 460.308 6936 37796 v 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8112 416 126312 3476 0 0 0 0 0 0
+node "m1_8162_38104#" 0 483.403 8162 38104 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 149600 1896 0 0 0 0 0 0 0 0
+node "m1_9424_41380#" 0 287.366 9424 41380 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 80400 1202 0 0 0 0 0 0 0 0
+node "m1_6692_41380#" 0 291.698 6692 41380 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 82008 1218 0 0 0 0 0 0 0 0
+node "m1_3291_41115#" 31 19512.6 3291 41115 v 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1379040 41184 2795200 15576 2795200 15576 33155200 27840 0 0
+node "m1_11493_44008#" 7 3517.96 11493 44008 v 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24336 624 25600 640 25600 640 25600 640 856408 19522
+node "m1_4867_44008#" 7 3514.6 4867 44008 v 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24336 624 25600 640 25600 640 25600 640 855704 19506
+node "m1_7650_47056#" 1 836.681 7650 47056 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 58240 1368 243200 2832 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "m1_6936_37796#" "m1_8162_38104#" 3.05056
+cap "m1_6700_37640#" "m1_3291_41115#" 433.115
+cap "m1_6692_41380#" "m1_3291_41115#" 97.5664
+cap "m1_3291_41115#" "m1_6936_37796#" 189.209
+cap "m1_6700_37640#" "m1_6692_41380#" 0.967916
+cap "m1_6700_37640#" "m1_6936_37796#" 686.931
+cap "m1_3291_41115#" "m1_4867_44008#" 3.3625
+cap "m1_3291_41115#" "m1_9424_41380#" 97.5825
+cap "m1_3291_41115#" "m1_8162_38104#" 121.933
+cap "m1_11493_44008#" "m1_3291_41115#" 2.50961
+cap "m1_6700_37640#" "m1_8162_38104#" 0.545337
+cap "m1_4867_44008#" "res_cap_0/differential_nulling_res$1_0/res_13p37u_22/a_80_80#" 0.303126
+cap "differential_output_ota_0/differential_load_res_0/VSS" "res_cap_0/differential_nulling_res$1_0/A1" 2.67753
+cap "m1_3291_41115#" "res_cap_0/differential_nulling_res$1_0/A1" 3.28227
+cap "differential_output_ota_0/differential_load_res_0/VSS" "differential_output_ota_0/m1_3726_490#" -0.0149055
+cap "m1_3291_41115#" "differential_output_ota_0/differential_load_res_0/VSS" 3.08192
+cap "res_cap_0/differential_nulling_res$1_0/A1" "differential_output_ota_0/m1_3726_490#" 26.0631
+cap "differential_output_ota_0/differential_load_res_0/VSS" "res_cap_0/differential_nulling_res$1_0/A1" 9.6613
+cap "differential_output_ota_0/m1_3726_490#" "res_cap_0/differential_nulling_res$1_0/A1" 6.29061
+cap "res_cap_0/differential_nulling_res$1_0/res_13p37u_19/a_2882_80#" "m1_3291_41115#" 1.11318
+cap "m1_3291_41115#" "res_cap_0/differential_nulling_res$1_0/VSS" 1.54325
+cap "res_cap_0/differential_nulling_res$1_0/res_13p37u_19/a_2882_80#" "res_cap_0/differential_nulling_res$1_0/VSS" 0.891589
+cap "differential_output_ota_0/m1_3726_490#" "res_cap_0/differential_nulling_res$1_0/VSS" 0.512389
+cap "res_cap_0/differential_nulling_res$1_0/VSS" "res_cap_0/differential_nulling_res$1_0/A1" 2.48775
+cap "res_cap_0/differential_nulling_res$1_0/VSS" "differential_output_ota_0/m1_3726_490#" 3.55271e-15
+cap "res_cap_0/differential_nulling_res$1_0/VSS" "m1_3291_41115#" 1.54325
+cap "res_cap_0/differential_nulling_res$1_0/VSS" "res_cap_0/differential_nulling_res$1_0/A1" -1.42109e-14
+cap "res_cap_0/differential_nulling_res$1_0/res_13p37u_10/a_2882_80#" "m1_3291_41115#" 3.28227
+cap "res_cap_0/differential_nulling_res$1_0/res_13p37u_10/a_2882_80#" "res_cap_0/differential_nulling_res$1_0/VSS" 0.221348
+cap "m1_3291_41115#" "res_cap_0/differential_nulling_res$1_0/VSS" 3.08192
+cap "res_cap_0/differential_nulling_res$1_0/res_13p37u_2/a_2882_80#" "m1_11493_44008#" 0.303126
+cap "m1_4867_44008#" "differential_output_ota_0/differential_load_res_0/VSS" 24.334
+cap "m1_3291_41115#" "res_cap_0/differential_nulling_res$1_0/A1" 9.72138
+cap "m1_3291_41115#" "differential_output_ota_0/differential_load_res_0/VSS" 67.2705
+cap "differential_output_ota_0/differential_load_res_0/VSS" "m1_3291_41115#" 290.155
+cap "differential_output_ota_0/differential_load_res_0/D4" "m1_3291_41115#" 19.4767
+cap "differential_output_ota_0/m1_3726_490#" "m1_3291_41115#" 20.1885
+cap "differential_output_ota_0/differential_load_res_0/VSS" "differential_output_ota_0/m1_3726_490#" 0.25124
+cap "differential_output_ota_0/differential_load_res_0/D4" "differential_output_ota_0/differential_load_res_0/VSS" 3.66171
+cap "differential_output_ota_0/m1_3726_490#" "differential_output_ota_0/differential_load_res_0/D4" 30.1288
+cap "m1_3291_41115#" "differential_output_ota_0/differential_load_res_0/VSS" 235.364
+cap "m1_3291_41115#" "differential_output_ota_0/m1_3726_490#" 14.012
+cap "differential_output_ota_0/differential_load_res_0/VSS" "differential_output_ota_0/m1_3726_490#" 87.6717
+cap "m1_3291_41115#" "differential_output_ota_0/differential_load_res_0/D4" 12.1631
+cap "differential_output_ota_0/differential_load_res_0/VSS" "differential_output_ota_0/differential_load_res_0/D4" 171.627
+cap "res_cap_0/differential_nulling_res$1_0/res_13p37u_19/a_2882_80#" "m1_3291_41115#" 3.37058
+cap "res_cap_0/differential_nulling_res$1_0/VSS" "m1_3291_41115#" 232.075
+cap "res_cap_0/differential_nulling_res$1_0/A1" "m1_3291_41115#" 12.8454
+cap "differential_output_ota_0/m1_3726_490#" "m1_3291_41115#" 13.7461
+cap "res_cap_0/differential_nulling_res$1_0/A1" "res_cap_0/differential_nulling_res$1_0/VSS" 1.03188
+cap "differential_output_ota_0/m1_3726_490#" "res_cap_0/differential_nulling_res$1_0/VSS" 17.1747
+cap "m1_3291_41115#" "res_cap_0/differential_nulling_res$1_0/res_13p37u_21/a_2882_80#" 4.26339
+cap "differential_output_ota_0/m1_3726_490#" "res_cap_0/differential_nulling_res$1_0/VSS" 0.242397
+cap "res_cap_0/differential_nulling_res$1_0/res_13p37u_19/a_2882_80#" "m1_3291_41115#" 2.1687
+cap "m1_3291_41115#" "res_cap_0/differential_nulling_res$1_0/VSS" 254.763
+cap "m1_3291_41115#" "res_cap_0/differential_nulling_res$1_0/res_13p37u_21/a_2882_80#" 1.05559
+cap "m1_3291_41115#" "res_cap_0/differential_nulling_res$1_0/A1" 12.8454
+cap "res_cap_0/differential_nulling_res$1_0/A1" "res_cap_0/differential_nulling_res$1_0/VSS" 0.128762
+cap "differential_output_ota_0/m1_3726_490#" "m1_3291_41115#" 14.7611
+cap "res_cap_0/differential_nulling_res$1_0/VSS" "m1_3291_41115#" 241.319
+cap "m1_3291_41115#" "res_cap_0/differential_nulling_res$1_0/res_13p37u_10/a_2882_80#" 13.5828
+cap "res_cap_0/differential_nulling_res$1_0/VSS" "res_cap_0/differential_nulling_res$1_0/res_13p37u_10/a_2882_80#" 0.128762
+cap "m1_3291_41115#" "res_cap_0/differential_nulling_res$1_0/res_13p37u_11/a_2882_80#" 15.6084
+cap "res_cap_0/differential_nulling_res$1_0/VSS" "res_cap_0/differential_nulling_res$1_0/res_13p37u_11/a_2882_80#" 0.160402
+cap "res_cap_0/differential_nulling_res$1_0/VSS" "m1_3291_41115#" 251.027
+cap "m1_3291_41115#" "res_cap_0/differential_nulling_res$1_0/res_13p37u_10/a_2882_80#" 10.1628
+cap "res_cap_0/differential_nulling_res$1_0/res_13p37u_9/a_2882_80#" "differential_output_ota_0/differential_load_res_0/D3" 0.0643766
+cap "res_cap_0/differential_nulling_res$1_0/VSS" "res_cap_0/differential_nulling_res$1_0/res_13p37u_9/a_2882_80#" 0.369769
+cap "res_cap_0/differential_nulling_res$1_0/VSS" "differential_output_ota_0/differential_load_res_0/D3" 0.163991
+cap "m1_3291_41115#" "res_cap_0/differential_nulling_res$1_0/res_13p37u_9/a_2882_80#" 28.6617
+cap "res_cap_0/differential_nulling_res$1_0/A2" "m1_3291_41115#" 8.00489
+cap "res_cap_0/differential_nulling_res$1_0/VSS" "m1_3291_41115#" 48.2038
+cap "m1_11493_44008#" "res_cap_0/differential_nulling_res$1_0/VSS" 24.334
+cap "differential_output_ota_0/output_stage_0/VDD" "differential_output_ota_0/differential_load_res_0/res_cell$1_28/a_1208_80#" 69.5345
+cap "differential_output_ota_0/output_stage_0/VDD" "differential_output_ota_0/differential_load_res_0/VSS" 167.786
+cap "differential_output_ota_0/differential_load_res_0/res_cell$1_25/a_80_80#" "differential_output_ota_0/differential_load_res_0/VSS" -0.0137181
+cap "differential_output_ota_0/output_stage_0/VDD" "differential_output_ota_0/differential_load_res_0/res_cell$1_27/a_1208_80#" 92.3648
+cap "differential_output_ota_0/output_stage_0/VDD" "differential_output_ota_0/differential_load_res_0/D4" 77.0332
+cap "differential_output_ota_0/differential_load_res_0/res_cell$1_27/a_80_80#" "differential_output_ota_0/differential_load_res_0/res_cell$1_28/a_1208_80#" -0.0164953
+cap "differential_output_ota_0/differential_load_res_0/VSS" "differential_output_ota_0/output_stage_0/VDD" 24.131
+cap "differential_output_ota_0/differential_load_res_0/res_cell$1_28/a_80_80#" "differential_output_ota_0/differential_load_res_0/res_cell$1_21/a_80_80#" -0.0188402
+cap "differential_output_ota_0/differential_load_res_0/res_cell$1_27/a_80_80#" "differential_output_ota_0/output_stage_0/VDD" 98.0075
+cap "differential_output_ota_0/differential_load_res_0/D4" "differential_output_ota_0/output_stage_0/VDD" -14.0805
+cap "differential_output_ota_0/differential_load_res_0/G" "differential_output_ota_0/output_stage_0/VDD" 81.0846
+cap "differential_output_ota_0/differential_load_res_0/res_cell$1_28/a_80_80#" "differential_output_ota_0/differential_load_res_0/D4" 3.88454
+cap "differential_output_ota_0/differential_load_res_0/res_cell$1_28/a_80_80#" "differential_output_ota_0/differential_load_res_0/res_cell$1_27/a_80_80#" -0.0712254
+cap "differential_output_ota_0/differential_load_res_0/res_cell$1_26/a_80_80#" "differential_output_ota_0/differential_load_res_0/res_cell$1_19/a_80_80#" -0.0188402
+cap "differential_output_ota_0/differential_load_res_0/res_cell$1_26/a_80_80#" "differential_output_ota_0/output_stage_0/VDD" 33.8499
+cap "differential_output_ota_0/m1_3726_490#" "differential_output_ota_0/output_stage_0/VDD" 54.8101
+cap "differential_output_ota_0/differential_load_res_0/res_cell$1_25/a_80_80#" "differential_output_ota_0/output_stage_0/VDD" 106.493
+cap "differential_output_ota_0/differential_load_res_0/res_cell$1_28/a_80_80#" "differential_output_ota_0/m1_3726_490#" -2.41577
+cap "differential_output_ota_0/differential_load_res_0/VSS" "differential_output_ota_0/differential_load_res_0/res_cell$1_27/a_80_80#" 0.154889
+cap "differential_output_ota_0/differential_load_res_0/VSS" "differential_output_ota_0/differential_load_res_0/D4" 2.38482
+cap "differential_output_ota_0/differential_load_res_0/res_cell$1_27/a_80_80#" "differential_output_ota_0/differential_load_res_0/D4" 24.9009
+cap "differential_output_ota_0/differential_load_res_0/res_cell$1_25/a_80_80#" "differential_output_ota_0/output_stage_0/pfet$2_1/a_1466_n60#" -0.271384
+cap "differential_output_ota_0/differential_load_res_0/G" "differential_output_ota_0/differential_load_res_0/D4" 48.8313
+cap "differential_output_ota_0/differential_load_res_0/G" "differential_output_ota_0/differential_load_res_0/res_cell$1_27/a_80_80#" -0.513293
+cap "differential_output_ota_0/differential_load_res_0/res_cell$1_25/a_80_80#" "differential_output_ota_0/output_stage_0/pfet$1_3/a_n92_0#" -0.365181
+cap "differential_output_ota_0/differential_load_res_0/res_cell$1_27/a_80_80#" "differential_output_ota_0/differential_load_res_0/res_cell$1_26/a_80_80#" -3.55271e-15
+cap "differential_output_ota_0/differential_load_res_0/res_cell$1_25/a_80_80#" "differential_output_ota_0/differential_load_res_0/res_cell$1_27/a_80_80#" -0.107814
+cap "differential_output_ota_0/differential_load_res_0/VSS" "differential_output_ota_0/m1_3726_490#" -1.63372
+cap "differential_output_ota_0/differential_load_res_0/res_cell$1_27/a_80_80#" "differential_output_ota_0/m1_3726_490#" -20.7624
+cap "differential_output_ota_0/differential_load_res_0/res_cell$1_28/a_80_80#" "differential_output_ota_0/output_stage_0/VDD" 38.84
+cap "differential_output_ota_0/differential_load_res_0/res_cell$1_26/a_80_80#" "differential_output_ota_0/differential_load_res_0/D4" 3.88454
+cap "differential_output_ota_0/m1_3726_490#" "differential_output_ota_0/differential_load_res_0/D4" 496.471
+cap "differential_output_ota_0/differential_load_res_0/res_cell$1_25/a_80_80#" "differential_output_ota_0/differential_load_res_0/D4" 24.3876
+cap "differential_output_ota_0/differential_load_res_0/G" "differential_output_ota_0/m1_3726_490#" -13.1873
+cap "differential_output_ota_0/output_stage_0/pfet$1_3/a_38_n60#" "differential_output_ota_0/differential_load_res_0/res_cell$1_25/a_80_80#" -0.7611
+cap "differential_output_ota_0/differential_load_res_0/res_cell$1_26/a_80_80#" "differential_output_ota_0/m1_3726_490#" -2.41577
+cap "differential_output_ota_0/differential_load_res_0/res_cell$1_25/a_80_80#" "differential_output_ota_0/differential_load_res_0/res_cell$1_26/a_80_80#" -0.0712254
+cap "differential_output_ota_0/differential_load_res_0/res_cell$1_25/a_80_80#" "differential_output_ota_0/m1_3726_490#" -20.7624
+cap "differential_output_ota_0/differential_load_res_0/res_cell$1_21/a_80_80#" "differential_output_ota_0/differential_load_res_0/res_cell$1_16/a_80_80#" 0.0343726
+cap "differential_output_ota_0/differential_load_res_0/res_cell$1_22/a_80_80#" "differential_output_ota_0/differential_load_res_0/res_cell$1_15/a_80_80#" -0.0188402
+cap "differential_output_ota_0/m1_3726_490#" "res_cap_0/differential_nulling_res$1_0/VSS" 0.904112
+cap "differential_output_ota_0/active_load_diff_out_0/G" "differential_output_ota_0/active_load_diff_out_0/VDD" 250.037
+cap "res_cap_0/differential_nulling_res$1_0/A1" "differential_output_ota_0/differential_load_res_0/res_cell$1_19/a_80_80#" 0.389984
+cap "res_cap_0/differential_nulling_res$1_0/VSS" "differential_output_ota_0/active_load_diff_out_0/VDD" 22.9429
+cap "res_cap_0/differential_nulling_res$1_0/VSS" "differential_output_ota_0/differential_load_res_0/res_cell$1_21/a_80_80#" 0.154889
+cap "differential_output_ota_0/active_load_diff_out_0/G" "differential_output_ota_0/differential_load_res_0/res_cell$1_21/a_80_80#" -0.513293
+cap "differential_output_ota_0/differential_load_res_0/res_cell$1_21/a_80_80#" "res_cap_0/differential_nulling_res$1_0/A1" 0.389984
+cap "differential_output_ota_0/differential_load_res_0/res_cell$1_20/a_80_80#" "res_cap_0/differential_nulling_res$1_0/A1" 0.389984
+cap "differential_output_ota_0/differential_load_res_0/res_cell$1_20/a_80_80#" "differential_output_ota_0/differential_load_res_0/res_cell$1_13/a_80_80#" -0.0188402
+cap "differential_output_ota_0/m1_3726_490#" "differential_output_ota_0/active_load_diff_out_0/VDD" 99.4642
+cap "differential_output_ota_0/active_load_diff_out_0/VDD" "differential_output_ota_0/differential_load_res_0/res_cell$1_19/a_80_80#" 97.9352
+cap "res_cap_0/differential_nulling_res$1_0/A1" "differential_output_ota_0/differential_load_res_0/res_cell$1_22/a_80_80#" 0.389984
+cap "differential_output_ota_0/differential_load_res_0/res_cell$1_21/a_80_80#" "differential_output_ota_0/differential_load_res_0/res_cell$1_19/a_80_80#" -0.107814
+cap "differential_output_ota_0/differential_load_res_0/res_cell$1_21/a_80_80#" "differential_output_ota_0/active_load_diff_out_0/VDD" 100.42
+cap "differential_output_ota_0/differential_load_res_0/res_cell$1_20/a_80_80#" "differential_output_ota_0/differential_load_res_0/res_cell$1_19/a_80_80#" -0.0712254
+cap "differential_output_ota_0/differential_load_res_0/res_cell$1_20/a_80_80#" "differential_output_ota_0/active_load_diff_out_0/VDD" 34.6085
+cap "differential_output_ota_0/differential_load_res_0/res_cell$1_20/a_80_80#" "differential_output_ota_0/differential_load_res_0/res_cell$1_21/a_80_80#" -3.55271e-15
+cap "differential_output_ota_0/active_load_diff_out_0/G" "differential_output_ota_0/differential_load_res_0/res_cell$1_14/a_80_80#" 0.229434
+cap "differential_output_ota_0/differential_load_res_0/res_cell$1_21/a_80_80#" "differential_output_ota_0/differential_load_res_0/res_cell$1_15/a_80_80#" 0.018133
+cap "differential_output_ota_0/active_load_diff_out_0/VDD" "differential_output_ota_0/differential_load_res_0/res_cell$1_22/a_80_80#" 34.5382
+cap "differential_output_ota_0/active_load_diff_out_0/G" "differential_output_ota_0/differential_load_res_0/res_cell$1_13/a_80_80#" 0.0597623
+cap "res_cap_0/differential_nulling_res$1_0/VSS" "res_cap_0/differential_nulling_res$1_0/A1" 0.400247
+cap "differential_output_ota_0/active_load_diff_out_0/G" "res_cap_0/differential_nulling_res$1_0/VSS" 1.48464
+cap "differential_output_ota_0/differential_load_res_0/res_cell$1_21/a_80_80#" "differential_output_ota_0/differential_load_res_0/res_cell$1_22/a_80_80#" -0.0712254
+cap "differential_output_ota_0/differential_load_res_0/res_cell$1_15/a_80_80#" "differential_output_ota_0/active_load_diff_out_0/VDD" 104.49
+cap "differential_output_ota_0/differential_load_res_0/res_cell$1_14/a_80_80#" "differential_output_ota_0/differential_load_res_0/res_cell$1_7/a_80_80#" -0.0188402
+cap "differential_output_ota_0/differential_load_res_0/res_cell$1_14/a_80_80#" "differential_output_ota_0/active_load_diff_out_0/VDD" 35.5618
+cap "differential_output_ota_0/differential_load_res_0/res_cell$1_15/a_80_80#" "res_cap_0/differential_nulling_res$1_0/VSS" 0.154889
+cap "differential_output_ota_0/differential_load_res_0/res_cell$1_15/a_80_80#" "differential_output_ota_0/differential_load_res_0/res_cell$1_9/a_80_80#" 0.018133
+cap "differential_output_ota_0/differential_load_res_0/res_cell$1_15/a_80_80#" "differential_output_ota_0/differential_load_res_0/res_cell$1_16/a_80_80#" -0.0712254
+cap "differential_output_ota_0/differential_load_res_0/res_cell$1_8/a_80_80#" "differential_output_ota_0/differential_load_res_0/res_cell$1_13/a_80_80#" 0.0343726
+cap "differential_output_ota_0/active_load_diff_out_0/G" "differential_output_ota_0/differential_load_res_0/res_cell$1_15/a_80_80#" -0.513293
+cap "differential_output_ota_0/differential_load_res_0/res_cell$1_15/a_80_80#" "differential_output_ota_0/differential_load_res_0/res_cell$1_13/a_80_80#" -0.107814
+cap "res_cap_0/differential_nulling_res$1_0/VSS" "differential_output_ota_0/active_load_diff_out_0/VDD" 23.4262
+cap "differential_output_ota_0/differential_load_res_0/res_cell$1_15/a_80_80#" "differential_output_ota_0/differential_load_res_0/res_cell$1_10/a_80_80#" 0.0343726
+cap "differential_output_ota_0/differential_load_res_0/res_cell$1_14/a_80_80#" "differential_output_ota_0/differential_load_res_0/res_cell$1_13/a_80_80#" -0.0712254
+cap "differential_output_ota_0/differential_load_res_0/res_cell$1_16/a_80_80#" "differential_output_ota_0/active_load_diff_out_0/VDD" 35.0092
+cap "differential_output_ota_0/m1_3726_490#" "differential_output_ota_0/active_load_diff_out_0/VDD" 76.5427
+cap "differential_output_ota_0/differential_load_res_0/res_cell$1_9/a_80_80#" "differential_output_ota_0/differential_load_res_0/res_cell$1_16/a_80_80#" -0.0188402
+cap "differential_output_ota_0/active_load_diff_out_0/G" "differential_output_ota_0/active_load_diff_out_0/VDD" 92.5603
+cap "differential_output_ota_0/differential_load_res_0/res_cell$1_14/a_80_80#" "differential_output_ota_0/differential_load_res_0/res_cell$1_15/a_80_80#" -3.55271e-15
+cap "differential_output_ota_0/differential_load_res_0/res_cell$1_7/a_80_80#" "differential_output_ota_0/differential_load_res_0/res_cell$1_13/a_80_80#" 0.018133
+cap "differential_output_ota_0/differential_load_res_0/res_cell$1_13/a_80_80#" "differential_output_ota_0/active_load_diff_out_0/VDD" 108.35
+cap "differential_output_ota_0/active_load_diff_out_0/VDD" "differential_output_ota_0/differential_load_res_0/res_cell$1_10/a_80_80#" 35.4901
+cap "differential_output_ota_0/differential_load_res_0/res_cell$1_9/a_80_80#" "res_cap_0/differential_nulling_res$1_0/VSS" 0.154889
+cap "differential_output_ota_0/active_load_diff_out_0/VDD" "differential_output_ota_0/differential_load_res_0/res_cell$1_9/a_80_80#" 105.468
+cap "differential_output_ota_0/differential_load_res_0/res_cell$1_8/a_80_80#" "differential_output_ota_0/differential_load_res_0/res_cell$1_7/a_80_80#" -0.0712254
+cap "differential_output_ota_0/differential_load_res_0/res_cell$1_9/a_80_80#" "differential_output_ota_0/differential_load_res_0/res_cell$1_7/a_80_80#" -0.107814
+cap "differential_output_ota_0/active_load_diff_out_0/VDD" "differential_output_ota_0/active_load_diff_out_0/G" 92.5603
+cap "differential_output_ota_0/output_stage_1/pfet$2_1/a_38_n60#" "differential_output_ota_0/differential_load_res_0/res_cell$1_7/a_80_80#" -0.38539
+cap "differential_output_ota_0/differential_load_res_0/res_cell$1_8/a_80_80#" "differential_output_ota_0/differential_load_res_0/res_cell$1_9/a_80_80#" -3.55271e-15
+cap "differential_output_ota_0/active_load_diff_out_0/VDD" "res_cap_0/differential_nulling_res$1_0/VSS" 23.4262
+cap "differential_output_ota_0/differential_load_res_0/res_cell$1_9/a_80_80#" "differential_output_ota_0/differential_load_res_0/res_cell$1_10/a_80_80#" -0.0712254
+cap "differential_output_ota_0/differential_load_res_0/D3" "differential_output_ota_0/active_load_diff_out_0/VDD" 76.5427
+cap "differential_output_ota_0/active_load_diff_out_0/VDD" "differential_output_ota_0/differential_load_res_0/res_cell$1_7/a_80_80#" 115.178
+cap "differential_output_ota_0/output_stage_1/pfet$1_3/a_38_n60#" "differential_output_ota_0/differential_load_res_0/res_cell$1_7/a_80_80#" -0.434648
+cap "differential_output_ota_0/active_load_diff_out_0/G" "differential_output_ota_0/differential_load_res_0/res_cell$1_9/a_80_80#" -0.513293
+cap "differential_output_ota_0/output_stage_1/pfet$1_3/a_n92_0#" "differential_output_ota_0/differential_load_res_0/res_cell$1_7/a_80_80#" -0.518798
+cap "differential_output_ota_0/active_load_diff_out_0/VDD" "differential_output_ota_0/differential_load_res_0/res_cell$1_8/a_80_80#" 35.8972
+cap "differential_output_ota_0/output_stage_1/VDD" "differential_output_ota_0/differential_load_res_0/D3" 60.1609
+cap "differential_output_ota_0/differential_load_res_0/res_cell$1_2/a_80_80#" "differential_output_ota_0/output_stage_1/VDD" 70.2925
+cap "res_cap_0/differential_nulling_res$1_0/VSS" "differential_output_ota_0/output_stage_1/VDD" 166.896
+cap "differential_output_ota_0/differential_load_res_0/res_cell$1_3/a_80_80#" "differential_output_ota_0/output_stage_1/VDD" 69.3538
+cap "m1_4867_44008#" "differential_output_ota_0/output_stage_0/VDD" 0.51457
+cap "differential_output_ota_0/output_stage_0/pfet$1_2/a_138_0#" "differential_output_ota_0/output_stage_0/VDD" 31.9696
+cap "differential_output_ota_0/output_stage_0/pfet$2_1/a_1466_n60#" "differential_output_ota_0/output_stage_0/VDD" 6.25235
+cap "differential_output_ota_0/output_stage_0/pfet$1_2/a_38_n60#" "differential_output_ota_0/output_stage_0/VDD" 28.3621
+cap "m1_4867_44008#" "differential_output_ota_0/output_stage_0/VDD" 0.274126
+cap "differential_output_ota_0/output_stage_0/VDD" "differential_output_ota_0/output_stage_0/pfet$2_1/a_954_0#" 25.7035
+cap "differential_output_ota_0/output_stage_0/VDD" "differential_output_ota_0/output_stage_0/pfet$2_1/a_1362_0#" 25.7035
+cap "differential_output_ota_0/output_stage_0/VDD" "differential_output_ota_0/differential_load_res_0/VSS" 338.619
+cap "differential_output_ota_0/output_stage_0/pfet$2_1/a_546_0#" "differential_output_ota_0/output_stage_0/VDD" 25.7035
+cap "differential_output_ota_0/differential_load_res_0/res_cell$1_28/a_1208_80#" "differential_output_ota_0/output_stage_0/VDD" 5.09343
+cap "differential_output_ota_0/output_stage_0/VDD" "differential_output_ota_0/output_stage_0/pfet$2_1/a_1466_n60#" 233.241
+cap "differential_output_ota_0/differential_load_res_0/res_cell$1_27/a_1208_80#" "differential_output_ota_0/output_stage_0/VDD" 5.24702
+cap "differential_output_ota_0/output_stage_0/VDD" "differential_output_ota_0/active_load_diff_out_0/D3" 14.5141
+cap "differential_output_ota_0/output_stage_0/pfet$2_1/a_138_0#" "differential_output_ota_0/output_stage_0/VDD" 23.5345
+cap "differential_output_ota_0/output_stage_0/VDD" "differential_output_ota_0/output_stage_0/pfet$2_1/a_1466_n60#" 71.2694
+cap "differential_output_ota_0/active_load_diff_out_0/D3" "differential_output_ota_0/differential_load_res_0/VSS" -6.07549
+cap "differential_output_ota_0/active_load_diff_out_0/D4" "differential_output_ota_0/differential_load_res_0/VSS" -6.09319
+cap "differential_output_ota_0/output_stage_0/VDD" "differential_output_ota_0/differential_load_res_0/res_cell$1_25/a_80_80#" 12.52
+cap "differential_output_ota_0/output_stage_0/VDD" "differential_output_ota_0/differential_load_res_0/res_cell$1_26/a_80_80#" 6.91154
+cap "differential_output_ota_0/output_stage_0/VDD" "differential_output_ota_0/differential_load_res_0/res_cell$1_28/a_80_80#" 2.39246
+cap "differential_output_ota_0/output_stage_0/VDD" "differential_output_ota_0/differential_load_res_0/res_cell$1_27/a_80_80#" 2.01862
+cap "differential_output_ota_0/output_stage_0/VDD" "differential_output_ota_0/differential_load_res_0/VSS" 310.33
+cap "differential_output_ota_0/output_stage_0/pfet$1_3/a_38_n60#" "differential_output_ota_0/differential_load_res_0/res_cell$1_25/a_80_80#" -0.0100795
+cap "differential_output_ota_0/output_stage_0/VDD" "differential_output_ota_0/active_load_diff_out_0/D4" 114.267
+cap "differential_output_ota_0/output_stage_0/VDD" "differential_output_ota_0/active_load_diff_out_0/D3" 256.759
+cap "differential_output_ota_0/output_stage_0/VDD" "differential_output_ota_0/output_stage_0/pfet$1_3/a_38_n60#" 27.7029
+cap "differential_output_ota_0/output_stage_0/VDD" "differential_output_ota_0/output_stage_0/pfet$1_3/a_n92_0#" 31.9696
+cap "differential_output_ota_0/output_stage_0/VDD" "differential_output_ota_0/output_stage_0/pfet$2_1/a_138_0#" 2.16902
+cap "differential_output_ota_0/output_stage_0/VDD" "differential_output_ota_0/differential_load_res_0/G" 4.7492
+cap "differential_output_ota_0/active_load_diff_out_0/VDD" "differential_output_ota_0/active_load_diff_out_0/D3" 0.947372
+cap "differential_output_ota_0/differential_load_res_0/VSS" "differential_output_ota_0/active_load_diff_out_0/D4" -0.0316073
+cap "differential_output_ota_0/active_load_diff_out_0/VDD" "differential_output_ota_0/differential_load_res_0/VSS" 160.349
+cap "differential_output_ota_0/differential_load_res_0/res_cell$1_19/a_80_80#" "differential_output_ota_0/differential_load_res_0/VSS" -0.0809376
+cap "differential_output_ota_0/active_load_diff_out_0/VDD" "differential_output_ota_0/active_load_diff_out_0/D4" 9.19498
+cap "differential_output_ota_0/active_load_diff_out_0/G" "differential_output_ota_0/active_load_diff_out_0/VDD" 160.487
+cap "differential_output_ota_0/active_load_diff_out_0/G" "differential_output_ota_0/differential_load_res_0/VSS" -5.26096
+cap "differential_output_ota_0/active_load_diff_out_0/G" "differential_output_ota_0/active_load_diff_out_0/VDD" 123.661
+cap "differential_output_ota_0/active_load_diff_out_0/pmos_6$1_0/a_1762_172#" "differential_output_ota_0/active_load_diff_out_0/VDD" 0.436209
+cap "differential_output_ota_0/active_load_diff_out_0/G" "differential_output_ota_0/differential_load_res_0/res_cell$1_14/a_80_80#" 0.176684
+cap "differential_output_ota_0/active_load_diff_out_0/D4" "differential_output_ota_0/active_load_diff_out_0/VDD" 13.9303
+cap "differential_output_ota_0/differential_load_res_0/VSS" "differential_output_ota_0/active_load_diff_out_0/VDD" 201.513
+cap "differential_output_ota_0/active_load_diff_out_0/D4" "differential_output_ota_0/differential_load_res_0/res_cell$1_13/a_80_80#" -0.00981783
+cap "differential_output_ota_0/differential_load_res_0/res_cell$1_13/a_80_80#" "differential_output_ota_0/differential_load_res_0/VSS" -0.0809376
+cap "differential_output_ota_0/differential_load_res_0/VSS" "differential_output_ota_0/differential_load_res_0/res_cell$1_7/a_80_80#" -0.0809376
+cap "differential_output_ota_0/active_load_diff_out_0/VDD" "differential_output_ota_0/differential_load_res_0/res_cell$1_9/a_80_80#" 2.24287
+cap "differential_output_ota_0/active_load_diff_out_0/VDD" "differential_output_ota_0/differential_load_res_0/VSS" 340.071
+cap "differential_output_ota_0/active_load_diff_out_0/VDD" "differential_output_ota_0/differential_load_res_0/res_cell$1_10/a_80_80#" 2.16822
+cap "differential_output_ota_0/active_load_diff_out_0/VDD" "differential_output_ota_0/differential_load_res_0/res_cell$1_7/a_80_80#" 10.6889
+cap "differential_output_ota_0/active_load_diff_out_0/VDD" "differential_output_ota_0/differential_load_res_0/res_cell$1_8/a_80_80#" 6.32927
+cap "differential_output_ota_0/active_load_diff_out_0/VDD" "differential_output_ota_0/output_stage_1/pfet$1_3/a_n92_0#" 31.9696
+cap "differential_output_ota_0/active_load_diff_out_0/VDD" "differential_output_ota_0/output_stage_1/pfet$2_1/a_38_n60#" 107.156
+cap "differential_output_ota_0/active_load_diff_out_0/VDD" "differential_output_ota_0/output_stage_1/pfet$1_3/a_38_n60#" 27.7425
+cap "differential_output_ota_0/active_load_diff_out_0/VDD" "differential_output_ota_0/output_stage_1/pfet$2_1/a_138_0#" 25.7035
+cap "differential_output_ota_0/active_load_diff_out_0/VDD" "differential_output_ota_0/active_load_diff_out_0/G" 11.8636
+cap "differential_output_ota_0/output_stage_1/VDD" "differential_output_ota_0/output_stage_1/pfet$2_1/a_954_0#" 25.7035
+cap "differential_output_ota_0/output_stage_1/VDD" "differential_output_ota_0/output_stage_1/pfet$2_1/a_38_n60#" 203.951
+cap "differential_output_ota_0/output_stage_1/VDD" "differential_output_ota_0/differential_load_res_0/VSS" 299.767
+cap "differential_output_ota_0/output_stage_1/VDD" "differential_output_ota_0/differential_load_res_0/res_cell$1_3/a_80_80#" 8.21615
+cap "differential_output_ota_0/output_stage_1/VDD" "differential_output_ota_0/output_stage_1/pfet$1_2/a_38_n60#" 27.5112
+cap "differential_output_ota_0/output_stage_1/VDD" "differential_output_ota_0/differential_load_res_0/D3" 0.682378
+cap "differential_output_ota_0/output_stage_1/VDD" "differential_output_ota_0/output_stage_1/pfet$2_1/a_1362_0#" 25.7035
+cap "differential_output_ota_0/output_stage_1/VDD" "differential_output_ota_0/differential_load_res_0/res_cell$1_2/a_80_80#" 4.87492
+cap "differential_output_ota_0/output_stage_1/VDD" "differential_output_ota_0/output_stage_1/pfet$2_1/a_546_0#" 25.7035
+cap "differential_output_ota_0/output_stage_1/VDD" "differential_output_ota_0/output_stage_1/pfet$1_2/a_38_n60#" 0.850862
+cap "differential_output_ota_0/output_stage_1/VDD" "m1_11493_44008#" 0.204945
+cap "differential_output_ota_0/output_stage_1/pfet$1_2/a_138_0#" "differential_output_ota_0/output_stage_1/VDD" 31.9696
+cap "m1_11493_44008#" "differential_output_ota_0/output_stage_1/VDD" 0.384707
+cap "differential_output_ota_0/output_stage_0/VDD" "m1_4867_44008#" 1.45242
+cap "differential_output_ota_0/output_stage_0/VDD" "differential_output_ota_0/output_stage_0/D6" 0.428322
+cap "differential_output_ota_0/active_load_diff_out_0/D4" "differential_output_ota_0/output_stage_0/VDD" 0.326565
+cap "differential_output_ota_0/active_load_diff_out_0/VDD" "differential_output_ota_0/active_load_diff_out_0/D3" 1.23901e-13
+cap "differential_output_ota_0/active_load_diff_out_0/VDD" "differential_output_ota_0/active_load_diff_out_0/D4" 0.600981
+cap "differential_output_ota_0/active_load_diff_out_0/pmos_6$1_0/a_1762_172#" "differential_output_ota_0/active_load_diff_out_0/VDD" 1.13687e-13
+cap "differential_output_ota_0/output_stage_1/D6" "differential_output_ota_0/output_stage_1/VDD" 0.320226
+cap "m1_11493_44008#" "differential_output_ota_0/output_stage_1/VDD" 1.08587
+cap "m1_4867_44008#" "differential_output_ota_0/output_stage_0/VDD" 0.666037
+cap "differential_output_ota_0/output_stage_0/D6" "differential_output_ota_0/output_stage_0/pfet$2_0/a_1466_n60#" 1.33106
+cap "differential_output_ota_0/output_stage_0/D6" "differential_output_ota_0/output_stage_0/pfet$2_1/a_1466_n60#" 1.33106
+cap "differential_output_ota_0/output_stage_0/D6" "differential_output_ota_0/output_stage_0/VDD" 128.794
+cap "differential_output_ota_0/output_stage_0/D6" "differential_output_ota_0/output_stage_0/pfet$1_2/a_138_0#" 33.5149
+cap "differential_output_ota_0/output_stage_0/D6" "differential_output_ota_0/output_stage_0/pfet$1_0/a_138_0#" 33.5149
+cap "differential_output_ota_0/output_stage_0/pfet$2_0/a_854_n60#" "differential_output_ota_0/output_stage_0/D6" 5.0017
+cap "differential_output_ota_0/output_stage_0/pfet$2_1/a_1158_0#" "differential_output_ota_0/output_stage_0/D6" 9.16979
+cap "differential_output_ota_0/output_stage_0/D6" "differential_output_ota_0/output_stage_0/pfet$2_1/a_1466_n60#" 5.67452
+cap "differential_output_ota_0/output_stage_0/pfet$2_0/a_1058_n60#" "differential_output_ota_0/output_stage_0/D6" 6.9468
+cap "differential_output_ota_0/output_stage_0/pfet$2_1/a_750_0#" "differential_output_ota_0/output_stage_0/D6" 8.90552
+cap "differential_output_ota_0/output_stage_0/pfet$2_0/a_750_0#" "differential_output_ota_0/output_stage_0/D6" 8.90552
+cap "differential_output_ota_0/output_stage_0/pfet$2_1/a_750_0#" "differential_output_ota_0/output_stage_0/pfet$2_0/a_750_0#" -5.91158
+cap "differential_output_ota_0/output_stage_0/VDD" "differential_output_ota_0/output_stage_0/D6" 3.93362
+cap "differential_output_ota_0/output_stage_0/pfet$2_0/a_1158_0#" "differential_output_ota_0/output_stage_0/D6" 9.16979
+cap "differential_output_ota_0/output_stage_0/VDD" "differential_output_ota_0/output_stage_0/pfet$2_1/a_750_0#" -0.434104
+cap "differential_output_ota_0/output_stage_0/pfet$2_0/a_1262_n60#" "differential_output_ota_0/output_stage_0/D6" 6.9468
+cap "differential_output_ota_0/output_stage_0/VDD" "differential_output_ota_0/output_stage_0/pfet$2_0/a_750_0#" -0.434104
+cap "differential_output_ota_0/output_stage_0/pfet$2_1/a_1262_n60#" "differential_output_ota_0/output_stage_0/D6" 6.9468
+cap "differential_output_ota_0/output_stage_0/pfet$2_0/a_342_0#" "differential_output_ota_0/output_stage_0/D6" -5.68434e-14
+cap "differential_output_ota_0/output_stage_0/pfet$2_1/a_1058_n60#" "differential_output_ota_0/output_stage_0/D6" 6.9468
+cap "differential_output_ota_0/output_stage_0/D6" "differential_output_ota_0/output_stage_0/pfet$2_1/a_342_0#" -5.68434e-14
+cap "differential_output_ota_0/input_pair_0/D1" "differential_output_ota_0/output_stage_0/D6" 3.17392
+cap "differential_output_ota_0/output_stage_0/pfet$2_1/a_854_n60#" "differential_output_ota_0/output_stage_0/D6" 5.0017
+cap "differential_output_ota_0/output_stage_0/pfet$2_0/a_1466_n60#" "differential_output_ota_0/output_stage_0/D6" 5.67452
+cap "differential_output_ota_0/input_pair_0/D1" "differential_output_ota_0/output_stage_0/D6" 2.11811
+cap "differential_output_ota_0/output_stage_1/G6" "differential_output_ota_0/output_stage_1/D6" 2.11811
+cap "differential_output_ota_0/output_stage_1/pfet$2_0/a_1566_0#" "differential_output_ota_0/output_stage_1/D6" 22.4064
+cap "differential_output_ota_0/output_stage_1/pfet$2_1/a_1158_0#" "differential_output_ota_0/output_stage_1/D6" 9.16979
+cap "differential_output_ota_0/output_stage_1/pfet$2_1/a_750_0#" "differential_output_ota_0/output_stage_1/D6" 8.90552
+cap "differential_output_ota_0/output_stage_1/pfet$2_1/a_1466_n60#" "differential_output_ota_0/output_stage_1/D6" 7.00558
+cap "differential_output_ota_0/output_stage_1/pfet$2_0/a_1466_n60#" "differential_output_ota_0/output_stage_1/D6" 7.00558
+cap "differential_output_ota_0/output_stage_1/pfet$2_1/a_854_n60#" "differential_output_ota_0/output_stage_1/D6" 5.0017
+cap "differential_output_ota_0/output_stage_1/pfet$2_0/a_750_0#" "differential_output_ota_0/output_stage_1/D6" 8.90552
+cap "differential_output_ota_0/output_stage_1/pfet$2_1/a_750_0#" "differential_output_ota_0/output_stage_1/pfet$2_0/a_750_0#" -5.91158
+cap "differential_output_ota_0/output_stage_1/pfet$2_0/a_342_0#" "differential_output_ota_0/output_stage_1/D6" -2.84217e-14
+cap "differential_output_ota_0/output_stage_1/pfet$2_1/a_342_0#" "differential_output_ota_0/output_stage_1/D6" -2.84217e-14
+cap "differential_output_ota_0/output_stage_1/VDD" "differential_output_ota_0/output_stage_1/D6" 11.2658
+cap "differential_output_ota_0/output_stage_1/G6" "differential_output_ota_0/output_stage_1/D6" 3.17392
+cap "differential_output_ota_0/output_stage_1/pfet$2_1/a_750_0#" "differential_output_ota_0/output_stage_1/VDD" -0.434104
+cap "differential_output_ota_0/output_stage_1/pfet$2_1/a_1058_n60#" "differential_output_ota_0/output_stage_1/D6" 6.9468
+cap "differential_output_ota_0/output_stage_1/pfet$1_2/a_n92_0#" "differential_output_ota_0/output_stage_1/D6" 22.4064
+cap "differential_output_ota_0/output_stage_1/pfet$2_0/a_750_0#" "differential_output_ota_0/output_stage_1/VDD" -0.434104
+cap "differential_output_ota_0/output_stage_1/pfet$2_0/a_1158_0#" "differential_output_ota_0/output_stage_1/D6" 9.16979
+cap "differential_output_ota_0/output_stage_1/pfet$2_0/a_1058_n60#" "differential_output_ota_0/output_stage_1/D6" 6.9468
+cap "differential_output_ota_0/output_stage_1/pfet$2_1/a_1262_n60#" "differential_output_ota_0/output_stage_1/D6" 6.9468
+cap "differential_output_ota_0/output_stage_1/pfet$2_0/a_1262_n60#" "differential_output_ota_0/output_stage_1/D6" 6.9468
+cap "differential_output_ota_0/output_stage_1/pfet$2_0/a_854_n60#" "differential_output_ota_0/output_stage_1/D6" 5.0017
+cap "differential_output_ota_0/output_stage_1/D6" "differential_output_ota_0/output_stage_1/VDD" 121.413
+cap "differential_output_ota_0/output_stage_1/pfet$2_0/a_1566_0#" "differential_output_ota_0/output_stage_1/D6" 11.1085
+cap "differential_output_ota_0/output_stage_1/pfet$1_2/a_n92_0#" "differential_output_ota_0/output_stage_1/D6" 11.1085
+cap "differential_output_ota_0/output_stage_1/VDD" "m1_11493_44008#" 0.497948
+cap "differential_output_ota_0/input_pair_0/VSS" "differential_output_ota_0/input_pair_0/S" 0.895374
+cap "differential_output_ota_0/input_pair_0/VSS" "differential_output_ota_0/output_stage_0/VDD" 0.256405
+cap "differential_output_ota_0/input_pair_0/D2" "differential_output_ota_0/input_pair_0/VSS" 0.226863
+cap "differential_output_ota_0/input_pair_0/VSS" "differential_output_ota_0/output_stage_0/VDD" 0.382749
+cap "differential_output_ota_0/input_pair_0/VSS" "differential_output_ota_0/input_pair_0/IP" 49.1289
+cap "differential_output_ota_0/input_pair_0/IN" "differential_output_ota_0/input_pair_0/VSS" 31.837
+cap "differential_output_ota_0/input_pair_0/D1" "differential_output_ota_0/input_pair_0/VSS" 5.38268
+cap "differential_output_ota_0/input_pair_0/VSS" "differential_output_ota_0/output_stage_1/VDD" 0.382749
+cap "differential_output_ota_0/input_pair_0/VSS" "differential_output_ota_0/input_pair_0/IN" 0.977081
+cap "differential_output_ota_0/input_pair_0/D1" "differential_output_ota_0/input_pair_0/VSS" 0.178574
+cap "differential_output_ota_0/input_pair_0/VSS" "differential_output_ota_0/input_pair_0/IP" 71.5706
+cap "differential_output_ota_0/input_pair_0/VSS" "differential_output_ota_0/output_stage_1/VDD" 0.256405
+merge "res_cap_0/differential_nulling_res$1_0/VSS" "differential_output_ota_0/differential_load_res_0/VSS" -915.868 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -800 0 0 0 0 0 0 0 0
+merge "differential_output_ota_0/differential_load_res_0/VSS" "m1_8162_38104#"
+merge "differential_output_ota_0/VSUBS" "res_cap_0/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "res_cap_0/VSUBS" "VSUBS"
+merge "differential_output_ota_0/active_load_diff_out_0/D3" "differential_output_ota_0/m1_1418_1546#" -558.248 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8112 -416 0 -152 0 0 0 0 0 0
+merge "differential_output_ota_0/m1_1418_1546#" "differential_output_ota_0/differential_load_res_0/D4"
+merge "differential_output_ota_0/differential_load_res_0/D4" "res_cap_0/differential_nulling_res$1_0/A1"
+merge "res_cap_0/differential_nulling_res$1_0/A1" "m1_6700_37640#"
+merge "differential_output_ota_0/active_load_diff_out_0/D4" "differential_output_ota_0/m1_3726_490#" -283.765 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8112 -416 0 -152 0 0 0 0 0 0
+merge "differential_output_ota_0/m1_3726_490#" "res_cap_0/differential_nulling_res$1_0/A2"
+merge "res_cap_0/differential_nulling_res$1_0/A2" "m1_6936_37796#"
+merge "differential_output_ota_0/output_stage_1/VDD" "differential_output_ota_0/active_load_diff_out_0/VDD" -15531 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1440948 -43207 -2292543 -13521 -2244800 -12424 -13516480 -10928 0 0
+merge "differential_output_ota_0/active_load_diff_out_0/VDD" "m1_9424_41380#"
+merge "m1_9424_41380#" "differential_output_ota_0/output_stage_0/VDD"
+merge "differential_output_ota_0/output_stage_0/VDD" "m1_6692_41380#"
+merge "m1_6692_41380#" "m1_3291_41115#"
+merge "differential_output_ota_0/output_stage_0/D6" "res_cap_0/m5_1542_35088#" -3263.08 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -24336 -624 0 0 0 0 0 0 -672122 -18147
+merge "res_cap_0/m5_1542_35088#" "m1_4867_44008#"
+merge "differential_output_ota_0/output_stage_1/D6" "res_cap_0/m5_14894_35088#" -3172.25 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -24336 -624 0 0 0 0 0 0 -630794 -17587
+merge "res_cap_0/m5_14894_35088#" "m1_11493_44008#"
+merge "differential_output_ota_0/input_pair_0/VSS" "m1_7650_47056#" -836.681 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -58240 -1368 -243200 -2832 0 0 0 0 0 0

@@ -1,0 +1,152 @@
+timestamp 1587512122
+version 8.3
+tech gf180mcuD
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 60
+use differential_nulling_res$1 differential_nulling_res$1_0 1 0 1370 0 1 35088
+use differential_miller_cap$1 differential_miller_cap$1_0 1 0 0 0 1 0
+node "m5_14894_35088#" 2 774.243 14894 35088 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 250272 5864
+node "m5_1542_35088#" 2 796.605 1542 35088 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 250272 5864
+node "m2_14688_35498#" 1 445.679 14688 35498 v2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14784 640 24640 736 24640 736 62000 1552
+node "m2_1764_35328#" 1 432.786 1764 35328 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24640 736 24640 736 24640 736 48448 1244
+node "m1_15154_35488#" 3 1076.18 15154 35488 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 69872 1764 24640 736 24640 736 24640 736 110528 2688
+node "m1_576_35488#" 3 1075.44 576 35488 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 69872 1764 24640 736 24640 736 24640 736 110528 2688
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "m2_1764_35328#" "m1_576_35488#" 29.2658
+cap "m5_1542_35088#" "m2_1764_35328#" 509.137
+cap "m5_1542_35088#" "m1_576_35488#" 71.0743
+cap "m1_15154_35488#" "m2_14688_35498#" 24.8132
+cap "m5_14894_35088#" "m2_14688_35498#" 655.224
+cap "m5_14894_35088#" "m1_15154_35488#" 71.0743
+cap "differential_miller_cap$1_0/cap_mim$5_2/m4_0_0#" "differential_miller_cap$1_0/cap_mim$4_24/m4_n120_n120#" 10.7058
+cap "differential_miller_cap$1_0/cap_mim$5_2/m4_0_0#" "differential_miller_cap$1_0/B1" 2.09312
+cap "differential_miller_cap$1_0/cap_mim$4_24/m4_n120_n120#" "differential_miller_cap$1_0/cap_mim$5_2/m4_0_0#" 25.3565
+cap "differential_miller_cap$1_0/cap_mim$4_24/m4_n120_n120#" "differential_miller_cap$1_0/B1" 1.89044
+cap "differential_miller_cap$1_0/cap_mim$5_2/m4_0_0#" "differential_miller_cap$1_0/B1" 2.09312
+cap "differential_miller_cap$1_0/cap_mim$4_24/m4_n120_n120#" "differential_nulling_res$1_0/B1" 11.782
+cap "differential_miller_cap$1_0/cap_mim$4_24/m4_n120_n120#" "differential_nulling_res$1_0/B2" 8.73941
+cap "differential_miller_cap$1_0/cap_mim$5_2/m4_n120_n120#" "differential_nulling_res$1_0/B2" 9.5293
+cap "differential_miller_cap$1_0/cap_mim$5_2/m4_n120_n120#" "differential_nulling_res$1_0/B1" 10.4325
+cap "differential_nulling_res$1_0/VSS" "differential_miller_cap$1_0/cap_mim$5_2/m4_n120_n120#" 19.4875
+cap "differential_miller_cap$1_0/m4_0_4078#" "differential_nulling_res$1_0/res_13p37u_20/a_2882_80#" 4.57161
+cap "differential_nulling_res$1_0/B1" "differential_miller_cap$1_0/m4_0_4078#" 8.91259
+cap "differential_nulling_res$1_0/B2" "differential_miller_cap$1_0/m4_0_4078#" 8.10218
+cap "differential_miller_cap$1_0/m4_0_4078#" "differential_nulling_res$1_0/VSS" 28.5279
+cap "differential_nulling_res$1_0/res_13p37u_17/a_2882_80#" "differential_miller_cap$1_0/m4_0_4078#" 4.88711
+cap "differential_miller_cap$1_0/m4_0_4078#" "differential_nulling_res$1_0/VSS" 19.0556
+cap "differential_nulling_res$1_0/res_13p37u_16/a_2882_80#" "differential_miller_cap$1_0/m4_0_4078#" 9.23028
+cap "differential_miller_cap$1_0/m4_0_4078#" "differential_nulling_res$1_0/res_13p37u_19/a_2882_80#" 10.1375
+cap "differential_miller_cap$1_0/m4_0_4078#" "differential_nulling_res$1_0/res_13p37u_19/a_2882_80#" 16.4286
+cap "differential_miller_cap$1_0/m4_0_4078#" "differential_nulling_res$1_0/res_13p37u_16/a_2882_80#" 14.6415
+cap "differential_nulling_res$1_0/VSS" "differential_miller_cap$1_0/m4_0_4078#" 24.1944
+cap "differential_miller_cap$1_0/m4_0_4078#" "differential_nulling_res$1_0/res_13p37u_16/a_2882_80#" 9.41803
+cap "differential_miller_cap$1_0/m4_0_4078#" "differential_nulling_res$1_0/res_13p37u_19/a_2882_80#" 10.802
+cap "differential_miller_cap$1_0/m4_0_4078#" "differential_nulling_res$1_0/VSS" 23.3891
+cap "differential_nulling_res$1_0/res_13p37u_12/a_80_80#" "differential_miller_cap$1_0/m4_0_4078#" 10.6876
+cap "differential_nulling_res$1_0/res_13p37u_11/a_80_80#" "differential_miller_cap$1_0/m4_0_4078#" 9.7879
+cap "differential_nulling_res$1_0/VSS" "differential_miller_cap$1_0/m4_0_4078#" 19.861
+cap "differential_miller_cap$1_0/m4_0_4078#" "differential_nulling_res$1_0/VSS" 27.8217
+cap "differential_nulling_res$1_0/B2" "differential_miller_cap$1_0/m4_0_4078#" 7.61325
+cap "differential_miller_cap$1_0/m4_0_4078#" "differential_nulling_res$1_0/res_13p37u_12/a_2882_80#" 4.88711
+cap "differential_miller_cap$1_0/m4_0_4078#" "differential_nulling_res$1_0/B1" 8.43024
+cap "differential_miller_cap$1_0/m4_0_4078#" "differential_nulling_res$1_0/res_13p37u_11/a_2882_80#" 4.57161
+cap "differential_miller_cap$1_0/m4_0_4078#" "differential_nulling_res$1_0/B2" 10.0182
+cap "differential_miller_cap$1_0/m4_0_4078#" "differential_nulling_res$1_0/res_13p37u_4/a_2882_80#" 10.9148
+cap "differential_miller_cap$1_0/m4_0_4078#" "differential_nulling_res$1_0/VSS" 20.1936
+cap "differential_miller_cap$1_0/cap_mim$5_3/m4_0_0#" "differential_miller_cap$1_0/m4_0_4078#" 23.4213
+cap "differential_nulling_res$1_0/B2" "differential_miller_cap$1_0/m4_0_4078#" 9.20604
+cap "differential_nulling_res$1_0/res_13p37u_4/a_2882_80#" "differential_miller_cap$1_0/m4_0_4078#" 8.51506
+cap "differential_miller_cap$1_0/cap_mim$5_3/m4_0_0#" "differential_miller_cap$1_0/B2" 2.09312
+cap "differential_miller_cap$1_0/m4_0_4078#" "differential_miller_cap$1_0/B2" 1.89044
+cap "differential_miller_cap$1_0/cap_mim$5_3/m4_0_0#" "differential_miller_cap$1_0/B2" 2.09312
+cap "differential_miller_cap$1_0/cap_mim$5_3/m4_0_0#" "differential_miller_cap$1_0/cap_mim$4_25/m4_n120_n120#" 8.6599
+cap "differential_nulling_res$1_0/B2" "differential_nulling_res$1_0/VSS" 3.12853
+cap "differential_nulling_res$1_0/VSS" "differential_miller_cap$1_0/B1" 5.53574
+cap "differential_nulling_res$1_0/VSS" "differential_miller_cap$1_0/m4_0_4078#" 112.79
+cap "differential_nulling_res$1_0/VSS" "differential_nulling_res$1_0/B1" -2.78242
+cap "differential_nulling_res$1_0/VSS" "differential_nulling_res$1_0/B1" 58.5357
+cap "differential_miller_cap$1_0/m4_0_4078#" "differential_miller_cap$1_0/B1" -1.74753
+cap "differential_miller_cap$1_0/B1" "differential_nulling_res$1_0/B2" 23.4475
+cap "differential_miller_cap$1_0/m4_0_4078#" "differential_nulling_res$1_0/B1" 22.5656
+cap "differential_nulling_res$1_0/VSS" "differential_miller_cap$1_0/m4_0_4078#" 76.236
+cap "differential_nulling_res$1_0/B2" "differential_nulling_res$1_0/B1" 47.5238
+cap "differential_nulling_res$1_0/VSS" "differential_nulling_res$1_0/B2" 8.03853
+cap "differential_miller_cap$1_0/m4_0_4078#" "differential_nulling_res$1_0/B2" 9.80404
+cap "differential_miller_cap$1_0/B1" "differential_nulling_res$1_0/B1" 11.6726
+cap "differential_nulling_res$1_0/VSS" "differential_miller_cap$1_0/B1" 39.3709
+cap "differential_miller_cap$1_0/m4_1838_33250#" "differential_nulling_res$1_0/VSS" 1.36399
+cap "differential_nulling_res$1_0/B1" "differential_miller_cap$1_0/cap_mim$5_2/m4_n120_n120#" 15.6084
+cap "differential_miller_cap$1_0/m4_1838_33250#" "differential_nulling_res$1_0/VSS" 1.79884
+cap "differential_nulling_res$1_0/B2" "differential_miller_cap$1_0/cap_mim$5_2/m4_n120_n120#" 13.5828
+cap "differential_miller_cap$1_0/cap_mim$5_2/m4_n120_n120#" "differential_nulling_res$1_0/VSS" 87.5053
+cap "differential_nulling_res$1_0/res_13p37u_20/a_2882_80#" "differential_miller_cap$1_0/m4_0_4078#" 5.29195
+cap "differential_nulling_res$1_0/VSS" "differential_miller_cap$1_0/m4_1838_33250#" 0.784399
+cap "differential_miller_cap$1_0/m4_0_4078#" "differential_nulling_res$1_0/res_13p37u_17/a_2882_80#" 8.16436
+cap "differential_miller_cap$1_0/m4_0_4078#" "differential_nulling_res$1_0/VSS" 117.213
+cap "differential_miller_cap$1_0/m4_0_4078#" "differential_nulling_res$1_0/B1" 13.9138
+cap "differential_nulling_res$1_0/B2" "differential_miller_cap$1_0/m4_0_4078#" 12.1081
+cap "differential_miller_cap$1_0/m4_0_4078#" "differential_nulling_res$1_0/VSS" 87.5053
+cap "differential_miller_cap$1_0/m4_0_4078#" "differential_nulling_res$1_0/res_13p37u_19/a_2882_80#" 15.6084
+cap "differential_nulling_res$1_0/VSS" "differential_miller_cap$1_0/m4_1838_33250#" 0.784399
+cap "differential_nulling_res$1_0/res_13p37u_16/a_2882_80#" "differential_miller_cap$1_0/m4_0_4078#" 13.5828
+cap "differential_miller_cap$1_0/m4_0_4078#" "differential_nulling_res$1_0/res_13p37u_16/a_2882_80#" 23.3966
+cap "differential_miller_cap$1_0/m4_0_4078#" "differential_nulling_res$1_0/res_13p37u_19/a_2882_80#" 26.9457
+cap "differential_miller_cap$1_0/m4_0_4078#" "differential_nulling_res$1_0/VSS" 102.359
+cap "differential_nulling_res$1_0/VSS" "differential_miller_cap$1_0/m4_1838_33250#" 1.84435
+cap "differential_miller_cap$1_0/m4_0_4078#" "differential_nulling_res$1_0/res_13p37u_16/a_2882_80#" 13.901
+cap "differential_nulling_res$1_0/res_13p37u_19/a_2882_80#" "differential_miller_cap$1_0/m4_0_4078#" 16.9298
+cap "differential_miller_cap$1_0/m4_1838_33250#" "differential_nulling_res$1_0/VSS" 1.62527
+cap "differential_miller_cap$1_0/m4_0_4078#" "differential_nulling_res$1_0/VSS" 102.359
+cap "differential_nulling_res$1_0/res_13p37u_11/a_80_80#" "differential_miller_cap$1_0/m4_0_4078#" 13.5828
+cap "differential_nulling_res$1_0/VSS" "differential_miller_cap$1_0/m4_0_4078#" 87.5053
+cap "differential_miller_cap$1_0/m4_1838_33250#" "differential_nulling_res$1_0/VSS" 0.784399
+cap "differential_nulling_res$1_0/res_13p37u_12/a_80_80#" "differential_miller_cap$1_0/m4_0_4078#" 15.6084
+cap "differential_nulling_res$1_0/VSS" "differential_miller_cap$1_0/m4_0_4078#" 117.213
+cap "differential_nulling_res$1_0/res_13p37u_12/a_2882_80#" "differential_miller_cap$1_0/m4_0_4078#" 8.16436
+cap "differential_nulling_res$1_0/B1" "differential_miller_cap$1_0/m4_0_4078#" 13.9138
+cap "differential_nulling_res$1_0/B2" "differential_miller_cap$1_0/m4_0_4078#" 12.1081
+cap "differential_nulling_res$1_0/res_13p37u_11/a_2882_80#" "differential_miller_cap$1_0/m4_0_4078#" 5.29195
+cap "differential_miller_cap$1_0/m4_1838_33250#" "differential_nulling_res$1_0/VSS" 0.90664
+cap "differential_miller_cap$1_0/m4_1838_33250#" "differential_nulling_res$1_0/VSS" 1.89568
+cap "differential_nulling_res$1_0/VSS" "differential_miller_cap$1_0/m4_0_4078#" 87.5053
+cap "differential_nulling_res$1_0/B2" "differential_miller_cap$1_0/m4_0_4078#" 13.5828
+cap "differential_miller_cap$1_0/m4_0_4078#" "differential_nulling_res$1_0/res_13p37u_4/a_2882_80#" 15.6084
+cap "differential_nulling_res$1_0/B2" "differential_nulling_res$1_0/VSS" 67.7148
+cap "differential_nulling_res$1_0/B2" "differential_miller_cap$1_0/m4_0_4078#" 15.7752
+cap "differential_miller_cap$1_0/B2" "differential_miller_cap$1_0/m4_0_4078#" -1.74753
+cap "differential_miller_cap$1_0/B2" "differential_nulling_res$1_0/VSS" 37.2008
+cap "differential_miller_cap$1_0/m4_1838_33250#" "differential_nulling_res$1_0/VSS" 0.990266
+cap "differential_nulling_res$1_0/VSS" "differential_miller_cap$1_0/m4_0_4078#" 63.4106
+cap "differential_nulling_res$1_0/B2" "differential_nulling_res$1_0/res_13p37u_4/a_2882_80#" 44.0821
+cap "differential_nulling_res$1_0/res_13p37u_4/a_2882_80#" "differential_miller_cap$1_0/B2" 26.4986
+cap "differential_nulling_res$1_0/res_13p37u_4/a_2882_80#" "differential_nulling_res$1_0/VSS" 8.3882
+cap "differential_nulling_res$1_0/res_13p37u_4/a_2882_80#" "differential_miller_cap$1_0/m4_0_4078#" 8.27669
+cap "differential_nulling_res$1_0/B2" "differential_miller_cap$1_0/B2" 10.2741
+cap "differential_nulling_res$1_0/VSS" "differential_nulling_res$1_0/B2" -1.8941
+cap "differential_nulling_res$1_0/VSS" "differential_miller_cap$1_0/B2" 5.72694
+cap "differential_nulling_res$1_0/VSS" "differential_nulling_res$1_0/res_13p37u_4/a_2882_80#" 2.92156
+cap "differential_nulling_res$1_0/VSS" "differential_miller_cap$1_0/cap_mim$4_25/m4_n120_n120#" 108.365
+cap "differential_nulling_res$1_0/B2" "differential_miller_cap$1_0/B1" 15.0578
+cap "differential_miller_cap$1_0/B1" "differential_nulling_res$1_0/B1" 15.9196
+cap "differential_nulling_res$1_0/VSS" "differential_miller_cap$1_0/B1" 29.5329
+cap "differential_nulling_res$1_0/A1" "differential_miller_cap$1_0/B1" 8.18514
+cap "differential_nulling_res$1_0/B2" "differential_miller_cap$1_0/B2" 15.9196
+cap "differential_nulling_res$1_0/VSS" "differential_miller_cap$1_0/B2" 29.5329
+cap "differential_nulling_res$1_0/A2" "differential_miller_cap$1_0/B2" 2.55037
+cap "differential_miller_cap$1_0/B2" "differential_nulling_res$1_0/res_13p37u_4/a_2882_80#" 15.0578
+cap "differential_nulling_res$1_0/VSS" "m5_1542_35088#" 7.57971
+cap "m5_14894_35088#" "differential_nulling_res$1_0/A2" 6.5581
+cap "m5_14894_35088#" "differential_nulling_res$1_0/VSS" 7.57971
+merge "differential_nulling_res$1_0/VSS" "differential_miller_cap$1_0/cap_mim$5_3/m4_0_0#" -635.731 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -352 0 0 0 0 0 0 -80256 -2176
+merge "differential_miller_cap$1_0/cap_mim$5_3/m4_0_0#" "m1_15154_35488#"
+merge "m1_15154_35488#" "differential_miller_cap$1_0/cap_mim$5_2/m4_0_0#"
+merge "differential_miller_cap$1_0/cap_mim$5_2/m4_0_0#" "m1_576_35488#"
+merge "m1_576_35488#" "differential_miller_cap$1_0/VSUBS"
+merge "differential_miller_cap$1_0/VSUBS" "VSUBS"
+merge "differential_miller_cap$1_0/B2" "m5_14894_35088#" -155.668 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -11616 -528
+merge "differential_miller_cap$1_0/B1" "m5_1542_35088#" -160.48 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -11616 -528
+merge "differential_nulling_res$1_0/B1" "differential_miller_cap$1_0/T1" -264.945 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -24640 -736 0 0 0 0 0 -176
+merge "differential_miller_cap$1_0/T1" "m2_1764_35328#"
+merge "differential_nulling_res$1_0/B2" "differential_miller_cap$1_0/T2" -238.483 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -14784 -640 0 0 0 0 0 -176
+merge "differential_miller_cap$1_0/T2" "m2_14688_35498#"

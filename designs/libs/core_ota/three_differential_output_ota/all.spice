@@ -1,0 +1,414 @@
+* NGSPICE file created from all.ext - technology: gf180mcuD
+
+.subckt res_cell$1 a_80_80# a_1208_80# VSUBS
+X0 a_80_80# a_1208_80# VSUBS ppolyf_u_1k r_width=1u r_length=5u
+.ends
+
+.subckt differential_load_res D3 D4 VSS G
+Xres_cell$1_20 m1_1190_4776# m1_1202_6080# VSS res_cell$1
+Xres_cell$1_0 VSS VSS VSS res_cell$1
+Xres_cell$1_21 m1_642_4572# m1_630_6284# VSS res_cell$1
+Xres_cell$1_10 m1_630_1760# m1_642_3064# VSS res_cell$1
+Xres_cell$1_1 m1_910_228# m1_1190_1760# VSS res_cell$1
+Xres_cell$1_22 m1_630_4776# m1_642_6080# VSS res_cell$1
+Xres_cell$1_11 VSS VSS VSS res_cell$1
+Xres_cell$1_2 G m1_1202_1556# VSS res_cell$1
+Xres_cell$1_23 VSS VSS VSS res_cell$1
+Xres_cell$1_12 VSS VSS VSS res_cell$1
+Xres_cell$1_3 m1_910_228# m1_630_1760# VSS res_cell$1
+Xres_cell$1_24 VSS VSS VSS res_cell$1
+Xres_cell$1_13 m1_1202_3064# m1_1190_4776# VSS res_cell$1
+Xres_cell$1_4 D3 m1_642_1556# VSS res_cell$1
+Xres_cell$1_25 m1_1202_6080# D4 VSS res_cell$1
+Xres_cell$1_14 m1_1190_3268# m1_1202_4572# VSS res_cell$1
+Xres_cell$1_6 VSS VSS VSS res_cell$1
+Xres_cell$1_5 VSS VSS VSS res_cell$1
+Xres_cell$1_26 m1_1190_6284# m1_630_7652# VSS res_cell$1
+Xres_cell$1_15 m1_642_3064# m1_630_4776# VSS res_cell$1
+Xres_cell$1_7 m1_1202_1556# m1_1190_3268# VSS res_cell$1
+Xres_cell$1_27 m1_642_6080# G VSS res_cell$1
+Xres_cell$1_16 m1_630_3268# m1_642_4572# VSS res_cell$1
+Xres_cell$1_8 m1_1190_1760# m1_1202_3064# VSS res_cell$1
+Xres_cell$1_28 m1_630_6284# m1_630_7652# VSS res_cell$1
+Xres_cell$1_29 VSS VSS VSS res_cell$1
+Xres_cell$1_18 VSS VSS VSS res_cell$1
+Xres_cell$1_17 VSS VSS VSS res_cell$1
+Xres_cell$1_9 m1_642_1556# m1_630_3268# VSS res_cell$1
+Xres_cell$1_19 m1_1202_4572# m1_1190_6284# VSS res_cell$1
+.ends
+
+.subckt pfet$2 a_1158_0# a_750_0# a_546_0# a_446_n60# a_242_n60# a_1566_0# a_954_0#
++ a_1466_n60# w_n180_n88# a_1262_n60# a_38_n60# a_n92_0# a_1058_n60# a_854_n60# a_342_0#
++ a_138_0# a_650_n60# a_1362_0#
+X0 a_1362_0# a_1262_n60# a_1158_0# w_n180_n88# pfet_03v3 ad=2.7118p pd=10.95u as=2.7118p ps=10.95u w=10.43u l=0.5u
+X1 a_954_0# a_854_n60# a_750_0# w_n180_n88# pfet_03v3 ad=2.7118p pd=10.95u as=2.7118p ps=10.95u w=10.43u l=0.5u
+X2 a_1566_0# a_1466_n60# a_1362_0# w_n180_n88# pfet_03v3 ad=6.7795p pd=22.16u as=2.7118p ps=10.95u w=10.43u l=0.5u
+X3 a_342_0# a_242_n60# a_138_0# w_n180_n88# pfet_03v3 ad=2.7118p pd=10.95u as=2.7118p ps=10.95u w=10.43u l=0.5u
+X4 a_546_0# a_446_n60# a_342_0# w_n180_n88# pfet_03v3 ad=2.7118p pd=10.95u as=2.7118p ps=10.95u w=10.43u l=0.5u
+X5 a_1158_0# a_1058_n60# a_954_0# w_n180_n88# pfet_03v3 ad=2.7118p pd=10.95u as=2.7118p ps=10.95u w=10.43u l=0.5u
+X6 a_138_0# a_38_n60# a_n92_0# w_n180_n88# pfet_03v3 ad=2.7118p pd=10.95u as=6.7795p ps=22.16u w=10.43u l=0.5u
+X7 a_750_0# a_650_n60# a_546_0# w_n180_n88# pfet_03v3 ad=2.7118p pd=10.95u as=2.7118p ps=10.95u w=10.43u l=0.5u
+.ends
+
+.subckt pfet$1 w_n180_n88# a_38_n60# a_n92_0# a_138_0#
+X0 a_138_0# a_38_n60# a_n92_0# w_n180_n88# pfet_03v3 ad=6.7795p pd=22.16u as=6.7795p ps=22.16u w=10.43u l=0.5u
+.ends
+
+.subckt output_stage G6 D6 VDD
+Xpfet$2_0 VDD VDD D6 G6 G6 VDD D6 G6 VDD G6 G6 VDD G6 G6 VDD D6 G6 D6 pfet$2
+Xpfet$2_1 VDD VDD D6 G6 G6 VDD D6 G6 VDD G6 G6 VDD G6 G6 VDD D6 G6 D6 pfet$2
+Xpfet$1_0 VDD VDD VDD VDD pfet$1
+Xpfet$1_1 VDD VDD VDD VDD pfet$1
+Xpfet$1_3 VDD VDD VDD VDD pfet$1
+Xpfet$1_2 VDD VDD VDD VDD pfet$1
+.ends
+
+.subckt nmos_6$1 a_1636_132# a_684_72# a_156_0# a_948_72# a_1476_0# a_316_132# a_580_132#
++ a_34_132# a_1108_132# a_1372_132# a_844_132# a_1212_72# a_420_72# VSUBS
+X0 a_1108_132# a_948_72# a_844_132# VSUBS nfet_03v3 ad=0.9828p pd=4.3u as=0.9828p ps=4.3u w=3.78u l=0.8u
+X1 a_844_132# a_684_72# a_580_132# VSUBS nfet_03v3 ad=0.9828p pd=4.3u as=0.9828p ps=4.3u w=3.78u l=0.8u
+X2 a_1636_132# a_1476_0# a_1372_132# VSUBS nfet_03v3 ad=2.3058p pd=8.78u as=0.9828p ps=4.3u w=3.78u l=0.8u
+X3 a_580_132# a_420_72# a_316_132# VSUBS nfet_03v3 ad=0.9828p pd=4.3u as=0.9828p ps=4.3u w=3.78u l=0.8u
+X4 a_316_132# a_156_0# a_34_132# VSUBS nfet_03v3 ad=0.9828p pd=4.3u as=2.3058p ps=8.78u w=3.78u l=0.8u
+X5 a_1372_132# a_1212_72# a_1108_132# VSUBS nfet_03v3 ad=0.9828p pd=4.3u as=0.9828p ps=4.3u w=3.78u l=0.8u
+.ends
+
+.subckt input_pair D1 D2 VSS S IP IN
+Xnmos_6$1_0 D1 IP D1 IP D1 D1 S D1 S D1 D2 IN IN VSS nmos_6$1
+Xnmos_6$1_1 D2 IN D2 IN D2 D2 S D2 S D2 D1 IP IP VSS nmos_6$1
+.ends
+
+.subckt differential_output_ota active_load_diff_out_0/VDD output_stage_0/VDD output_stage_1/D6
++ input_pair_0/S output_stage_1/VDD output_stage_0/D6 input_pair_0/IP input_pair_0/IN
++ VSUBS
+Xdifferential_load_res_0 VSUBS VSUBS VSUBS active_load_diff_out_0/G differential_load_res
+Xoutput_stage_0 VSUBS output_stage_0/D6 output_stage_0/VDD output_stage
+Xoutput_stage_1 VSUBS output_stage_1/D6 output_stage_1/VDD output_stage
+Xinput_pair_0 VSUBS VSUBS VSUBS input_pair_0/S input_pair_0/IP input_pair_0/IN input_pair
+.ends
+
+.subckt cap_mim$4 m4_n120_n120# m4_0_0#
+X0 m4_0_0# m4_n120_n120# cap_mim_2f0_m4m5_noshield c_width=5u c_length=10u
+.ends
+
+.subckt cap_mim m4_n120_n120# m4_0_0#
+X0 m4_0_0# m4_n120_n120# cap_mim_2f0_m4m5_noshield c_width=10u c_length=10u
+.ends
+
+.subckt cap_mim$5 m4_n120_n120# m4_0_0#
+X0 m4_0_0# m4_n120_n120# cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+.ends
+
+.subckt differential_miller_cap$1 B2 T2 T1 B1 m4_0_4078#
+Xcap_mim$4_0 m4_0_4078# m4_0_4078# cap_mim$4
+Xcap_mim$4_1 m4_0_4078# m4_0_4078# cap_mim$4
+Xcap_mim$4_2 m4_0_4078# m4_0_4078# cap_mim$4
+Xcap_mim$4_3 m4_0_4078# m4_0_4078# cap_mim$4
+Xcap_mim$4_4 m4_0_4078# m4_0_4078# cap_mim$4
+Xcap_mim$4_5 m4_0_4078# m4_0_4078# cap_mim$4
+Xcap_mim_0 B2 T2 cap_mim
+Xcap_mim$4_6 m4_0_4078# m4_0_4078# cap_mim$4
+Xcap_mim_1 B1 T1 cap_mim
+Xcap_mim$4_7 m4_0_4078# m4_0_4078# cap_mim$4
+Xcap_mim_2 B2 T2 cap_mim
+Xcap_mim$4_8 m4_0_4078# m4_0_4078# cap_mim$4
+Xcap_mim_3 B1 T1 cap_mim
+Xcap_mim$4_9 m4_0_4078# m4_0_4078# cap_mim$4
+Xcap_mim_4 B1 T1 cap_mim
+Xcap_mim_5 B2 T2 cap_mim
+Xcap_mim_6 B2 T2 cap_mim
+Xcap_mim_7 B1 T1 cap_mim
+Xcap_mim_8 B1 T1 cap_mim
+Xcap_mim_50 B2 T2 cap_mim
+Xcap_mim$4_30 m4_0_4078# m4_0_4078# cap_mim$4
+Xcap_mim_51 B1 T1 cap_mim
+Xcap_mim_40 B2 T2 cap_mim
+Xcap_mim_9 B2 T2 cap_mim
+Xcap_mim_30 B2 T2 cap_mim
+Xcap_mim$4_20 m4_0_4078# m4_0_4078# cap_mim$4
+Xcap_mim$4_31 m4_0_4078# m4_0_4078# cap_mim$4
+Xcap_mim_52 B1 T1 cap_mim
+Xcap_mim_41 B1 T1 cap_mim
+Xcap_mim$4_10 m4_0_4078# m4_0_4078# cap_mim$4
+Xcap_mim_31 B1 T1 cap_mim
+Xcap_mim_20 B2 T2 cap_mim
+Xcap_mim$4_21 m4_0_4078# m4_0_4078# cap_mim$4
+Xcap_mim_42 B2 T2 cap_mim
+Xcap_mim_53 B2 T2 cap_mim
+Xcap_mim$4_32 m4_0_4078# m4_0_4078# cap_mim$4
+Xcap_mim$5_0 m4_0_4078# m4_0_4078# cap_mim$5
+Xcap_mim$5_1 m4_0_4078# m4_0_4078# cap_mim$5
+Xcap_mim_10 B2 T2 cap_mim
+Xcap_mim$4_11 m4_0_4078# m4_0_4078# cap_mim$4
+Xcap_mim_32 B1 T1 cap_mim
+Xcap_mim_21 B1 T1 cap_mim
+Xcap_mim$4_22 m4_0_4078# m4_0_4078# cap_mim$4
+Xcap_mim_43 B1 T1 cap_mim
+Xcap_mim_54 B2 T2 cap_mim
+Xcap_mim$4_33 m4_0_4078# m4_0_4078# cap_mim$4
+Xcap_mim_11 B1 T1 cap_mim
+Xcap_mim_22 B2 T2 cap_mim
+Xcap_mim_33 B2 T2 cap_mim
+Xcap_mim_44 B1 T1 cap_mim
+Xcap_mim_55 B1 T1 cap_mim
+Xcap_mim$4_12 m4_0_4078# m4_0_4078# cap_mim$4
+Xcap_mim$4_23 m4_0_4078# m4_0_4078# cap_mim$4
+Xcap_mim$5_2 m4_0_4078# m4_0_4078# cap_mim$5
+Xcap_mim$5_3 m4_0_4078# m4_0_4078# cap_mim$5
+Xcap_mim$4_13 m4_0_4078# m4_0_4078# cap_mim$4
+Xcap_mim_12 B1 T1 cap_mim
+Xcap_mim_23 B1 T1 cap_mim
+Xcap_mim_34 B2 T2 cap_mim
+Xcap_mim_56 B1 T1 cap_mim
+Xcap_mim_45 B2 T2 cap_mim
+Xcap_mim$4_24 m4_0_4078# m4_0_4078# cap_mim$4
+Xcap_mim_13 B2 T2 cap_mim
+Xcap_mim_24 B1 T1 cap_mim
+Xcap_mim_35 B1 T1 cap_mim
+Xcap_mim_57 B2 T2 cap_mim
+Xcap_mim_46 B2 T2 cap_mim
+Xcap_mim$4_25 m4_0_4078# m4_0_4078# cap_mim$4
+Xcap_mim$4_14 m4_0_4078# m4_0_4078# cap_mim$4
+Xcap_mim$4_15 m4_0_4078# m4_0_4078# cap_mim$4
+Xcap_mim_14 B2 T2 cap_mim
+Xcap_mim_36 B1 T1 cap_mim
+Xcap_mim_25 B2 T2 cap_mim
+Xcap_mim_58 B2 T2 cap_mim
+Xcap_mim_47 B1 T1 cap_mim
+Xcap_mim$4_26 m4_0_4078# m4_0_4078# cap_mim$4
+Xcap_mim_15 B1 T1 cap_mim
+Xcap_mim$4_16 m4_0_4078# m4_0_4078# cap_mim$4
+Xcap_mim_37 B2 T2 cap_mim
+Xcap_mim_26 B2 T2 cap_mim
+Xcap_mim_48 B1 T1 cap_mim
+Xcap_mim_59 B1 T1 cap_mim
+Xcap_mim$4_27 m4_0_4078# m4_0_4078# cap_mim$4
+Xcap_mim_16 B1 T1 cap_mim
+Xcap_mim$4_17 m4_0_4078# m4_0_4078# cap_mim$4
+Xcap_mim_38 B2 T2 cap_mim
+Xcap_mim_27 B1 T1 cap_mim
+Xcap_mim_49 B2 T2 cap_mim
+Xcap_mim$4_28 m4_0_4078# m4_0_4078# cap_mim$4
+Xcap_mim_17 B2 T2 cap_mim
+Xcap_mim_28 B1 T1 cap_mim
+Xcap_mim_39 B1 T1 cap_mim
+Xcap_mim$4_18 m4_0_4078# m4_0_4078# cap_mim$4
+Xcap_mim$4_29 m4_0_4078# m4_0_4078# cap_mim$4
+Xcap_mim_18 B2 T2 cap_mim
+Xcap_mim_29 B2 T2 cap_mim
+Xcap_mim$4_19 m4_0_4078# m4_0_4078# cap_mim$4
+Xcap_mim_19 B1 T1 cap_mim
+.ends
+
+.subckt res_13p37u a_2882_80# a_80_80# VSUBS
+X0 a_80_80# a_2882_80# VSUBS ppolyf_u_1k r_width=1u r_length=13.37u
+.ends
+
+.subckt differential_nulling_res$1 A2 VSS A1 B2 B1
+Xres_13p37u_27 VSS VSS VSS res_13p37u
+Xres_13p37u_8 A1 B1 VSS res_13p37u
+Xres_13p37u_16 B2 A2 VSS res_13p37u
+Xres_13p37u_9 A2 B2 VSS res_13p37u
+Xres_13p37u_17 A1 B1 VSS res_13p37u
+Xres_13p37u_18 A1 B1 VSS res_13p37u
+Xres_13p37u_19 B1 A1 VSS res_13p37u
+Xres_13p37u_0 VSS VSS VSS res_13p37u
+Xres_13p37u_1 B2 A2 VSS res_13p37u
+Xres_13p37u_20 A2 B2 VSS res_13p37u
+Xres_13p37u_2 B1 A1 VSS res_13p37u
+Xres_13p37u_10 A1 B1 VSS res_13p37u
+Xres_13p37u_21 B2 A2 VSS res_13p37u
+Xres_13p37u_3 B2 A2 VSS res_13p37u
+Xres_13p37u_22 A2 B2 VSS res_13p37u
+Xres_13p37u_11 A2 B2 VSS res_13p37u
+Xres_13p37u_24 B2 A2 VSS res_13p37u
+Xres_13p37u_23 B1 A1 VSS res_13p37u
+Xres_13p37u_4 B1 A1 VSS res_13p37u
+Xres_13p37u_5 B2 A2 VSS res_13p37u
+Xres_13p37u_12 A1 B1 VSS res_13p37u
+Xres_13p37u_13 VSS VSS VSS res_13p37u
+Xres_13p37u_25 A1 B1 VSS res_13p37u
+Xres_13p37u_6 VSS VSS VSS res_13p37u
+Xres_13p37u_14 VSS VSS VSS res_13p37u
+Xres_13p37u_7 VSS VSS VSS res_13p37u
+Xres_13p37u_26 VSS VSS VSS res_13p37u
+Xres_13p37u_15 VSS VSS VSS res_13p37u
+.ends
+
+.subckt res_cap differential_nulling_res$1_0/A2 differential_nulling_res$1_0/A1 differential_miller_cap$1_0/B2
++ differential_miller_cap$1_0/B1 VSUBS
+Xdifferential_miller_cap$1_0 differential_miller_cap$1_0/B2 differential_miller_cap$1_0/T2
++ differential_miller_cap$1_0/T1 differential_miller_cap$1_0/B1 VSUBS differential_miller_cap$1
+Xdifferential_nulling_res$1_0 differential_nulling_res$1_0/A2 VSUBS differential_nulling_res$1_0/A1
++ differential_miller_cap$1_0/T2 differential_miller_cap$1_0/T1 differential_nulling_res$1
+.ends
+
+.subckt one_differential_output_ota res_cap_0/differential_miller_cap$1_0/B2 differential_output_ota_0/input_pair_0/IP
++ differential_output_ota_0/input_pair_0/IN res_cap_0/differential_miller_cap$1_0/B1
++ differential_output_ota_0/input_pair_0/S differential_output_ota_0/output_stage_1/VDD
++ VSUBS
+Xdifferential_output_ota_0 differential_output_ota_0/output_stage_1/VDD differential_output_ota_0/output_stage_1/VDD
++ res_cap_0/differential_miller_cap$1_0/B2 differential_output_ota_0/input_pair_0/S
++ differential_output_ota_0/output_stage_1/VDD res_cap_0/differential_miller_cap$1_0/B1
++ differential_output_ota_0/input_pair_0/IP differential_output_ota_0/input_pair_0/IN
++ VSUBS differential_output_ota
+Xres_cap_0 VSUBS VSUBS res_cap_0/differential_miller_cap$1_0/B2 res_cap_0/differential_miller_cap$1_0/B1
++ VSUBS res_cap
+.ends
+
+.subckt nfet$6 a_38_n60# a_n84_0# a_198_0# VSUBS
+X0 a_198_0# a_38_n60# a_n84_0# VSUBS nfet_03v3 ad=2.2875p pd=8.72u as=2.2875p ps=8.72u w=3.75u l=0.8u
+.ends
+
+.subckt nmos_mid_dummy nfet$6_1/a_198_0# m1_38_779# VSUBS
+Xnfet$6_0 m1_38_779# nfet$6_1/a_198_0# m1_38_779# VSUBS nfet$6
+Xnfet$6_1 m1_38_779# m1_38_779# nfet$6_1/a_198_0# VSUBS nfet$6
+.ends
+
+.subckt nmos_1$4 a_16_61# a_298_61# a_138_1# VSUBS
+X0 a_298_61# a_138_1# a_16_61# VSUBS nfet_03v3 ad=2.2875p pd=8.72u as=2.2875p ps=8.72u w=3.75u l=0.8u
+.ends
+
+.subckt nfet$7 a_38_n60# a_n84_0# a_198_0# VSUBS
+X0 a_198_0# a_38_n60# a_n84_0# VSUBS nfet_03v3 ad=2.2875p pd=8.72u as=2.2875p ps=8.72u w=3.75u l=0.8u
+.ends
+
+.subckt nmos_2_4_mid nmos_1$4_4/a_16_61# m1_222_n2529# nmos_1$4_1/a_16_61# a_17_n2720#
++ m1_222_n21# nmos_1$4_2/a_16_61# m1_222_n3014# a_17_n212# nmos_1$4_3/a_16_61# VSUBS
+Xnmos_1$4_0 a_17_n212# a_17_n212# a_17_n212# VSUBS nmos_1$4
+Xnmos_1$4_1 nmos_1$4_1/a_16_61# m1_222_n3014# a_17_n2720# VSUBS nmos_1$4
+Xnmos_1$4_2 nmos_1$4_2/a_16_61# m1_222_n2529# a_17_n2720# VSUBS nmos_1$4
+Xnfet$7_0 m1_222_n3014# m1_222_n3014# m1_222_n3014# VSUBS nfet$7
+Xnmos_1$4_3 nmos_1$4_3/a_16_61# a_17_n212# a_17_n212# VSUBS nmos_1$4
+Xnfet$7_1 m1_222_n2529# m1_222_n2529# m1_222_n2529# VSUBS nfet$7
+Xnmos_1$4_4 nmos_1$4_4/a_16_61# m1_222_n21# a_17_n212# VSUBS nmos_1$4
+Xnfet$7_2 m1_222_n21# m1_222_n21# m1_222_n21# VSUBS nfet$7
+.ends
+
+.subckt nmos_mid_4_6 m1_358_7375# nmos_2_4_mid_1/nmos_1$4_3/a_16_61# nmos_2_4_mid_1/m1_222_n21#
++ m1_1138_76# nmos_2_4_mid_0/m1_222_n2529# nmos_2_4_mid_0/nmos_1$4_3/a_16_61# nmos_2_4_mid_1/m1_222_n3014#
++ m1_76_6334# m1_76_944# nmos_2_4_mid_1/nmos_1$4_4/a_16_61# nmos_2_4_mid_0/m1_222_n21#
++ m1_1138_7375# m1_76_1150# nmos_2_4_mid_1/nmos_1$4_1/a_16_61# nmos_2_4_mid_1/a_17_n212#
++ nmos_2_4_mid_0/a_17_n212# nmos_2_4_mid_0/nmos_1$4_4/a_16_61# m1_76_6128# m1_76_6446#
++ nmos_2_4_mid_0/nmos_1$4_1/a_16_61# m1_76_1262# m1_76_3620# m1_358_76# nmos_2_4_mid_1/nmos_1$4_2/a_16_61#
++ nmos_2_4_mid_1/m1_222_n2529# nmos_2_4_mid_0/m1_222_n3014# nmos_2_4_mid_0/nmos_1$4_2/a_16_61#
++ VSUBS
+Xnmos_mid_dummy_0 m1_358_76# m1_358_76# VSUBS nmos_mid_dummy
+Xnmos_mid_dummy_1 m1_1138_76# m1_1138_76# VSUBS nmos_mid_dummy
+Xnmos_mid_dummy_2 m1_358_7375# m1_358_7375# VSUBS nmos_mid_dummy
+Xnmos_mid_dummy_3 m1_1138_7375# m1_1138_7375# VSUBS nmos_mid_dummy
+Xnmos_2_4_mid_0 nmos_2_4_mid_0/nmos_1$4_4/a_16_61# nmos_2_4_mid_0/m1_222_n2529# nmos_2_4_mid_0/nmos_1$4_1/a_16_61#
++ nmos_2_4_mid_1/a_17_n212# nmos_2_4_mid_0/m1_222_n21# nmos_2_4_mid_0/nmos_1$4_2/a_16_61#
++ nmos_2_4_mid_0/m1_222_n3014# nmos_2_4_mid_0/a_17_n212# nmos_2_4_mid_0/nmos_1$4_3/a_16_61#
++ VSUBS nmos_2_4_mid
+Xnmos_2_4_mid_1 nmos_2_4_mid_1/nmos_1$4_4/a_16_61# nmos_2_4_mid_1/m1_222_n2529# nmos_2_4_mid_1/nmos_1$4_1/a_16_61#
++ nmos_2_4_mid_0/a_17_n212# nmos_2_4_mid_1/m1_222_n21# nmos_2_4_mid_1/nmos_1$4_2/a_16_61#
++ nmos_2_4_mid_1/m1_222_n3014# nmos_2_4_mid_1/a_17_n212# nmos_2_4_mid_1/nmos_1$4_3/a_16_61#
++ VSUBS nmos_2_4_mid
+.ends
+
+.subckt nmos_mid_right_2_6 a_640_434# a_157_5293# m1_362_5090# m1_80_6428# a_320_3110#
++ m1_80_1244# a_320_5618# a_320_434# a_157_1447# a_38_434# a_320_6956# m1_362_7766#
++ a_320_1772# a_320_4280# m1_362_2582# VSUBS
+X0 a_640_434# a_157_5293# a_320_4280# VSUBS nfet_03v3 ad=2.2875p pd=8.72u as=1.5p ps=4.55u w=3.75u l=0.8u
+X1 a_320_6956# a_157_5293# a_38_434# VSUBS nfet_03v3 ad=1.5p pd=4.55u as=2.2875p ps=8.72u w=3.75u l=0.8u
+X2 a_320_434# a_157_1447# a_38_434# VSUBS nfet_03v3 ad=1.5p pd=4.55u as=2.2875p ps=8.72u w=3.75u l=0.8u
+X3 a_320_4280# a_157_5293# a_38_434# VSUBS nfet_03v3 ad=1.5p pd=4.55u as=2.2875p ps=8.72u w=3.75u l=0.8u
+X4 a_640_434# a_157_1447# a_320_3110# VSUBS nfet_03v3 ad=2.2875p pd=8.72u as=1.5p ps=4.55u w=3.75u l=0.8u
+X5 a_640_434# a_157_1447# a_320_1772# VSUBS nfet_03v3 ad=2.2875p pd=8.72u as=1.5p ps=4.55u w=3.75u l=0.8u
+X6 a_640_434# a_157_5293# a_320_5618# VSUBS nfet_03v3 ad=2.2875p pd=8.72u as=1.5p ps=4.55u w=3.75u l=0.8u
+X7 a_640_434# a_157_5293# a_320_6956# VSUBS nfet_03v3 ad=2.2875p pd=8.72u as=1.5p ps=4.55u w=3.75u l=0.8u
+X8 a_640_434# a_157_1447# a_320_434# VSUBS nfet_03v3 ad=2.2875p pd=8.72u as=1.5p ps=4.55u w=3.75u l=0.8u
+X9 a_320_3110# a_157_1447# a_38_434# VSUBS nfet_03v3 ad=1.5p pd=4.55u as=2.2875p ps=8.72u w=3.75u l=0.8u
+X10 a_320_1772# a_157_1447# a_38_434# VSUBS nfet_03v3 ad=1.5p pd=4.55u as=2.2875p ps=8.72u w=3.75u l=0.8u
+X11 a_320_5618# a_157_5293# a_38_434# VSUBS nfet_03v3 ad=1.5p pd=4.55u as=2.2875p ps=8.72u w=3.75u l=0.8u
+.ends
+
+.subckt nfet a_38_n60# a_n84_0# a_198_0# VSUBS
+X0 a_198_0# a_38_n60# a_n84_0# VSUBS nfet_03v3 ad=2.2875p pd=8.72u as=2.2875p ps=8.72u w=3.75u l=0.8u
+.ends
+
+.subckt nmos_1$3 a_16_61# a_298_61# a_138_1# VSUBS
+X0 a_298_61# a_138_1# a_16_61# VSUBS nfet_03v3 ad=2.2875p pd=8.72u as=2.2875p ps=8.72u w=3.75u l=0.8u
+.ends
+
+.subckt nmos_last_dummy m1_114_4280# m1_114_3110# m1_114_1772# m1_114_5618# a_156_944#
++ VSUBS
+Xnfet_0 a_156_944# a_156_944# a_156_944# VSUBS nfet
+Xnfet_1 a_156_944# a_156_944# a_156_944# VSUBS nfet
+Xnmos_1$3_0 m1_114_5618# m1_114_5618# a_156_944# VSUBS nmos_1$3
+Xnmos_1$3_1 m1_114_4280# m1_114_4280# a_156_944# VSUBS nmos_1$3
+Xnmos_1$3_2 m1_114_3110# m1_114_3110# a_156_944# VSUBS nmos_1$3
+Xnmos_1$3_3 m1_114_1772# m1_114_1772# a_156_944# VSUBS nmos_1$3
+.ends
+
+.subckt nmos_1 a_16_61# a_298_61# a_138_1# VSUBS
+X0 a_298_61# a_138_1# a_16_61# VSUBS nfet_03v3 ad=2.2875p pd=8.72u as=2.2875p ps=8.72u w=3.75u l=0.8u
+.ends
+
+.subckt nmos_2_6 m1_80_5166# m1_80_5484# m1_80_7842# m1_80_300# m1_80_3996# a_157_2861#
++ m1_80_1638# m1_80_6504# m1_80_6822# m1_80_1320# m1_642_21# m1_80_2658# m1_80_2976#
++ a_157_6707# m1_2_21# VSUBS
+Xnmos_1_0 m1_2_21# m1_80_7842# a_157_6707# VSUBS nmos_1
+Xnmos_1_1 m1_80_7842# m1_642_21# a_157_6707# VSUBS nmos_1
+Xnmos_1_2 m1_2_21# m1_80_1320# a_157_2861# VSUBS nmos_1
+Xnmos_1_3 m1_80_1320# m1_642_21# a_157_2861# VSUBS nmos_1
+Xnmos_1_4 m1_2_21# m1_80_6504# a_157_6707# VSUBS nmos_1
+Xnmos_1_10 m1_80_5166# m1_642_21# a_157_6707# VSUBS nmos_1
+Xnmos_1_5 m1_2_21# m1_80_2658# a_157_2861# VSUBS nmos_1
+Xnmos_1_11 m1_80_6504# m1_642_21# a_157_6707# VSUBS nmos_1
+Xnmos_1_6 m1_80_2658# m1_642_21# a_157_2861# VSUBS nmos_1
+Xnmos_1_7 m1_80_3996# m1_642_21# a_157_2861# VSUBS nmos_1
+Xnmos_1_9 m1_2_21# m1_80_5166# a_157_6707# VSUBS nmos_1
+Xnmos_1_8 m1_2_21# m1_80_3996# a_157_2861# VSUBS nmos_1
+.ends
+
+.subckt nmos_mid_left_2_6 m1_n15699_n1349# m1_n15699_1159# a_n15459_1369# a_n15459_n1139#
++ a_n15459_n3815# m1_n15699_n2687# m1_n15699_2497# a_n15741_n3815# a_n15459_31# a_n15622_n2802#
++ a_n15622_1044# a_n15459_2707# m1_n15699_n4025# a_n15459_n2477# a_n15139_n3815# VSUBS
+X0 a_n15459_n2477# a_n15622_n2802# a_n15741_n3815# VSUBS nfet_03v3 ad=1.5p pd=4.55u as=2.2875p ps=8.72u w=3.75u l=0.8u
+X1 a_n15459_2707# a_n15622_1044# a_n15741_n3815# VSUBS nfet_03v3 ad=1.5p pd=4.55u as=2.2875p ps=8.72u w=3.75u l=0.8u
+X2 a_n15459_1369# a_n15622_1044# a_n15741_n3815# VSUBS nfet_03v3 ad=1.5p pd=4.55u as=2.2875p ps=8.72u w=3.75u l=0.8u
+X3 a_n15139_n3815# a_n15622_n2802# a_n15459_n1139# VSUBS nfet_03v3 ad=2.2875p pd=8.72u as=1.5p ps=4.55u w=3.75u l=0.8u
+X4 a_n15139_n3815# a_n15622_n2802# a_n15459_n3815# VSUBS nfet_03v3 ad=2.2875p pd=8.72u as=1.5p ps=4.55u w=3.75u l=0.8u
+X5 a_n15139_n3815# a_n15622_n2802# a_n15459_n2477# VSUBS nfet_03v3 ad=2.2875p pd=8.72u as=1.5p ps=4.55u w=3.75u l=0.8u
+X6 a_n15459_31# a_n15622_1044# a_n15741_n3815# VSUBS nfet_03v3 ad=1.5p pd=4.55u as=2.2875p ps=8.72u w=3.75u l=0.8u
+X7 a_n15139_n3815# a_n15622_1044# a_n15459_2707# VSUBS nfet_03v3 ad=2.2875p pd=8.72u as=1.5p ps=4.55u w=3.75u l=0.8u
+X8 a_n15139_n3815# a_n15622_1044# a_n15459_1369# VSUBS nfet_03v3 ad=2.2875p pd=8.72u as=1.5p ps=4.55u w=3.75u l=0.8u
+X9 a_n15459_n1139# a_n15622_n2802# a_n15741_n3815# VSUBS nfet_03v3 ad=1.5p pd=4.55u as=2.2875p ps=8.72u w=3.75u l=0.8u
+X10 a_n15459_n3815# a_n15622_n2802# a_n15741_n3815# VSUBS nfet_03v3 ad=1.5p pd=4.55u as=2.2875p ps=8.72u w=3.75u l=0.8u
+X11 a_n15139_n3815# a_n15622_1044# a_n15459_31# VSUBS nfet_03v3 ad=2.2875p pd=8.72u as=1.5p ps=4.55u w=3.75u l=0.8u
+.ends
+
+.subckt tail_current_diff_out VSS I2B I3B I2A I3A I3C I2C IBIAS I1B I1C I1A
+Xnmos_mid_4_6_0 VSS VSS I1C VSS I1B VSS I1A IBIAS I2C VSS I1C VSS IBIAS VSS IBIAS
++ IBIAS VSS I3A I2C VSS I3A I2B VSS VSS I1B I1A VSS VSS nmos_mid_4_6
+Xnmos_mid_right_2_6_0 VSS IBIAS I3B I3A I3B I2C I2A I3C IBIAS VSS I2C I3C I3A I2B
++ I2A VSS nmos_mid_right_2_6
+Xnmos_last_dummy_0 VSS VSS VSS VSS VSS VSS nmos_last_dummy
+Xnmos_mid_right_2_6_1 VSS IBIAS I3B I3A I3B I2C I2A I3C IBIAS VSS I2C I3C I3A I2B
++ I2A VSS nmos_mid_right_2_6
+Xnmos_last_dummy_1 VSS VSS VSS VSS VSS VSS nmos_last_dummy
+Xnmos_2_6_0 I3B I2A I3C I3C I2B IBIAS I3A I3A I2C I2C VSS I2A I3B IBIAS VSS VSS nmos_2_6
+Xnmos_mid_left_2_6_0 I3B I2A I3A I2B I2C I3A I2C VSS I3B IBIAS IBIAS I3C I3C I2A VSS
++ VSS nmos_mid_left_2_6
+Xnmos_2_6_1 I3B I2A I3C I3C I2B IBIAS I3A I3A I2C I2C VSS I2A I3B IBIAS VSS VSS nmos_2_6
+Xnmos_2_6_2 I3B I2A I3C I3C I2B IBIAS I3A I3A I2C I2C VSS I2A I3B IBIAS VSS VSS nmos_2_6
+Xnmos_mid_left_2_6_1 I3B I2A I3A I2B I2C I3A I2C VSS I3B IBIAS IBIAS I3C I3C I2A VSS
++ VSS nmos_mid_left_2_6
+Xnmos_2_6_3 I3B I2A I3C I3C I2B IBIAS I3A I3A I2C I2C VSS I2A I3B IBIAS VSS VSS nmos_2_6
+Xnmos_2_6_4 I3B I2A I3C I3C I2B IBIAS I3A I3A I2C I2C VSS I2A I3B IBIAS VSS VSS nmos_2_6
+Xnmos_2_6_5 I3B I2A I3C I3C I2B IBIAS I3A I3A I2C I2C VSS I2A I3B IBIAS VSS VSS nmos_2_6
+.ends
+
+.subckt all ON1 OP1 ON2 OP2 ON3 OP3 VDD IN1 IP1 IN2 IP2 IN3 IP3 VSS IBIAS
+Xone_differential_output_ota_0 OP3 IP3 IN3 ON3 tail_current_diff_out_0/I1C VDD VSS
++ one_differential_output_ota
+Xone_differential_output_ota_1 OP2 IP2 IN2 ON2 tail_current_diff_out_0/I1B VDD VSS
++ one_differential_output_ota
+Xone_differential_output_ota_2 OP1 IP1 IN1 ON1 tail_current_diff_out_0/I1A VDD VSS
++ one_differential_output_ota
+Xtail_current_diff_out_0 VSS OP2 ON2 OP1 ON1 OP3 ON3 IBIAS tail_current_diff_out_0/I1B
++ tail_current_diff_out_0/I1C tail_current_diff_out_0/I1A tail_current_diff_out
+.ends
+
